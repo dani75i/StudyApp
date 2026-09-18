@@ -83,3 +83,17 @@ La version inclut l'identifiant GA4 `G-KF2VQGLN8C` avec chargement conditionnel 
 Cette version ajoute un pack pédagogique versionné pour la 3e : 15 chapitres de mathématiques, 10 chapitres de physique-chimie, 75 fiches de cours et 300 nouveaux exercices. Voir `CONTENT_3E.md`.
 
 Le pack est compatible avec une base Neon déjà utilisée : il est importé automatiquement une seule fois et ne supprime pas les utilisateurs ni leurs tentatives.
+
+## V7 — Refonte UI/UX et récompenses
+
+Cette version conserve la V6 (contenu 3e, déploiement Render/Neon, Google Analytics avec consentement) et ajoute :
+
+- un dashboard visuellement plus riche avec un grand bloc d'accueil et l'objectif hebdomadaire sous forme d'anneau ;
+- une vitrine de récompenses beaucoup plus visible sur le dashboard ;
+- une page `/recompenses` dédiée avec progression globale et badges verrouillés/débloqués ;
+- 9 badges au total, dont des paliers à 25/50 exercices, 3 chapitres maîtrisés et 7 jours de série ;
+- un toast visuel lorsqu'un nouveau badge est détecté comme débloqué ;
+- des cartes, états de survol, couleurs et contrastes retravaillés en clair et sombre ;
+- une navigation mobile améliorée lorsque davantage d'entrées sont présentes dans le menu.
+
+Aucune migration de base de données n'est nécessaire pour cette version.

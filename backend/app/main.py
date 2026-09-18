@@ -144,6 +144,7 @@ def weekly_progress(db: Session, user: User):
 def badge_data(db: Session, user: User, attempts, chapter_progress, streak, week):
     completed_ids = {a.exercise_id for a in attempts}
     correct_ids = {a.exercise_id for a in attempts if a.is_correct}
+    mastered_chapters = sum(1 for c in chapter_progress if c["percent"] == 100 and c["total"] > 0)
     badges = [
         {
             "id": "first-step",
@@ -164,13 +165,40 @@ def badge_data(db: Session, user: User, attempts, chapter_progress, streak, week
             "target": 10,
         },
         {
+            "id": "twenty-five-correct",
+            "title": "Élan confirmé",
+            "description": "Maîtriser 25 exercices différents.",
+            "icon": "star",
+            "unlocked": len(correct_ids) >= 25,
+            "progress": min(25, len(correct_ids)),
+            "target": 25,
+        },
+        {
+            "id": "fifty-correct",
+            "title": "Machine à réviser",
+            "description": "Maîtriser 50 exercices différents.",
+            "icon": "rocket",
+            "unlocked": len(correct_ids) >= 50,
+            "progress": min(50, len(correct_ids)),
+            "target": 50,
+        },
+        {
             "id": "chapter-master",
             "title": "Chapitre maîtrisé",
             "description": "Atteindre 100 % sur un chapitre.",
             "icon": "trophy",
-            "unlocked": any(c["percent"] == 100 and c["total"] > 0 for c in chapter_progress),
-            "progress": 1 if any(c["percent"] == 100 and c["total"] > 0 for c in chapter_progress) else 0,
+            "unlocked": mastered_chapters >= 1,
+            "progress": min(1, mastered_chapters),
             "target": 1,
+        },
+        {
+            "id": "three-chapters",
+            "title": "Triple maîtrise",
+            "description": "Maîtriser entièrement 3 chapitres.",
+            "icon": "crown",
+            "unlocked": mastered_chapters >= 3,
+            "progress": min(3, mastered_chapters),
+            "target": 3,
         },
         {
             "id": "streak-3",
@@ -180,6 +208,15 @@ def badge_data(db: Session, user: User, attempts, chapter_progress, streak, week
             "unlocked": streak >= 3,
             "progress": min(3, streak),
             "target": 3,
+        },
+        {
+            "id": "streak-7",
+            "title": "Semaine en feu",
+            "description": "Travailler sept jours consécutifs.",
+            "icon": "flame",
+            "unlocked": streak >= 7,
+            "progress": min(7, streak),
+            "target": 7,
         },
         {
             "id": "weekly-goal",
@@ -254,7 +291,7 @@ def public_chapter(chapter_id: int, db: Session = Depends(get_db)):
 @app.get("/robots.txt", response_class=PlainTextResponse)
 def robots_txt():
     base = settings.site_url.rstrip("/")
-    return f"User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /dashboard\nDisallow: /historique\nDisallow: /profil\nDisallow: /seance\nDisallow: /exercices\nDisallow: /chapitre/\nDisallow: /exercice/\nSitemap: {base}/sitemap.xml\n"
+    return f"User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /dashboard\nDisallow: /historique\nDisallow: /profil\nDisallow: /recompenses\nDisallow: /seance\nDisallow: /exercices\nDisallow: /chapitre/\nDisallow: /exercice/\nSitemap: {base}/sitemap.xml\n"
 
 
 @app.get("/sitemap.xml")

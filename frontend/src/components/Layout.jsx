@@ -12,6 +12,7 @@ import {
   Dumbbell,
   Sparkles,
   ShieldCheck,
+  Award,
 } from 'lucide-react';
 import { api } from '../api';
 import { useAuth, useTheme } from '../App';
@@ -34,6 +35,7 @@ export default function Layout() {
     ['/cours', BookOpenText, 'Cours'],
     ['/exercices', Dumbbell, 'Exercices'],
     ['/historique', Clock3, 'Historique'],
+    ['/recompenses', Award, 'Récompenses'],
     ['/profil', UserRound, 'Profil'],
     ...(user?.role === 'admin' ? [['/admin', ShieldCheck, 'Admin']] : []),
   ];

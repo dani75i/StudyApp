@@ -12,6 +12,7 @@ import Chapter from './pages/Chapter';
 import Exercise from './pages/Exercise';
 import History from './pages/History';
 import Profile from './pages/Profile';
+import Rewards from './pages/Rewards';
 import Admin from './pages/Admin';
 import PublicHome from './pages/PublicHome';
 import PublicCourses from './pages/PublicCourses';
@@ -94,6 +95,7 @@ export default function App() {
             <Route path="/exercice/:id" element={<Exercise />} />
             <Route path="/historique" element={<History />} />
             <Route path="/profil" element={<Profile />} />
+            <Route path="/recompenses" element={<Rewards />} />
             <Route path="/admin" element={<AdminOnly><Admin /></AdminOnly>} />
           </Route>
 
