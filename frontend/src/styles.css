@@ -962,3 +962,130 @@ body {
   .sidebar nav::-webkit-scrollbar { display: none; }
   .nav-item { min-width: 48px; flex: 0 0 auto; }
 }
+
+/* V7.1 — Chapter exercise tracking */
+.chapter-exercise-heading { margin-top: 0; }
+.exercise-panel-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 14px; }
+.chapter-exercise-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.summary-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.summary-stat div { min-width: 0; }
+.summary-stat strong, .summary-stat span { display: block; }
+.summary-stat strong { font-family: 'Manrope'; font-size: 18px; line-height: 1; }
+.summary-stat span { margin-top: 3px; color: var(--muted); font-size: 11px; font-weight: 700; white-space: nowrap; }
+.summary-stat.success { color: var(--green); background: var(--green-bg); border-color: color-mix(in srgb, var(--green) 20%, var(--line)); }
+.summary-stat.review { color: #d97706; background: rgba(245, 158, 11, .09); border-color: rgba(217,119,6,.2); }
+.summary-stat.todo { color: var(--muted); }
+
+.chapter-continue-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 16px;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--soft), var(--card));
+  border: 1px solid color-mix(in srgb, var(--purple) 24%, var(--line));
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.chapter-continue-card:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(103,92,242,.10); border-color: color-mix(in srgb, var(--purple) 42%, var(--line)); }
+.continue-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: var(--purple); background: var(--card); border: 1px solid var(--line); }
+.chapter-continue-card small, .chapter-continue-card strong { display: block; }
+.chapter-continue-card small { color: var(--purple); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.chapter-continue-card strong { margin-top: 3px; font-size: 14px; }
+.chapter-continue-card > span { display: inline-flex; align-items: center; gap: 5px; color: var(--purple); font-size: 12px; font-weight: 800; white-space: nowrap; }
+
+.exercise-filter-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.exercise-filter-tabs button {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 8px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.exercise-filter-tabs button span { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; display: inline-grid; place-items: center; background: var(--surface-2); font-size: 10px; }
+.exercise-filter-tabs button:hover { color: var(--text); border-color: var(--line-strong); }
+.exercise-filter-tabs button.active { color: var(--purple); background: var(--soft); border-color: color-mix(in srgb, var(--purple) 28%, var(--line)); }
+
+.chapter-exercise-list { gap: 10px; }
+.exercise-item {
+  position: relative;
+  grid-template-columns: 39px minmax(0, 1fr) 20px;
+  padding: 14px 14px 14px 16px;
+  overflow: hidden;
+}
+.exercise-item:before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: transparent; }
+.exercise-item.exercise-status-success:before { background: var(--green); }
+.exercise-item.exercise-status-review:before { background: #f59e0b; }
+.exercise-item.exercise-status-todo:before { background: rgba(148,163,184,.35); }
+.exercise-item.exercise-status-success { background: linear-gradient(90deg, var(--green-bg), var(--card) 23%); }
+.exercise-item.exercise-status-review { background: linear-gradient(90deg, rgba(245,158,11,.08), var(--card) 23%); }
+.exercise-item.exercise-status-todo { background: var(--card); }
+.exercise-item-copy { min-width: 0; }
+.exercise-item-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.exercise-item-title-row strong { min-width: 0; }
+.exercise-status-badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+}
+.exercise-status-badge.success { color: var(--green); background: var(--green-bg); }
+.exercise-status-badge.review { color: #c56d05; background: rgba(245,158,11,.11); }
+.exercise-status-badge.todo { color: var(--muted); background: var(--surface-2); }
+.exercise-meta-row { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-top: 8px; color: var(--muted); font-size: 11px; font-weight: 700; }
+.difficulty-chip, .skill-chip { display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; padding: 5px 8px; }
+.difficulty-chip { border: 1px solid var(--line); background: var(--surface); }
+.difficulty-chip.d1 { color: var(--green); }
+.difficulty-chip.d2 { color: #b77905; }
+.difficulty-chip.d3 { color: var(--red); }
+.skill-chip { color: var(--purple); background: var(--soft); }
+.attempt-copy { margin-top: 7px !important; color: var(--muted) !important; font-size: 11px; }
+.exercise-arrow { color: var(--muted); }
+.exercise-status-success .exercise-number { background: var(--green-bg); color: var(--green); }
+.exercise-status-review .exercise-number { background: rgba(245,158,11,.11); color: #b96a06; }
+.exercise-filter-empty {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  padding: 28px 18px;
+  text-align: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: 16px;
+  color: var(--muted);
+  background: var(--surface-2);
+}
+.exercise-filter-empty strong { color: var(--text); }
+.exercise-filter-empty span { max-width: 320px; font-size: 13px; }
+
+@media (max-width: 1100px) {
+  .chapter-exercise-summary { grid-template-columns: 1fr 1fr 1fr; }
+  .chapter-continue-card { grid-template-columns: 42px 1fr; }
+  .chapter-continue-card > span { grid-column: 2; }
+}
+
+@media (max-width: 760px) {
+  .chapter-exercise-summary { grid-template-columns: 1fr; }
+  .exercise-item-title-row { align-items: flex-start; flex-direction: column; }
+  .exercise-status-badge { align-self: flex-start; }
+  .chapter-continue-card { grid-template-columns: 40px 1fr; }
+  .chapter-continue-card > span { grid-column: 1 / -1; justify-content: center; padding-top: 4px; }
+}

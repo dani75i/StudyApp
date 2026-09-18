@@ -646,6 +646,126 @@ def chapter_detail(chapter_id: int, db: Session = Depends(get_db), user: User = 
         raise HTTPException(404, "Chapitre introuvable")
     lessons = db.query(Lesson).filter(Lesson.chapter_id == chapter_id).order_by(Lesson.order_index).all()
     exercises = db.query(Exercise).filter(Exercise.chapter_id == chapter_id).order_by(Exercise.order_index).all()
+
+    exercise_ids = [exercise.id for exercise in exercises]
+    attempts = (
+        db.query(Attempt)
+        .filter(Attempt.user_id == user.id, Attempt.exercise_id.in_(exercise_ids))
+        .order_by(Attempt.created_at.asc())
+        .all()
+        if exercise_ids else []
+    )
+    attempts_by_exercise = {}
+    for attempt in attempts:
+        attempts_by_exercise.setdefault(attempt.exercise_id, []).append(attempt)
+
+    def infer_skill(exercise):
+        chapter_name = chapter.title.lower()
+        title = exercise.title.lower()
+
+        if "arithmétique" in chapter_name:
+            if "pgcd" in title:
+                return "Calculer un PGCD"
+            if "premier" in title:
+                return "Reconnaître un nombre premier"
+            return "Utiliser la divisibilité"
+        if "puissances" in chapter_name:
+            return "Calculer avec des puissances"
+        if "calcul littéral" in chapter_name:
+            return "Résoudre une équation" if "résoudre" in title else "Substituer une valeur"
+        if "racines carrées" in chapter_name:
+            return "Calculer une racine carrée"
+        if "proportionnalité" in chapter_name:
+            if "%" in title or "hausse" in title or "baisse" in title:
+                return "Calculer un pourcentage"
+            return "Utiliser la proportionnalité"
+        if "images et antécédents" in chapter_name:
+            return "Trouver un antécédent" if "antécédent" in title else "Calculer une image"
+        if "linéaires et affines" in chapter_name:
+            if "coefficient" in title:
+                return "Identifier le coefficient directeur"
+            if "origine" in title:
+                return "Identifier l’ordonnée à l’origine"
+            return "Calculer une image"
+        if "statistiques" in chapter_name:
+            if "médiane" in title:
+                return "Calculer une médiane"
+            if "moyenne" in title:
+                return "Calculer une moyenne"
+            return "Interpréter une série statistique"
+        if "probabilités" in chapter_name:
+            return "Calculer une probabilité"
+        if "pythagore" in chapter_name:
+            return "Appliquer Pythagore"
+        if "thalès" in chapter_name or "thales" in chapter_name:
+            return "Appliquer Thalès"
+        if "trigonométrie" in chapter_name:
+            if "définition" in title:
+                return "Choisir le bon rapport"
+            return "Calculer avec la trigonométrie"
+        if "transformations" in chapter_name:
+            return "Utiliser une transformation"
+        if "géométrie dans l'espace" in chapter_name:
+            return "Calculer un volume"
+        if "algorithmique" in chapter_name:
+            if "boucle" in title:
+                return "Comprendre une boucle"
+            if "condition" in title:
+                return "Comprendre une condition"
+            return "Lire un programme"
+        if "atomes" in chapter_name:
+            return "Identifier les constituants de la matière"
+        if "transformations chimiques" in chapter_name:
+            return "Interpréter une transformation chimique"
+        if "ph" in chapter_name:
+            return "Interpréter une valeur de pH"
+        if "mouvement" in chapter_name:
+            return "Calculer une vitesse"
+        if "forces" in chapter_name:
+            return "Caractériser une force"
+        if "énergie" in chapter_name:
+            return "Calculer énergie et puissance"
+        if "circuits électriques" in chapter_name:
+            return "Identifier tension et intensité"
+        if "ohm" in chapter_name:
+            return "Appliquer la loi d’Ohm"
+        if "signaux" in chapter_name:
+            return "Caractériser un signal"
+        if "univers" in chapter_name:
+            return "Connaître les ordres de grandeur"
+
+        if any(token in title for token in ("graph", "lecture", "lire", "interpr")):
+            return "Lire et interpréter"
+        if any(token in title for token in ("identifier", "repérer", "reconnaître", "unité", "symbole")):
+            return "Identifier"
+        if any(token in title for token in ("calcul", "valeur", "image", "résoudre", "coefficient")):
+            return "Calculer"
+        return "S'entraîner"
+
+
+    exercise_rows = []
+    for exercise in exercises:
+        exercise_attempts = attempts_by_exercise.get(exercise.id, [])
+        last_attempt = exercise_attempts[-1] if exercise_attempts else None
+        ever_correct = any(attempt.is_correct for attempt in exercise_attempts)
+        if last_attempt is None:
+            status = "todo"
+        elif last_attempt.is_correct:
+            status = "success"
+        else:
+            status = "review"
+        exercise_rows.append({
+            "id": exercise.id,
+            "title": exercise.title,
+            "difficulty": exercise.difficulty,
+            "points": exercise.points,
+            "skill": infer_skill(exercise),
+            "status": status,
+            "attempt_count": len(exercise_attempts),
+            "ever_correct": ever_correct,
+            "last_is_correct": None if last_attempt is None else last_attempt.is_correct,
+        })
+
     return {
         "id": chapter.id,
         "title": chapter.title,
@@ -653,7 +773,7 @@ def chapter_detail(chapter_id: int, db: Session = Depends(get_db), user: User = 
         "level": chapter.level,
         "subject": {"id": subject.id, "name": subject.name, "emoji": subject.emoji, "slug": subject.slug},
         "lessons": [{"id": l.id, "title": l.title, "body": l.body} for l in lessons],
-        "exercises": [{"id": e.id, "title": e.title, "difficulty": e.difficulty, "points": e.points} for e in exercises],
+        "exercises": exercise_rows,
         "progress": progress_for_chapter(db, user.id, chapter_id),
     }
 

@@ -97,3 +97,19 @@ Cette version conserve la V6 (contenu 3e, déploiement Render/Neon, Google Analy
 - une navigation mobile améliorée lorsque davantage d'entrées sont présentes dans le menu.
 
 Aucune migration de base de données n'est nécessaire pour cette version.
+
+## V7.1 — Suivi visuel des exercices dans un chapitre
+
+Cette version améliore la lisibilité de la colonne d'exercices sans modifier la base de données :
+
+- statut visible sur chaque exercice : `À faire`, `À revoir`, `Réussi` ;
+- nombre de tentatives affiché ;
+- résultat de la dernière tentative pris en compte ;
+- résumé du chapitre : réussis / à revoir / à faire ;
+- filtres rapides sur ces statuts ;
+- bouton de reprise priorisant les exercices à revoir puis ceux jamais faits ;
+- difficulté écrite en toutes lettres : Facile / Intermédiaire / Difficile ;
+- tag de compétence pédagogique déduit du chapitre et du type d'exercice ;
+- cartes colorées et bordures d'état pour identifier la progression au premier coup d'œil.
+
+Aucune migration SQL n'est nécessaire pour cette version.
