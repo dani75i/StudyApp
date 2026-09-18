@@ -15,6 +15,7 @@ import { Link, useParams } from 'react-router-dom';
 import { api } from '../api';
 import { getSubjectMeta } from '../subjectMeta';
 import { getChapterIllustration } from '../chapterIllustrations';
+import { LessonContent } from '../components/RichContent';
 
 const FILTERS = [
   ['all', 'Tous'],
@@ -149,7 +150,7 @@ export default function Chapter() {
               <article className="lesson-card" key={lesson.id}>
                 <div className="lesson-tag">Fiche cours</div>
                 <h3>{lesson.title}</h3>
-                {lesson.body.split('\n').map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+                <LessonContent body={lesson.body} />
               </article>
             ))}
           </div>

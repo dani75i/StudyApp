@@ -5,6 +5,7 @@ import { api } from '../api';
 import PublicFooter from '../components/PublicFooter';
 import { trackEvent } from '../analytics';
 import { getChapterIllustration } from '../chapterIllustrations';
+import { LessonContent } from '../components/RichContent';
 
 export default function PublicChapter() {
   const { id } = useParams();
@@ -44,7 +45,7 @@ export default function PublicChapter() {
         </header>
         <section className="public-lessons">
           <div className="section-head"><div><h2><BookOpenCheck size={21} /> Le cours</h2><p>Les notions essentielles à connaître.</p></div></div>
-          <div className="lesson-list">{data.lessons.map((lesson) => <article className="lesson-card" key={lesson.id}><div className="lesson-tag">Fiche cours</div><h3>{lesson.title}</h3>{lesson.body.split('\n').map((p, i) => <p key={i}>{p}</p>)}</article>)}</div>
+          <div className="lesson-list">{data.lessons.map((lesson) => <article className="lesson-card" key={lesson.id}><div className="lesson-tag">Fiche cours</div><h3>{lesson.title}</h3><LessonContent body={lesson.body} /></article>)}</div>
         </section>
         <section className="public-exercise-cta"><Dumbbell size={26} /><div><h2>{data.exercise_count} exercice(s) pour t'entraîner</h2><p>Crée un compte gratuit pour répondre aux exercices, voir les corrections et enregistrer ta progression.</p></div><Link className="primary" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'chapter_signup', destination: '/inscription', chapter_id: data.id })}>M'entraîner gratuitement <ArrowRight size={17} /></Link></section>
       </main>

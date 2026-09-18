@@ -1,3 +1,20 @@
+# StudySprint V7.3 — Éditeur pédagogique et formules mathématiques
+
+## Nouveautés
+- rendu des expressions mathématiques avec KaTeX ;
+- les anciennes fiches sont automatiquement aérées en paragraphes/formules ;
+- les cours peuvent être structurés depuis `/admin` en blocs Paragraphe / Formule / Liste / À retenir ;
+- aperçu élève en direct dans l'éditeur de cours ;
+- édition des exercices existants avec aperçu de l'énoncé et de la correction ;
+- boutons d'insertion rapide pour fractions, racines, puissances, multiplication et formules centrées ;
+- recherche et filtres matière / niveau / chapitre dans `/admin` ;
+- duplication rapide d'un exercice ;
+- les modifications effectuées dans `/admin` sont enregistrées directement dans la base de production, sans nouveau déploiement.
+
+Les fiches existantes restent compatibles : aucune migration SQL n'est nécessaire. Lorsqu'une ancienne fiche est ouverte dans l'éditeur puis enregistrée, elle passe automatiquement au nouveau format structuré.
+
+---
+
 # StudySprint v7.2 — Illustrations physique
 
 ## Ajouts de cette version

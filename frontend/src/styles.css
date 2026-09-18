@@ -1096,3 +1096,78 @@ body {
   .chapter-continue-card { grid-template-columns: 40px 1fr; }
   .chapter-continue-card > span { grid-column: 1 / -1; justify-content: center; padding-top: 4px; }
 }
+
+/* V7.3 — richer educational content + admin editor */
+.lesson-content { display: flex; flex-direction: column; gap: 14px; }
+.lesson-content > p { margin: 0; line-height: 1.72; color: var(--text); opacity: .94; }
+.inline-math { display: inline-flex; align-items: center; margin: 0 .12em; vertical-align: middle; }
+.display-math { display: block; width: 100%; overflow-x: auto; padding: 4px 0; }
+.formula-block {
+  overflow-x: auto; padding: 16px 18px; border-radius: 14px; background: var(--course-bg); border: 1px solid var(--line);
+  color: var(--course-accent); text-align: center;
+}
+.formula-block .katex-display { margin: .2em 0; }
+.lesson-bullet-list { margin: 0; padding-left: 22px; display: grid; gap: 9px; line-height: 1.65; }
+.lesson-bullet-list li::marker { color: var(--purple); }
+.lesson-note {
+  display: grid; grid-template-columns: 24px 1fr; gap: 11px; align-items: flex-start; margin-top: 2px; padding: 15px 16px;
+  border-radius: 14px; background: rgba(245,158,11,.10); border: 1px solid rgba(245,158,11,.24); color: var(--text);
+}
+.lesson-note > svg { color: #f59e0b; margin-top: 2px; }
+.lesson-note strong { display: block; margin-bottom: 4px; }
+.lesson-note p { margin: 0; line-height: 1.65; color: var(--muted); }
+.katex { font-size: 1.08em; }
+.formula-block .katex { font-size: 1.22em; }
+.correction-copy { line-height: 1.7; margin: 12px 0; }
+.statement { line-height: 1.72; }
+
+.admin-toolbar-v73 { align-items: stretch; }
+.admin-search {
+  min-width: 230px; flex: 1; max-width: 380px; display: flex; align-items: center; gap: 8px; padding: 0 11px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--muted);
+}
+.admin-search input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--text); padding: 11px 0; }
+.admin-modal.wide { width: min(1180px, 100%); }
+.lesson-editor-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); gap: 18px; align-items: start; }
+.lesson-block-editor { min-width: 0; }
+.block-add-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 14px; margin-bottom: 12px;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+}
+.block-add-toolbar > div { display: flex; gap: 7px; flex-wrap: wrap; }
+.block-add-toolbar button, .math-toolbar button {
+  display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--card); color: var(--text);
+  border-radius: 9px; padding: 7px 9px; font-size: 12px; font-weight: 700;
+}
+.block-add-toolbar button:hover, .math-toolbar button:hover { border-color: var(--purple); color: var(--purple); }
+.lesson-block-list { display: flex; flex-direction: column; gap: 11px; }
+.lesson-edit-block { padding: 13px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.lesson-edit-block.type-formula { border-left: 4px solid var(--course-accent); }
+.lesson-edit-block.type-note { border-left: 4px solid #f59e0b; }
+.lesson-edit-block.type-list { border-left: 4px solid var(--practice-accent); }
+.lesson-edit-block-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 9px; font-size: 12px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.lesson-edit-block textarea { width: 100%; margin: 0; border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 10px; padding: 11px; resize: vertical; line-height: 1.55; }
+.danger-icon { border: 0; background: transparent; color: var(--red); padding: 5px; border-radius: 8px; }
+.math-toolbar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 8px 0 2px; color: var(--muted); font-size: 11px; }
+.math-toolbar > span { display: inline-flex; align-items: center; gap: 5px; font-weight: 800; }
+.formula-help { color: var(--muted); font-size: 11px; margin-top: 7px; line-height: 1.5; }
+.formula-help code { color: var(--purple); background: var(--soft); padding: 2px 5px; border-radius: 5px; }
+.lesson-live-preview, .exercise-admin-preview { position: sticky; top: 82px; min-width: 0; }
+.preview-title { display: flex; align-items: center; gap: 7px; font-weight: 800; color: var(--muted); margin-bottom: 10px; }
+.preview-lesson-card { padding: 18px; }
+.preview-lesson-card .lesson-content { margin-top: 4px; }
+.exercise-editor-layout { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); gap: 20px; align-items: start; }
+.exercise-preview-card { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.exercise-preview-card h3 { margin-bottom: 12px; }
+.preview-statement { line-height: 1.7; margin-bottom: 14px; }
+.preview-options { display: grid; gap: 8px; }
+.preview-options > div { display: grid; grid-template-columns: 30px 1fr; gap: 9px; align-items: center; padding: 10px 11px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+.preview-options > div > span:first-child { width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; background: var(--soft); color: var(--purple); font-weight: 800; }
+.preview-correction { margin-top: 14px; padding: 13px 14px; border-radius: 12px; background: var(--green-bg); border: 1px solid rgba(34,160,107,.22); }
+.preview-correction > strong { color: var(--green); display: block; margin-bottom: 6px; }
+
+@media (max-width: 980px) {
+  .lesson-editor-layout, .exercise-editor-layout { grid-template-columns: 1fr; }
+  .lesson-live-preview, .exercise-admin-preview { position: static; }
+  .admin-search { max-width: none; min-width: 100%; }
+}

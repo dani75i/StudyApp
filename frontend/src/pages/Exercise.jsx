@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, RotateCcw, Sparkles, XCircle } from 'lucide-react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { api } from '../api';
+import { RichText } from '../components/RichContent';
 
 export default function Exercise() {
   const { id } = useParams();
@@ -48,14 +49,14 @@ export default function Exercise() {
           <span>{data.points} POINTS</span>
         </div>
         <h1>{data.title}</h1>
-        <p className="statement">{data.statement}</p>
+        <div className="statement"><RichText text={data.statement} /></div>
         <form onSubmit={submit}>
           {data.exercise_type === 'mcq' ? (
             <div className="options">
               {data.options.map((option) => (
                 <label className={`option ${answer === option ? 'selected' : ''}`} key={option}>
                   <input type="radio" name="answer" value={option} checked={answer === option} onChange={() => setAnswer(option)} />
-                  <span>{option}</span>
+                  <span><RichText text={option} /></span>
                 </label>
               ))}
             </div>
@@ -72,8 +73,8 @@ export default function Exercise() {
             <div className="correction-title">
               {result.is_correct ? <><CheckCircle2 /> Bonne réponse !</> : <><XCircle /> Pas encore.</>}
             </div>
-            {!result.is_correct && <p><b>Réponse attendue :</b> {result.correct_answer}</p>}
-            <p>{result.correction}</p>
+            {!result.is_correct && <p><b>Réponse attendue :</b> <RichText text={result.correct_answer} /></p>}
+            <div className="correction-copy"><RichText text={result.correction} /></div>
             <div className="correction-actions">
               <button className="secondary" onClick={retry}><RotateCcw size={16} /> Refaire l'exercice</button>
               {fromSession && <Link className="primary" to="/seance">Continuer ma séance</Link>}

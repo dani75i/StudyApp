@@ -1,20 +1,35 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
+  AlignLeft,
   BookOpenText,
   CirclePlus,
+  Copy,
   Dumbbell,
+  Eye,
+  Lightbulb,
+  List,
   Layers3,
   Pencil,
   Save,
+  Search,
   ShieldCheck,
+  Sigma,
   Trash2,
   X,
 } from 'lucide-react';
 import { api } from '../api';
+import {
+  emptyLessonBlocks,
+  insertSnippet,
+  lessonPreview,
+  parseLessonBlocks,
+  serializeLessonBlocks,
+} from '../contentFormat';
+import { LessonContent, RichText } from '../components/RichContent';
 
 const levels = ['6e', '5e', '4e', '3e', '2nde', '1re', 'Terminale'];
 const emptyChapter = { subject_id: '', level: '3e', title: '', summary: '', order_index: 0 };
-const emptyLesson = { chapter_id: '', title: '', body: '', order_index: 0 };
+const emptyLesson = { chapter_id: '', title: '', body: '', blocks: emptyLessonBlocks(), order_index: 0 };
 const emptyExercise = {
   chapter_id: '',
   title: '',
@@ -28,6 +43,15 @@ const emptyExercise = {
   order_index: 0,
 };
 
+const mathSnippets = [
+  ['x²', '\\(x^2\\)'],
+  ['Fraction', '\\(\\frac{a}{b}\\)'],
+  ['Racine', '\\(\\sqrt{x}\\)'],
+  ['×', '\\(a \\times b\\)'],
+  ['π', '\\(\\pi\\)'],
+  ['Formule centrée', '\\[a = b\\]'],
+];
+
 function SectionHeader({ icon: Icon, title, description, onAdd, addLabel }) {
   return (
     <div className="admin-section-head">
@@ -40,15 +64,132 @@ function SectionHeader({ icon: Icon, title, description, onAdd, addLabel }) {
   );
 }
 
-function AdminModal({ title, children, onClose }) {
+function AdminModal({ title, children, onClose, wide = false }) {
   return (
     <div className="admin-modal-backdrop" onMouseDown={onClose}>
-      <div className="admin-modal" onMouseDown={(e) => e.stopPropagation()}>
+      <div className={`admin-modal ${wide ? 'wide' : ''}`} onMouseDown={(e) => e.stopPropagation()}>
         <div className="admin-modal-head">
           <h2>{title}</h2>
           <button className="icon-button" onClick={onClose}><X size={19} /></button>
         </div>
         {children}
+      </div>
+    </div>
+  );
+}
+
+function MathToolbar({ value, onChange }) {
+  return (
+    <div className="math-toolbar">
+      <span><Sigma size={14} /> Insérer :</span>
+      {mathSnippets.map(([label, snippet]) => (
+        <button type="button" key={label} onClick={() => onChange(insertSnippet(value, snippet))}>{label}</button>
+      ))}
+    </div>
+  );
+}
+
+function LessonBlockEditor({ blocks, onChange }) {
+  const updateBlock = (index, patch) => {
+    const next = blocks.map((block, i) => i === index ? { ...block, ...patch } : block);
+    onChange(next);
+  };
+
+  const removeBlock = (index) => {
+    const next = blocks.filter((_, i) => i !== index);
+    onChange(next.length ? next : emptyLessonBlocks());
+  };
+
+  const addBlock = (type) => {
+    const block = type === 'list' ? { type, items: [''] } : { type, content: '' };
+    onChange([...blocks, block]);
+  };
+
+  return (
+    <div className="lesson-editor-layout">
+      <div className="lesson-block-editor">
+        <div className="block-add-toolbar">
+          <strong>Construire la fiche</strong>
+          <div>
+            <button type="button" onClick={() => addBlock('paragraph')}><AlignLeft size={15} /> Paragraphe</button>
+            <button type="button" onClick={() => addBlock('formula')}><Sigma size={15} /> Formule</button>
+            <button type="button" onClick={() => addBlock('list')}><List size={15} /> Liste</button>
+            <button type="button" onClick={() => addBlock('note')}><Lightbulb size={15} /> À retenir</button>
+          </div>
+        </div>
+
+        <div className="lesson-block-list">
+          {blocks.map((block, index) => (
+            <div className={`lesson-edit-block type-${block.type}`} key={`${block.type}-${index}`}>
+              <div className="lesson-edit-block-head">
+                <span>{index + 1}. {block.type === 'paragraph' ? 'Paragraphe' : block.type === 'formula' ? 'Formule' : block.type === 'list' ? 'Liste' : 'À retenir'}</span>
+                <button type="button" className="danger-icon" onClick={() => removeBlock(index)}><Trash2 size={15} /></button>
+              </div>
+
+              {block.type === 'formula' && (
+                <>
+                  <textarea
+                    rows="3"
+                    value={block.content || ''}
+                    onChange={(e) => updateBlock(index, { content: e.target.value })}
+                    placeholder="Ex. P = m \\times g"
+                  />
+                  <div className="formula-help">Écris uniquement la formule. Exemple : <code>{'\\\\frac{a}{b}'}</code>, <code>x^2</code>, <code>{'\\\\sqrt{x}'}</code>.</div>
+                </>
+              )}
+
+              {block.type === 'list' && (
+                <textarea
+                  rows="5"
+                  value={(block.items || []).join('\n')}
+                  onChange={(e) => updateBlock(index, { items: e.target.value.split('\n') })}
+                  placeholder={'Un élément par ligne\nP : poids en newtons (N)\nm : masse en kilogrammes (kg)'}
+                />
+              )}
+
+              {(block.type === 'paragraph' || block.type === 'note') && (
+                <>
+                  <textarea
+                    rows={block.type === 'note' ? 4 : 5}
+                    value={block.content || ''}
+                    onChange={(e) => updateBlock(index, { content: e.target.value })}
+                    placeholder={block.type === 'note' ? 'La notion essentielle à mémoriser…' : 'Explique la notion avec des phrases courtes et aérées…'}
+                  />
+                  <MathToolbar value={block.content || ''} onChange={(value) => updateBlock(index, { content: value })} />
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <aside className="lesson-live-preview">
+        <div className="preview-title"><Eye size={17} /> Aperçu élève</div>
+        <div className="lesson-card preview-lesson-card">
+          <div className="lesson-tag">Fiche cours</div>
+          <LessonContent body={serializeLessonBlocks(blocks)} />
+        </div>
+      </aside>
+    </div>
+  );
+}
+
+function ExercisePreview({ form }) {
+  return (
+    <div className="exercise-admin-preview">
+      <div className="preview-title"><Eye size={17} /> Aperçu</div>
+      <div className="exercise-preview-card">
+        <h3>{form.title || 'Titre de l’exercice'}</h3>
+        <div className="preview-statement"><RichText text={form.statement || 'L’énoncé apparaîtra ici.'} /></div>
+        {form.exercise_type === 'mcq' && (
+          <div className="preview-options">
+            {form.options.filter(Boolean).map((option, index) => <div key={index}><span>{String.fromCharCode(65 + index)}</span><RichText text={option} /></div>)}
+          </div>
+        )}
+        <div className="preview-correction">
+          <strong>Correction</strong>
+          <div><RichText text={form.correction || 'La correction détaillée apparaîtra ici.'} /></div>
+        </div>
       </div>
     </div>
   );
@@ -64,6 +205,8 @@ export default function Admin() {
   const [busy, setBusy] = useState(false);
   const [subjectFilter, setSubjectFilter] = useState('all');
   const [levelFilter, setLevelFilter] = useState('all');
+  const [chapterFilter, setChapterFilter] = useState('all');
+  const [query, setQuery] = useState('');
 
   const load = async () => {
     const next = await api('/admin/content');
@@ -75,7 +218,7 @@ export default function Admin() {
   const subjectById = useMemo(() => Object.fromEntries((data?.subjects || []).map((s) => [s.id, s])), [data]);
   const chapterById = useMemo(() => Object.fromEntries((data?.chapters || []).map((c) => [c.id, c])), [data]);
 
-  const filteredChapters = useMemo(() => {
+  const baseChapters = useMemo(() => {
     if (!data) return [];
     return data.chapters.filter((chapter) => {
       const subjectOk = subjectFilter === 'all' || String(chapter.subject_id) === subjectFilter;
@@ -84,33 +227,51 @@ export default function Admin() {
     });
   }, [data, subjectFilter, levelFilter]);
 
+  useEffect(() => {
+    if (chapterFilter !== 'all' && !baseChapters.some((chapter) => String(chapter.id) === chapterFilter)) setChapterFilter('all');
+  }, [baseChapters, chapterFilter]);
+
+  const matchesQuery = (value) => String(value || '').toLocaleLowerCase('fr').includes(query.trim().toLocaleLowerCase('fr'));
+
+  const filteredChapters = useMemo(() => baseChapters.filter((chapter) => !query.trim() || matchesQuery(`${chapter.title} ${chapter.summary}`)), [baseChapters, query]);
+
+  const allowedChapterIds = useMemo(() => new Set(
+    baseChapters
+      .filter((chapter) => chapterFilter === 'all' || String(chapter.id) === chapterFilter)
+      .map((chapter) => chapter.id)
+  ), [baseChapters, chapterFilter]);
+
   const filteredLessons = useMemo(() => {
     if (!data) return [];
-    const allowed = new Set(filteredChapters.map((c) => c.id));
-    return data.lessons.filter((lesson) => allowed.has(lesson.chapter_id));
-  }, [data, filteredChapters]);
+    return data.lessons.filter((lesson) => allowedChapterIds.has(lesson.chapter_id) && (!query.trim() || matchesQuery(`${lesson.title} ${lessonPreview(lesson.body)}`)));
+  }, [data, allowedChapterIds, query]);
 
   const filteredExercises = useMemo(() => {
     if (!data) return [];
-    const allowed = new Set(filteredChapters.map((c) => c.id));
-    return data.exercises.filter((exercise) => allowed.has(exercise.chapter_id));
-  }, [data, filteredChapters]);
+    return data.exercises.filter((exercise) => allowedChapterIds.has(exercise.chapter_id) && (!query.trim() || matchesQuery(`${exercise.title} ${exercise.statement} ${exercise.correction}`)));
+  }, [data, allowedChapterIds, query]);
 
   const openNew = (kind) => {
     setError('');
     if (kind === 'chapter') {
       setForm({ ...emptyChapter, subject_id: data.subjects[0]?.id || '' });
     } else if (kind === 'lesson') {
-      setForm({ ...emptyLesson, chapter_id: filteredChapters[0]?.id || data.chapters[0]?.id || '' });
+      setForm({ ...emptyLesson, chapter_id: baseChapters[0]?.id || data.chapters[0]?.id || '', blocks: emptyLessonBlocks() });
     } else {
-      setForm({ ...emptyExercise, chapter_id: filteredChapters[0]?.id || data.chapters[0]?.id || '', options: [...emptyExercise.options] });
+      setForm({ ...emptyExercise, chapter_id: baseChapters[0]?.id || data.chapters[0]?.id || '', options: [...emptyExercise.options] });
     }
     setModal({ kind, id: null });
   };
 
   const openEdit = (kind, item) => {
     setError('');
-    setForm({ ...item, options: item.options ? [...item.options, '', '', '', ''].slice(0, 6) : undefined });
+    if (kind === 'lesson') {
+      setForm({ ...item, blocks: parseLessonBlocks(item.body) });
+    } else if (kind === 'exercise') {
+      setForm({ ...item, options: [...(item.options || []), '', '', '', ''].slice(0, 6) });
+    } else {
+      setForm({ ...item });
+    }
     setModal({ kind, id: item.id });
   };
 
@@ -131,6 +292,10 @@ export default function Admin() {
       if (modal.kind === 'chapter') body.subject_id = Number(body.subject_id);
       if (modal.kind !== 'chapter') body.chapter_id = Number(body.chapter_id);
       body.order_index = Number(body.order_index || 0);
+      if (modal.kind === 'lesson') {
+        body.body = serializeLessonBlocks(body.blocks);
+        delete body.blocks;
+      }
       if (modal.kind === 'exercise') {
         body.difficulty = Number(body.difficulty);
         body.points = Number(body.points);
@@ -141,8 +306,8 @@ export default function Admin() {
         body: JSON.stringify(body),
       });
       await load();
-      setSuccess(modal.id ? 'Modification enregistrée.' : 'Contenu ajouté à la base.');
-      setTimeout(() => setSuccess(''), 2500);
+      setSuccess(modal.id ? 'Modification enregistrée immédiatement dans la base.' : 'Contenu ajouté à la base.');
+      setTimeout(() => setSuccess(''), 3000);
       setModal(null);
       setForm(null);
       setError('');
@@ -150,6 +315,25 @@ export default function Admin() {
       setError(err.message);
     } finally {
       setBusy(false);
+    }
+  };
+
+  const duplicateExercise = async (exercise) => {
+    const body = {
+      ...exercise,
+      chapter_id: Number(exercise.chapter_id),
+      title: `${exercise.title} — copie`,
+      options: exercise.options || [],
+      order_index: Number(exercise.order_index || 0) + 1,
+    };
+    delete body.id;
+    try {
+      await api('/admin/exercises', { method: 'POST', body: JSON.stringify(body) });
+      await load();
+      setSuccess('Exercice dupliqué. Tu peux maintenant modifier la copie.');
+      setTimeout(() => setSuccess(''), 3000);
+    } catch (err) {
+      setError(err.message);
     }
   };
 
@@ -175,7 +359,7 @@ export default function Admin() {
         <div>
           <span className="eyebrow">ADMINISTRATION</span>
           <h1>Gestion du contenu</h1>
-          <p>Ajoute et modifie les chapitres, cours et exercices enregistrés dans la base de données.</p>
+          <p>Corrige les cours et exercices directement ici : les changements sont enregistrés dans Neon sans modifier le code.</p>
         </div>
         <div className="admin-badge"><ShieldCheck size={18} /> Accès administrateur</div>
       </header>
@@ -189,12 +373,13 @@ export default function Admin() {
         <div className="admin-summary"><Dumbbell /><div><strong>{data.exercises.length}</strong><span>exercices</span></div></div>
       </div>
 
-      <div className="admin-toolbar">
+      <div className="admin-toolbar admin-toolbar-v73">
         <div className="admin-tabs">
           <button className={tab === 'chapters' ? 'active' : ''} onClick={() => setTab('chapters')}>Chapitres</button>
           <button className={tab === 'lessons' ? 'active' : ''} onClick={() => setTab('lessons')}>Cours</button>
           <button className={tab === 'exercises' ? 'active' : ''} onClick={() => setTab('exercises')}>Exercices</button>
         </div>
+        <div className="admin-search"><Search size={16} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher un contenu…" /></div>
         <div className="admin-filters">
           <select value={subjectFilter} onChange={(e) => setSubjectFilter(e.target.value)}>
             <option value="all">Toutes les matières</option>
@@ -204,6 +389,12 @@ export default function Admin() {
             <option value="all">Tous les niveaux</option>
             {levels.map((level) => <option key={level}>{level}</option>)}
           </select>
+          {tab !== 'chapters' && (
+            <select value={chapterFilter} onChange={(e) => setChapterFilter(e.target.value)}>
+              <option value="all">Tous les chapitres</option>
+              {baseChapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.level} • {chapter.title}</option>)}
+            </select>
+          )}
         </div>
       </div>
 
@@ -232,7 +423,7 @@ export default function Admin() {
 
       {tab === 'lessons' && (
         <section className="admin-panel">
-          <SectionHeader icon={BookOpenText} title="Cours" description="Crée les fiches pédagogiques affichées dans chaque chapitre." onAdd={() => openNew('lesson')} addLabel="Nouveau cours" />
+          <SectionHeader icon={BookOpenText} title="Cours" description="Modifie les fiches existantes avec paragraphes, formules, listes et encarts." onAdd={() => openNew('lesson')} addLabel="Nouveau cours" />
           <div className="admin-list">
             {filteredLessons.map((lesson) => {
               const chapter = chapterById[lesson.chapter_id];
@@ -241,7 +432,7 @@ export default function Admin() {
                   <div className="admin-row-main">
                     <span className="subject-pill">{chapter?.level} • {chapter?.title}</span>
                     <strong>{lesson.title}</strong>
-                    <p className="admin-preview">{lesson.body}</p>
+                    <p className="admin-preview">{lessonPreview(lesson.body)}</p>
                     <small>ordre {lesson.order_index}</small>
                   </div>
                   <div className="admin-actions">
@@ -258,7 +449,7 @@ export default function Admin() {
 
       {tab === 'exercises' && (
         <section className="admin-panel">
-          <SectionHeader icon={Dumbbell} title="Exercices" description="Les exercices enregistrés ici deviennent disponibles aux élèves du niveau concerné." onAdd={() => openNew('exercise')} addLabel="Nouvel exercice" />
+          <SectionHeader icon={Dumbbell} title="Exercices" description="Corrige l’énoncé, la réponse ou la correction sans toucher directement à la base." onAdd={() => openNew('exercise')} addLabel="Nouvel exercice" />
           <div className="admin-list">
             {filteredExercises.map((exercise) => {
               const chapter = chapterById[exercise.chapter_id];
@@ -272,6 +463,7 @@ export default function Admin() {
                   </div>
                   <div className="admin-actions">
                     <button onClick={() => openEdit('exercise', exercise)}><Pencil size={16} /> Modifier</button>
+                    <button onClick={() => duplicateExercise(exercise)}><Copy size={16} /> Dupliquer</button>
                     <button className="danger" onClick={() => remove('exercise', exercise)}><Trash2 size={16} /> Supprimer</button>
                   </div>
                 </article>
@@ -284,6 +476,7 @@ export default function Admin() {
 
       {modal && form && (
         <AdminModal
+          wide={modal.kind !== 'chapter'}
           title={`${modal.id ? 'Modifier' : 'Ajouter'} ${modal.kind === 'chapter' ? 'un chapitre' : modal.kind === 'lesson' ? 'un cours' : 'un exercice'}`}
           onClose={closeModal}
         >
@@ -308,66 +501,73 @@ export default function Admin() {
 
             {modal.kind === 'lesson' && (
               <>
-                <label>Chapitre
-                  <select value={form.chapter_id} onChange={(e) => setForm({ ...form, chapter_id: e.target.value })} required>
-                    {data.chapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.level} • {subjectById[chapter.subject_id]?.name} • {chapter.title}</option>)}
-                  </select>
-                </label>
+                <div className="admin-form-grid">
+                  <label>Chapitre
+                    <select value={form.chapter_id} onChange={(e) => setForm({ ...form, chapter_id: e.target.value })} required>
+                      {data.chapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.level} • {subjectById[chapter.subject_id]?.name} • {chapter.title}</option>)}
+                    </select>
+                  </label>
+                  <label>Ordre<input type="number" min="0" value={form.order_index} onChange={(e) => setForm({ ...form, order_index: e.target.value })} /></label>
+                </div>
                 <label>Titre<input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} required /></label>
-                <label>Contenu du cours<textarea rows="12" value={form.body} onChange={(e) => setForm({ ...form, body: e.target.value })} required /></label>
-                <label>Ordre<input type="number" min="0" value={form.order_index} onChange={(e) => setForm({ ...form, order_index: e.target.value })} /></label>
+                <LessonBlockEditor blocks={form.blocks || emptyLessonBlocks()} onChange={(blocks) => setForm({ ...form, blocks })} />
               </>
             )}
 
             {modal.kind === 'exercise' && (
-              <>
-                <label>Chapitre
-                  <select value={form.chapter_id} onChange={(e) => setForm({ ...form, chapter_id: e.target.value })} required>
-                    {data.chapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.level} • {subjectById[chapter.subject_id]?.name} • {chapter.title}</option>)}
-                  </select>
-                </label>
-                <label>Titre<input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} required /></label>
-                <label>Énoncé<textarea rows="5" value={form.statement} onChange={(e) => setForm({ ...form, statement: e.target.value })} required /></label>
-                <div className="admin-form-grid three">
-                  <label>Type
-                    <select value={form.exercise_type} onChange={(e) => setForm({ ...form, exercise_type: e.target.value })}>
-                      <option value="mcq">QCM</option>
-                      <option value="text">Réponse libre</option>
+              <div className="exercise-editor-layout">
+                <div>
+                  <label>Chapitre
+                    <select value={form.chapter_id} onChange={(e) => setForm({ ...form, chapter_id: e.target.value })} required>
+                      {data.chapters.map((chapter) => <option key={chapter.id} value={chapter.id}>{chapter.level} • {subjectById[chapter.subject_id]?.name} • {chapter.title}</option>)}
                     </select>
                   </label>
-                  <label>Difficulté
-                    <select value={form.difficulty} onChange={(e) => setForm({ ...form, difficulty: e.target.value })}>
-                      <option value="1">Facile</option>
-                      <option value="2">Moyen</option>
-                      <option value="3">Difficile</option>
-                    </select>
-                  </label>
-                  <label>Points<input type="number" min="1" max="1000" value={form.points} onChange={(e) => setForm({ ...form, points: e.target.value })} /></label>
-                </div>
-
-                {form.exercise_type === 'mcq' && (
-                  <div className="admin-option-box">
-                    <strong>Réponses proposées</strong>
-                    <p>Ajoute au moins deux choix. La bonne réponse doit correspondre exactement à l'un des choix.</p>
-                    {form.options.map((option, index) => (
-                      <input
-                        key={index}
-                        value={option}
-                        placeholder={`Choix ${index + 1}`}
-                        onChange={(e) => {
-                          const options = [...form.options];
-                          options[index] = e.target.value;
-                          setForm({ ...form, options });
-                        }}
-                      />
-                    ))}
+                  <label>Titre<input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} required /></label>
+                  <label>Énoncé<textarea rows="5" value={form.statement} onChange={(e) => setForm({ ...form, statement: e.target.value })} required /></label>
+                  <MathToolbar value={form.statement} onChange={(statement) => setForm({ ...form, statement })} />
+                  <div className="admin-form-grid three">
+                    <label>Type
+                      <select value={form.exercise_type} onChange={(e) => setForm({ ...form, exercise_type: e.target.value })}>
+                        <option value="mcq">QCM</option>
+                        <option value="text">Réponse libre</option>
+                      </select>
+                    </label>
+                    <label>Difficulté
+                      <select value={form.difficulty} onChange={(e) => setForm({ ...form, difficulty: e.target.value })}>
+                        <option value="1">Facile</option>
+                        <option value="2">Moyen</option>
+                        <option value="3">Difficile</option>
+                      </select>
+                    </label>
+                    <label>Points<input type="number" min="1" max="1000" value={form.points} onChange={(e) => setForm({ ...form, points: e.target.value })} /></label>
                   </div>
-                )}
 
-                <label>Bonne réponse<input value={form.correct_answer} onChange={(e) => setForm({ ...form, correct_answer: e.target.value })} required /></label>
-                <label>Correction détaillée<textarea rows="7" value={form.correction} onChange={(e) => setForm({ ...form, correction: e.target.value })} required /></label>
-                <label>Ordre<input type="number" min="0" value={form.order_index} onChange={(e) => setForm({ ...form, order_index: e.target.value })} /></label>
-              </>
+                  {form.exercise_type === 'mcq' && (
+                    <div className="admin-option-box">
+                      <strong>Réponses proposées</strong>
+                      <p>La bonne réponse doit correspondre exactement à l'un des choix.</p>
+                      {form.options.map((option, index) => (
+                        <input
+                          key={index}
+                          value={option}
+                          placeholder={`Choix ${index + 1}`}
+                          onChange={(e) => {
+                            const options = [...form.options];
+                            options[index] = e.target.value;
+                            setForm({ ...form, options });
+                          }}
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  <label>Bonne réponse<input value={form.correct_answer} onChange={(e) => setForm({ ...form, correct_answer: e.target.value })} required /></label>
+                  <label>Correction détaillée<textarea rows="7" value={form.correction} onChange={(e) => setForm({ ...form, correction: e.target.value })} required /></label>
+                  <MathToolbar value={form.correction} onChange={(correction) => setForm({ ...form, correction })} />
+                  <label>Ordre<input type="number" min="0" value={form.order_index} onChange={(e) => setForm({ ...form, order_index: e.target.value })} /></label>
+                </div>
+                <ExercisePreview form={form} />
+              </div>
             )}
 
             {error && <div className="alert error">{error}</div>}
