@@ -82,6 +82,14 @@ class Exercise(Base):
     attempts = relationship("Attempt", cascade="all, delete-orphan")
 
 
+class ContentPack(Base):
+    __tablename__ = "content_packs"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    slug: Mapped[str] = mapped_column(String(120), unique=True, index=True)
+    title: Mapped[str] = mapped_column(String(255), default="")
+    applied_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+
 class Attempt(Base):
     __tablename__ = "attempts"
     __table_args__ = (UniqueConstraint("user_id", "exercise_id", "attempt_number", name="uq_attempt_number"),)

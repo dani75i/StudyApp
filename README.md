@@ -77,3 +77,9 @@ Les images/vidéos lourdes devront plus tard être placées dans un stockage obj
 ## Google Analytics et consentement
 
 La version inclut l'identifiant GA4 `G-KF2VQGLN8C` avec chargement conditionnel après consentement. Voir `ANALYTICS.md` pour les routes mesurées, les événements et les réglages GA4 recommandés.
+
+## V6 — contenu 3e
+
+Cette version ajoute un pack pédagogique versionné pour la 3e : 15 chapitres de mathématiques, 10 chapitres de physique-chimie, 75 fiches de cours et 300 nouveaux exercices. Voir `CONTENT_3E.md`.
+
+Le pack est compatible avec une base Neon déjà utilisée : il est importé automatiquement une seule fois et ne supprime pas les utilisateurs ni leurs tentatives.

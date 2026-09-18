@@ -11,6 +11,7 @@ from sqlalchemy import inspect, text
 from sqlalchemy.orm import Session
 
 from .config import settings
+from .content_pack import install_default_content_packs
 from .db import Base, SessionLocal, engine, get_db
 from .models import Attempt, Chapter, Exercise, Lesson, Subject, User
 from .schemas import (
@@ -49,6 +50,7 @@ def startup():
     db = SessionLocal()
     try:
         seed(db)
+        install_default_content_packs(db)
     finally:
         db.close()
 
