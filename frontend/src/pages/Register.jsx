@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { CheckCircle2, Zap } from 'lucide-react';
 import { api } from '../api';
 import { useAuth } from '../App';
 import { appBadges } from '../subjectMeta';
+import { openCookiePreferences, trackEvent } from '../analytics';
 
 const levels = ['6e', '5e', '4e', '3e', '2nde', '1re', 'Terminale'];
 
@@ -11,8 +12,8 @@ export default function Register() {
   const [form, setForm] = useState({ first_name: '', email: '', password: '', level: '3e' });
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
+  const [startedTracked, setStartedTracked] = useState(false);
   const { setUser } = useAuth();
-  const nav = useNavigate();
 
   const submit = async (e) => {
     e.preventDefault();
@@ -21,7 +22,8 @@ export default function Register() {
     try {
       const user = await api('/auth/register', { method: 'POST', body: JSON.stringify(form) });
       setUser(user);
-      nav('/dashboard');
+      trackEvent('sign_up', { method: 'email' });
+      window.location.assign('/dashboard');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -46,7 +48,7 @@ export default function Register() {
       </div>
 
       <div className="auth-panel">
-        <form className="auth-card" onSubmit={submit}>
+        <form className="auth-card" onSubmit={submit} onFocus={() => { if (!startedTracked) { trackEvent('sign_up_started'); setStartedTracked(true); } }}>
           <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>StudySprint</span></div>
           <h2>Créer mon compte</h2>
           <p className="muted">Tu pourras tester l'application comme un vrai élève.</p>
@@ -59,6 +61,7 @@ export default function Register() {
           <label>Mot de passe<input type="password" minLength="8" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} placeholder="8 caractères minimum" /></label>
           <button className="primary" disabled={busy}>{busy ? 'Création…' : 'Créer mon espace'}</button>
           <p className="auth-switch">Déjà inscrit ? <Link to="/connexion">Se connecter</Link></p>
+          <p className="auth-legal"><Link to="/confidentialite">Confidentialité</Link><span>•</span><button type="button" onClick={openCookiePreferences}>Gérer les cookies</button></p>
         </form>
       </div>
     </div>

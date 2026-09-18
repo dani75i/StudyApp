@@ -73,3 +73,7 @@ En production, toutes les données persistantes vont dans PostgreSQL :
 - corrections.
 
 Les images/vidéos lourdes devront plus tard être placées dans un stockage objet plutôt qu'en base.
+
+## Google Analytics et consentement
+
+La version inclut l'identifiant GA4 `G-KF2VQGLN8C` avec chargement conditionnel après consentement. Voir `ANALYTICS.md` pour les routes mesurées, les événements et les réglages GA4 recommandés.

@@ -199,3 +199,17 @@ Pour une bêta ouverte, prévoir rapidement :
 - politique de confidentialité / mentions légales / RGPD ;
 - sauvegarde/export régulier de la base ;
 - tests automatisés des parcours inscription, exercices et admin.
+
+## Google Analytics (consentement préalable)
+
+L'identifiant par défaut intégré au frontend est `G-KF2VQGLN8C`.
+Google Analytics n'est chargé qu'après acceptation explicite de la mesure d'audience.
+L'intégration est volontairement désactivée dans les routes privées de l'espace élève et de l'administration.
+
+Dans Google Analytics :
+1. Réglez la conservation des données d'événements sur 2 mois.
+2. N'activez pas Google Signals, le remarketing ni la personnalisation publicitaire.
+3. Dans le flux Web, désactivez le suivi automatique des changements d'historique/page si vous utilisez la mesure améliorée des pages : StudySprint envoie lui-même les `page_view` des routes publiques autorisées.
+4. Ne transmettez jamais email, prénom, réponses d'exercices ou identifiant interne dans les événements Analytics.
+
+Avant une communication publique large, complétez la page `/confidentialite` avec l'identité de l'éditeur et une adresse de contact RGPD.

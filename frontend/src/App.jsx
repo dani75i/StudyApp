@@ -16,6 +16,8 @@ import Admin from './pages/Admin';
 import PublicHome from './pages/PublicHome';
 import PublicCourses from './pages/PublicCourses';
 import PublicChapter from './pages/PublicChapter';
+import Privacy from './pages/Privacy';
+import CookieConsent from './components/CookieConsent';
 
 const AuthContext = createContext(null);
 const ThemeContext = createContext(null);
@@ -35,10 +37,15 @@ function AdminOnly({ children }) {
   return user?.role === 'admin' ? children : <Navigate to="/dashboard" replace />;
 }
 
+function HardRedirect({ to }) {
+  useEffect(() => { window.location.replace(to); }, [to]);
+  return <div className="screen-center"><div className="loader" /></div>;
+}
+
 function GuestOnly({ children }) {
   const { user, loading } = useAuth();
   if (loading) return <div className="screen-center"><div className="loader" /></div>;
-  return user ? <Navigate to="/dashboard" replace /> : children;
+  return user ? <HardRedirect to="/dashboard" /> : children;
 }
 
 export default function App() {
@@ -74,6 +81,7 @@ export default function App() {
           <Route path="/" element={<PublicHome />} />
           <Route path="/decouvrir/cours" element={<PublicCourses />} />
           <Route path="/decouvrir/cours/:id" element={<PublicChapter />} />
+          <Route path="/confidentialite" element={<Privacy />} />
           <Route path="/connexion" element={<GuestOnly><Login /></GuestOnly>} />
           <Route path="/inscription" element={<GuestOnly><Register /></GuestOnly>} />
 
@@ -91,6 +99,7 @@ export default function App() {
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <CookieConsent />
       </AuthContext.Provider>
     </ThemeContext.Provider>
   );

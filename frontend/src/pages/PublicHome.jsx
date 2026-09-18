@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Atom, BookOpenText, Calculator, CheckCircle2, Dumbbell, Sparkles, Target, Zap } from 'lucide-react';
+import PublicFooter from '../components/PublicFooter';
+import { trackEvent } from '../analytics';
 
 export default function PublicHome() {
   useEffect(() => {
@@ -16,7 +18,7 @@ export default function PublicHome() {
         <nav>
           <Link to="/decouvrir/cours">Cours gratuits</Link>
           <Link to="/connexion">Connexion</Link>
-          <Link className="primary compact" to="/inscription">Créer mon compte</Link>
+          <Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'nav_signup', destination: '/inscription' })}>Créer mon compte</Link>
         </nav>
       </header>
 
@@ -27,8 +29,8 @@ export default function PublicHome() {
             <h1>Progresse en maths et en physique, un exercice à la fois.</h1>
             <p>Des cours clairs, des exercices corrigés et un tableau de bord personnel pour savoir exactement ce que tu maîtrises et ce qu'il faut retravailler.</p>
             <div className="public-actions">
-              <Link className="primary public-cta" to="/inscription">Commencer gratuitement <ArrowRight size={18} /></Link>
-              <Link className="secondary public-cta" to="/decouvrir/cours">Voir les cours</Link>
+              <Link className="primary public-cta" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'hero_signup', destination: '/inscription' })}>Commencer gratuitement <ArrowRight size={18} /></Link>
+              <Link className="secondary public-cta" to="/decouvrir/cours" onClick={() => trackEvent('cta_click', { cta_name: 'hero_courses', destination: '/decouvrir/cours' })}>Voir les cours</Link>
             </div>
             <div className="public-proof"><CheckCircle2 size={17} /> Aucun paiement demandé pour le moment</div>
           </div>
@@ -60,11 +62,11 @@ export default function PublicHome() {
         <section className="public-final-cta">
           <h2>Commence avec une vraie progression personnelle.</h2>
           <p>Crée ton compte gratuitement et retrouve ton travail à chaque connexion.</p>
-          <Link className="primary public-cta" to="/inscription">Créer mon espace <ArrowRight size={18} /></Link>
+          <Link className="primary public-cta" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'final_signup', destination: '/inscription' })}>Créer mon espace <ArrowRight size={18} /></Link>
         </section>
       </main>
 
-      <footer className="public-footer"><span>© {new Date().getFullYear()} StudySprint</span><Link to="/decouvrir/cours">Cours gratuits</Link><Link to="/connexion">Connexion</Link></footer>
+      <PublicFooter />
     </div>
   );
 }

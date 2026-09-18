@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { api } from '../api';
 import { useAuth, useTheme } from '../App';
+import { openCookiePreferences } from '../analytics';
 
 export default function Layout() {
   const { user, setUser } = useAuth();
@@ -66,6 +67,7 @@ export default function Layout() {
           </div>
           <button onClick={logout} title="Se déconnecter"><LogOut size={18} /></button>
         </div>
+        <div className="sidebar-legal"><NavLink to="/confidentialite">Confidentialité</NavLink><button type="button" onClick={openCookiePreferences}>Cookies</button></div>
       </aside>
       <main className="main"><Outlet /></main>
     </div>

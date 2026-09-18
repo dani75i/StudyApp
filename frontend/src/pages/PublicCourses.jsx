@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Atom, BookOpenText, Calculator, Zap } from 'lucide-react';
 import { api } from '../api';
+import PublicFooter from '../components/PublicFooter';
+import { trackEvent } from '../analytics';
 
 const icons = { mathematiques: Calculator, 'physique-chimie': Atom };
 
@@ -19,7 +21,7 @@ export default function PublicCourses() {
     <div className="public-page">
       <header className="public-nav">
         <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></Link>
-        <nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription">Créer mon compte</Link></nav>
+        <nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'courses_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav>
       </header>
 
       <main className="public-content">
@@ -34,7 +36,7 @@ export default function PublicCourses() {
                 <div className="subject-title"><div className={`subject-logo ${subject.slug === 'mathematiques' ? 'math' : 'physics'}`}><Icon size={25} /></div><div><h2>{subject.name}</h2><p>{subject.description}</p></div></div>
                 <div className="chapter-grid">
                   {subject.chapters.map((chapter) => (
-                    <Link key={chapter.id} className="chapter-card course-card" to={`/decouvrir/cours/${chapter.id}`}>
+                    <Link key={chapter.id} className="chapter-card course-card" to={`/decouvrir/cours/${chapter.id}`} onClick={() => trackEvent('course_opened', { chapter_id: chapter.id, subject: subject.slug })}>
                       <div className="chapter-top"><BookOpenText size={20} /><span>{chapter.level}</span></div>
                       <h3>{chapter.title}</h3><p>{chapter.summary}</p>
                       <div className="course-kpis"><span>{chapter.lesson_count} fiche(s)</span><span>{chapter.exercise_count} exercice(s)</span></div>
@@ -47,6 +49,7 @@ export default function PublicCourses() {
           })}
         </div>
       </main>
+      <PublicFooter />
     </div>
   );
 }

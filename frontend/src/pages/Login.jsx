@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GraduationCap, Zap } from 'lucide-react';
 import { api } from '../api';
 import { useAuth } from '../App';
 import { appBadges } from '../subjectMeta';
+import { openCookiePreferences, trackEvent } from '../analytics';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -11,7 +12,6 @@ export default function Login() {
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const { setUser } = useAuth();
-  const nav = useNavigate();
 
   const submit = async (e) => {
     e.preventDefault();
@@ -20,7 +20,8 @@ export default function Login() {
     try {
       const user = await api('/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) });
       setUser(user);
-      nav('/dashboard');
+      trackEvent('login', { method: 'email' });
+      window.location.assign('/dashboard');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -54,6 +55,7 @@ export default function Login() {
           <label>Mot de passe<input type="password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" /></label>
           <button className="primary" disabled={busy}>{busy ? 'Connexion…' : 'Se connecter'}</button>
           <p className="auth-switch">Pas encore de compte ? <Link to="/inscription">Créer mon compte</Link></p>
+          <p className="auth-legal"><Link to="/confidentialite">Confidentialité</Link><span>•</span><button type="button" onClick={openCookiePreferences}>Gérer les cookies</button></p>
         </form>
       </div>
     </div>

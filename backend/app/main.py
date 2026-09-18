@@ -252,7 +252,7 @@ def public_chapter(chapter_id: int, db: Session = Depends(get_db)):
 @app.get("/robots.txt", response_class=PlainTextResponse)
 def robots_txt():
     base = settings.site_url.rstrip("/")
-    return f"User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /dashboard\nDisallow: /historique\nDisallow: /profil\nSitemap: {base}/sitemap.xml\n"
+    return f"User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /dashboard\nDisallow: /historique\nDisallow: /profil\nDisallow: /seance\nDisallow: /exercices\nDisallow: /chapitre/\nDisallow: /exercice/\nSitemap: {base}/sitemap.xml\n"
 
 
 @app.get("/sitemap.xml")
@@ -263,7 +263,7 @@ def sitemap_xml(db: Session = Depends(get_db)):
         db.query(Chapter).filter(Chapter.subject_id.in_(subject_ids)).order_by(Chapter.id).all()
         if subject_ids else []
     )
-    urls = [f"{base}/", f"{base}/decouvrir/cours"] + [f"{base}/decouvrir/cours/{chapter.id}" for chapter in chapters]
+    urls = [f"{base}/", f"{base}/decouvrir/cours", f"{base}/confidentialite"] + [f"{base}/decouvrir/cours/{chapter.id}" for chapter in chapters]
     rows = "".join(f"<url><loc>{url}</loc></url>" for url in urls)
     xml = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{rows}</urlset>'
     return Response(content=xml, media_type="application/xml")
