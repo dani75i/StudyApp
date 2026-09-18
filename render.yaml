@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: studysprint
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SITE_URL
+        sync: false
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: ADMIN_EMAIL
+        value: admin@studysprint.fr
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: STATIC_DIR
+        value: /app/frontend/dist

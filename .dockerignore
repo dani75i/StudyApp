@@ -1,0 +1,11 @@
+.git
+.gitignore
+**/.venv
+**/node_modules
+**/dist
+backend/.env
+backend/studysprint.db
+frontend/.env
+__pycache__
+*.pyc
+.DS_Store

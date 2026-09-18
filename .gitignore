@@ -1,0 +1,7 @@
+backend/.venv/
+backend/.env
+backend/studysprint.db
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+.DS_Store
