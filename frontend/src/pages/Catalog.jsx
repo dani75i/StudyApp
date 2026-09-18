@@ -3,6 +3,7 @@ import { ArrowRight, BookOpenText, Layers3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { getSubjectMeta } from '../subjectMeta';
+import { getChapterIllustration } from '../chapterIllustrations';
 
 export default function Catalog() {
   const [data, setData] = useState(null);
@@ -40,25 +41,34 @@ export default function Catalog() {
 
               {subject.chapters.length ? (
                 <div className="chapter-grid">
-                  {subject.chapters.map((chapter) => (
-                    <Link className="chapter-card course-card" to={`/chapitre/${chapter.id}`} key={chapter.id}>
-                      <div className="chapter-top">
-                        <BookOpenText size={20} />
-                        <span>{chapter.level}</span>
-                      </div>
-                      <h3>{chapter.title}</h3>
-                      <p>{chapter.summary}</p>
-                      <div className="course-kpis">
-                        <span><Layers3 size={14} /> {chapter.progress.total} exercices associés</span>
-                        <span>{chapter.progress.percent}% maîtrisé</span>
-                      </div>
-                      <div className="bar"><span style={{ width: `${chapter.progress.percent}%` }} /></div>
-                      <div className="chapter-footer">
-                        <small>Lire le cours</small>
-                        <ArrowRight size={17} />
-                      </div>
-                    </Link>
-                  ))}
+                  {subject.chapters.map((chapter) => {
+                    const illustration = getChapterIllustration({ subjectSlug: subject.slug, title: chapter.title });
+
+                    return (
+                      <Link className="chapter-card course-card" to={`/chapitre/${chapter.id}`} key={chapter.id}>
+                        {illustration && (
+                          <div className="chapter-visual">
+                            <img src={illustration} alt={`Illustration du chapitre ${chapter.title}`} loading="lazy" />
+                          </div>
+                        )}
+                        <div className="chapter-top">
+                          <BookOpenText size={20} />
+                          <span>{chapter.level}</span>
+                        </div>
+                        <h3>{chapter.title}</h3>
+                        <p>{chapter.summary}</p>
+                        <div className="course-kpis">
+                          <span><Layers3 size={14} /> {chapter.progress.total} exercices associés</span>
+                          <span>{chapter.progress.percent}% maîtrisé</span>
+                        </div>
+                        <div className="bar"><span style={{ width: `${chapter.progress.percent}%` }} /></div>
+                        <div className="chapter-footer">
+                          <small>Lire le cours</small>
+                          <ArrowRight size={17} />
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="empty">Le contenu de cette matière arrivera dans une prochaine version.</div>

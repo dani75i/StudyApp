@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, BookOpenCheck, Dumbbell, Zap } from 'lucide-reac
 import { api } from '../api';
 import PublicFooter from '../components/PublicFooter';
 import { trackEvent } from '../analytics';
+import { getChapterIllustration } from '../chapterIllustrations';
 
 export default function PublicChapter() {
   const { id } = useParams();
@@ -20,12 +21,27 @@ export default function PublicChapter() {
 
   if (!data) return <div className="screen-center"><div className="loader" /></div>;
 
+  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title });
+
   return (
     <div className="public-page">
       <header className="public-nav"><Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></Link><nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'chapter_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav></header>
       <main className="public-content public-chapter">
         <Link className="back" to="/decouvrir/cours"><ArrowLeft size={17} /> Tous les cours gratuits</Link>
-        <header className="chapter-hero"><span className="subject-pill">{data.subject.emoji} {data.subject.name} • {data.level}</span><h1>{data.title}</h1><p>{data.summary}</p></header>
+        <header className="chapter-hero">
+          <div className={`chapter-hero-split ${illustration ? 'with-visual' : ''}`}>
+            <div>
+              <span className="subject-pill">{data.subject.emoji} {data.subject.name} • {data.level}</span>
+              <h1>{data.title}</h1>
+              <p>{data.summary}</p>
+            </div>
+            {illustration && (
+              <div className="chapter-hero-visual">
+                <img src={illustration} alt={`Illustration du chapitre ${data.title}`} />
+              </div>
+            )}
+          </div>
+        </header>
         <section className="public-lessons">
           <div className="section-head"><div><h2><BookOpenCheck size={21} /> Le cours</h2><p>Les notions essentielles à connaître.</p></div></div>
           <div className="lesson-list">{data.lessons.map((lesson) => <article className="lesson-card" key={lesson.id}><div className="lesson-tag">Fiche cours</div><h3>{lesson.title}</h3>{lesson.body.split('\n').map((p, i) => <p key={i}>{p}</p>)}</article>)}</div>

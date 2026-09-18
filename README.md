@@ -1,3 +1,13 @@
+# StudySprint v7.2 — Illustrations physique
+
+## Ajouts de cette version
+- 10 illustrations intégrées pour les chapitres de physique-chimie.
+- Affichage des visuels sur les cartes des chapitres de physique.
+- Affichage d'une grande illustration en haut de chaque chapitre de physique.
+- Les images sont stockées dans `frontend/public/illustrations/physics/`.
+
+---
+
 # StudySprint V5
 
 StudySprint est une application éducative centrée sur les **mathématiques** et la **physique-chimie** pour les collégiens et lycéens.

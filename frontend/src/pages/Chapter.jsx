@@ -14,6 +14,7 @@ import {
 import { Link, useParams } from 'react-router-dom';
 import { api } from '../api';
 import { getSubjectMeta } from '../subjectMeta';
+import { getChapterIllustration } from '../chapterIllustrations';
 
 const FILTERS = [
   ['all', 'Tous'],
@@ -86,6 +87,7 @@ export default function Chapter() {
   const continueActionLabel = summary.review ? 'Revoir' : summary.todo ? 'Continuer' : 'Recommencer';
   const meta = getSubjectMeta(data.subject.slug);
   const Icon = meta.icon;
+  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title });
 
   return (
     <>
@@ -93,12 +95,22 @@ export default function Chapter() {
 
       <header className="chapter-hero">
         <span className="subject-pill">{data.subject.emoji} {data.subject.name} • {data.level}</span>
-        <div className="chapter-hero-row">
+        <div className={`chapter-hero-split ${illustration ? 'with-visual' : ''}`}>
           <div>
-            <h1>{data.title}</h1>
-            <p>{data.summary}</p>
+            <div className="chapter-hero-row">
+              <div>
+                <h1>{data.title}</h1>
+                <p>{data.summary}</p>
+              </div>
+              {!illustration && <div className={`hero-icon ${meta.accent}`}><Icon size={32} /></div>}
+            </div>
           </div>
-          <div className={`hero-icon ${meta.accent}`}><Icon size={32} /></div>
+
+          {illustration && (
+            <div className="chapter-hero-visual chapter-hero-visual-large">
+              <img src={illustration} alt={`Illustration du chapitre ${data.title}`} />
+            </div>
+          )}
         </div>
 
         <div className="hero-progress">
@@ -218,20 +230,12 @@ export default function Chapter() {
                   <small className="attempt-copy">
                     {exercise.attempt_count === 0
                       ? 'Jamais tenté'
-                      : `${exercise.attempt_count} tentative${exercise.attempt_count > 1 ? 's' : ''}${exercise.status === 'review' && exercise.ever_correct ? ' • déjà réussi auparavant' : ''}`}
+                      : `${exercise.attempt_count} tentative${exercise.attempt_count > 1 ? 's' : ''} • ${exercise.last_result ? 'Dernier résultat : réussi' : 'Dernier résultat : à revoir'}`}
                   </small>
                 </div>
-                <ArrowRight size={18} className="exercise-arrow" />
+                <ArrowRight size={18} />
               </Link>
             ))}
-
-            {!filteredExercises.length && (
-              <div className="exercise-filter-empty">
-                <CheckCircle2 size={24} />
-                <strong>Rien ici pour le moment</strong>
-                <span>Change de filtre pour afficher les autres exercices du chapitre.</span>
-              </div>
-            )}
           </div>
         </section>
       </div>
