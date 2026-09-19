@@ -10,6 +10,8 @@ import ExercisesLibrary from './pages/ExercisesLibrary';
 import DailySession from './pages/DailySession';
 import Chapter from './pages/Chapter';
 import Exercise from './pages/Exercise';
+import ExerciseCorrection from './pages/ExerciseCorrection';
+import SessionRecap from './pages/SessionRecap';
 import History from './pages/History';
 import Profile from './pages/Profile';
 import Rewards from './pages/Rewards';
@@ -93,6 +95,8 @@ export default function App() {
             <Route path="/seance" element={<DailySession />} />
             <Route path="/chapitre/:id" element={<Chapter />} />
             <Route path="/exercice/:id" element={<Exercise />} />
+            <Route path="/exercice/:id/correction" element={<ExerciseCorrection />} />
+            <Route path="/seance/bilan" element={<SessionRecap />} />
             <Route path="/historique" element={<History />} />
             <Route path="/profil" element={<Profile />} />
             <Route path="/recompenses" element={<Rewards />} />

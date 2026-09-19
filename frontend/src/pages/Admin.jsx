@@ -38,6 +38,9 @@ const emptyExercise = {
   options: ['', '', '', ''],
   correct_answer: '',
   correction: '',
+  hints: ['', ''],
+  steps: [],
+  method: '',
   difficulty: 1,
   points: 10,
   order_index: 0,
@@ -268,7 +271,7 @@ export default function Admin() {
     if (kind === 'lesson') {
       setForm({ ...item, blocks: parseLessonBlocks(item.body) });
     } else if (kind === 'exercise') {
-      setForm({ ...item, options: [...(item.options || []), '', '', '', ''].slice(0, 6) });
+      setForm({ ...item, options: [...(item.options || []), '', '', '', ''].slice(0, 6), hints: [...(item.hints || []), '', ''].slice(0, 2), steps: item.steps || [], method: item.method || '' });
     } else {
       setForm({ ...item });
     }
@@ -300,6 +303,8 @@ export default function Admin() {
         body.difficulty = Number(body.difficulty);
         body.points = Number(body.points);
         body.options = body.exercise_type === 'mcq' ? body.options.filter((value) => value.trim()) : [];
+        body.hints = (body.hints || []).map(value => value.trim()).filter(Boolean);
+        body.steps = (body.steps || []).map(value => value.trim()).filter(Boolean);
       }
       await api(`/admin/${endpoint}${modal.id ? `/${modal.id}` : ''}`, {
         method: modal.id ? 'PATCH' : 'POST',
@@ -564,6 +569,23 @@ export default function Admin() {
                   <label>Bonne réponse<input value={form.correct_answer} onChange={(e) => setForm({ ...form, correct_answer: e.target.value })} required /></label>
                   <label>Correction détaillée<textarea rows="7" value={form.correction} onChange={(e) => setForm({ ...form, correction: e.target.value })} required /></label>
                   <MathToolbar value={form.correction} onChange={(correction) => setForm({ ...form, correction })} />
+                  <div className="v9-admin-guides">
+                    <strong>Indices et correction pas à pas (V9)</strong>
+                    <p>Les indices s’affichent avant validation ; les étapes et la méthode apparaissent uniquement après la réponse.</p>
+                    {(form.hints || ['', '']).map((hint, index) => (
+                      <label key={index}>Indice {index + 1}
+                        <textarea rows="2" value={hint} onChange={(event) => {
+                          const hints = [...form.hints]; hints[index] = event.target.value; setForm({ ...form, hints });
+                        }} placeholder={index ? 'Deuxième coup de pouce…' : 'Premier coup de pouce…'} />
+                      </label>
+                    ))}
+                    <label>Étapes de la correction (une par ligne)
+                      <textarea rows="6" value={(form.steps || []).join('\n')} onChange={(event) => setForm({ ...form, steps: event.target.value.split('\n') })} placeholder="Étape 1 : …\nÉtape 2 : …" />
+                    </label>
+                    <label>Méthode à retenir
+                      <textarea rows="3" value={form.method || ''} onChange={(event) => setForm({ ...form, method: event.target.value })} placeholder="Conseil pédagogique…" />
+                    </label>
+                  </div>
                   <label>Ordre<input type="number" min="0" value={form.order_index} onChange={(e) => setForm({ ...form, order_index: e.target.value })} /></label>
                 </div>
                 <ExercisePreview form={form} />

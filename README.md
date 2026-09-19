@@ -1,3 +1,9 @@
+# StudySprint V9 — Exercices enrichis et parcours pédagogique
+
+Consulte `V9_GUIDE.md` pour les 52 nouveaux exercices originaux de 3e, les indices, la page de correction, le bilan de séance et la barre mobile flottante. Les fonctionnalités et ressources de la V8 restent incluses.
+
+---
+
 # StudySprint V8 — Mobile et contenu 4e
 
 - Navigation mobile **fixe en bas** : Accueil, Cours, Exercices, Badges, Plus (Profil, Séance, Historique et Admin).

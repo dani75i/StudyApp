@@ -3,7 +3,7 @@ from pathlib import Path
 
 from sqlalchemy.orm import Session
 
-from .models import Chapter, ContentPack, Exercise, Lesson, Subject
+from .models import Chapter, ContentPack, Exercise, ExerciseGuide, Lesson, Subject
 
 
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
@@ -89,9 +89,10 @@ def install_content_pack(db: Session, filename: str) -> dict:
         else:
             # The pack is applied only once, so updating these fields here cannot
             # overwrite later edits made from /admin on subsequent restarts.
-            chapter.summary = chapter_data.get("summary", chapter.summary)
-            chapter.order_index = chapter_data.get("order_index", chapter.order_index)
-            updated["chapters"] += 1
+            if filename != "3e_2026_v9_exercices.json":
+                chapter.summary = chapter_data.get("summary", chapter.summary)
+                chapter.order_index = chapter_data.get("order_index", chapter.order_index)
+                updated["chapters"] += 1
 
         existing_lesson_titles = {
             row[0]
@@ -117,8 +118,7 @@ def install_content_pack(db: Session, filename: str) -> dict:
         for exercise_data in chapter_data.get("exercises", []):
             if exercise_data["title"] in existing_exercise_titles:
                 continue
-            db.add(
-                Exercise(
+            exercise = Exercise(
                     chapter_id=chapter.id,
                     title=exercise_data["title"],
                     statement=exercise_data["statement"],
@@ -130,7 +130,16 @@ def install_content_pack(db: Session, filename: str) -> dict:
                     points=exercise_data.get("points", 10),
                     order_index=exercise_data.get("order_index", 0),
                 )
-            )
+            db.add(exercise)
+            db.flush()
+            if exercise_data.get("hints") or exercise_data.get("steps") or exercise_data.get("method"):
+                db.add(ExerciseGuide(
+                    exercise_id=exercise.id,
+                    hints_json=json.dumps(exercise_data.get("hints", []), ensure_ascii=False),
+                    steps_json=json.dumps(exercise_data.get("steps", []), ensure_ascii=False),
+                    method=exercise_data.get("method", ""),
+                    diagram_json=json.dumps(exercise_data.get("diagram"), ensure_ascii=False),
+                ))
             created["exercises"] += 1
 
     db.add(ContentPack(slug=pack_id, title=payload.get("title", pack_id)))
@@ -139,4 +148,4 @@ def install_content_pack(db: Session, filename: str) -> dict:
 
 
 def install_default_content_packs(db: Session) -> list[dict]:
-    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json")]
+    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json")]

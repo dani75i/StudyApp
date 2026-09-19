@@ -2,6 +2,7 @@ import hashlib
 import json
 from pathlib import Path
 from datetime import date, datetime, time, timedelta
+from decimal import Decimal, InvalidOperation
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, PlainTextResponse
@@ -13,7 +14,7 @@ from sqlalchemy.orm import Session
 from .config import settings
 from .content_pack import install_default_content_packs
 from .db import Base, SessionLocal, engine, get_db
-from .models import Attempt, Chapter, Exercise, Lesson, Subject, User
+from .models import Attempt, Chapter, Exercise, ExerciseGuide, Lesson, Subject, User
 from .schemas import (
     AdminChapterIn,
     AdminExerciseIn,
@@ -340,6 +341,8 @@ def admin_content_payload(db: Session):
         if chapter_ids else []
     )
 
+    guides = {guide.exercise_id: guide for guide in db.query(ExerciseGuide).filter(ExerciseGuide.exercise_id.in_([ex.id for ex in exercises])).all()} if exercises else {}
+
     return {
         "subjects": [
             {
@@ -387,6 +390,9 @@ def admin_content_payload(db: Session):
                 "difficulty": exercise.difficulty,
                 "points": exercise.points,
                 "order_index": exercise.order_index,
+                "hints": json.loads(guides[exercise.id].hints_json) if exercise.id in guides else [],
+                "steps": json.loads(guides[exercise.id].steps_json) if exercise.id in guides else [],
+                "method": guides[exercise.id].method if exercise.id in guides else "",
             }
             for exercise in exercises
         ],
@@ -468,15 +474,27 @@ def admin_delete_lesson(lesson_id: int, db: Session = Depends(get_db), _: User =
     return {"ok": True}
 
 
+def save_exercise_guide(db: Session, exercise_id: int, payload: AdminExerciseIn):
+    guide = db.query(ExerciseGuide).filter_by(exercise_id=exercise_id).first()
+    if not guide:
+        guide = ExerciseGuide(exercise_id=exercise_id)
+        db.add(guide)
+    guide.hints_json = json.dumps([h.strip() for h in payload.hints if h.strip()], ensure_ascii=False)
+    guide.steps_json = json.dumps([s.strip() for s in payload.steps if s.strip()], ensure_ascii=False)
+    guide.method = payload.method.strip()
+
+
 @app.post("/api/admin/exercises")
 def admin_create_exercise(payload: AdminExerciseIn, db: Session = Depends(get_db), _: User = Depends(require_admin)):
     if not db.get(Chapter, payload.chapter_id):
         raise HTTPException(400, "Chapitre invalide")
-    data = payload.model_dump(exclude={"options"})
+    data = payload.model_dump(exclude={"options", "hints", "steps", "method"})
     if payload.exercise_type == "mcq" and len([option for option in payload.options if option.strip()]) < 2:
         raise HTTPException(400, "Un QCM doit contenir au moins deux réponses proposées")
     exercise = Exercise(**data, options_json=json.dumps([option.strip() for option in payload.options if option.strip()], ensure_ascii=False))
     db.add(exercise)
+    db.flush()
+    save_exercise_guide(db, exercise.id, payload)
     db.commit()
     db.refresh(exercise)
     return {"id": exercise.id}
@@ -491,10 +509,11 @@ def admin_update_exercise(exercise_id: int, payload: AdminExerciseIn, db: Sessio
         raise HTTPException(400, "Chapitre invalide")
     if payload.exercise_type == "mcq" and len([option for option in payload.options if option.strip()]) < 2:
         raise HTTPException(400, "Un QCM doit contenir au moins deux réponses proposées")
-    data = payload.model_dump(exclude={"options"})
+    data = payload.model_dump(exclude={"options", "hints", "steps", "method"})
     for key, value in data.items():
         setattr(exercise, key, value)
     exercise.options_json = json.dumps([option.strip() for option in payload.options if option.strip()], ensure_ascii=False)
+    save_exercise_guide(db, exercise.id, payload)
     db.commit()
     return {"ok": True}
 
@@ -802,6 +821,7 @@ def exercise_detail(exercise_id: int, db: Session = Depends(get_db), user: User 
         .order_by(Attempt.created_at.desc())
         .first()
     )
+    guide = db.query(ExerciseGuide).filter_by(exercise_id=exercise.id).first()
     return {
         "id": exercise.id,
         "chapter_id": exercise.chapter_id,
@@ -813,11 +833,31 @@ def exercise_detail(exercise_id: int, db: Session = Depends(get_db), user: User 
         "difficulty": exercise.difficulty,
         "points": exercise.points,
         "last_attempt": None if not previous else {"answer": previous.answer, "is_correct": previous.is_correct},
+        "hints": (json.loads(guide.hints_json or "[]") if guide and json.loads(guide.hints_json or "[]") else [
+            "Relis l'énoncé et distingue les données de ce que l'on te demande.",
+            "Retrouve dans le cours la propriété adaptée, puis écris les étapes de ton calcul."
+        ]),
+        "diagram": json.loads(guide.diagram_json or "null") if guide else None,
+        "sequence_total": len(chapter_exercises),
+        "previous_exercise_id": chapter_exercises[sequence_number - 2][0] if sequence_number > 1 else None,
+        "next_exercise_id": chapter_exercises[sequence_number][0] if sequence_number < len(chapter_exercises) else None,
     }
 
 
 def normalize_answer(value: str) -> str:
-    return " ".join(value.strip().lower().replace(",", ".").split())
+    return " ".join(value.strip().lower().replace("−", "-").replace(",", ".").split())
+
+
+def answers_match(candidate: str, expected: str, exercise_type: str) -> bool:
+    if normalize_answer(candidate) == normalize_answer(expected):
+        return True
+    if exercise_type != "text":
+        return False
+    try:
+        # A number written as 5,0 or 5.00 represents the same numerical answer as 5.
+        return Decimal(normalize_answer(candidate)) == Decimal(normalize_answer(expected))
+    except (InvalidOperation, ValueError):
+        return False
 
 
 @app.post("/api/exercises/{exercise_id}/answer")
@@ -826,7 +866,7 @@ def answer_exercise(exercise_id: int, payload: AnswerIn, db: Session = Depends(g
     if not exercise:
         raise HTTPException(404, "Exercice introuvable")
     count = db.query(Attempt).filter(Attempt.user_id == user.id, Attempt.exercise_id == exercise_id).count()
-    is_correct = normalize_answer(payload.answer) == normalize_answer(exercise.correct_answer)
+    is_correct = answers_match(payload.answer, exercise.correct_answer, exercise.exercise_type)
     attempt = Attempt(
         user_id=user.id,
         exercise_id=exercise_id,
@@ -838,9 +878,31 @@ def answer_exercise(exercise_id: int, payload: AnswerIn, db: Session = Depends(g
     db.commit()
     return {
         "is_correct": is_correct,
+        "user_answer": payload.answer,
         "correct_answer": exercise.correct_answer,
         "correction": exercise.correction,
         "points": exercise.points if is_correct else 0,
+    }
+
+
+@app.get("/api/exercises/{exercise_id}/latest-correction")
+def latest_correction(exercise_id: int, db: Session = Depends(get_db), user: User = Depends(get_current_user)):
+    exercise = db.get(Exercise, exercise_id)
+    if not exercise:
+        raise HTTPException(404, "Exercice introuvable")
+    last = (db.query(Attempt).filter(Attempt.user_id == user.id, Attempt.exercise_id == exercise_id)
+            .order_by(Attempt.id.desc()).first())
+    if last is None:
+        raise HTTPException(404, "Réponds d'abord à l'exercice pour voir la correction")
+    guide = db.query(ExerciseGuide).filter_by(exercise_id=exercise.id).first()
+    return {
+        "is_correct": last.is_correct,
+        "user_answer": last.answer,
+        "correct_answer": exercise.correct_answer,
+        "correction": exercise.correction,
+        "steps": json.loads(guide.steps_json or "[]") if guide else [],
+        "method": guide.method if guide else "",
+        "attempt_number": last.attempt_number,
     }
 
 

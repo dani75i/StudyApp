@@ -80,6 +80,7 @@ class Exercise(Base):
 
     chapter = relationship("Chapter", back_populates="exercises")
     attempts = relationship("Attempt", cascade="all, delete-orphan")
+    guide = relationship("ExerciseGuide", uselist=False, cascade="all, delete-orphan", back_populates="exercise")
 
 
 class ContentPack(Base):
@@ -100,3 +101,15 @@ class Attempt(Base):
     answer: Mapped[str] = mapped_column(Text)
     is_correct: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+
+
+class ExerciseGuide(Base):
+    """Optional hints and step-by-step correction, stored separately for safe upgrades."""
+    __tablename__ = "exercise_guides"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    exercise_id: Mapped[int] = mapped_column(ForeignKey("exercises.id", ondelete="CASCADE"), unique=True, index=True)
+    hints_json: Mapped[str] = mapped_column(Text, default="[]")
+    steps_json: Mapped[str] = mapped_column(Text, default="[]")
+    method: Mapped[str] = mapped_column(Text, default="")
+    diagram_json: Mapped[str] = mapped_column(Text, default="null")
+    exercise = relationship("Exercise", back_populates="guide")
