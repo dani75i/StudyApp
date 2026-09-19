@@ -43,10 +43,18 @@ export default function ExercisesLibrary() {
       if (filters.difficulty !== 'all' && String(exercise.difficulty) !== String(filters.difficulty)) return false;
       if (filters.status !== 'all' && exercise.status !== filters.status) return false;
       return true;
-    });
+    }).sort((a, b) => (a.chapter.id - b.chapter.id) || (a.difficulty - b.difficulty) || ((a.order_index ?? 0) - (b.order_index ?? 0)) || (a.id - b.id));
   }, [data, filters]);
 
   if (!data) return <div className="loader-page"><div className="loader" /></div>;
+
+  const exerciseNumber = new Map();
+  const byChapter = new Map();
+  for (const exercise of [...data].sort((a, b) => (a.chapter.id - b.chapter.id) || (a.difficulty - b.difficulty) || ((a.order_index ?? 0) - (b.order_index ?? 0)) || (a.id - b.id))) {
+    const next = (byChapter.get(exercise.chapter.id) || 0) + 1;
+    byChapter.set(exercise.chapter.id, next);
+    exerciseNumber.set(exercise.id, next);
+  }
 
   const reset = () => setFilters({ subject: 'all', chapter: 'all', difficulty: 'all', status: 'all' });
 
@@ -110,7 +118,7 @@ export default function ExercisesLibrary() {
                 <span className={`status-chip ${status.cls}`}><StatusIcon size={13} /> {status.label}</span>
               </div>
               <small>{exercise.subject.name} • {exercise.chapter.title}</small>
-              <h3>{exercise.title}</h3>
+              <h3>Exercice {exerciseNumber.get(exercise.id)}</h3><p className="exercise-topic-label">{exercise.title.replace(/^Exercice \d+\s*[—·-]\s*/, "")}</p>
               <div className="browser-card-foot">
                 <span>{'●'.repeat(exercise.difficulty)}{'○'.repeat(3 - exercise.difficulty)}</span>
                 <span>{exercise.points} pts</span>

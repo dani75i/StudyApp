@@ -139,4 +139,4 @@ def install_content_pack(db: Session, filename: str) -> dict:
 
 
 def install_default_content_packs(db: Session) -> list[dict]:
-    return [install_content_pack(db, "3e_2026_v1.json")]
+    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json")]

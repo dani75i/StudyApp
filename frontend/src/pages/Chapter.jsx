@@ -69,7 +69,7 @@ export default function Chapter() {
 
   const numberedExercises = useMemo(() => {
     if (!data) return [];
-    return data.exercises.map((exercise, index) => ({ ...exercise, originalIndex: index + 1 }));
+    return [...data.exercises].sort((a, b) => (a.difficulty - b.difficulty) || (a.order_index ?? 0) - (b.order_index ?? 0) || (a.id - b.id)).map((exercise, index) => ({ ...exercise, originalIndex: index + 1 }));
   }, [data]);
 
   const filteredExercises = useMemo(() => (
@@ -78,10 +78,10 @@ export default function Chapter() {
 
   const continueExercise = useMemo(() => {
     if (!data?.exercises?.length) return null;
-    return data.exercises.find((exercise) => exercise.status === 'review')
-      || data.exercises.find((exercise) => exercise.status === 'todo')
-      || data.exercises[0];
-  }, [data]);
+    return numberedExercises.find((exercise) => exercise.status === 'review')
+      || numberedExercises.find((exercise) => exercise.status === 'todo')
+      || numberedExercises[0];
+  }, [data, numberedExercises]);
 
   if (!data) return <div className="loader-page"><div className="loader" /></div>;
 
@@ -185,7 +185,7 @@ export default function Chapter() {
                 <div className="continue-icon"><Sparkles size={19} /></div>
                 <div>
                   <small>{summary.review ? 'Priorité : à retravailler' : summary.todo ? 'Prochain exercice' : 'Chapitre terminé'}</small>
-                  <strong>{continueExercise.title}</strong>
+                  <strong>Exercice {continueExercise.originalIndex} · {difficultyLabel[continueExercise.difficulty]}</strong>
                 </div>
                 <span>{continueActionLabel} <ArrowRight size={16} /></span>
               </Link>
@@ -218,7 +218,7 @@ export default function Chapter() {
                 <span className="exercise-number">{exercise.originalIndex}</span>
                 <div className="exercise-item-copy">
                   <div className="exercise-item-title-row">
-                    <strong>{exercise.title}</strong>
+                    <strong>Exercice {exercise.originalIndex}</strong><small className="exercise-topic-label">{exercise.title.replace(/^Exercice \d+\s*[—·-]\s*/, "")}</small>
                     <span className={`exercise-status-badge ${exercise.status}`}>
                       <StatusIcon status={exercise.status} size={14} /> {statusLabel(exercise.status)}
                     </span>
@@ -231,7 +231,7 @@ export default function Chapter() {
                   <small className="attempt-copy">
                     {exercise.attempt_count === 0
                       ? 'Jamais tenté'
-                      : `${exercise.attempt_count} tentative${exercise.attempt_count > 1 ? 's' : ''} • ${exercise.last_result ? 'Dernier résultat : réussi' : 'Dernier résultat : à revoir'}`}
+                      : `${exercise.attempt_count} tentative${exercise.attempt_count > 1 ? 's' : ''} • ${exercise.last_is_correct ? 'Dernier résultat : réussi' : 'Dernier résultat : à revoir'}`}
                   </small>
                 </div>
                 <ArrowRight size={18} />

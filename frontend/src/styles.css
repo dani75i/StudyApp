@@ -1171,3 +1171,71 @@ body {
   .lesson-live-preview, .exercise-admin-preview { position: static; }
   .admin-search { max-width: none; min-width: 100%; }
 }
+
+/* V8 — lecture des exercices et navigation mobile */
+.mobile-app-header, .mobile-bottom-nav, .mobile-more-backdrop, .mobile-more-sheet { display: none; }
+.exercise-topic-label { margin-top: 4px; display: block; font-size: 12px; color: var(--muted); font-weight: 500; line-height: 1.4; }
+.lesson-content > p { overflow-wrap: anywhere; word-break: normal; }
+.lesson-content .katex { white-space: nowrap; }
+.lesson-content .katex-display { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: 4px 0; }
+
+@media (max-width: 760px) {
+  .app-shell { display: block; min-height: 100dvh; }
+  .app-shell > .sidebar { display: none !important; }
+  .mobile-app-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 17px; min-height: 62px; background: var(--card);
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-app-header .brand { font-size: 19px; }
+  .mobile-app-header .brand-mark { width: 34px; height: 34px; }
+  .main { padding: 22px 13px calc(110px + env(safe-area-inset-bottom, 0px)); min-width: 0; }
+  .mobile-bottom-nav {
+    position: fixed; z-index: 100; bottom: 0; left: 0; right: 0;
+    display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: stretch; gap: 3px; padding: 8px 10px calc(9px + env(safe-area-inset-bottom, 0px));
+    background: var(--card); border-top: 1px solid var(--line);
+    box-shadow: 0 -12px 35px rgba(20, 28, 60, .08);
+  }
+  .mobile-bottom-link {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 5px; min-height: 49px; border: 0; border-radius: 13px;
+    color: var(--muted); background: transparent; font-size: 10px;
+    font-weight: 800; line-height: 1.1; cursor: pointer; padding: 5px 0;
+  }
+  .mobile-bottom-link.active { background: var(--soft); color: var(--purple); }
+  .mobile-bottom-link span { display: block; }
+  .mobile-more-backdrop {
+    display: block; position: fixed; z-index: 101; inset: 0;
+    width: 100%; border: 0; background: rgba(9, 17, 35, .4);
+  }
+  .mobile-more-sheet {
+    display: block; position: fixed; z-index: 102;
+    bottom: calc(67px + env(safe-area-inset-bottom, 0px)); left: 11px; right: 11px;
+    max-height: min(68dvh, 470px); overflow-y: auto; border-radius: 22px;
+    background: var(--card); border: 1px solid var(--line);
+    padding: 18px; box-shadow: 0 24px 70px rgba(10, 15, 35, .23);
+  }
+  .mobile-more-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .mobile-more-head button { background: var(--surface-2); color: var(--muted); border: 0; border-radius: 10px; width: 34px; height: 34px; display: grid; place-items: center; }
+  .mobile-more-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+  .mobile-more-grid a, .mobile-more-grid button { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 12px; min-height: 47px; padding: 10px; text-align: left; font-size: 12px; font-weight: 700; }
+  .mobile-more-grid button { cursor: pointer; }
+  .chapter-exercise-summary { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 6px; }
+  .chapter-exercise-summary .summary-stat { min-width: 0; padding: 10px 5px; gap: 5px; justify-content: center; flex-direction: column; text-align: center; }
+  .chapter-exercise-summary .summary-stat svg { width: 16px; height: 16px; }
+  .chapter-exercise-summary .summary-stat strong { font-size: 17px; }
+  .chapter-exercise-summary .summary-stat span { font-size: 10px; white-space: normal; }
+  .exercise-item-title-row { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; }
+  .exercise-status-badge { align-self: flex-start; }
+  .exercise-item { grid-template-columns: 36px minmax(0, 1fr) 15px; gap: 8px; padding: 12px 9px; }
+  .exercise-item-copy { min-width: 0; }
+  .exercise-meta-row { gap: 4px; }
+  .skill-chip { max-width: 100%; white-space: normal; }
+  .chapter-hero, .panel { padding: 16px 12px; }
+  .lesson-card { padding: 17px 13px; }
+  .cookie-consent { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); z-index: 105; }
+}
+
+.exercise-detail-topic { margin: -4px 0 22px; font-size: 14px; color: var(--muted); line-height: 1.5; }
+.browser-exercise-card .exercise-topic-label { margin: 2px 0 12px; }

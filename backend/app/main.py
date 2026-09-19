@@ -629,6 +629,7 @@ def exercise_library(db: Session = Depends(get_db), user: User = Depends(get_cur
             "title": exercise.title,
             "difficulty": exercise.difficulty,
             "points": exercise.points,
+            "order_index": exercise.order_index,
             "status": status,
             "chapter": {"id": chapter.id, "title": chapter.title},
             "subject": {"id": subject.id, "name": subject.name, "slug": subject.slug, "emoji": subject.emoji},
@@ -759,6 +760,7 @@ def chapter_detail(chapter_id: int, db: Session = Depends(get_db), user: User = 
             "title": exercise.title,
             "difficulty": exercise.difficulty,
             "points": exercise.points,
+            "order_index": exercise.order_index,
             "skill": infer_skill(exercise),
             "status": status,
             "attempt_count": len(exercise_attempts),
@@ -787,6 +789,13 @@ def exercise_detail(exercise_id: int, db: Session = Depends(get_db), user: User 
     subject = db.get(Subject, chapter.subject_id)
     if subject.slug not in ALLOWED_SUBJECT_SLUGS:
         raise HTTPException(404, "Exercice introuvable")
+    chapter_exercises = (
+        db.query(Exercise.id)
+        .filter(Exercise.chapter_id == exercise.chapter_id)
+        .order_by(Exercise.difficulty, Exercise.order_index, Exercise.id)
+        .all()
+    )
+    sequence_number = next((index for index, (row_id,) in enumerate(chapter_exercises, 1) if row_id == exercise.id), 1)
     previous = (
         db.query(Attempt)
         .filter(Attempt.user_id == user.id, Attempt.exercise_id == exercise.id)
@@ -796,6 +805,7 @@ def exercise_detail(exercise_id: int, db: Session = Depends(get_db), user: User 
     return {
         "id": exercise.id,
         "chapter_id": exercise.chapter_id,
+        "sequence_number": sequence_number,
         "title": exercise.title,
         "statement": exercise.statement,
         "exercise_type": exercise.exercise_type,

@@ -1,3 +1,18 @@
+# StudySprint V8 — Mobile et contenu 4e
+
+- Navigation mobile **fixe en bas** : Accueil, Cours, Exercices, Badges, Plus (Profil, Séance, Historique et Admin).
+- Sur mobile, les compteurs « Réussis / À revoir / À faire » sont côte à côte.
+- Exercices affichés sous « Exercice 1 », « Exercice 2 », etc. avec le sujet en sous-titre et progression conservée.
+- Exercices classés par difficulté croissante, puis selon leur ordre initial.
+- Mise en forme plus sûre des expressions : le texte courant ne devient plus une formule.
+- Anciennes fiches 3e (puissances, poids, Pythagore et trigonométrie) présentées en paragraphes/formules/notes lisibles, sans modifier les fiches sauvegardées dans la base.
+- Nouveau pack **4e : 13 chapitres maths, 9 physique-chimie, 66 fiches, 176 exercices corrigés**. Voir `CONTENT_4E.md`.
+- Visuels de physique redimensionnés au format WebP pour accélérer l'affichage mobile.
+
+**Mise à jour :** copier le contenu du dossier ZIP dans le dépôt Git **existant** sans toucher à `.git`, tester avec `start.bat`, puis `git add .`, `git commit -m "V8 mobile cours et contenu 4e"`, `git push`. Render réutilise `DATABASE_URL`/Neon ; ne recréez pas de base et ne touchez pas à vos variables d'environnement.
+
+---
+
 # StudySprint V7.3 — Éditeur pédagogique et formules mathématiques
 
 ## Nouveautés

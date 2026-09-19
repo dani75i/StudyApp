@@ -4,9 +4,11 @@ import { Lightbulb } from 'lucide-react';
 import { parseLessonBlocks } from '../contentFormat';
 
 function latexify(expression = '') {
-  return String(expression)
-    .replace(/\b(sin|cos|tan)\b/g, (word) => `\\${word}`)
-    .replace(/(opposé|hypoténuse|adjacent|Moyenne|somme|valeurs|effectif|total)/g, (word) => `\\text{${word}}`)
+  const raw = String(expression).trim();
+  // Les formules LaTeX rédigées dans l'admin contiennent déjà \sin, \frac,
+  // \text, etc. Ne pas réécrire l'intérieur de ces commandes.
+  if (raw.includes('\\')) return raw;
+  return raw
     .replace(/−/g, '-')
     .replace(/×/g, '\\times ')
     .replace(/≈/g, '\\approx ')
@@ -34,18 +36,21 @@ function renderKatex(expression, displayMode = false) {
 }
 
 const explicitMathRegex = /(\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\))/g;
-const autoMathRegex = /(√\s*[A-Za-z0-9]+|(?:[A-Za-z][A-Za-z0-9]*\([^)]*\)|[A-Za-zπ]+|[0-9]+(?:[.,][0-9]+)?)(?:\^\([^)]*\)|\^[A-Za-z0-9+\-]+|[²³])?(?:\s*[=≈×+\-/<>]\s*(?:[A-Za-z][A-Za-z0-9]*\([^)]*\)|[A-Za-zπ]+|[0-9]+(?:[.,][0-9]+)?)(?:\^\([^)]*\)|\^[A-Za-z0-9+\-]+|[²³])?)+|[A-Za-z0-9π]+(?:\^\([^)]*\)|\^[A-Za-z0-9+\-]+|[²³])[A-Za-z0-9]*)/g;
+// Conservative auto-format: match only actual short mathematical expressions.
+// Never swallow ordinary French words next to an exponent such as « Pour a non nul ».
+const autoMathRegex = /([A-Za-z](?:\([A-Za-z0-9+\-]+\))?|[0-9]+(?:[.,][0-9]+)?)(?:\^\([A-Za-z0-9+\-]+\)|\^[A-Za-z0-9+\-]+|[²³])?(?:\s*[=≈×]\s*(?:[A-Za-z](?:\([A-Za-z0-9+\-]+\))?|[0-9]+(?:[.,][0-9]+)?)(?:\^\([A-Za-z0-9+\-]+\)|\^[A-Za-z0-9+\-]+|[²³])?)+|\b[A-Za-z]\^(?:\([A-Za-z0-9+\-]+\)|[A-Za-z0-9+\-]+)|\b[A-Z]{2}[²³]/g;
 
 function AutoMathText({ text }) {
-  const parts = String(text || '').split(autoMathRegex);
-  return parts.map((part, index) => {
-    if (!part) return null;
-    autoMathRegex.lastIndex = 0;
-    const isMath = autoMathRegex.test(part) && /[=≈×^²³√/+\-]/.test(part);
-    autoMathRegex.lastIndex = 0;
-    if (!isMath) return <React.Fragment key={index}>{part}</React.Fragment>;
-    return <span key={index} className="inline-math" dangerouslySetInnerHTML={{ __html: renderKatex(part, false) }} />;
-  });
+  const source = String(text || '');
+  const parts = [];
+  let lastIndex = 0;
+  for (const match of source.matchAll(autoMathRegex)) {
+    if (match.index > lastIndex) parts.push(source.slice(lastIndex, match.index));
+    parts.push(<span key={match.index} className="inline-math" dangerouslySetInnerHTML={{ __html: renderKatex(match[0], false) }} />);
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < source.length) parts.push(source.slice(lastIndex));
+  return <>{parts}</>;
 }
 
 export function RichText({ text = '' }) {

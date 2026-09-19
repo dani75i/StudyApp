@@ -48,7 +48,7 @@ export default function Exercise() {
           <span>DIFFICULTÉ {'●'.repeat(data.difficulty)}{'○'.repeat(3 - data.difficulty)}</span>
           <span>{data.points} POINTS</span>
         </div>
-        <h1>{data.title}</h1>
+        <h1>Exercice {data.sequence_number || 1}</h1><p className="exercise-detail-topic">{data.title.replace(/^Exercice \d+\s*[—·-]\s*/, "")}</p>
         <div className="statement"><RichText text={data.statement} /></div>
         <form onSubmit={submit}>
           {data.exercise_type === 'mcq' ? (
