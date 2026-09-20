@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   AlignLeft,
+  BookOpen,
   BookOpenText,
   CirclePlus,
   Copy,
@@ -120,6 +121,7 @@ function LessonBlockEditor({ blocks, onChange }) {
             <button type="button" onClick={() => addBlock('formula')}><Sigma size={15} /> Formule</button>
             <button type="button" onClick={() => addBlock('list')}><List size={15} /> Liste</button>
             <button type="button" onClick={() => addBlock('note')}><Lightbulb size={15} /> À retenir</button>
+            <button type="button" onClick={() => addBlock('example')}><BookOpen size={15} /> Exemple</button>
           </div>
         </div>
 
@@ -127,7 +129,7 @@ function LessonBlockEditor({ blocks, onChange }) {
           {blocks.map((block, index) => (
             <div className={`lesson-edit-block type-${block.type}`} key={`${block.type}-${index}`}>
               <div className="lesson-edit-block-head">
-                <span>{index + 1}. {block.type === 'paragraph' ? 'Paragraphe' : block.type === 'formula' ? 'Formule' : block.type === 'list' ? 'Liste' : 'À retenir'}</span>
+                <span>{index + 1}. {block.type === 'paragraph' ? 'Paragraphe' : block.type === 'formula' ? 'Formule' : block.type === 'list' ? 'Liste' : block.type === 'example' ? 'Exemple' : 'À retenir'}</span>
                 <button type="button" className="danger-icon" onClick={() => removeBlock(index)}><Trash2 size={15} /></button>
               </div>
 
@@ -152,13 +154,13 @@ function LessonBlockEditor({ blocks, onChange }) {
                 />
               )}
 
-              {(block.type === 'paragraph' || block.type === 'note') && (
+              {(block.type === 'paragraph' || block.type === 'note' || block.type === 'example') && (
                 <>
                   <textarea
-                    rows={block.type === 'note' ? 4 : 5}
+                    rows={block.type === 'note' || block.type === 'example' ? 4 : 5}
                     value={block.content || ''}
                     onChange={(e) => updateBlock(index, { content: e.target.value })}
-                    placeholder={block.type === 'note' ? 'La notion essentielle à mémoriser…' : 'Explique la notion avec des phrases courtes et aérées…'}
+                    placeholder={block.type === 'note' ? 'La notion essentielle à mémoriser…' : block.type === 'example' ? 'Exemple concret, calcul commenté ou cas pratique…' : 'Explique la notion avec des phrases courtes et aérées…'}
                   />
                   <MathToolbar value={block.content || ''} onChange={(value) => updateBlock(index, { content: value })} />
                 </>

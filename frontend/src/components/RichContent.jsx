@@ -1,6 +1,6 @@
 import React from 'react';
 import katex from 'katex';
-import { Lightbulb } from 'lucide-react';
+import { Lightbulb, BookOpen } from 'lucide-react';
 import { parseLessonBlocks } from '../contentFormat';
 
 function latexify(expression = '') {
@@ -98,6 +98,14 @@ export function LessonContent({ body = '' }) {
             <aside key={index} className="lesson-note">
               <Lightbulb size={18} />
               <div><strong>À retenir</strong><p><RichText text={block.content} /></p></div>
+            </aside>
+          );
+        }
+        if (block.type === 'example') {
+          return (
+            <aside key={index} className="lesson-example">
+              <BookOpen size={18} />
+              <div><strong>Exemple</strong><p><RichText text={block.content} /></p></div>
             </aside>
           );
         }
