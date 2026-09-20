@@ -1,0 +1,1660 @@
+{
+  "pack_id": "3e_2026_v10_3_exercises_refresh",
+  "title": "Enrichissement pédagogique 3e V9 — exercices originaux — refresh formules et exemples",
+  "level": "3e",
+  "subjects": {
+    "mathematiques": {
+      "name": "Mathématiques",
+      "emoji": "📐",
+      "description": "Mathématiques du collège et du lycée."
+    }
+  },
+  "chapters": [
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "title": "Trigonométrie dans le triangle rectangle",
+      "summary": "Rapports sinus, cosinus et tangente dans un triangle rectangle.",
+      "order_index": 12,
+      "lessons": [],
+      "exercises": [
+        {
+          "title": "V9 · Longueur BC dans ABC",
+          "statement": "Dans le triangle ABC, rectangle en B, on connaît AC = 7,6 cm et l’angle A = 41°. Calcule BC en cm, au dixième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5,0",
+          "correction": "Le triangle est rectangle en B. Par rapport à l’angle A, BC est le côté opposé et AC est l’hypoténuse. On utilise sin(41°) = BC/AC. Donc BC = 7,6 × sin(41°) ≈ 5,0 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle A : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le sin : écris sin(41°) = BC/AC."
+          ],
+          "steps": [
+            "Le triangle ABC est rectangle en B.",
+            "On choisit le sin parce que les côtés concernés sont BC et AC.",
+            "\\[sin(41^\\circ)=\\frac{BC}{AC}\\]",
+            "\\[BC=7,6 \\times sin(41^\\circ)\\approx 5,0\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1100,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "A",
+              "B",
+              "C"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur DE dans DEF",
+          "statement": "Dans le triangle DEF, rectangle en E, on connaît DF = 9,2 cm et l’angle D = 28°. Calcule DE en cm, au dixième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8,1",
+          "correction": "Le triangle est rectangle en E. Par rapport à l’angle D, DE est le côté adjacent et DF est l’hypoténuse. On utilise cos(28°) = DE/DF. Donc DE = 9,2 × cos(28°) ≈ 8,1 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle D : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le cos : écris cos(28°) = DE/DF."
+          ],
+          "steps": [
+            "Le triangle DEF est rectangle en E.",
+            "On choisit le cos parce que les côtés concernés sont DE et DF.",
+            "\\[cos(28^\\circ)=\\frac{DE}{DF}\\]",
+            "\\[DE=9,2 \\times cos(28^\\circ)\\approx 8,1\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1101,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "D",
+              "E",
+              "F"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur HI dans GHI",
+          "statement": "Dans le triangle GHI, rectangle en H, on connaît GH = 4,8 cm et l’angle G = 53°. Calcule HI en cm, au centième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6,37",
+          "correction": "Le triangle est rectangle en H. Par rapport à l’angle G, HI est le côté opposé et GH est le côté adjacent. On utilise tan(53°) = HI/GH. Donc HI = 4,8 × tan(53°) ≈ 6,37 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle G : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le tan : écris tan(53°) = HI/GH."
+          ],
+          "steps": [
+            "Le triangle GHI est rectangle en H.",
+            "On choisit le tan parce que les côtés concernés sont HI et GH.",
+            "\\[tan(53^\\circ)=\\frac{HI}{GH}\\]",
+            "\\[HI=4,8 \\times tan(53^\\circ)\\approx 6,37\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1102,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "G",
+              "H",
+              "I"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur KL dans JKL",
+          "statement": "Dans le triangle JKL, rectangle en K, on connaît JL = 12,4 cm et l’angle J = 36°. Calcule KL en cm, au centième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7,29",
+          "correction": "Le triangle est rectangle en K. Par rapport à l’angle J, KL est le côté opposé et JL est l’hypoténuse. On utilise sin(36°) = KL/JL. Donc KL = 12,4 × sin(36°) ≈ 7,29 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle J : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le sin : écris sin(36°) = KL/JL."
+          ],
+          "steps": [
+            "Le triangle JKL est rectangle en K.",
+            "On choisit le sin parce que les côtés concernés sont KL et JL.",
+            "\\[sin(36^\\circ)=\\frac{KL}{JL}\\]",
+            "\\[KL=12,4 \\times sin(36^\\circ)\\approx 7,29\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1103,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "J",
+              "K",
+              "L"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur MN dans MNP",
+          "statement": "Dans le triangle MNP, rectangle en N, on connaît MP = 6,5 cm et l’angle M = 64°. Calcule MN en cm, au dixième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2,8",
+          "correction": "Le triangle est rectangle en N. Par rapport à l’angle M, MN est le côté adjacent et MP est l’hypoténuse. On utilise cos(64°) = MN/MP. Donc MN = 6,5 × cos(64°) ≈ 2,8 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle M : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le cos : écris cos(64°) = MN/MP."
+          ],
+          "steps": [
+            "Le triangle MNP est rectangle en N.",
+            "On choisit le cos parce que les côtés concernés sont MN et MP.",
+            "\\[cos(64^\\circ)=\\frac{MN}{MP}\\]",
+            "\\[MN=6,5 \\times cos(64^\\circ)\\approx 2,8\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1104,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "M",
+              "N",
+              "P"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur RS dans QRS",
+          "statement": "Dans le triangle QRS, rectangle en R, on connaît QR = 8,4 cm et l’angle Q = 33°. Calcule RS en cm, au centième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5,46",
+          "correction": "Le triangle est rectangle en R. Par rapport à l’angle Q, RS est le côté opposé et QR est le côté adjacent. On utilise tan(33°) = RS/QR. Donc RS = 8,4 × tan(33°) ≈ 5,46 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle Q : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le tan : écris tan(33°) = RS/QR."
+          ],
+          "steps": [
+            "Le triangle QRS est rectangle en R.",
+            "On choisit le tan parce que les côtés concernés sont RS et QR.",
+            "\\[tan(33^\\circ)=\\frac{RS}{QR}\\]",
+            "\\[RS=8,4 \\times tan(33^\\circ)\\approx 5,46\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1105,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "Q",
+              "R",
+              "S"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur UV dans TUV",
+          "statement": "Dans le triangle TUV, rectangle en U, on connaît TV = 13,4 cm et l’angle T = 25°. Calcule UV en cm, au centième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5,66",
+          "correction": "Le triangle est rectangle en U. Par rapport à l’angle T, UV est le côté opposé et TV est l’hypoténuse. On utilise sin(25°) = UV/TV. Donc UV = 13,4 × sin(25°) ≈ 5,66 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle T : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le sin : écris sin(25°) = UV/TV."
+          ],
+          "steps": [
+            "Le triangle TUV est rectangle en U.",
+            "On choisit le sin parce que les côtés concernés sont UV et TV.",
+            "\\[sin(25^\\circ)=\\frac{UV}{TV}\\]",
+            "\\[UV=13,4 \\times sin(25^\\circ)\\approx 5,66\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1106,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "T",
+              "U",
+              "V"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Longueur XY dans WXY",
+          "statement": "Dans le triangle WXY, rectangle en X, on connaît WX = 3,7 cm et l’angle W = 47°. Calcule XY en cm, au millième. Écris uniquement la valeur numérique arrondie.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3,968",
+          "correction": "Le triangle est rectangle en X. Par rapport à l’angle W, XY est le côté opposé et WX est le côté adjacent. On utilise tan(47°) = XY/WX. Donc XY = 3,7 × tan(47°) ≈ 3,968 cm.",
+          "hints": [
+            "Identifie les trois côtés par rapport à l’angle W : opposé, adjacent et hypoténuse.",
+            "Le rapport à choisir ici est le tan : écris tan(47°) = XY/WX."
+          ],
+          "steps": [
+            "Le triangle WXY est rectangle en X.",
+            "On choisit le tan parce que les côtés concernés sont XY et WX.",
+            "\\[tan(47^\\circ)=\\frac{XY}{WX}\\]",
+            "\\[XY=3,7 \\times tan(47^\\circ)\\approx 3,968\\ \\text{cm}\\]"
+          ],
+          "method": "Identifier les côtés par rapport à l’angle, choisir SOH-CAH-TOA, isoler la longueur puis arrondir à la précision demandée.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1107,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "W",
+              "X",
+              "Y"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Angle U dans UVW",
+          "statement": "Dans le triangle UVW rectangle en V, UV = 8,6 cm et VW = 5,4 cm. Détermine l’angle U en degrés, au dixième. Saisis uniquement sa valeur numérique.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "32,1",
+          "correction": "On calcule tan(U) = 5,4/8,6. Sur la calculatrice réglée en degrés, U = tan⁻¹(5,4/8,6) ≈ 32,1°. ",
+          "hints": [
+            "Repère les côtés connus par rapport à l’angle U.",
+            "Le tan de cet angle vaut 5,4/8,6; utilise la fonction inverse de la calculatrice en mode degrés."
+          ],
+          "steps": [
+            "Le triangle UVW est rectangle en V.",
+            "On choisit le tan à partir des deux côtés connus.",
+            "\\[tan(U)=\\frac{5,4}{8,6}\\]",
+            "\\[U=\\operatorname{arctan}(5,4/8,6)\\approx 32,1^\\circ\\]"
+          ],
+          "method": "Pour trouver un angle, utiliser le rapport adapté puis sa fonction réciproque sur une calculatrice en mode degrés.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1108,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "U",
+              "V",
+              "W"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Angle X dans XYZ",
+          "statement": "Dans le triangle XYZ rectangle en Y, XZ = 11,2 cm et XY = 7,1 cm. Détermine l’angle X en degrés, au dixième. Saisis uniquement sa valeur numérique.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50,7",
+          "correction": "On calcule cos(X) = 7,1/11,2. Sur la calculatrice réglée en degrés, X = cos⁻¹(7,1/11,2) ≈ 50,7°. ",
+          "hints": [
+            "Repère les côtés connus par rapport à l’angle X.",
+            "Le cos de cet angle vaut 7,1/11,2; utilise la fonction inverse de la calculatrice en mode degrés."
+          ],
+          "steps": [
+            "Le triangle XYZ est rectangle en Y.",
+            "On choisit le cos à partir des deux côtés connus.",
+            "\\[cos(X)=\\frac{7,1}{11,2}\\]",
+            "\\[X=\\operatorname{arccos}(7,1/11,2)\\approx 50,7^\\circ\\]"
+          ],
+          "method": "Pour trouver un angle, utiliser le rapport adapté puis sa fonction réciproque sur une calculatrice en mode degrés.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1109,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "X",
+              "Y",
+              "Z"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Angle B dans BCD",
+          "statement": "Dans le triangle BCD rectangle en C, BD = 14,7 cm et CD = 9,3 cm. Détermine l’angle B en degrés, au centième. Saisis uniquement sa valeur numérique.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "39,25",
+          "correction": "On calcule sin(B) = 9,3/14,7. Sur la calculatrice réglée en degrés, B = sin⁻¹(9,3/14,7) ≈ 39,25°. ",
+          "hints": [
+            "Repère les côtés connus par rapport à l’angle B.",
+            "Le sin de cet angle vaut 9,3/14,7; utilise la fonction inverse de la calculatrice en mode degrés."
+          ],
+          "steps": [
+            "Le triangle BCD est rectangle en C.",
+            "On choisit le sin à partir des deux côtés connus.",
+            "\\[sin(B)=\\frac{9,3}{14,7}\\]",
+            "\\[B=\\operatorname{arcsin}(9,3/14,7)\\approx 39,25^\\circ\\]"
+          ],
+          "method": "Pour trouver un angle, utiliser le rapport adapté puis sa fonction réciproque sur une calculatrice en mode degrés.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1110,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "B",
+              "C",
+              "D"
+            ]
+          }
+        },
+        {
+          "title": "V9 · Angle E dans EFG",
+          "statement": "Dans le triangle EFG rectangle en F, EF = 6,9 cm et FG = 4,2 cm. Détermine l’angle E en degrés, au centième. Saisis uniquement sa valeur numérique.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "31,33",
+          "correction": "On calcule tan(E) = 4,2/6,9. Sur la calculatrice réglée en degrés, E = tan⁻¹(4,2/6,9) ≈ 31,33°. ",
+          "hints": [
+            "Repère les côtés connus par rapport à l’angle E.",
+            "Le tan de cet angle vaut 4,2/6,9; utilise la fonction inverse de la calculatrice en mode degrés."
+          ],
+          "steps": [
+            "Le triangle EFG est rectangle en F.",
+            "On choisit le tan à partir des deux côtés connus.",
+            "\\[tan(E)=\\frac{4,2}{6,9}\\]",
+            "\\[E=\\operatorname{arctan}(4,2/6,9)\\approx 31,33^\\circ\\]"
+          ],
+          "method": "Pour trouver un angle, utiliser le rapport adapté puis sa fonction réciproque sur une calculatrice en mode degrés.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1111,
+          "diagram": {
+            "type": "right_triangle",
+            "vertices": [
+              "E",
+              "F",
+              "G"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "title": "Factoriser une expression",
+      "summary": "Facteur commun et différence de deux carrés, avec explications progressives.",
+      "order_index": 16,
+      "lessons": [
+        {
+          "title": "Reconnaître un facteur commun",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le facteur commun se met devant des parenthèses\"}, {\"type\": \"formula\", \"content\": \"ab+ac=a(b+c)\"}, {\"type\": \"paragraph\", \"content\": \"Commence par repérer une partie qui apparaît dans chaque terme.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"6x+9 = 3(2x+3)\"}, {\"type\": \"paragraph\", \"content\": \"Le facteur commun est 3.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Différence de deux carrés",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’identité remarquable à connaître est\"}, {\"type\": \"formula\", \"content\": \"a^2-b^2=(a-b)(a+b)\"}, {\"type\": \"paragraph\", \"content\": \"Une somme de deux carrés ne se factorise pas de cette manière.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"6x+9 = 3(2x+3)\"}, {\"type\": \"paragraph\", \"content\": \"Le facteur commun est 3.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Combiner plusieurs méthodes",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour une expression composée, cherche d’abord un facteur commun, puis examine les identités remarquables et vérifie par développement.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"6x+9 = 3(2x+3)\"}, {\"type\": \"paragraph\", \"content\": \"Le facteur commun est 3.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "V9 · Factorisation guidée 1",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[6x + 18\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(6x + 18 + 1\\)",
+            "\\(6(x + 3) + 1\\)",
+            "\\(6(x - 3)\\)",
+            "\\(6(x + 3)\\)"
+          ],
+          "correct_answer": "\\(6(x + 3)\\)",
+          "correction": "On reconnaît ici : facteur commun 6. On obtient 6(x + 3). Pour vérifier, développe les parenthèses et retrouve 6x + 18.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : facteur commun 6. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[6x + 18\\]",
+            "On applique la méthode « facteur commun 6 ».",
+            "6x + 18 = 6 × x + 6 × 3 ; on met le facteur 6 en évidence.",
+            "La forme factorisée est \\[6(x + 3)\\]",
+            "La vérification par développement redonne \\[6x + 18\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1100
+        },
+        {
+          "title": "V9 · Factorisation guidée 2",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[14x^2 + 21x\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(7x(2x + 3) + 1\\)",
+            "\\(7x(2x - 3)\\)",
+            "\\(14x^2 + 21x + 1\\)",
+            "\\(7x(2x + 3)\\)"
+          ],
+          "correct_answer": "\\(7x(2x + 3)\\)",
+          "correction": "On reconnaît ici : facteur commun 7x. On obtient 7x(2x + 3). Pour vérifier, développe les parenthèses et retrouve 14x² + 21x.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : facteur commun 7x. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[14x^2 + 21x\\]",
+            "On applique la méthode « facteur commun 7x ».",
+            "14x² + 21x = 7x × 2x + 7x × 3 ; les deux termes contiennent 7x.",
+            "La forme factorisée est \\[7x(2x + 3)\\]",
+            "La vérification par développement redonne \\[14x^2 + 21x\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1101
+        },
+        {
+          "title": "V9 · Factorisation guidée 3",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[x^2 - 49\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((x - 7)(x + 7) + 1\\)",
+            "\\(x^2 + 49\\)",
+            "\\((x - 7)(x - 7)\\)",
+            "\\((x - 7)(x + 7)\\)"
+          ],
+          "correct_answer": "\\((x - 7)(x + 7)\\)",
+          "correction": "On reconnaît ici : différence de carrés. On obtient (x - 7)(x + 7). Pour vérifier, développe les parenthèses et retrouve x² - 49.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de carrés. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[x^2 - 49\\]",
+            "On applique la méthode « différence de carrés ».",
+            "x² - 49 = x² - 7² ; appliquer a² - b² = (a - b)(a + b).",
+            "La forme factorisée est \\[(x - 7)(x + 7)\\]",
+            "La vérification par développement redonne \\[x^2 - 49\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1102
+        },
+        {
+          "title": "V9 · Factorisation guidée 4",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[25x^2 - 4\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((5x - 2)(5x + 2)\\)",
+            "\\(25x^2 + 4\\)",
+            "\\((5x - 2)(5x + 2) + 1\\)",
+            "\\((5x - 2)(5x - 2)\\)"
+          ],
+          "correct_answer": "\\((5x - 2)(5x + 2)\\)",
+          "correction": "On reconnaît ici : différence de carrés. On obtient (5x - 2)(5x + 2). Pour vérifier, développe les parenthèses et retrouve 25x² - 4.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de carrés. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[25x^2 - 4\\]",
+            "On applique la méthode « différence de carrés ».",
+            "25x² - 4 = (5x)² - 2² ; utiliser la différence de deux carrés.",
+            "La forme factorisée est \\[(5x - 2)(5x + 2)\\]",
+            "La vérification par développement redonne \\[25x^2 - 4\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1103
+        },
+        {
+          "title": "V9 · Factorisation guidée 5",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(x + 5)(3x - 1) + 2(x + 5)\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((x + 5)(3x + 1) + 1\\)",
+            "\\((x + 5)(3x + 1) + 2(x + 5)\\)",
+            "\\((x + 5)(3x + 1)\\)",
+            "\\((x - 5)(3x + 1)\\)"
+          ],
+          "correct_answer": "\\((x + 5)(3x + 1)\\)",
+          "correction": "On reconnaît ici : facteur commun x + 5. On obtient (x + 5)(3x + 1). Pour vérifier, développe les parenthèses et retrouve (x + 5)(3x - 1) + 2(x + 5).",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : facteur commun x + 5. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(x + 5)(3x - 1) + 2(x + 5)\\]",
+            "On applique la méthode « facteur commun x + 5 ».",
+            "(x + 5)(3x - 1) + 2(x + 5) = (x + 5)[(3x - 1) + 2].",
+            "La forme factorisée est \\[(x + 5)(3x + 1)\\]",
+            "La vérification par développement redonne \\[(x + 5)(3x - 1) + 2(x + 5)\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1104
+        },
+        {
+          "title": "V9 · Factorisation guidée 6",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(2x - 3)^2 - 16\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((2x - 7)(2x - 1)\\)",
+            "\\((2x - 7)(2x + 1) + 1\\)",
+            "\\((2x + 3)^2 - 16\\)",
+            "\\((2x - 7)(2x + 1)\\)"
+          ],
+          "correct_answer": "\\((2x - 7)(2x + 1)\\)",
+          "correction": "On reconnaît ici : différence de deux carrés. On obtient (2x - 7)(2x + 1). Pour vérifier, développe les parenthèses et retrouve (2x - 3)² - 16.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de deux carrés. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(2x - 3)^2 - 16\\]",
+            "On applique la méthode « différence de deux carrés ».",
+            "(2x - 3)² - 16 = [(2x - 3) - 4][(2x - 3) + 4].",
+            "La forme factorisée est \\[(2x - 7)(2x + 1)\\]",
+            "La vérification par développement redonne \\[(2x - 3)^2 - 16\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1105
+        },
+        {
+          "title": "V9 · Factorisation guidée 7",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[9x^2 - 30x + 25\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((3x - 5)^2\\)",
+            "\\((3x - 5)^2 + 1\\)",
+            "\\(9x^2 + 30x + 25\\)",
+            "\\((3x + 5)^2\\)"
+          ],
+          "correct_answer": "\\((3x - 5)^2\\)",
+          "correction": "On reconnaît ici : carré d’une différence. On obtient (3x - 5)². Pour vérifier, développe les parenthèses et retrouve 9x² - 30x + 25.",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : carré d’une différence. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[9x^2 - 30x + 25\\]",
+            "On applique la méthode « carré d’une différence ».",
+            "9x² - 30x + 25 = (3x)² - 2 × (3x) × 5 + 5².",
+            "La forme factorisée est \\[(3x - 5)^2\\]",
+            "La vérification par développement redonne \\[9x^2 - 30x + 25\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1106
+        },
+        {
+          "title": "V9 · Factorisation guidée 8",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(4x + 1)(x - 2) - (4x + 1)(2x + 3)\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((4x - 1)(-x - 5)\\)",
+            "\\((4x + 1)(-x - 5)\\)",
+            "\\((4x + 1)(x + 2) - (4x + 1)(2x + 3)\\)",
+            "\\((4x + 1)(-x - 5) + 1\\)"
+          ],
+          "correct_answer": "\\((4x + 1)(-x - 5)\\)",
+          "correction": "On reconnaît ici : facteur commun 4x + 1. On obtient (4x + 1)(-x - 5). Pour vérifier, développe les parenthèses et retrouve (4x + 1)(x - 2) - (4x + 1)(2x + 3).",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : facteur commun 4x + 1. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(4x + 1)(x - 2) - (4x + 1)(2x + 3)\\]",
+            "On applique la méthode « facteur commun 4x + 1 ».",
+            "(4x + 1)(x - 2) - (4x + 1)(2x + 3) = (4x + 1)[(x - 2) - (2x + 3)].",
+            "La forme factorisée est \\[(4x + 1)(-x - 5)\\]",
+            "La vérification par développement redonne \\[(4x + 1)(x - 2) - (4x + 1)(2x + 3)\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1107
+        },
+        {
+          "title": "V9 · Factorisation guidée 9",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(3x + 2)^2 - (x - 4)^2\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((2x + 6)(4x - 2)\\)",
+            "\\((2x + 6)(4x - 2) + 1\\)",
+            "\\((3x + 2)^2 + (x - 4)^2\\)",
+            "\\((2x - 6)(4x - 2)\\)"
+          ],
+          "correct_answer": "\\((2x + 6)(4x - 2)\\)",
+          "correction": "On reconnaît ici : différence de carrés composée. On obtient (2x + 6)(4x - 2). Pour vérifier, développe les parenthèses et retrouve (3x + 2)² - (x - 4)².",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de carrés composée. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(3x + 2)^2 - (x - 4)^2\\]",
+            "On applique la méthode « différence de carrés composée ».",
+            "(3x + 2)² - (x - 4)² = [(3x + 2) - (x - 4)][(3x + 2) + (x - 4)].",
+            "La forme factorisée est \\[(2x + 6)(4x - 2)\\]",
+            "La vérification par développement redonne \\[(3x + 2)^2 - (x - 4)^2\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1108
+        },
+        {
+          "title": "V9 · Factorisation guidée 10",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[16x^2 - 81 - (4x - 9)(2x + 3)\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((4x - 9)(2x - 6)\\)",
+            "\\((4x - 9)(2x + 6)\\)",
+            "\\(16x^2 + 81 - (4x - 9)(2x + 3)\\)",
+            "\\((4x - 9)(2x + 6) + 1\\)"
+          ],
+          "correct_answer": "\\((4x - 9)(2x + 6)\\)",
+          "correction": "On reconnaît ici : différence de carrés puis facteur commun. On obtient (4x - 9)(2x + 6). Pour vérifier, développe les parenthèses et retrouve 16x² - 81 - (4x - 9)(2x + 3).",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de carrés puis facteur commun. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[16x^2 - 81 - (4x - 9)(2x + 3)\\]",
+            "On applique la méthode « différence de carrés puis facteur commun ».",
+            "16x² - 81 - (4x - 9)(2x + 3) = (4x - 9)[(4x + 9) - (2x + 3)].",
+            "La forme factorisée est \\[(4x - 9)(2x + 6)\\]",
+            "La vérification par développement redonne \\[16x^2 - 81 - (4x - 9)(2x + 3)\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1109
+        },
+        {
+          "title": "V9 · Factorisation guidée 11",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(5x - 2)(x + 3) + (5x - 2)^2\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((5x - 2)(6x + 1) + 1\\)",
+            "\\((5x - 2)(6x - 1)\\)",
+            "\\((5x + 2)(x + 3) + (5x - 2)^2\\)",
+            "\\((5x - 2)(6x + 1)\\)"
+          ],
+          "correct_answer": "\\((5x - 2)(6x + 1)\\)",
+          "correction": "On reconnaît ici : facteur commun composé. On obtient (5x - 2)(6x + 1). Pour vérifier, développe les parenthèses et retrouve (5x - 2)(x + 3) + (5x - 2)².",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : facteur commun composé. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(5x - 2)(x + 3) + (5x - 2)^2\\]",
+            "On applique la méthode « facteur commun composé ».",
+            "(5x - 2)(x + 3) + (5x - 2)² = (5x - 2)[(x + 3) + (5x - 2)].",
+            "La forme factorisée est \\[(5x - 2)(6x + 1)\\]",
+            "La vérification par développement redonne \\[(5x - 2)(x + 3) + (5x - 2)^2\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1110
+        },
+        {
+          "title": "V9 · Factorisation guidée 12",
+          "statement": "Factorise l’expression suivante, puis sélectionne la forme factorisée correcte : \\[(x + 6)^2 - 9(x - 2)^2\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "\\((x + 6)^2 + 9(x - 2)^2\\)",
+            "\\((-2x - 12)(4x)\\)",
+            "\\((-2x + 12)(4x) + 1\\)",
+            "\\((-2x + 12)(4x)\\)"
+          ],
+          "correct_answer": "\\((-2x + 12)(4x)\\)",
+          "correction": "On reconnaît ici : différence de carrés avec deux expressions. On obtient (-2x + 12)(4x). Pour vérifier, développe les parenthèses et retrouve (x + 6)² - 9(x - 2)².",
+          "hints": [
+            "Dans chaque terme, cherche d’abord un facteur commun ou des carrés parfaits.",
+            "La méthode utile ici : différence de carrés avec deux expressions. Mets l’expression sous forme de produit."
+          ],
+          "steps": [
+            "Expression de départ : \\[(x + 6)^2 - 9(x - 2)^2\\]",
+            "On applique la méthode « différence de carrés avec deux expressions ».",
+            "(x + 6)² - 9(x - 2)² = [(x + 6) - 3(x - 2)][(x + 6) + 3(x - 2)].",
+            "La forme factorisée est \\[(-2x + 12)(4x)\\]",
+            "La vérification par développement redonne \\[(x + 6)^2 - 9(x - 2)^2\\]"
+          ],
+          "method": "Factoriser transforme une somme ou une différence en un produit. Vérifie toujours en redéveloppant.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1111
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "title": "Identités remarquables et développement",
+      "summary": "Développer un carré de somme, un carré de différence ou un produit de conjugués.",
+      "order_index": 17,
+      "lessons": [
+        {
+          "title": "Carré d’une somme",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La formule complète, y compris le double produit, est\"}, {\"type\": \"formula\", \"content\": \"(a+b)^2=a^2+2ab+b^2\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"(x+4)^2=x^2+8x+16\"}, {\"type\": \"paragraph\", \"content\": \"Ici, a = x et b = 4.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Carré d’une différence",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Fais attention au signe du terme du milieu\"}, {\"type\": \"formula\", \"content\": \"(a-b)^2=a^2-2ab+b^2\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"(x-3)^2=x^2-6x+9\"}, {\"type\": \"paragraph\", \"content\": \"Le terme du milieu est négatif.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Conjugués",
+          "body": "@@studysprint-blocks@@[{\"type\": \"formula\", \"content\": \"(a-b)(a+b)=a^2-b^2\"}, {\"type\": \"paragraph\", \"content\": \"Dans cette identité, les termes croisés s’annulent.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"(x-5)(x+5)=x^2-25\"}, {\"type\": \"paragraph\", \"content\": \"Les termes croisés s’annulent : +5x et -5x.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "V9 · Développement guidé 1",
+          "statement": "Développe et réduis l’expression : \\[(x + 4)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(x^2 + 8x + 16 + 1\\)",
+            "\\(x^2 - 8x + 16\\)",
+            "\\(x^2 + 8x + 16\\)",
+            "\\(x**2 + 9*x + 16\\)"
+          ],
+          "correct_answer": "\\(x^2 + 8x + 16\\)",
+          "correction": "On applique carré d’une somme, puis on regroupe les termes de même degré. La forme réduite est x² + 8x + 16.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise carré d’une somme puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(x + 4)^2\\]",
+            "Développer en appliquant carré d’une somme.",
+            "(x + 4)² = x² + 2 × x × 4 + 4² = x² + 8x + 16.",
+            "Regrouper les termes de même degré : \\[x^2 + 8x + 16\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1100
+        },
+        {
+          "title": "V9 · Développement guidé 2",
+          "statement": "Développe et réduis l’expression : \\[(2x - 5)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(4x^2 - 20x - 25\\)",
+            "\\(4x^2 - 20x + 25\\)",
+            "\\(4x^2 - 20x + 25 + 1\\)",
+            "\\(4*x**2 - 19*x + 25\\)"
+          ],
+          "correct_answer": "\\(4x^2 - 20x + 25\\)",
+          "correction": "On applique carré d’une différence, puis on regroupe les termes de même degré. La forme réduite est 4x² - 20x + 25.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise carré d’une différence puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(2x - 5)^2\\]",
+            "Développer en appliquant carré d’une différence.",
+            "(2x - 5)² = (2x)² - 2 × 2x × 5 + 5² = 4x² - 20x + 25.",
+            "Regrouper les termes de même degré : \\[4x^2 - 20x + 25\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1101
+        },
+        {
+          "title": "V9 · Développement guidé 3",
+          "statement": "Développe et réduis l’expression : \\[(3x - 7)(3x + 7)\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(9x^2 - 49\\)",
+            "\\(9x^2 + 49\\)",
+            "\\(9x^2 - 49 + 1\\)",
+            "\\(9*x**2 + x - 49\\)"
+          ],
+          "correct_answer": "\\(9x^2 - 49\\)",
+          "correction": "On applique produit de conjugués, puis on regroupe les termes de même degré. La forme réduite est 9x² - 49.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise produit de conjugués puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(3x - 7)(3x + 7)\\]",
+            "Développer en appliquant produit de conjugués.",
+            "(3x - 7)(3x + 7) = (3x)² - 7² = 9x² - 49.",
+            "Regrouper les termes de même degré : \\[9x^2 - 49\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1102
+        },
+        {
+          "title": "V9 · Développement guidé 4",
+          "statement": "Développe et réduis l’expression : \\[(5x + 2)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(25x^2 + 20x + 4 + 1\\)",
+            "\\(25*x**2 + 21*x + 4\\)",
+            "\\(25x^2 - 20x + 4\\)",
+            "\\(25x^2 + 20x + 4\\)"
+          ],
+          "correct_answer": "\\(25x^2 + 20x + 4\\)",
+          "correction": "On applique carré d’une somme, puis on regroupe les termes de même degré. La forme réduite est 25x² + 20x + 4.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise carré d’une somme puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(5x + 2)^2\\]",
+            "Développer en appliquant carré d’une somme.",
+            "(5x + 2)² = (5x)² + 2 × 5x × 2 + 2² = 25x² + 20x + 4.",
+            "Regrouper les termes de même degré : \\[25x^2 + 20x + 4\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1103
+        },
+        {
+          "title": "V9 · Développement guidé 5",
+          "statement": "Développe et réduis l’expression : \\[(4x - 3)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(16x^2 - 24x - 9\\)",
+            "\\(16x^2 - 24x + 9\\)",
+            "\\(16*x**2 - 23*x + 9\\)",
+            "\\(16x^2 - 24x + 9 + 1\\)"
+          ],
+          "correct_answer": "\\(16x^2 - 24x + 9\\)",
+          "correction": "On applique carré d’une différence, puis on regroupe les termes de même degré. La forme réduite est 16x² - 24x + 9.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise carré d’une différence puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(4x - 3)^2\\]",
+            "Développer en appliquant carré d’une différence.",
+            "(4x - 3)² = (4x)² - 2 × 4x × 3 + 3² = 16x² - 24x + 9.",
+            "Regrouper les termes de même degré : \\[16x^2 - 24x + 9\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1104
+        },
+        {
+          "title": "V9 · Développement guidé 6",
+          "statement": "Développe et réduis l’expression : \\[(7x + 1)(7x - 1)\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(49x^2 - 1\\)",
+            "\\(49x^2 + 1\\)",
+            "\\(49x^2 - 1 + 1\\)",
+            "\\(49*x**2 + x - 1\\)"
+          ],
+          "correct_answer": "\\(49x^2 - 1\\)",
+          "correction": "On applique produit de conjugués, puis on regroupe les termes de même degré. La forme réduite est 49x² - 1.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise produit de conjugués puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(7x + 1)(7x - 1)\\]",
+            "Développer en appliquant produit de conjugués.",
+            "(7x + 1)(7x - 1) = (7x)² - 1² = 49x² - 1.",
+            "Regrouper les termes de même degré : \\[49x^2 - 1\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1105
+        },
+        {
+          "title": "V9 · Développement guidé 7",
+          "statement": "Développe et réduis l’expression : \\[-(2x + 3)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(-4*x**2 - 11*x - 9\\)",
+            "\\(-4x^2 - 12x - 9 + 1\\)",
+            "\\(-4x^2 - 12x - 9\\)",
+            "\\(-4x^2 + 12x - 9\\)"
+          ],
+          "correct_answer": "\\(-4x^2 - 12x - 9\\)",
+          "correction": "On applique opposé d’un carré de somme, puis on regroupe les termes de même degré. La forme réduite est -4x² - 12x - 9.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise opposé d’un carré de somme puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[-(2x + 3)^2\\]",
+            "Développer en appliquant opposé d’un carré de somme.",
+            "-(2x + 3)² = -[(2x)² + 2 × 2x × 3 + 3²] = -4x² - 12x - 9.",
+            "Regrouper les termes de même degré : \\[-4x^2 - 12x - 9\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1106
+        },
+        {
+          "title": "V9 · Développement guidé 8",
+          "statement": "Développe et réduis l’expression : \\[(x + 2)(3x - 5)\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(3*x**2 + 2*x - 10\\)",
+            "\\(3x^2 + x - 10\\)",
+            "\\(3x^2 - x - 10\\)",
+            "\\(3x^2 + x - 10 + 1\\)"
+          ],
+          "correct_answer": "\\(3x^2 + x - 10\\)",
+          "correction": "On applique double distributivité, puis on regroupe les termes de même degré. La forme réduite est 3x² + x - 10.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise double distributivité puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(x + 2)(3x - 5)\\]",
+            "Développer en appliquant double distributivité.",
+            "(x + 2)(3x - 5) = 3x² - 5x + 6x - 10 = 3x² + x - 10.",
+            "Regrouper les termes de même degré : \\[3x^2 + x - 10\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1107
+        },
+        {
+          "title": "V9 · Développement guidé 9",
+          "statement": "Développe et réduis l’expression : \\[(3x + 4)^2 - (x + 1)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(8x^2 + 22x + 15\\)",
+            "\\(8x^2 - 22x + 15\\)",
+            "\\(8*x**2 + 23*x + 15\\)",
+            "\\(8x^2 + 22x + 15 + 1\\)"
+          ],
+          "correct_answer": "\\(8x^2 + 22x + 15\\)",
+          "correction": "On applique deux carrés de sommes, puis on regroupe les termes de même degré. La forme réduite est 8x² + 22x + 15.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise deux carrés de sommes puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(3x + 4)^2 - (x + 1)^2\\]",
+            "Développer en appliquant deux carrés de sommes.",
+            "(3x + 4)² - (x + 1)² = (9x² + 24x + 16) - (x² + 2x + 1) = 8x² + 22x + 15.",
+            "Regrouper les termes de même degré : \\[8x^2 + 22x + 15\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1108
+        },
+        {
+          "title": "V9 · Développement guidé 10",
+          "statement": "Développe et réduis l’expression : \\[(5x - 1)(5x + 1) - (x - 2)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(24*x**2 + 5*x - 5\\)",
+            "\\(24x^2 - 4x - 5\\)",
+            "\\(24x^2 + 4x - 5\\)",
+            "\\(24x^2 + 4x - 5 + 1\\)"
+          ],
+          "correct_answer": "\\(24x^2 + 4x - 5\\)",
+          "correction": "On applique produit de conjugués et carré, puis on regroupe les termes de même degré. La forme réduite est 24x² + 4x - 5.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise produit de conjugués et carré puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(5x - 1)(5x + 1) - (x - 2)^2\\]",
+            "Développer en appliquant produit de conjugués et carré.",
+            "(5x - 1)(5x + 1) - (x - 2)² = (25x² - 1) - (x² - 4x + 4) = 24x² + 4x - 5.",
+            "Regrouper les termes de même degré : \\[24x^2 + 4x - 5\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1109
+        },
+        {
+          "title": "V9 · Développement guidé 11",
+          "statement": "Développe et réduis l’expression : \\[(x + 5)^2 - (x - 3)(x + 3)\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(10x + 34\\)",
+            "\\(10x - 34\\)",
+            "\\(10x + 34 + 1\\)",
+            "\\(11*x + 34\\)"
+          ],
+          "correct_answer": "\\(10x + 34\\)",
+          "correction": "On applique carré et conjugués, puis on regroupe les termes de même degré. La forme réduite est 10x + 34.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise carré et conjugués puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(x + 5)^2 - (x - 3)(x + 3)\\]",
+            "Développer en appliquant carré et conjugués.",
+            "(x + 5)² - (x - 3)(x + 3) = (x² + 10x + 25) - (x² - 9) = 10x + 34.",
+            "Regrouper les termes de même degré : \\[10x + 34\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1110
+        },
+        {
+          "title": "V9 · Développement guidé 12",
+          "statement": "Développe et réduis l’expression : \\[(2x - 3)^2 + (x + 4)^2\\] Quelle expression réduite est correcte ?",
+          "exercise_type": "mcq",
+          "options": [
+            "\\(5x^2 - 4x - 25\\)",
+            "\\(5x^2 - 4x + 25\\)",
+            "\\(5x^2 - 4x + 25 + 1\\)",
+            "\\(5*x**2 - 3*x + 25\\)"
+          ],
+          "correct_answer": "\\(5x^2 - 4x + 25\\)",
+          "correction": "On applique somme de deux carrés de binômes, puis on regroupe les termes de même degré. La forme réduite est 5x² - 4x + 25.",
+          "hints": [
+            "Repère si tu as un carré, un produit de conjugués ou un produit quelconque.",
+            "Utilise somme de deux carrés de binômes puis réunis les termes en x², x et les constantes."
+          ],
+          "steps": [
+            "Expression initiale : \\[(2x - 3)^2 + (x + 4)^2\\]",
+            "Développer en appliquant somme de deux carrés de binômes.",
+            "(2x - 3)² + (x + 4)² = (4x² - 12x + 9) + (x² + 8x + 16) = 5x² - 4x + 25.",
+            "Regrouper les termes de même degré : \\[5x^2 - 4x + 25\\]"
+          ],
+          "method": "Pour un carré de binôme, ne pas oublier le terme double : (a ± b)² = a² ± 2ab + b².",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1111
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "title": "Théorème de Thalès",
+      "summary": "Comparer les rapports de longueurs et justifier un parallélisme.",
+      "order_index": 11,
+      "lessons": [],
+      "exercises": [
+        {
+          "title": "V9 · Parallélisme et rapports 1",
+          "statement": "Les points O, A et C sont alignés dans cet ordre ; les points O, B et D sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne OA = 3 cm, OC = 9 cm, OB = 4 cm et OD = 12 cm. Les droites (AB) et (CD) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare OA/OC = 3/9 et OB/OD = 4/12. Les produits en croix valent 36 et 36 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports OA/OC et OB/OD avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de O.",
+            "Les deux rapports sont \\[\\frac{3}{9}\\quad\\text{et}\\quad\\frac{4}{12}\\]",
+            "Produits en croix : 3 × 12 = 36 et 4 × 9 = 36.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1100,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "O",
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "parallel": true
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 2",
+          "statement": "Les points S, E et G sont alignés dans cet ordre ; les points S, F et H sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne SE = 5 cm, SG = 15 cm, SF = 7 cm et SH = 21 cm. Les droites (EF) et (GH) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare SE/SG = 5/15 et SF/SH = 7/21. Les produits en croix valent 105 et 105 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports SE/SG et SF/SH avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de S.",
+            "Les deux rapports sont \\[\\frac{5}{15}\\quad\\text{et}\\quad\\frac{7}{21}\\]",
+            "Produits en croix : 5 × 21 = 105 et 7 × 15 = 105.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1101,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "S",
+              "E",
+              "F",
+              "G",
+              "H"
+            ],
+            "parallel": true
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 3",
+          "statement": "Les points M, N et Q sont alignés dans cet ordre ; les points M, P et R sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne MN = 4 cm, MQ = 10 cm, MP = 6 cm et MR = 15 cm. Les droites (NP) et (QR) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare MN/MQ = 4/10 et MP/MR = 6/15. Les produits en croix valent 60 et 60 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports MN/MQ et MP/MR avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de M.",
+            "Les deux rapports sont \\[\\frac{4}{10}\\quad\\text{et}\\quad\\frac{6}{15}\\]",
+            "Produits en croix : 4 × 15 = 60 et 6 × 10 = 60.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1102,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "M",
+              "N",
+              "P",
+              "Q",
+              "R"
+            ],
+            "parallel": true
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 4",
+          "statement": "Les points T, U et W sont alignés dans cet ordre ; les points T, V et X sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne TU = 3 cm, TW = 12 cm, TV = 5 cm et TX = 18 cm. Les droites (UV) et (WX) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Non, les droites ne sont pas parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare TU/TW = 3/12 et TV/TX = 5/18. Les produits en croix valent 54 et 60 : ils sont différents, donc ces rapports ne sont pas égaux : les droites ne sont pas parallèles.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports TU/TW et TV/TX avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de T.",
+            "Les deux rapports sont \\[\\frac{3}{12}\\quad\\text{et}\\quad\\frac{5}{18}\\]",
+            "Produits en croix : 3 × 18 = 54 et 5 × 12 = 60.",
+            "Les rapports diffèrent, donc le parallélisme est exclu dans cette configuration."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1103,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "T",
+              "U",
+              "V",
+              "W",
+              "X"
+            ],
+            "parallel": false
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 5",
+          "statement": "Les points B, C et E sont alignés dans cet ordre ; les points B, D et F sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne BC = 7 cm, BE = 14 cm, BD = 8 cm et BF = 16 cm. Les droites (CD) et (EF) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare BC/BE = 7/14 et BD/BF = 8/16. Les produits en croix valent 112 et 112 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports BC/BE et BD/BF avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de B.",
+            "Les deux rapports sont \\[\\frac{7}{14}\\quad\\text{et}\\quad\\frac{8}{16}\\]",
+            "Produits en croix : 7 × 16 = 112 et 8 × 14 = 112.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1104,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "parallel": true
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 6",
+          "statement": "Les points K, L et N sont alignés dans cet ordre ; les points K, M et P sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne KL = 6 cm, KN = 18 cm, KM = 8 cm et KP = 24 cm. Les droites (LM) et (NP) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare KL/KN = 6/18 et KM/KP = 8/24. Les produits en croix valent 144 et 144 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports KL/KN et KM/KP avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de K.",
+            "Les deux rapports sont \\[\\frac{6}{18}\\quad\\text{et}\\quad\\frac{8}{24}\\]",
+            "Produits en croix : 6 × 24 = 144 et 8 × 18 = 144.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1105,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "K",
+              "L",
+              "M",
+              "N",
+              "P"
+            ],
+            "parallel": true
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 7",
+          "statement": "Les points R, S et U sont alignés dans cet ordre ; les points R, T et V sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne RS = 8 cm, RU = 24 cm, RT = 9 cm et RV = 28 cm. Les droites (ST) et (UV) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Non, les droites ne sont pas parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare RS/RU = 8/24 et RT/RV = 9/28. Les produits en croix valent 224 et 216 : ils sont différents, donc ces rapports ne sont pas égaux : les droites ne sont pas parallèles.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports RS/RU et RT/RV avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de R.",
+            "Les deux rapports sont \\[\\frac{8}{24}\\quad\\text{et}\\quad\\frac{9}{28}\\]",
+            "Produits en croix : 8 × 28 = 224 et 9 × 24 = 216.",
+            "Les rapports diffèrent, donc le parallélisme est exclu dans cette configuration."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1106,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "R",
+              "S",
+              "T",
+              "U",
+              "V"
+            ],
+            "parallel": false
+          }
+        },
+        {
+          "title": "V9 · Parallélisme et rapports 8",
+          "statement": "Les points Y, Z et B sont alignés dans cet ordre ; les points Y, A et C sont alignés dans cet ordre, sur deux demi-droites distinctes. On donne YZ = 11 cm, YB = 22 cm, YA = 12 cm et YC = 24 cm. Les droites (ZA) et (BC) sont-elles parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui, les droites sont parallèles",
+            "Non, les droites ne sont pas parallèles",
+            "Impossible de conclure avec ces données"
+          ],
+          "correct_answer": "Oui, les droites sont parallèles",
+          "correction": "Les points sont alignés dans le même ordre. On compare YZ/YB = 11/22 et YA/YC = 12/24. Les produits en croix valent 264 et 264 : ils sont égaux, donc la réciproque de Thalès permet de conclure au parallélisme.",
+          "hints": [
+            "Commence par vérifier la disposition des points et les alignements sur les deux demi-droites.",
+            "Compare les rapports YZ/YB et YA/YC avec un produit en croix."
+          ],
+          "steps": [
+            "Les points sont alignés dans le même ordre sur deux demi-droites issues de Y.",
+            "Les deux rapports sont \\[\\frac{11}{22}\\quad\\text{et}\\quad\\frac{12}{24}\\]",
+            "Produits en croix : 11 × 24 = 264 et 12 × 22 = 264.",
+            "Les droites sont parallèles par la réciproque du théorème de Thalès."
+          ],
+          "method": "La réciproque de Thalès nécessite les alignements et des rapports de longueurs égaux ; pour une négation, on constate des rapports différents.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1107,
+          "diagram": {
+            "type": "thales_rays",
+            "vertices": [
+              "Y",
+              "Z",
+              "A",
+              "B",
+              "C"
+            ],
+            "parallel": true
+          }
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "title": "Systèmes de deux équations — approfondissement",
+      "summary": "Résoudre deux équations à deux inconnues par substitution ou élimination (approfondissement).",
+      "order_index": 18,
+      "lessons": [
+        {
+          "title": "Éliminer une inconnue",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Multiplier éventuellement une équation puis additionner pour faire disparaître x ou y.\"}, {\"type\": \"formula\", \"content\": \"\\\\begin{cases} x+y=5 \\\\\\\\ x-y=1\\\\end{cases}\"}, {\"type\": \"paragraph\", \"content\": \"En additionnant : 2x = 6, puis x = 3 et y = 2.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\begin{cases}x+y=5\\\\\\\\x-y=1\\\\end{cases}\\\\Rightarrow 2x=6\\\\Rightarrow x=3\\\\text{ puis }y=2\"}, {\"type\": \"paragraph\", \"content\": \"En additionnant les deux équations, on élimine y.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Substituer",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Si l’on connaît une expression de x en fonction de y, on la remplace dans la seconde équation et on résout.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\begin{cases}x+y=5\\\\\\\\x-y=1\\\\end{cases}\\\\Rightarrow 2x=6\\\\Rightarrow x=3\\\\text{ puis }y=2\"}, {\"type\": \"paragraph\", \"content\": \"En additionnant les deux équations, on élimine y.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Vérifier",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Remplace les deux inconnues dans chacune des équations initiales : une paire qui ne vérifie pas les deux n’est pas solution.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\begin{cases}x+y=5\\\\\\\\x-y=1\\\\end{cases}\\\\Rightarrow 2x=6\\\\Rightarrow x=3\\\\text{ puis }y=2\"}, {\"type\": \"paragraph\", \"content\": \"En additionnant les deux équations, on élimine y.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "V9 · Système à deux inconnues 1",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 1x + 1y = 5 \\\\ 1x - 1y = 1\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (3 ; 2)",
+            "(x ; y) = (2 ; 3)",
+            "(x ; y) = (3 ; -2)",
+            "(x ; y) = (-3 ; 2)"
+          ],
+          "correct_answer": "(x ; y) = (3 ; 2)",
+          "correction": "On résout par élimination ou substitution. On obtient x = 3 et y = 2. Vérification : 1×(3) + (1)×(2) = 5, et 1×(3) + (-1)×(2) = 1. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-1), puis la seconde par (-1).",
+            "Les coefficients de y s’annulent en additionnant : (-2)x = -6.",
+            "On obtient x = -6/(-2) = 3.",
+            "Dans la première équation, 1×(3) + (1)y = 5, donc y = 2.",
+            "Vérification dans la première : 1×(3) + (1)×(2) = 5.",
+            "Vérification dans la seconde : 1×(3) + (-1)×(2) = 1."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1100
+        },
+        {
+          "title": "V9 · Système à deux inconnues 2",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 2x + 1y = 7 \\\\ 1x - 2y = 6\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (-4 ; -1)",
+            "(x ; y) = (4 ; -1)",
+            "(x ; y) = (4 ; 1)",
+            "(x ; y) = (-1 ; 4)"
+          ],
+          "correct_answer": "(x ; y) = (4 ; -1)",
+          "correction": "On résout par élimination ou substitution. On obtient x = 4 et y = -1. Vérification : 2×(4) + (1)×(-1) = 7, et 1×(4) + (-2)×(-1) = 6. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-2), puis la seconde par (-1).",
+            "Les coefficients de y s’annulent en additionnant : (-5)x = -20.",
+            "On obtient x = -20/(-5) = 4.",
+            "Dans la première équation, 2×(4) + (1)y = 7, donc y = -1.",
+            "Vérification dans la première : 2×(4) + (1)×(-1) = 7.",
+            "Vérification dans la seconde : 1×(4) + (-2)×(-1) = 6."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1101
+        },
+        {
+          "title": "V9 · Système à deux inconnues 3",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 1x + 2y = 8 \\\\ 2x - 1y = -9\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (-2 ; 5)",
+            "(x ; y) = (5 ; -2)",
+            "(x ; y) = (-2 ; -5)",
+            "(x ; y) = (2 ; 5)"
+          ],
+          "correct_answer": "(x ; y) = (-2 ; 5)",
+          "correction": "On résout par élimination ou substitution. On obtient x = -2 et y = 5. Vérification : 1×(-2) + (2)×(5) = 8, et 2×(-2) + (-1)×(5) = -9. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-1), puis la seconde par (-2).",
+            "Les coefficients de y s’annulent en additionnant : (-5)x = 10.",
+            "On obtient x = 10/(-5) = -2.",
+            "Dans la première équation, 1×(-2) + (2)y = 8, donc y = 5.",
+            "Vérification dans la première : 1×(-2) + (2)×(5) = 8.",
+            "Vérification dans la seconde : 2×(-2) + (-1)×(5) = -9."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1102
+        },
+        {
+          "title": "V9 · Système à deux inconnues 4",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 3x - 1y = 12 \\\\ 1x + 2y = 11\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (5 ; 3)",
+            "(x ; y) = (3 ; 5)",
+            "(x ; y) = (-5 ; 3)",
+            "(x ; y) = (5 ; -3)"
+          ],
+          "correct_answer": "(x ; y) = (5 ; 3)",
+          "correction": "On résout par élimination ou substitution. On obtient x = 5 et y = 3. Vérification : 3×(5) + (-1)×(3) = 12, et 1×(5) + (2)×(3) = 11. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (2), puis la seconde par (1).",
+            "Les coefficients de y s’annulent en additionnant : (7)x = 35.",
+            "On obtient x = 35/(7) = 5.",
+            "Dans la première équation, 3×(5) + (-1)y = 12, donc y = 3.",
+            "Vérification dans la première : 3×(5) + (-1)×(3) = 12.",
+            "Vérification dans la seconde : 1×(5) + (2)×(3) = 11."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1103
+        },
+        {
+          "title": "V9 · Système à deux inconnues 5",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 2x + 3y = 10 \\\\ 3x - 2y = -11\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (4 ; -1)",
+            "(x ; y) = (-1 ; -4)",
+            "(x ; y) = (1 ; 4)",
+            "(x ; y) = (-1 ; 4)"
+          ],
+          "correct_answer": "(x ; y) = (-1 ; 4)",
+          "correction": "On résout par élimination ou substitution. On obtient x = -1 et y = 4. Vérification : 2×(-1) + (3)×(4) = 10, et 3×(-1) + (-2)×(4) = -11. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-2), puis la seconde par (-3).",
+            "Les coefficients de y s’annulent en additionnant : (-13)x = 13.",
+            "On obtient x = 13/(-13) = -1.",
+            "Dans la première équation, 2×(-1) + (3)y = 10, donc y = 4.",
+            "Vérification dans la première : 2×(-1) + (3)×(4) = 10.",
+            "Vérification dans la seconde : 3×(-1) + (-2)×(4) = -11."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1104
+        },
+        {
+          "title": "V9 · Système à deux inconnues 6",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 4x + 1y = 5 \\\\ 1x - 3y = 11\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (2 ; -3)",
+            "(x ; y) = (2 ; 3)",
+            "(x ; y) = (-3 ; 2)",
+            "(x ; y) = (-2 ; -3)"
+          ],
+          "correct_answer": "(x ; y) = (2 ; -3)",
+          "correction": "On résout par élimination ou substitution. On obtient x = 2 et y = -3. Vérification : 4×(2) + (1)×(-3) = 5, et 1×(2) + (-3)×(-3) = 11. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-3), puis la seconde par (-1).",
+            "Les coefficients de y s’annulent en additionnant : (-13)x = -26.",
+            "On obtient x = -26/(-13) = 2.",
+            "Dans la première équation, 4×(2) + (1)y = 5, donc y = -3.",
+            "Vérification dans la première : 4×(2) + (1)×(-3) = 5.",
+            "Vérification dans la seconde : 1×(2) + (-3)×(-3) = 11."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 2,
+          "points": 15,
+          "order_index": 1105
+        },
+        {
+          "title": "V9 · Système à deux inconnues 7",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 3x - 2y = -8 \\\\ 2x + 3y = -14\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (-4 ; 2)",
+            "(x ; y) = (4 ; -2)",
+            "(x ; y) = (-2 ; -4)",
+            "(x ; y) = (-4 ; -2)"
+          ],
+          "correct_answer": "(x ; y) = (-4 ; -2)",
+          "correction": "On résout par élimination ou substitution. On obtient x = -4 et y = -2. Vérification : 3×(-4) + (-2)×(-2) = -8, et 2×(-4) + (3)×(-2) = -14. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (3), puis la seconde par (2).",
+            "Les coefficients de y s’annulent en additionnant : (13)x = -52.",
+            "On obtient x = -52/(13) = -4.",
+            "Dans la première équation, 3×(-4) + (-2)y = -8, donc y = -2.",
+            "Vérification dans la première : 3×(-4) + (-2)×(-2) = -8.",
+            "Vérification dans la seconde : 2×(-4) + (3)×(-2) = -14."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1106
+        },
+        {
+          "title": "V9 · Système à deux inconnues 8",
+          "statement": "Résous le système puis choisis le couple solution. \\[\\begin{cases} 5x + 2y = 20 \\\\ 3x - 4y = 38\\end{cases}\\]",
+          "exercise_type": "mcq",
+          "options": [
+            "(x ; y) = (-5 ; 6)",
+            "(x ; y) = (-6 ; -5)",
+            "(x ; y) = (6 ; 5)",
+            "(x ; y) = (6 ; -5)"
+          ],
+          "correct_answer": "(x ; y) = (6 ; -5)",
+          "correction": "On résout par élimination ou substitution. On obtient x = 6 et y = -5. Vérification : 5×(6) + (2)×(-5) = 20, et 3×(6) + (-4)×(-5) = 38. Les deux égalités sont vérifiées.",
+          "hints": [
+            "Choisis une inconnue à éliminer en multipliant si besoin l’une des équations.",
+            "Une fois une inconnue trouvée, remplace-la dans l’une des équations de départ puis vérifie les deux."
+          ],
+          "steps": [
+            "Pour éliminer y, multiplie la première équation par (-4), puis la seconde par (-2).",
+            "Les coefficients de y s’annulent en additionnant : (-26)x = -156.",
+            "On obtient x = -156/(-26) = 6.",
+            "Dans la première équation, 5×(6) + (2)y = 20, donc y = -5.",
+            "Vérification dans la première : 5×(6) + (2)×(-5) = 20.",
+            "Vérification dans la seconde : 3×(6) + (-4)×(-5) = 38."
+          ],
+          "method": "Une solution d’un système doit vérifier simultanément les deux équations ; vérifie toujours le couple obtenu.",
+          "difficulty": 3,
+          "points": 20,
+          "order_index": 1107
+        }
+      ]
+    }
+  ]
+}

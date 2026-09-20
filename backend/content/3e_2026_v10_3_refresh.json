@@ -1,0 +1,4654 @@
+{
+  "pack_id": "3e_2026_v10_3_refresh",
+  "title": "StudySprint - Contenu 3e Maths & Physique-Chimie — refresh formules et exemples",
+  "level": "3e",
+  "subjects": {
+    "mathematiques": {
+      "name": "Mathématiques",
+      "emoji": "📐",
+      "description": "3e : nombres, calcul, fonctions, géométrie, statistiques, probabilités et algorithmique."
+    },
+    "physique-chimie": {
+      "name": "Physique-Chimie",
+      "emoji": "⚛️",
+      "description": "3e / cycle 4 : matière, mouvements, énergie, électricité et signaux."
+    }
+  },
+  "chapters": [
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 1,
+      "title": "Arithmétique : divisibilité et nombres premiers",
+      "summary": "Utiliser divisibilité, nombres premiers et PGCD pour simplifier des fractions et résoudre des problèmes.",
+      "lessons": [
+        {
+          "title": "Diviseurs et multiples",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un entier a est divisible par b s'il existe un entier k tel que a=b×k. Les critères de divisibilité par 2, 3, 5, 9 et 10 permettent de repérer rapidement certains diviseurs.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : 84 est divisible par 7 car 84 = 7 × 12.\"}, {\"type\": \"note\", \"content\": \"On peut aussi dire que 7 est un diviseur de 84 et que 84 est un multiple de 7.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Nombres premiers",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un nombre premier possède exactement deux diviseurs positifs : 1 et lui-même. Tout entier supérieur à 1 peut se décomposer en produit de facteurs premiers.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : 84 est divisible par 7 car 84 = 7 × 12.\"}, {\"type\": \"note\", \"content\": \"On peut aussi dire que 7 est un diviseur de 84 et que 84 est un multiple de 7.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "PGCD et fractions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le PGCD est le plus grand entier qui divise deux nombres. Pour rendre une fraction irréductible, on divise son numérateur et son dénominateur par leur PGCD.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : 84 est divisible par 7 car 84 = 7 × 12.\"}, {\"type\": \"note\", \"content\": \"On peut aussi dire que 7 est un diviseur de 84 et que 84 est un multiple de 7.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "PGCD de 84 et 126",
+          "statement": "Calcule le PGCD de 84 et 126.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "42",
+          "correction": "Le plus grand diviseur commun de 84 et 126 est 42.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "PGCD de 96 et 144",
+          "statement": "Calcule le PGCD de 96 et 144.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "48",
+          "correction": "Le plus grand diviseur commun de 96 et 144 est 48.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "PGCD de 150 et 210",
+          "statement": "Calcule le PGCD de 150 et 210.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "30",
+          "correction": "Le plus grand diviseur commun de 150 et 210 est 30.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "PGCD de 72 et 120",
+          "statement": "Calcule le PGCD de 72 et 120.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "24",
+          "correction": "Le plus grand diviseur commun de 72 et 120 est 24.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "97 est-il premier ?",
+          "statement": "Le nombre 97 est-il premier ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "97 n'a pas de diviseur premier inférieur ou égal à sa racine carrée : il est premier.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "91 est-il premier ?",
+          "statement": "Le nombre 91 est-il premier ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Non",
+          "correction": "91=7×13, donc 91 n'est pas premier.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "53 est-il premier ?",
+          "statement": "Le nombre 53 est-il premier ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "53 n'a pas de diviseur premier inférieur ou égal à sa racine carrée : il est premier.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "121 est-il premier ?",
+          "statement": "Le nombre 121 est-il premier ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Non",
+          "correction": "121=11×11, donc 121 n'est pas premier.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Réduire 42/56",
+          "statement": "Quelle est la forme irréductible de 42/56 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3/4",
+            "42/56",
+            "4/5"
+          ],
+          "correct_answer": "3/4",
+          "correction": "Le PGCD vaut 14. En divisant les deux termes par 14, on obtient 3/4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Réduire 63/81",
+          "statement": "Quelle est la forme irréductible de 63/81 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "7/9",
+            "63/81",
+            "8/10"
+          ],
+          "correct_answer": "7/9",
+          "correction": "Le PGCD vaut 9. En divisant les deux termes par 9, on obtient 7/9.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Réduire 48/180",
+          "statement": "Quelle est la forme irréductible de 48/180 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "4/15",
+            "48/180",
+            "5/16"
+          ],
+          "correct_answer": "4/15",
+          "correction": "Le PGCD vaut 12. En divisant les deux termes par 12, on obtient 4/15.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Réduire 105/140",
+          "statement": "Quelle est la forme irréductible de 105/140 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3/4",
+            "105/140",
+            "4/5"
+          ],
+          "correct_answer": "3/4",
+          "correction": "Le PGCD vaut 35. En divisant les deux termes par 35, on obtient 3/4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 2,
+      "title": "Puissances et écriture scientifique",
+      "summary": "Calculer avec des puissances et écrire des nombres très grands ou très petits en notation scientifique.",
+      "lessons": [
+        {
+          "title": "Puissances",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour n entier positif, a^n est le produit de n facteurs égaux à a. Pour a non nul, a^0=1.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"45\\\\,000 = 4{,}5\\\\times 10^4\"}, {\"type\": \"paragraph\", \"content\": \"On a déplacé la virgule de 4 rangs vers la gauche.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Règles de calcul",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour une même base : a^m×a^n=a^(m+n) et a^m/a^n=a^(m−n).\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"45\\\\,000 = 4{,}5\\\\times 10^4\"}, {\"type\": \"paragraph\", \"content\": \"On a déplacé la virgule de 4 rangs vers la gauche.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Écriture scientifique",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un nombre en écriture scientifique s'écrit a×10^n avec 1≤a<10 et n entier.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"45\\\\,000 = 4{,}5\\\\times 10^4\"}, {\"type\": \"paragraph\", \"content\": \"On a déplacé la virgule de 4 rangs vers la gauche.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Calculer 2^5",
+          "statement": "Calcule 2^5.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "32",
+          "correction": "2^5 est le produit de 5 facteurs égaux à 2. Résultat : 32.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Calculer 3^4",
+          "statement": "Calcule 3^4.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "81",
+          "correction": "3^4 est le produit de 4 facteurs égaux à 3. Résultat : 81.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Calculer 10^6",
+          "statement": "Calcule 10^6.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1000000",
+          "correction": "10^6 est le produit de 6 facteurs égaux à 10. Résultat : 1000000.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Calculer 5^3",
+          "statement": "Calcule 5^3.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "125",
+          "correction": "5^3 est le produit de 3 facteurs égaux à 5. Résultat : 125.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "10^5 / 10^2",
+          "statement": "Quelle puissance de 10 vaut 10^5 / 10^2 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "10^3",
+            "10^7",
+            "10^4"
+          ],
+          "correct_answer": "10^3",
+          "correction": "10^m/10^n=10^(m−n), donc 10^3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "10^7 / 10^3",
+          "statement": "Quelle puissance de 10 vaut 10^7 / 10^3 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "10^4",
+            "10^10",
+            "10^5"
+          ],
+          "correct_answer": "10^4",
+          "correction": "10^m/10^n=10^(m−n), donc 10^4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "10^2 / 10^5",
+          "statement": "Quelle puissance de 10 vaut 10^2 / 10^5 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "10^-3",
+            "10^7",
+            "10^-2"
+          ],
+          "correct_answer": "10^-3",
+          "correction": "10^m/10^n=10^(m−n), donc 10^-3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "10^8 / 10^6",
+          "statement": "Quelle puissance de 10 vaut 10^8 / 10^6 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "10^2",
+            "10^14",
+            "10^3"
+          ],
+          "correct_answer": "10^2",
+          "correction": "10^m/10^n=10^(m−n), donc 10^2.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Écriture scientifique de 4 500 000",
+          "statement": "Quelle est l'écriture scientifique de 4 500 000 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "4,5 × 10^6",
+            "45 × 10^5",
+            "0"
+          ],
+          "correct_answer": "4,5 × 10^6",
+          "correction": "Le coefficient doit être compris entre 1 et 10 : 4,5 × 10^6.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Écriture scientifique de 0,00072",
+          "statement": "Quelle est l'écriture scientifique de 0,00072 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "7,2 × 10^-4",
+            "7,2 × 10^-3",
+            "0"
+          ],
+          "correct_answer": "7,2 × 10^-4",
+          "correction": "Le coefficient doit être compris entre 1 et 10 : 7,2 × 10^-4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Écriture scientifique de 83 000",
+          "statement": "Quelle est l'écriture scientifique de 83 000 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "8,3 × 10^4",
+            "8,3 × 10^3",
+            "0"
+          ],
+          "correct_answer": "8,3 × 10^4",
+          "correction": "Le coefficient doit être compris entre 1 et 10 : 8,3 × 10^4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Écriture scientifique de 0,0051",
+          "statement": "Quelle est l'écriture scientifique de 0,0051 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "5,1 × 10^-3",
+            "5,1 × 10^-2",
+            "0"
+          ],
+          "correct_answer": "5,1 × 10^-3",
+          "correction": "Le coefficient doit être compris entre 1 et 10 : 5,1 × 10^-3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 3,
+      "title": "Calcul littéral et équations",
+      "summary": "Substituer, développer, factoriser et résoudre des équations simples du premier degré.",
+      "lessons": [
+        {
+          "title": "Calculer une expression",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On remplace les lettres par leurs valeurs en conservant les priorités opératoires. Les parenthèses sont particulièrement utiles avec les nombres négatifs.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"3(x+2)=3x+6\"}, {\"type\": \"paragraph\", \"content\": \"On distribue 3 à chacun des termes entre parenthèses.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Développer et factoriser",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Développer utilise la distributivité : k(a+b)=ka+kb. Factoriser est l'opération inverse : on met un facteur commun en évidence.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"6x+9 = 3(2x+3)\"}, {\"type\": \"paragraph\", \"content\": \"Le facteur commun est 3.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Résoudre une équation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On cherche les valeurs de l'inconnue qui rendent l'égalité vraie. On effectue la même opération dans les deux membres pour isoler l'inconnue.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"3(x+2)=3x+6\"}, {\"type\": \"paragraph\", \"content\": \"On distribue 3 à chacun des termes entre parenthèses.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Substitution 2x+5",
+          "statement": "Calcule 2x+5 pour x=3.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "11",
+          "correction": "2×3+5=11.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Substitution 4x-1",
+          "statement": "Calcule 4x-1 pour x=-2.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-9",
+          "correction": "4×(-2)-1=-9.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Substitution 3(x-2)",
+          "statement": "Calcule 3(x-2) pour x=5.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "3×(5-2)=9.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Substitution x²+2x",
+          "statement": "Calcule x²+2x pour x=-1.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-1",
+          "correction": "(-1)²+2×(-1)=1-2=-1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Résoudre 3x+5=20",
+          "statement": "Résous 3x+5=20. Donne x.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "On isole x : 3x=15, donc x=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Résoudre 4x-7=9",
+          "statement": "Résous 4x-7=9. Donne x.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "On isole x : 4x=16, donc x=4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Résoudre 5x+2=27",
+          "statement": "Résous 5x+2=27. Donne x.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "On isole x : 5x=25, donc x=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Résoudre 7x-3=25",
+          "statement": "Résous 7x-3=25. Donne x.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "On isole x : 7x=28, donc x=4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Développer 3(x+4)",
+          "statement": "Quelle expression est égale à 3(x+4) ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3x+12",
+            "3x+4",
+            "7x"
+          ],
+          "correct_answer": "3x+12",
+          "correction": "Distributivité : 3×x+3×4=3x+12.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Développer -2(x-5)",
+          "statement": "Quelle expression est égale à -2(x-5) ?",
+          "exercise_type": "mcq",
+          "options": [
+            "-2x+10",
+            "-2x-10",
+            "2x-10"
+          ],
+          "correct_answer": "-2x+10",
+          "correction": "-2×x+(-2)×(-5)=-2x+10.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Factoriser 5x+15",
+          "statement": "Quelle factorisation convient ?",
+          "exercise_type": "mcq",
+          "options": [
+            "5(x+3)",
+            "5(x+15)",
+            "x(5+15)"
+          ],
+          "correct_answer": "5(x+3)",
+          "correction": "5 est facteur commun.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Factoriser 6x²+9x",
+          "statement": "Quelle factorisation convient ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3x(2x+3)",
+            "3(2x²+3x)",
+            "x(6x+9x)"
+          ],
+          "correct_answer": "3x(2x+3)",
+          "correction": "3x est facteur commun.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 4,
+      "title": "Racines carrées",
+      "summary": "Comprendre la racine carrée et l'utiliser dans des calculs numériques et géométriques.",
+      "lessons": [
+        {
+          "title": "Définition",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour a≥0, √a est le nombre positif dont le carré vaut a.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\sqrt{49}=7\"}, {\"type\": \"paragraph\", \"content\": \"En effet, 7 × 7 = 49.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Carrés parfaits",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Il est utile de connaître les carrés parfaits usuels : 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144…\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\sqrt{49}=7\"}, {\"type\": \"paragraph\", \"content\": \"En effet, 7 × 7 = 49.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Lien avec la géométrie",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La racine carrée intervient notamment avec Pythagore quand on passe d'une longueur au carré à la longueur.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\sqrt{49}=7\"}, {\"type\": \"paragraph\", \"content\": \"En effet, 7 × 7 = 49.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Racine de 49",
+          "statement": "Calcule √49.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "7²=49, donc √49=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Racine de 121",
+          "statement": "Calcule √121.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "11",
+          "correction": "11²=121, donc √121=11.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Racine de 225",
+          "statement": "Calcule √225.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "15²=225, donc √225=15.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Racine de 400",
+          "statement": "Calcule √400.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "20²=400, donc √400=20.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Nombre de racine 6",
+          "statement": "Quel nombre a pour racine carrée 6 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "36",
+            "12",
+            "42"
+          ],
+          "correct_answer": "36",
+          "correction": "6²=36.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Nombre de racine 9",
+          "statement": "Quel nombre a pour racine carrée 9 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "81",
+            "18",
+            "90"
+          ],
+          "correct_answer": "81",
+          "correction": "9²=81.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Nombre de racine 12",
+          "statement": "Quel nombre a pour racine carrée 12 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "144",
+            "24",
+            "156"
+          ],
+          "correct_answer": "144",
+          "correction": "12²=144.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Nombre de racine 14",
+          "statement": "Quel nombre a pour racine carrée 14 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "196",
+            "28",
+            "210"
+          ],
+          "correct_answer": "196",
+          "correction": "14²=196.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Somme √9+√16",
+          "statement": "Calcule √9+√16.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "√9=3 et √16=4, donc 7.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Somme √25+√64",
+          "statement": "Calcule √25+√64.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "√25=5 et √64=8, donc 13.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Somme √36+√49",
+          "statement": "Calcule √36+√49.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "√36=6 et √49=7, donc 13.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Somme √81+√100",
+          "statement": "Calcule √81+√100.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "19",
+          "correction": "√81=9 et √100=10, donc 19.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 5,
+      "title": "Proportionnalité, pourcentages et vitesses",
+      "summary": "Résoudre des situations de proportionnalité, calculer des pourcentages et manipuler des grandeurs composées.",
+      "lessons": [
+        {
+          "title": "Proportionnalité",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux grandeurs sont proportionnelles si l'on passe de l'une à l'autre en multipliant toujours par le même nombre.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{150}{2}=75\\\\ \\\\text{km/h}\"}, {\"type\": \"paragraph\", \"content\": \"Une voiture parcourt 150 km en 2 h : sa vitesse moyenne est 75 km/h.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Pourcentages",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"p% d'une quantité correspond à quantité×p/100. Une hausse de p% utilise le coefficient 1+p/100.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{150}{2}=75\\\\ \\\\text{km/h}\"}, {\"type\": \"paragraph\", \"content\": \"Une voiture parcourt 150 km en 2 h : sa vitesse moyenne est 75 km/h.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Vitesse moyenne",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"v=d/t. Il faut employer des unités cohérentes : km et h pour obtenir des km/h, m et s pour des m/s.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{150}{2}=75\\\\ \\\\text{km/h}\"}, {\"type\": \"paragraph\", \"content\": \"Une voiture parcourt 150 km en 2 h : sa vitesse moyenne est 75 km/h.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "25% de 80",
+          "statement": "Calcule 25% de 80.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "80×25/100=20.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "10% de 150",
+          "statement": "Calcule 10% de 150.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "150×10/100=15.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "15% de 240",
+          "statement": "Calcule 15% de 240.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "36",
+          "correction": "240×15/100=36.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "30% de 60",
+          "statement": "Calcule 30% de 60.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "18",
+          "correction": "60×30/100=18.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Hausse de 20% sur 100",
+          "statement": "Un prix de 100 € augmente de 20 %. Nouveau prix ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "120",
+          "correction": "Coefficient multiplicateur : 1.2. Nouveau prix=120 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Hausse de 10% sur 50",
+          "statement": "Un prix de 50 € augmente de 10 %. Nouveau prix ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "55",
+          "correction": "Coefficient multiplicateur : 1.1. Nouveau prix=55 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Hausse de 15% sur 200",
+          "statement": "Un prix de 200 € augmente de 15 %. Nouveau prix ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "230",
+          "correction": "Coefficient multiplicateur : 1.15. Nouveau prix=230 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Hausse de 25% sur 80",
+          "statement": "Un prix de 80 € augmente de 25 %. Nouveau prix ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "100",
+          "correction": "Coefficient multiplicateur : 1.25. Nouveau prix=100 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Vitesse pour 150 km",
+          "statement": "On parcourt 150 km en 3 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "v=d/t=150/3=50 km/h.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Vitesse pour 240 km",
+          "statement": "On parcourt 240 km en 4 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "v=d/t=240/4=60 km/h.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Vitesse pour 90 km",
+          "statement": "On parcourt 90 km en 1,5 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "v=d/t=90/1.5=60 km/h.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Vitesse pour 35 km",
+          "statement": "On parcourt 35 km en 0,5 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "70",
+          "correction": "v=d/t=35/0.5=70 km/h.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 6,
+      "title": "Fonctions : images et antécédents",
+      "summary": "Lire et calculer des images et des antécédents.",
+      "lessons": [
+        {
+          "title": "Vocabulaire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"f(x) est l'image de x. Si f(a)=b, alors a est un antécédent de b.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\\\\quad\\\\text{et}\\\\quad f(x)=7\\\\Rightarrow x=3\"}, {\"type\": \"paragraph\", \"content\": \"3 est un antécédent de 7.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Avec une formule",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer une image, on remplace x par la valeur. Pour chercher un antécédent, on résout une équation.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\\\\quad\\\\text{et}\\\\quad f(x)=7\\\\Rightarrow x=3\"}, {\"type\": \"paragraph\", \"content\": \"3 est un antécédent de 7.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Tableau et graphique",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un tableau, on lit les couples x et f(x). Sur un graphique, l'image se lit verticalement et les antécédents horizontalement.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\\\\quad\\\\text{et}\\\\quad f(x)=7\\\\Rightarrow x=3\"}, {\"type\": \"paragraph\", \"content\": \"3 est un antécédent de 7.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Image de 0 par f",
+          "statement": "Soit f(x)=2x+1. Calcule f(0).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1",
+          "correction": "On remplace x par 0 : 2×0+1=1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Image de 2 par f",
+          "statement": "Soit f(x)=2x+1. Calcule f(2).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "On remplace x par 2 : 2×2+1=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Image de -1 par f",
+          "statement": "Soit f(x)=2x+1. Calcule f(-1).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-1",
+          "correction": "On remplace x par -1 : 2×-1+1=-1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Image de 0 par g",
+          "statement": "Soit g(x)=3x-4. Calcule g(0).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-4",
+          "correction": "On remplace x par 0 : 3×0-4=-4.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Image de 2 par g",
+          "statement": "Soit g(x)=3x-4. Calcule g(2).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "On remplace x par 2 : 3×2-4=2.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Image de -1 par g",
+          "statement": "Soit g(x)=3x-4. Calcule g(-1).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-7",
+          "correction": "On remplace x par -1 : 3×-1-4=-7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Image de 0 par h",
+          "statement": "Soit h(x)=-1x+5. Calcule h(0).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "On remplace x par 0 : -1×0+5=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Image de 2 par h",
+          "statement": "Soit h(x)=-1x+5. Calcule h(2).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "On remplace x par 2 : -1×2+5=3.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Image de -1 par h",
+          "statement": "Soit h(x)=-1x+5. Calcule h(-1).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "On remplace x par -1 : -1×-1+5=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Antécédent de 9 par f",
+          "statement": "Soit f(x)=2x+1. Quel est l'antécédent de 9 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "On résout 2x+1=9. On obtient x=4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Antécédent de 11 par g",
+          "statement": "Soit g(x)=3x-4. Quel est l'antécédent de 11 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "On résout 3x-4=11. On obtient x=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Antécédent de 2 par h",
+          "statement": "Soit h(x)=-1x+5. Quel est l'antécédent de 2 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "On résout -1x+5=2. On obtient x=3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 7,
+      "title": "Fonctions linéaires et affines",
+      "summary": "Reconnaître et exploiter fonctions linéaires et affines.",
+      "lessons": [
+        {
+          "title": "Fonction linéaire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une fonction linéaire est de la forme f(x)=ax. Sa représentation est une droite passant par l'origine.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=3x\\\\quad\\\\Rightarrow\\\\quad f(4)=12\"}, {\"type\": \"paragraph\", \"content\": \"L’image de 4 par f est 12.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Fonction affine",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une fonction affine est de la forme f(x)=ax+b.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\\\\quad\\\\Rightarrow\\\\quad f(3)=7\"}, {\"type\": \"paragraph\", \"content\": \"On remplace x par 3 : l’image de 3 est 7.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Interprétation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"a est le coefficient directeur : il décrit la variation. b est l'ordonnée à l'origine : f(0)=b.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"f(x)=3x\\\\quad\\\\Rightarrow\\\\quad f(4)=12\"}, {\"type\": \"paragraph\", \"content\": \"L’image de 4 par f est 12.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Valeur de 2x+3",
+          "statement": "Soit f(x)=2x+3. Calcule f(4).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "11",
+          "correction": "f(4)=2×4+3=11.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Valeur de -3x+7",
+          "statement": "Soit f(x)=-3x+7. Calcule f(2).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1",
+          "correction": "f(2)=-3×2+7=1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Valeur de 1x+2",
+          "statement": "Soit f(x)=1x+2. Calcule f(6).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "f(6)=1×6+2=8.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Valeur de 4x-5",
+          "statement": "Soit f(x)=4x-5. Calcule f(3).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "f(3)=4×3-5=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Coefficient directeur 2x+5",
+          "statement": "Dans f(x)=2x+5, quel est le coefficient directeur ?",
+          "exercise_type": "mcq",
+          "options": [
+            "2",
+            "5",
+            "7"
+          ],
+          "correct_answer": "2",
+          "correction": "Le coefficient directeur est a=2.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Coefficient directeur -3x+7",
+          "statement": "Dans f(x)=-3x+7, quel est le coefficient directeur ?",
+          "exercise_type": "mcq",
+          "options": [
+            "-3",
+            "7",
+            "4"
+          ],
+          "correct_answer": "-3",
+          "correction": "Le coefficient directeur est a=-3.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Coefficient directeur 4x-1",
+          "statement": "Dans f(x)=4x-1, quel est le coefficient directeur ?",
+          "exercise_type": "mcq",
+          "options": [
+            "4",
+            "-1",
+            "3"
+          ],
+          "correct_answer": "4",
+          "correction": "Le coefficient directeur est a=4.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Coefficient directeur 1x+6",
+          "statement": "Dans f(x)=1x+6, quel est le coefficient directeur ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1",
+            "6",
+            "7"
+          ],
+          "correct_answer": "1",
+          "correction": "Le coefficient directeur est a=1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Ordonnée origine 2x+5",
+          "statement": "Dans f(x)=2x+5, quelle est l'ordonnée à l'origine ?",
+          "exercise_type": "mcq",
+          "options": [
+            "5",
+            "2",
+            "-3"
+          ],
+          "correct_answer": "5",
+          "correction": "L'ordonnée à l'origine est b=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Ordonnée origine -3x+7",
+          "statement": "Dans f(x)=-3x+7, quelle est l'ordonnée à l'origine ?",
+          "exercise_type": "mcq",
+          "options": [
+            "7",
+            "-3",
+            "-10"
+          ],
+          "correct_answer": "7",
+          "correction": "L'ordonnée à l'origine est b=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Ordonnée origine 4x-1",
+          "statement": "Dans f(x)=4x-1, quelle est l'ordonnée à l'origine ?",
+          "exercise_type": "mcq",
+          "options": [
+            "-1",
+            "4",
+            "5"
+          ],
+          "correct_answer": "-1",
+          "correction": "L'ordonnée à l'origine est b=-1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Ordonnée origine 1x+6",
+          "statement": "Dans f(x)=1x+6, quelle est l'ordonnée à l'origine ?",
+          "exercise_type": "mcq",
+          "options": [
+            "6",
+            "1",
+            "-5"
+          ],
+          "correct_answer": "6",
+          "correction": "L'ordonnée à l'origine est b=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 8,
+      "title": "Statistiques",
+      "summary": "Calculer moyenne, médiane, étendue et interpréter des données.",
+      "lessons": [
+        {
+          "title": "Moyenne",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Moyenne=somme des valeurs/effectif total.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : les notes 8, 10 et 12 ont pour moyenne (8 + 10 + 12) ÷ 3 = 10.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Médiane",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une fois la série ordonnée, la médiane partage les données en deux groupes de même effectif.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : les notes 8, 10 et 12 ont pour moyenne (8 + 10 + 12) ÷ 3 = 10.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Étendue et fréquence",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Étendue=max−min. Une fréquence est l'effectif d'une catégorie divisé par l'effectif total.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : les notes 8, 10 et 12 ont pour moyenne (8 + 10 + 12) ÷ 3 = 10.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Moyenne série 1",
+          "statement": "Calcule la moyenne de : 8, 10, 12, 14.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "11",
+          "correction": "Somme=44, effectif=4, moyenne=11.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Moyenne série 2",
+          "statement": "Calcule la moyenne de : 5, 7, 7, 9, 12.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "Somme=40, effectif=5, moyenne=8.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Moyenne série 3",
+          "statement": "Calcule la moyenne de : 10, 10, 14, 16, 20.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "14",
+          "correction": "Somme=70, effectif=5, moyenne=14.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Moyenne série 4",
+          "statement": "Calcule la moyenne de : 2, 4, 6, 8, 10.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "Somme=30, effectif=5, moyenne=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Médiane série 5",
+          "statement": "Détermine la médiane de : 1, 3, 5, 7, 9.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "La médiane vaut 5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Médiane série 6",
+          "statement": "Détermine la médiane de : 2, 4, 6, 8.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "La médiane vaut 5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Médiane série 7",
+          "statement": "Détermine la médiane de : 3, 3, 4, 8, 10, 12.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "La médiane vaut 6.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Médiane série 8",
+          "statement": "Détermine la médiane de : 5, 6, 6, 7, 9.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "La médiane vaut 6.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Étendue série 9",
+          "statement": "Calcule l'étendue de : 4, 9, 12, 15.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "11",
+          "correction": "Étendue=15−4=11.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Étendue série 10",
+          "statement": "Calcule l'étendue de : 2, 3, 9, 10.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "Étendue=10−2=8.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Étendue série 11",
+          "statement": "Calcule l'étendue de : 7, 7, 8, 20.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "Étendue=20−7=13.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Étendue série 12",
+          "statement": "Calcule l'étendue de : 0, 5, 5, 6.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "Étendue=6−0=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 9,
+      "title": "Probabilités",
+      "summary": "Calculer des probabilités simples et relier probabilité et fréquence.",
+      "lessons": [
+        {
+          "title": "Expérience aléatoire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une expérience aléatoire possède plusieurs issues possibles sans que l'on sache à l'avance laquelle aura lieu.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : dans une urne contenant 2 boules rouges et 3 boules bleues, la probabilité de tirer une boule rouge est 2/5.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Probabilité",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans une situation équiprobable : P(A)=issues favorables/issues totales. Une probabilité est entre 0 et 1.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : dans une urne contenant 2 boules rouges et 3 boules bleues, la probabilité de tirer une boule rouge est 2/5.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Contraire et fréquence",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"P(non A)=1−P(A). Sur de nombreuses répétitions, la fréquence tend à se rapprocher de la probabilité.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : dans une urne contenant 2 boules rouges et 3 boules bleues, la probabilité de tirer une boule rouge est 2/5.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Dé : obtenir 6",
+          "statement": "Dé équilibré à 6 faces : probabilité d'obtenir 6 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/6",
+            "1/3",
+            "1/2"
+          ],
+          "correct_answer": "1/6",
+          "correction": "1 issue favorable sur 6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Dé : pair",
+          "statement": "Dé équilibré : probabilité d'obtenir un nombre pair ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "1/3",
+            "2/3"
+          ],
+          "correct_answer": "1/2",
+          "correction": "3 issues favorables sur 6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Pièce : pile",
+          "statement": "Pièce équilibrée : probabilité d'obtenir pile ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "1/4",
+            "1"
+          ],
+          "correct_answer": "1/2",
+          "correction": "2 issues équiprobables.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Urne rouge",
+          "statement": "Urne : 3 rouges, 2 bleues. Probabilité d'une rouge ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3/5",
+            "2/5",
+            "1/2"
+          ],
+          "correct_answer": "3/5",
+          "correction": "3 boules sur 5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Événement contraire",
+          "statement": "P(A)=0,3. P(non A) ?",
+          "exercise_type": "mcq",
+          "options": [
+            "0,7",
+            "0,3",
+            "1,3"
+          ],
+          "correct_answer": "0,7",
+          "correction": "1−0,3=0,7.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Deux pièces",
+          "statement": "Deux pièces : probabilité d'obtenir deux piles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/4",
+            "1/2",
+            "3/4"
+          ],
+          "correct_answer": "1/4",
+          "correction": "PP, PF, FP, FF : 1 cas sur 4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Dé >4",
+          "statement": "Dé équilibré : probabilité d'obtenir >4 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/3",
+            "2/3",
+            "1/6"
+          ],
+          "correct_answer": "1/3",
+          "correction": "5 ou 6 : 2/6=1/3.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Urne noire",
+          "statement": "5 vertes, 3 jaunes, 2 noires : probabilité d'une noire ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/5",
+            "1/2",
+            "2/5"
+          ],
+          "correct_answer": "1/5",
+          "correction": "2/10=1/5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Événement certain",
+          "statement": "Probabilité d'un événement certain ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1",
+            "0",
+            "1/2"
+          ],
+          "correct_answer": "1",
+          "correction": "Par définition, elle vaut 1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Événement impossible",
+          "statement": "Probabilité d'un événement impossible ?",
+          "exercise_type": "mcq",
+          "options": [
+            "0",
+            "1",
+            "-1"
+          ],
+          "correct_answer": "0",
+          "correction": "Par définition, elle vaut 0.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Fréquence",
+          "statement": "Sur 200 essais, 50 succès. Fréquence ?",
+          "exercise_type": "mcq",
+          "options": [
+            "0,25",
+            "0,5",
+            "0,75"
+          ],
+          "correct_answer": "0,25",
+          "correction": "50/200=0,25.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Somme probabilités",
+          "statement": "Somme des probabilités de toutes les issues ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1",
+            "0",
+            "100"
+          ],
+          "correct_answer": "1",
+          "correction": "Elle vaut 1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 10,
+      "title": "Théorème de Pythagore",
+      "summary": "Calculer des longueurs et utiliser la réciproque.",
+      "lessons": [
+        {
+          "title": "Théorème",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le carré de l'hypoténuse est la somme des carrés des deux autres côtés.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"AB=3,\\\\ AC=4\\\\quad\\\\Rightarrow\\\\quad BC^2=3^2+4^2=25\\\\quad\\\\Rightarrow\\\\quad BC=5\"}, {\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le côté le plus long est l’hypoténuse.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Calcul d'une longueur",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Hypoténuse : addition des carrés puis racine. Autre côté : soustraction des carrés puis racine.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"AB=3,\\\\ AC=4\\\\quad\\\\Rightarrow\\\\quad BC^2=3^2+4^2=25\\\\quad\\\\Rightarrow\\\\quad BC=5\"}, {\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le côté le plus long est l’hypoténuse.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Réciproque",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Si le carré du plus grand côté égale la somme des carrés des deux autres, le triangle est rectangle.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"AB=3,\\\\ AC=4\\\\quad\\\\Rightarrow\\\\quad BC^2=3^2+4^2=25\\\\quad\\\\Rightarrow\\\\quad BC=5\"}, {\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le côté le plus long est l’hypoténuse.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Hypoténuse 3-4",
+          "statement": "Triangle rectangle : côtés de l'angle droit 3 cm et 4 cm. Hypoténuse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "c²=9+16=25, donc c=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Hypoténuse 5-12",
+          "statement": "Triangle rectangle : côtés de l'angle droit 5 cm et 12 cm. Hypoténuse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "c²=25+144=169, donc c=13.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Hypoténuse 8-15",
+          "statement": "Triangle rectangle : côtés de l'angle droit 8 cm et 15 cm. Hypoténuse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "17",
+          "correction": "c²=64+225=289, donc c=17.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Hypoténuse 7-24",
+          "statement": "Triangle rectangle : côtés de l'angle droit 7 cm et 24 cm. Hypoténuse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "25",
+          "correction": "c²=49+576=625, donc c=25.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Côté manquant 6-10",
+          "statement": "Hypoténuse 10 cm, autre côté 6 cm. Troisième côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "b²=100−36=64, donc b=8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Côté manquant 9-15",
+          "statement": "Hypoténuse 15 cm, autre côté 9 cm. Troisième côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "b²=225−81=144, donc b=12.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Côté manquant 12-13",
+          "statement": "Hypoténuse 13 cm, autre côté 12 cm. Troisième côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "b²=169−144=25, donc b=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Côté manquant 20-29",
+          "statement": "Hypoténuse 29 cm, autre côté 20 cm. Troisième côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "21",
+          "correction": "b²=841−400=441, donc b=21.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Triangle 6-8-10",
+          "statement": "Triangle de côtés 6, 8, 10 cm : est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "10²=100; 6²+8²=100. Égalité : oui.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Triangle 5-6-8",
+          "statement": "Triangle de côtés 5, 6, 8 cm : est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Non",
+          "correction": "8²=64; 5²+6²=61. Pas d'égalité : non.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Triangle 9-12-15",
+          "statement": "Triangle de côtés 9, 12, 15 cm : est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "15²=225; 9²+12²=225. Égalité : oui.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Triangle 7-8-10",
+          "statement": "Triangle de côtés 7, 8, 10 cm : est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Non",
+          "correction": "10²=100; 7²+8²=113. Pas d'égalité : non.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 11,
+      "title": "Théorème de Thalès",
+      "summary": "Utiliser des rapports de longueurs et des coefficients d'agrandissement/réduction.",
+      "lessons": [
+        {
+          "title": "Configuration",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux sécantes coupées par deux parallèles donnent des longueurs correspondantes proportionnelles.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : si (DE) est parallèle à (BC), avec AD = 2 cm, AB = 6 cm et AC = 9 cm, alors AE/AC = AD/AB = 2/6 = 1/3, donc AE = 3 cm.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Méthode",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On repère le sommet commun, on met les côtés correspondants dans le même ordre, puis on utilise le produit en croix.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : si (DE) est parallèle à (BC), avec AD = 2 cm, AB = 6 cm et AC = 9 cm, alors AE/AC = AD/AB = 2/6 = 1/3, donc AE = 3 cm.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Agrandissement/réduction",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un coefficient >1 agrandit. Entre 0 et 1, il réduit.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"3(x+2)=3x+6\"}, {\"type\": \"paragraph\", \"content\": \"On distribue 3 à chacun des termes entre parenthèses.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Longueur Thalès 1",
+          "statement": "AB/AC=2/5 et AD=6 cm correspond à AB. Quelle est AE ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "2/5=6/AE, donc AE=15.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Longueur Thalès 2",
+          "statement": "AB/AC=3/4 et AD=9 cm correspond à AB. Quelle est AE ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "3/4=9/AE, donc AE=12.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Longueur Thalès 3",
+          "statement": "AB/AC=4/7 et AD=8 cm correspond à AB. Quelle est AE ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "14",
+          "correction": "4/7=8/AE, donc AE=14.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Longueur Thalès 4",
+          "statement": "AB/AC=5/8 et AD=10 cm correspond à AB. Quelle est AE ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "16",
+          "correction": "5/8=10/AE, donc AE=16.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Réduction 0.5",
+          "statement": "Rapport petit/grand=0,5. Grand côté=8 cm. Petit côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "8×0.5=4.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Réduction 0.75",
+          "statement": "Rapport petit/grand=0,75. Grand côté=12 cm. Petit côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "12×0.75=9.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Réduction 0.4",
+          "statement": "Rapport petit/grand=0,4. Grand côté=15 cm. Petit côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "15×0.4=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Réduction 0.6",
+          "statement": "Rapport petit/grand=0,6. Grand côté=20 cm. Petit côté ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "20×0.6=12.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Condition Thalès",
+          "statement": "Quelle information est indispensable dans la configuration classique ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Deux droites parallèles",
+            "Un angle droit",
+            "Deux côtés égaux"
+          ],
+          "correct_answer": "Deux droites parallèles",
+          "correction": "Thalès utilise des droites parallèles.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Rapports correspondants",
+          "statement": "Si BC // DE avec A sommet commun, quelle égalité est cohérente ?",
+          "exercise_type": "mcq",
+          "options": [
+            "AB/AD = AC/AE",
+            "AB+AD=AC+AE",
+            "AB×AD=AC×AE"
+          ],
+          "correct_answer": "AB/AD = AC/AE",
+          "correction": "Les côtés correspondants sont proportionnels.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Agrandissement 1,5",
+          "statement": "Coefficient 1,5 sur une longueur 8 cm :",
+          "exercise_type": "mcq",
+          "options": [
+            "12 cm",
+            "9,5 cm",
+            "6,5 cm"
+          ],
+          "correct_answer": "12 cm",
+          "correction": "8×1,5=12.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Réduction 0,25",
+          "statement": "Coefficient 0,25 sur 20 cm :",
+          "exercise_type": "mcq",
+          "options": [
+            "5 cm",
+            "15 cm",
+            "80 cm"
+          ],
+          "correct_answer": "5 cm",
+          "correction": "20×0,25=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 12,
+      "title": "Trigonométrie dans le triangle rectangle",
+      "summary": "Utiliser sinus, cosinus et tangente.",
+      "lessons": [
+        {
+          "title": "Trois rapports",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"sin=opposé/hypoténuse ; cos=adjacent/hypoténuse ; tan=opposé/adjacent.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\cos(60^\\\\circ)=\\\\frac{\\\\text{adjacent}}{\\\\text{hypoténuse}}=\\\\frac{1}{2}\"}, {\"type\": \"paragraph\", \"content\": \"Si l’hypoténuse mesure 10 cm, alors le côté adjacent vaut 5 cm.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Choisir",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On repère l'angle, puis on identifie opposé, adjacent et hypoténuse.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\cos(60^\\\\circ)=\\\\frac{\\\\text{adjacent}}{\\\\text{hypoténuse}}=\\\\frac{1}{2}\"}, {\"type\": \"paragraph\", \"content\": \"Si l’hypoténuse mesure 10 cm, alors le côté adjacent vaut 5 cm.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Calculer",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On écrit le rapport adapté, puis on isole la longueur ou on utilise la fonction inverse pour un angle.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"\\\\cos(60^\\\\circ)=\\\\frac{\\\\text{adjacent}}{\\\\text{hypoténuse}}=\\\\frac{1}{2}\"}, {\"type\": \"paragraph\", \"content\": \"Si l’hypoténuse mesure 10 cm, alors le côté adjacent vaut 5 cm.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Sinus définition",
+          "statement": "sin(angle) vaut :",
+          "exercise_type": "mcq",
+          "options": [
+            "opposé / hypoténuse",
+            "adjacent / hypoténuse",
+            "opposé / adjacent"
+          ],
+          "correct_answer": "opposé / hypoténuse",
+          "correction": "SOH.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Cosinus définition",
+          "statement": "cos(angle) vaut :",
+          "exercise_type": "mcq",
+          "options": [
+            "adjacent / hypoténuse",
+            "opposé / hypoténuse",
+            "opposé / adjacent"
+          ],
+          "correct_answer": "adjacent / hypoténuse",
+          "correction": "CAH.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Tangente définition",
+          "statement": "tan(angle) vaut :",
+          "exercise_type": "mcq",
+          "options": [
+            "opposé / adjacent",
+            "adjacent / hypoténuse",
+            "hypoténuse / opposé"
+          ],
+          "correct_answer": "opposé / adjacent",
+          "correction": "TOA.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "sin 30°",
+          "statement": "Hypoténuse 10 cm, côté opposé 5 cm. Calcule le sinus.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.5",
+          "correction": "sin=5/10=0,5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "cos avec 6 et 10",
+          "statement": "Adjacent 6 cm, hypoténuse 10 cm. Calcule le cosinus.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.6",
+          "correction": "cos=6/10=0,6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "tan avec 6 et 8",
+          "statement": "Opposé 6 cm, adjacent 8 cm. Calcule la tangente.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.75",
+          "correction": "tan=6/8=0,75.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Choisir sinus",
+          "statement": "Tu connais opposé et hypoténuse. Quelle fonction ?",
+          "exercise_type": "mcq",
+          "options": [
+            "sinus",
+            "cosinus",
+            "tangente"
+          ],
+          "correct_answer": "sinus",
+          "correction": "Sinus relie opposé et hypoténuse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Choisir cosinus",
+          "statement": "Tu connais adjacent et hypoténuse. Quelle fonction ?",
+          "exercise_type": "mcq",
+          "options": [
+            "cosinus",
+            "sinus",
+            "tangente"
+          ],
+          "correct_answer": "cosinus",
+          "correction": "Cosinus relie adjacent et hypoténuse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Choisir tangente",
+          "statement": "Tu connais opposé et adjacent. Quelle fonction ?",
+          "exercise_type": "mcq",
+          "options": [
+            "tangente",
+            "cosinus",
+            "sinus"
+          ],
+          "correct_answer": "tangente",
+          "correction": "Tangente relie opposé et adjacent.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Opposé sin30",
+          "statement": "Hypoténuse 14 cm, angle 30°, sin(30°)=0,5. Côté opposé ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "14×0,5=7.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Adjacent cos60",
+          "statement": "Hypoténuse 18 cm, angle 60°, cos(60°)=0,5. Adjacent ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "18×0,5=9.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Opposé tan45",
+          "statement": "Adjacent 8 cm, angle 45°, tan(45°)=1. Opposé ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "8×1=8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 13,
+      "title": "Transformations et homothéties",
+      "summary": "Étudier translations, rotations, symétries et homothéties.",
+      "lessons": [
+        {
+          "title": "Isométries",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Translations, rotations et symétries conservent longueurs et angles.\"}, {\"type\": \"note\", \"content\": \"Exemple : lors d’une homothétie de rapport 2, une longueur de 3 cm devient 6 cm. Avec un rapport négatif, la figure est aussi renversée.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Homothétie",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une homothétie de rapport k multiplie les longueurs par |k|.\"}, {\"type\": \"note\", \"content\": \"Exemple : lors d’une homothétie de rapport 2, une longueur de 3 cm devient 6 cm. Avec un rapport négatif, la figure est aussi renversée.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Aires et volumes",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Les aires sont multipliées par k² et les volumes par |k|³.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un pavé droit de dimensions 5 cm, 3 cm et 2 cm a pour volume 5 × 3 × 2 = 30 cm³.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Translation longueurs",
+          "statement": "Une translation conserve les longueurs ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "Oui, c'est une isométrie.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Rotation angles",
+          "statement": "Une rotation conserve les angles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "Oui.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Symétrie centrale",
+          "statement": "Une symétrie centrale correspond à une rotation de :",
+          "exercise_type": "mcq",
+          "options": [
+            "180°",
+            "90°",
+            "360°"
+          ],
+          "correct_answer": "180°",
+          "correction": "C'est un demi-tour.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Homothétie 2",
+          "statement": "Rapport 2 : 5 cm devient :",
+          "exercise_type": "mcq",
+          "options": [
+            "10 cm",
+            "7 cm",
+            "2,5 cm"
+          ],
+          "correct_answer": "10 cm",
+          "correction": "5×2=10.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Homothétie 0,5",
+          "statement": "Rapport 0,5 : 12 cm devient :",
+          "exercise_type": "mcq",
+          "options": [
+            "6 cm",
+            "24 cm",
+            "11,5 cm"
+          ],
+          "correct_answer": "6 cm",
+          "correction": "12×0,5=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Aire homothétie 3",
+          "statement": "Rapport 3 : aires multipliées par :",
+          "exercise_type": "mcq",
+          "options": [
+            "9",
+            "3",
+            "6"
+          ],
+          "correct_answer": "9",
+          "correction": "k²=9.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Volume homothétie 2",
+          "statement": "Rapport 2 : volumes multipliés par :",
+          "exercise_type": "mcq",
+          "options": [
+            "8",
+            "4",
+            "2"
+          ],
+          "correct_answer": "8",
+          "correction": "k³=8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Rapport négatif",
+          "statement": "Rapport négatif : l'image est :",
+          "exercise_type": "mcq",
+          "options": [
+            "de l'autre côté du centre",
+            "toujours au même endroit",
+            "sur un cercle"
+          ],
+          "correct_answer": "de l'autre côté du centre",
+          "correction": "Le signe change le côté par rapport au centre.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Figures homothétiques",
+          "statement": "Deux figures homothétiques sont :",
+          "exercise_type": "mcq",
+          "options": [
+            "semblables",
+            "toujours superposables",
+            "sans angles"
+          ],
+          "correct_answer": "semblables",
+          "correction": "Les angles sont conservés.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Rotation définition",
+          "statement": "Une rotation est définie notamment par :",
+          "exercise_type": "mcq",
+          "options": [
+            "un centre et un angle",
+            "deux parallèles",
+            "une aire"
+          ],
+          "correct_answer": "un centre et un angle",
+          "correction": "Centre, angle et sens.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Translation définition",
+          "statement": "Une translation est caractérisée par :",
+          "exercise_type": "mcq",
+          "options": [
+            "un vecteur",
+            "un rayon",
+            "une aire"
+          ],
+          "correct_answer": "un vecteur",
+          "correction": "Le vecteur décrit le déplacement.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Alignement",
+          "statement": "Ces transformations conservent l'alignement ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non"
+          ],
+          "correct_answer": "Oui",
+          "correction": "Oui.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 14,
+      "title": "Géométrie dans l'espace",
+      "summary": "Calculer des volumes et reconnaître des sections de solides.",
+      "lessons": [
+        {
+          "title": "Volumes",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pavé : L×l×h. Cylindre : πr²h. Boule : 4/3πr³.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un pavé droit de dimensions 5 cm, 3 cm et 2 cm a pour volume 5 × 3 × 2 = 30 cm³.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Sections",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une coupe par un plan donne une figure plane. Par exemple, une coupe parallèle à la base d'un cylindre donne un disque.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Unités",
+          "body": "@@studysprint-blocks@@[{\"type\": \"formula\", \"content\": \"1 dm³=1 L et 1 cm³=1 mL.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un pavé droit de dimensions 5 cm, 3 cm et 2 cm a pour volume 5 × 3 × 2 = 30 cm³.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Volume pavé",
+          "statement": "Pavé droit 4 cm × 3 cm × 5 cm : volume en cm³ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "4×3×5=60.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Volume cube",
+          "statement": "Cube d'arête 4 cm : volume ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "64",
+          "correction": "4³=64.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Volume cylindre",
+          "statement": "Formule du volume d'un cylindre ?",
+          "exercise_type": "mcq",
+          "options": [
+            "πr²h",
+            "2πrh",
+            "4/3πr³"
+          ],
+          "correct_answer": "πr²h",
+          "correction": "Aire de base × hauteur.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Volume sphère",
+          "statement": "Formule du volume d'une boule ?",
+          "exercise_type": "mcq",
+          "options": [
+            "4/3πr³",
+            "πr²h",
+            "4πr²"
+          ],
+          "correct_answer": "4/3πr³",
+          "correction": "Formule du volume d'une boule.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Cylindre coefficient π",
+          "statement": "Rayon 2 cm, hauteur 5 cm. Coefficient devant π dans le volume ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "π×2²×5=20π.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Cylindre r3 h4",
+          "statement": "Rayon 3 cm, hauteur 4 cm. Coefficient devant π ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "36",
+          "correction": "π×9×4=36π.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Section cylindre",
+          "statement": "Plan parallèle à la base d'un cylindre : section ?",
+          "exercise_type": "mcq",
+          "options": [
+            "un disque",
+            "un triangle",
+            "un segment"
+          ],
+          "correct_answer": "un disque",
+          "correction": "Même forme que la base.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Section boule",
+          "statement": "Section d'une boule par un plan :",
+          "exercise_type": "mcq",
+          "options": [
+            "un disque",
+            "un carré",
+            "toujours un point"
+          ],
+          "correct_answer": "un disque",
+          "correction": "La section est un disque, sauf cas tangent dégénéré.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Litres cm3",
+          "statement": "2 L correspondent à combien de cm³ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2000",
+          "correction": "1 L=1000 cm³.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "dm3 litres",
+          "statement": "3 dm³ correspondent à combien de litres ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "1 dm³=1 L.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Patron",
+          "statement": "Un patron est :",
+          "exercise_type": "mcq",
+          "options": [
+            "une figure plane permettant de construire un solide",
+            "un volume",
+            "une droite"
+          ],
+          "correct_answer": "une figure plane permettant de construire un solide",
+          "correction": "C'est le développement à plat.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Aire sphère",
+          "statement": "4πr² calcule :",
+          "exercise_type": "mcq",
+          "options": [
+            "l'aire d'une sphère",
+            "le volume d'une boule",
+            "un périmètre"
+          ],
+          "correct_answer": "l'aire d'une sphère",
+          "correction": "Formule de l'aire de la sphère.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "3e",
+      "order_index": 15,
+      "title": "Algorithmique et programmation",
+      "summary": "Raisonner sur variables, conditions et boucles.",
+      "lessons": [
+        {
+          "title": "Variables",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une variable stocke une valeur qui peut évoluer au cours du programme.\"}, {\"type\": \"note\", \"content\": \"Exemple : un programme peut répéter 5 fois l’instruction « avancer de 2 » ; au total, il avance de 10 unités.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Conditions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une condition permet de choisir quelles instructions exécuter.\"}, {\"type\": \"note\", \"content\": \"Exemple : un programme peut répéter 5 fois l’instruction « avancer de 2 » ; au total, il avance de 10 unités.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Boucles",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une boucle répète des instructions. Il faut suivre l'évolution des variables à chaque passage.\"}, {\"type\": \"note\", \"content\": \"Exemple : un programme peut répéter 5 fois l’instruction « avancer de 2 » ; au total, il avance de 10 unités.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Variable",
+          "statement": "Une variable sert à :",
+          "exercise_type": "mcq",
+          "options": [
+            "stocker une valeur",
+            "dessiner toujours un cercle",
+            "arrêter le réseau"
+          ],
+          "correct_answer": "stocker une valeur",
+          "correction": "Une variable mémorise une valeur.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Boucle",
+          "statement": "Une boucle sert à :",
+          "exercise_type": "mcq",
+          "options": [
+            "répéter des instructions",
+            "effacer le programme",
+            "créer Internet"
+          ],
+          "correct_answer": "répéter des instructions",
+          "correction": "Elle évite de réécrire les mêmes instructions.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Condition",
+          "statement": "« si ... alors » sert à :",
+          "exercise_type": "mcq",
+          "options": [
+            "exécuter selon une condition",
+            "répéter toujours 10 fois",
+            "mesurer une longueur"
+          ],
+          "correct_answer": "exécuter selon une condition",
+          "correction": "C'est une structure conditionnelle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Programme +2 ×3",
+          "statement": "Départ 4, ajouter 2 puis multiplier par 3. Résultat ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "18",
+          "correction": "(4+2)×3=18.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Boucle +2",
+          "statement": "x=1. Répéter 4 fois x←x+2. Valeur finale ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "1→3→5→7→9.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Compteur",
+          "statement": "Compteur=0, boucle 7 fois avec +1. Valeur finale ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "0+7=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Tester pair",
+          "statement": "Comment tester que n est pair ?",
+          "exercise_type": "mcq",
+          "options": [
+            "n modulo 2 = 0",
+            "n > 0",
+            "n modulo 2 = 1"
+          ],
+          "correct_answer": "n modulo 2 = 0",
+          "correction": "Reste nul dans la division par 2.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Programme 2x+5",
+          "statement": "Programme : 2x+5. Résultat pour x=6 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "17",
+          "correction": "12+5=17.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Programme carré",
+          "statement": "Programme : x²−1. Résultat pour x=5 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "24",
+          "correction": "25−1=24.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Entrée",
+          "statement": "Une donnée fournie au début est une :",
+          "exercise_type": "mcq",
+          "options": [
+            "entrée",
+            "sortie",
+            "boucle"
+          ],
+          "correct_answer": "entrée",
+          "correction": "Le programme reçoit une entrée.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Erreur logique",
+          "statement": "Programme exécuté mais résultat faux :",
+          "exercise_type": "mcq",
+          "options": [
+            "erreur logique possible",
+            "aucun bug possible",
+            "ordinateur cassé nécessairement"
+          ],
+          "correct_answer": "erreur logique possible",
+          "correction": "Un bug logique peut produire un résultat incorrect.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Décomposer",
+          "statement": "Décomposer un problème sert à :",
+          "exercise_type": "mcq",
+          "options": [
+            "simplifier la résolution",
+            "rendre le problème impossible",
+            "supprimer les variables"
+          ],
+          "correct_answer": "simplifier la résolution",
+          "correction": "On traite des sous-problèmes plus simples.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 1,
+      "title": "Atomes, ions et molécules",
+      "summary": "Décrire la structure microscopique simple de la matière.",
+      "lessons": [
+        {
+          "title": "Atome",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Noyau : protons et neutrons. Autour : électrons. Proton positif, électron négatif, neutron neutre.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : la molécule d’eau H₂O est formée de 2 atomes d’hydrogène et d’1 atome d’oxygène. L’ion chlorure s’écrit Cl⁻.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Ions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un atome neutre a autant de protons que d'électrons. Un ion apparaît après gain ou perte d'électrons.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : la molécule d’eau H₂O est formée de 2 atomes d’hydrogène et d’1 atome d’oxygène. L’ion chlorure s’écrit Cl⁻.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Molécules",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une molécule est un assemblage d'atomes. La formule indique les éléments et leur nombre, par exemple H₂O.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Charge proton",
+          "statement": "Charge du proton ?",
+          "exercise_type": "mcq",
+          "options": [
+            "positive",
+            "négative",
+            "nulle"
+          ],
+          "correct_answer": "positive",
+          "correction": "Le proton est positif.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Charge électron",
+          "statement": "Charge de l'électron ?",
+          "exercise_type": "mcq",
+          "options": [
+            "négative",
+            "positive",
+            "nulle"
+          ],
+          "correct_answer": "négative",
+          "correction": "L'électron est négatif.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Charge neutron",
+          "statement": "Charge du neutron ?",
+          "exercise_type": "mcq",
+          "options": [
+            "nulle",
+            "positive",
+            "négative"
+          ],
+          "correct_answer": "nulle",
+          "correction": "Le neutron est neutre.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Atome neutre",
+          "statement": "Dans un atome neutre, électrons et protons sont :",
+          "exercise_type": "mcq",
+          "options": [
+            "en nombre égal",
+            "toujours différents",
+            "absents"
+          ],
+          "correct_answer": "en nombre égal",
+          "correction": "Les charges se compensent.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Cation",
+          "statement": "Un cation se forme lorsqu'un atome :",
+          "exercise_type": "mcq",
+          "options": [
+            "perd des électrons",
+            "gagne des électrons",
+            "perd des protons"
+          ],
+          "correct_answer": "perd des électrons",
+          "correction": "Perdre des charges négatives rend positif.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Anion",
+          "statement": "Un anion se forme lorsqu'un atome :",
+          "exercise_type": "mcq",
+          "options": [
+            "gagne des électrons",
+            "perd des électrons",
+            "gagne des protons"
+          ],
+          "correct_answer": "gagne des électrons",
+          "correction": "Gagner des électrons rend négatif.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Formule eau",
+          "statement": "Formule de l'eau ?",
+          "exercise_type": "mcq",
+          "options": [
+            "H₂O",
+            "CO₂",
+            "O₂"
+          ],
+          "correct_answer": "H₂O",
+          "correction": "Deux H et un O.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Dioxygène",
+          "statement": "Formule du dioxygène ?",
+          "exercise_type": "mcq",
+          "options": [
+            "O₂",
+            "O",
+            "CO₂"
+          ],
+          "correct_answer": "O₂",
+          "correction": "Deux atomes d'oxygène.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "CO2",
+          "statement": "Formule du dioxyde de carbone ?",
+          "exercise_type": "mcq",
+          "options": [
+            "CO₂",
+            "CO",
+            "C₂O"
+          ],
+          "correct_answer": "CO₂",
+          "correction": "Un C et deux O.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Noyau",
+          "statement": "Le noyau contient :",
+          "exercise_type": "mcq",
+          "options": [
+            "protons et neutrons",
+            "électrons seulement",
+            "molécules"
+          ],
+          "correct_answer": "protons et neutrons",
+          "correction": "Les électrons sont autour du noyau.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Atome vide",
+          "statement": "À l'échelle du modèle, la majeure partie du volume de l'atome est :",
+          "exercise_type": "mcq",
+          "options": [
+            "du vide",
+            "des protons",
+            "de l'eau"
+          ],
+          "correct_answer": "du vide",
+          "correction": "Le noyau est minuscule devant l'atome.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Na+",
+          "statement": "Na⁺ correspond à un sodium qui a :",
+          "exercise_type": "mcq",
+          "options": [
+            "perdu un électron",
+            "gagné un électron",
+            "perdu un proton"
+          ],
+          "correct_answer": "perdu un électron",
+          "correction": "Charge +1 : un électron perdu.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 2,
+      "title": "Transformations chimiques et conservation",
+      "summary": "Identifier réactifs et produits et appliquer les lois de conservation.",
+      "lessons": [
+        {
+          "title": "Transformation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Les réactifs disparaissent ou diminuent, les produits apparaissent.\"}, {\"type\": \"note\", \"content\": \"Exemple : lors de la combustion du carbone, le carbone réagit avec le dioxygène pour former du dioxyde de carbone. Les réactifs disparaissent et un nouveau produit apparaît.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Conservation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Les atomes se conservent. Dans un système fermé, la masse totale se conserve.\"}, {\"type\": \"note\", \"content\": \"Exemple : lors de la combustion du carbone, le carbone réagit avec le dioxygène pour former du dioxyde de carbone. Les réactifs disparaissent et un nouveau produit apparaît.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Équation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une équation chimique doit conserver le nombre d'atomes de chaque élément.\"}, {\"type\": \"note\", \"content\": \"Exemple : lors de la combustion du carbone, le carbone réagit avec le dioxygène pour former du dioxyde de carbone. Les réactifs disparaissent et un nouveau produit apparaît.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Réactifs",
+          "statement": "Espèces présentes au début ?",
+          "exercise_type": "mcq",
+          "options": [
+            "réactifs",
+            "produits",
+            "résidus uniquement"
+          ],
+          "correct_answer": "réactifs",
+          "correction": "Les réactifs sont transformés.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Produits",
+          "statement": "Espèces formées ?",
+          "exercise_type": "mcq",
+          "options": [
+            "produits",
+            "réactifs",
+            "noyaux"
+          ],
+          "correct_answer": "produits",
+          "correction": "Les produits apparaissent.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Atomes conservation",
+          "statement": "Lors d'une réaction, les atomes :",
+          "exercise_type": "mcq",
+          "options": [
+            "se conservent et se réarrangent",
+            "disparaissent",
+            "sont créés"
+          ],
+          "correct_answer": "se conservent et se réarrangent",
+          "correction": "Ils sont réorganisés.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Masse conservation",
+          "statement": "Système fermé : masse totale ?",
+          "exercise_type": "mcq",
+          "options": [
+            "se conserve",
+            "double",
+            "devient nulle"
+          ],
+          "correct_answer": "se conserve",
+          "correction": "Masse réactifs=masse produits.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Masse produits",
+          "statement": "12 g + 8 g de réactifs. Masse totale des produits ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "12+8=20 g.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Masse manquante",
+          "statement": "Produits : 30 g. Un réactif : 18 g. Autre réactif ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "30−18=12 g.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Combustion",
+          "statement": "Une combustion nécessite :",
+          "exercise_type": "mcq",
+          "options": [
+            "combustible et comburant",
+            "eau seulement",
+            "CO₂ seulement"
+          ],
+          "correct_answer": "combustible et comburant",
+          "correction": "Souvent le dioxygène est le comburant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Carbone + O2",
+          "statement": "Combustion complète du carbone produit surtout :",
+          "exercise_type": "mcq",
+          "options": [
+            "CO₂",
+            "H₂",
+            "NaCl"
+          ],
+          "correct_answer": "CO₂",
+          "correction": "C + O₂ → CO₂.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Équilibrer",
+          "statement": "Pourquoi équilibrer une équation ?",
+          "exercise_type": "mcq",
+          "options": [
+            "conserver le nombre d'atomes",
+            "changer les éléments",
+            "supprimer les produits"
+          ],
+          "correct_answer": "conserver le nombre d'atomes",
+          "correction": "Conservation des atomes.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Indice H2O",
+          "statement": "Dans H₂O, le 2 indique :",
+          "exercise_type": "mcq",
+          "options": [
+            "deux H",
+            "deux molécules",
+            "deux O"
+          ],
+          "correct_answer": "deux H",
+          "correction": "L'indice s'applique à H.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Fusion glace",
+          "statement": "Faire fondre la glace est :",
+          "exercise_type": "mcq",
+          "options": [
+            "physique",
+            "chimique",
+            "nucléaire"
+          ],
+          "correct_answer": "physique",
+          "correction": "L'espèce eau ne change pas.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Rouille",
+          "statement": "Formation de rouille :",
+          "exercise_type": "mcq",
+          "options": [
+            "chimique",
+            "fusion",
+            "évaporation"
+          ],
+          "correct_answer": "chimique",
+          "correction": "De nouvelles espèces apparaissent.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 3,
+      "title": "Acides, bases et pH",
+      "summary": "Interpréter l'échelle de pH et l'effet de la dilution.",
+      "lessons": [
+        {
+          "title": "Échelle",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"pH<7 acide ; pH≈7 neutre ; pH>7 basique.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une solution de pH 2 est acide, une solution de pH 7 est neutre, et une solution de pH 11 est basique.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Mesure",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Papier pH pour une estimation, pH-mètre pour plus de précision.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une solution de pH 2 est acide, une solution de pH 7 est neutre, et une solution de pH 11 est basique.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Dilution",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La dilution rapproche le pH de 7. Les solutions très acides ou basiques nécessitent des précautions.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une solution de pH 2 est acide, une solution de pH 7 est neutre, et une solution de pH 11 est basique.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "pH 3",
+          "statement": "pH 3 :",
+          "exercise_type": "mcq",
+          "options": [
+            "acide",
+            "neutre",
+            "basique"
+          ],
+          "correct_answer": "acide",
+          "correction": "pH<7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "pH neutre",
+          "statement": "pH neutre proche de :",
+          "exercise_type": "mcq",
+          "options": [
+            "7",
+            "0",
+            "14"
+          ],
+          "correct_answer": "7",
+          "correction": "pH≈7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "pH 11",
+          "statement": "pH 11 :",
+          "exercise_type": "mcq",
+          "options": [
+            "basique",
+            "acide",
+            "neutre"
+          ],
+          "correct_answer": "basique",
+          "correction": "pH>7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Plus acide",
+          "statement": "Plus acide ?",
+          "exercise_type": "mcq",
+          "options": [
+            "pH 2",
+            "pH 5",
+            "pH 9"
+          ],
+          "correct_answer": "pH 2",
+          "correction": "Plus le pH est bas, plus c'est acide.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Plus basique",
+          "statement": "Plus basique ?",
+          "exercise_type": "mcq",
+          "options": [
+            "pH 13",
+            "pH 9",
+            "pH 6"
+          ],
+          "correct_answer": "pH 13",
+          "correction": "Plus le pH est haut, plus c'est basique.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Diluer acide",
+          "statement": "Diluer un acide fait tendre le pH vers :",
+          "exercise_type": "mcq",
+          "options": [
+            "7",
+            "0",
+            "-1"
+          ],
+          "correct_answer": "7",
+          "correction": "La dilution rapproche de la neutralité.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Diluer base",
+          "statement": "Diluer une base fait tendre le pH vers :",
+          "exercise_type": "mcq",
+          "options": [
+            "7",
+            "20",
+            "0"
+          ],
+          "correct_answer": "7",
+          "correction": "La dilution rapproche de 7.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Ion acide",
+          "statement": "Solution acide associée aux ions :",
+          "exercise_type": "mcq",
+          "options": [
+            "H⁺ (ou H₃O⁺)",
+            "HO⁻ uniquement",
+            "Na⁺ uniquement"
+          ],
+          "correct_answer": "H⁺ (ou H₃O⁺)",
+          "correction": "Au collège on associe l'acidité aux ions H⁺/H₃O⁺.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Ion basique",
+          "statement": "Solution basique associée aux ions :",
+          "exercise_type": "mcq",
+          "options": [
+            "HO⁻",
+            "H⁺ uniquement",
+            "Cl⁻ uniquement"
+          ],
+          "correct_answer": "HO⁻",
+          "correction": "Les ions hydroxyde caractérisent une base.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Mesure pH",
+          "statement": "Appareil précis pour pH ?",
+          "exercise_type": "mcq",
+          "options": [
+            "pH-mètre",
+            "balance",
+            "ampèremètre"
+          ],
+          "correct_answer": "pH-mètre",
+          "correction": "Mesure directe du pH.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Papier pH",
+          "statement": "Le papier pH utilise :",
+          "exercise_type": "mcq",
+          "options": [
+            "un changement de couleur",
+            "un son",
+            "une masse"
+          ],
+          "correct_answer": "un changement de couleur",
+          "correction": "On compare à une échelle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Sécurité acide",
+          "statement": "Avec un acide concentré :",
+          "exercise_type": "mcq",
+          "options": [
+            "porter des protections",
+            "goûter",
+            "chauffer systématiquement"
+          ],
+          "correct_answer": "porter des protections",
+          "correction": "Les solutions concentrées peuvent être corrosives.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 4,
+      "title": "Mouvement et vitesse",
+      "summary": "Décrire une trajectoire et relier distance, durée et vitesse.",
+      "lessons": [
+        {
+          "title": "Référentiel",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le mouvement est décrit par rapport à un référentiel.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un cycliste parcourt 120 m en 20 s.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}=\\\\frac{120}{20}=6\\\\ \\\\text{m/s}\"}, {\"type\": \"paragraph\", \"content\": \"Sa vitesse moyenne est de 6 m/s.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Vitesse",
+          "body": "@@studysprint-blocks@@[{\"type\": \"formula\", \"content\": \"v=d/t ; d=v×t ; t=d/v.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un cycliste parcourt 120 m en 20 s.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}=\\\\frac{120}{20}=6\\\\ \\\\text{m/s}\"}, {\"type\": \"paragraph\", \"content\": \"Sa vitesse moyenne est de 6 m/s.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Évolution",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Vitesse constante : uniforme. Vitesse augmente : accéléré. Vitesse diminue : ralenti.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : un cycliste parcourt 120 m en 20 s.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}=\\\\frac{120}{20}=6\\\\ \\\\text{m/s}\"}, {\"type\": \"paragraph\", \"content\": \"Sa vitesse moyenne est de 6 m/s.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Vitesse 100m",
+          "statement": "100 m parcourus en 20 s. Vitesse moyenne en m/s ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "v=d/t=5 m/s.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Vitesse 150m",
+          "statement": "150 m parcourus en 30 s. Vitesse moyenne en m/s ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "v=d/t=5 m/s.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Vitesse 72km",
+          "statement": "72 km parcourus en 2 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "36",
+          "correction": "v=d/t=36 km/h.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Vitesse 180km",
+          "statement": "180 km parcourus en 3 h. Vitesse moyenne en km/h ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "v=d/t=60 km/h.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Distance à 5m/s",
+          "statement": "Vitesse 5 m/s pendant 10 s. Distance en m ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "d=v×t=50.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Distance à 12m/s",
+          "statement": "Vitesse 12 m/s pendant 4 s. Distance en m ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "48",
+          "correction": "d=v×t=48.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Distance à 60km/h",
+          "statement": "Vitesse 60 km/h pendant 2 h. Distance en km ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "120",
+          "correction": "d=v×t=120.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Distance à 90km/h",
+          "statement": "Vitesse 90 km/h pendant 0,5 h. Distance en km ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "45",
+          "correction": "d=v×t=45.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Rectiligne",
+          "statement": "Trajectoire en ligne droite :",
+          "exercise_type": "mcq",
+          "options": [
+            "rectiligne",
+            "circulaire",
+            "aléatoire"
+          ],
+          "correct_answer": "rectiligne",
+          "correction": "Définition.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Uniforme",
+          "statement": "Vitesse constante :",
+          "exercise_type": "mcq",
+          "options": [
+            "uniforme",
+            "accéléré",
+            "ralenti"
+          ],
+          "correct_answer": "uniforme",
+          "correction": "La vitesse ne varie pas.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Accéléré",
+          "statement": "Vitesse qui augmente :",
+          "exercise_type": "mcq",
+          "options": [
+            "accéléré",
+            "uniforme",
+            "immobile"
+          ],
+          "correct_answer": "accéléré",
+          "correction": "La vitesse augmente.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Référentiel",
+          "statement": "Pour décrire un mouvement, préciser :",
+          "exercise_type": "mcq",
+          "options": [
+            "le référentiel",
+            "la couleur seulement",
+            "la masse seulement"
+          ],
+          "correct_answer": "le référentiel",
+          "correction": "Le mouvement dépend du référentiel.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 5,
+      "title": "Forces, poids et gravitation",
+      "summary": "Modéliser les actions mécaniques et relier masse et poids.",
+      "lessons": [
+        {
+          "title": "Force",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une force se caractérise par une direction, un sens et une valeur en newtons.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"P=m\\\\times g=2\\\\times 9{,}8=19{,}6\\\\ \\\\text{N}\"}, {\"type\": \"paragraph\", \"content\": \"Un objet de 2 kg a un poids d’environ 19,6 N sur Terre.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Poids",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"P=m×g. Sur Terre, g≈9,8 N/kg, souvent arrondi à 10 N/kg au collège.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"P=m\\\\times g=2\\\\times 9{,}8=19{,}6\\\\ \\\\text{N}\"}, {\"type\": \"paragraph\", \"content\": \"Un objet de 2 kg a un poids d’environ 19,6 N sur Terre.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Équilibre",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Plusieurs forces peuvent se compenser et donner une résultante nulle.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"P=m\\\\times g=2\\\\times 9{,}8=19{,}6\\\\ \\\\text{N}\"}, {\"type\": \"paragraph\", \"content\": \"Un objet de 2 kg a un poids d’environ 19,6 N sur Terre.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Unité force",
+          "statement": "Unité d'une force ?",
+          "exercise_type": "mcq",
+          "options": [
+            "newton",
+            "joule",
+            "watt"
+          ],
+          "correct_answer": "newton",
+          "correction": "N.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Représenter force",
+          "statement": "Une force se représente par :",
+          "exercise_type": "mcq",
+          "options": [
+            "un vecteur",
+            "un cercle",
+            "une température"
+          ],
+          "correct_answer": "un vecteur",
+          "correction": "Direction, sens, valeur.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Poids direction",
+          "statement": "Le poids est dirigé :",
+          "exercise_type": "mcq",
+          "options": [
+            "vers le centre de la Terre",
+            "horizontalement",
+            "vers le haut"
+          ],
+          "correct_answer": "vers le centre de la Terre",
+          "correction": "Direction verticale locale.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Poids 2kg",
+          "statement": "g≈10 N/kg. Poids de 2 kg ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "P=m×g=20 N.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Poids 5kg",
+          "statement": "g≈10 N/kg. Poids de 5 kg ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "P=50 N.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Masse 80N",
+          "statement": "Poids 80 N, g≈10 N/kg. Masse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "m=P/g=8 kg.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Unité masse",
+          "statement": "Masse en :",
+          "exercise_type": "mcq",
+          "options": [
+            "kg",
+            "N",
+            "W"
+          ],
+          "correct_answer": "kg",
+          "correction": "La masse s'exprime en kilogrammes.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Gravitation",
+          "statement": "La gravitation est :",
+          "exercise_type": "mcq",
+          "options": [
+            "attractive",
+            "toujours répulsive",
+            "sans distance"
+          ],
+          "correct_answer": "attractive",
+          "correction": "Les masses s'attirent.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Contact",
+          "statement": "Force d'une table sur un livre :",
+          "exercise_type": "mcq",
+          "options": [
+            "contact",
+            "à distance",
+            "nucléaire"
+          ],
+          "correct_answer": "contact",
+          "correction": "Il y a contact.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Distance",
+          "statement": "Poids :",
+          "exercise_type": "mcq",
+          "options": [
+            "action à distance",
+            "contact",
+            "sans force"
+          ],
+          "correct_answer": "action à distance",
+          "correction": "Attraction gravitationnelle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Équilibre",
+          "statement": "Objet immobile : plusieurs forces peuvent :",
+          "exercise_type": "mcq",
+          "options": [
+            "se compenser",
+            "être toutes nulles",
+            "aller toutes dans le même sens"
+          ],
+          "correct_answer": "se compenser",
+          "correction": "Résultante nulle.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Dynamomètre",
+          "statement": "Appareil pour mesurer force ?",
+          "exercise_type": "mcq",
+          "options": [
+            "dynamomètre",
+            "voltmètre",
+            "chronomètre"
+          ],
+          "correct_answer": "dynamomètre",
+          "correction": "Mesure en newtons.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 6,
+      "title": "Énergie, puissance et conversions",
+      "summary": "Identifier formes, transferts et conversions d'énergie.",
+      "lessons": [
+        {
+          "title": "Conservation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L'énergie se transfère et se convertit ; dans un bilan complet elle se conserve.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une lampe de 60 W allumée pendant 2 h consomme :\"}, {\"type\": \"formula\", \"content\": \"E=P\\\\times t=60\\\\times 2=120\\\\ \\\\text{Wh}\"}, {\"type\": \"paragraph\", \"content\": \"On peut aussi écrire 0,12 kWh.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Puissance",
+          "body": "@@studysprint-blocks@@[{\"type\": \"formula\", \"content\": \"P=E/t et E=P×t.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une lampe de 60 W allumée pendant 2 h consomme :\"}, {\"type\": \"formula\", \"content\": \"E=P\\\\times t=60\\\\times 2=120\\\\ \\\\text{Wh}\"}, {\"type\": \"paragraph\", \"content\": \"On peut aussi écrire 0,12 kWh.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Conversions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un dispositif peut produire plusieurs formes d'énergie ; une partie est souvent dissipée thermiquement.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple : une lampe de 60 W allumée pendant 2 h consomme :\"}, {\"type\": \"formula\", \"content\": \"E=P\\\\times t=60\\\\times 2=120\\\\ \\\\text{Wh}\"}, {\"type\": \"paragraph\", \"content\": \"On peut aussi écrire 0,12 kWh.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Unité énergie",
+          "statement": "Unité SI énergie ?",
+          "exercise_type": "mcq",
+          "options": [
+            "joule",
+            "watt",
+            "volt"
+          ],
+          "correct_answer": "joule",
+          "correction": "J.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Unité puissance",
+          "statement": "Unité puissance ?",
+          "exercise_type": "mcq",
+          "options": [
+            "watt",
+            "joule",
+            "ampère"
+          ],
+          "correct_answer": "watt",
+          "correction": "W.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Relation E",
+          "statement": "Bonne relation ?",
+          "exercise_type": "mcq",
+          "options": [
+            "E=P×t",
+            "P=E×t",
+            "E=P/t"
+          ],
+          "correct_answer": "E=P×t",
+          "correction": "Énergie=puissance×durée.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "E 100W 20s",
+          "statement": "100 W pendant 20 s : énergie J ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2000",
+          "correction": "E=100×20=2000 J.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "E 500W 10s",
+          "statement": "500 W pendant 10 s : énergie J ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5000",
+          "correction": "E=5000 J.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "P 6000J 30s",
+          "statement": "6000 J en 30 s : puissance W ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "200",
+          "correction": "P=6000/30=200 W.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "t 1000J 50W",
+          "statement": "1000 J avec 50 W : durée s ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "t=1000/50=20 s.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Énergie cinétique",
+          "statement": "Énergie du mouvement ?",
+          "exercise_type": "mcq",
+          "options": [
+            "cinétique",
+            "chimique uniquement",
+            "nucléaire uniquement"
+          ],
+          "correct_answer": "cinétique",
+          "correction": "Liée au mouvement.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Énergie potentielle",
+          "statement": "Objet en hauteur :",
+          "exercise_type": "mcq",
+          "options": [
+            "potentielle de pesanteur",
+            "sonore uniquement",
+            "aucune"
+          ],
+          "correct_answer": "potentielle de pesanteur",
+          "correction": "Liée à la position.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Lampe conversion",
+          "statement": "Lampe : électrique vers :",
+          "exercise_type": "mcq",
+          "options": [
+            "lumière et chaleur",
+            "masse",
+            "pression"
+          ],
+          "correct_answer": "lumière et chaleur",
+          "correction": "Conversions énergétique.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Pertes",
+          "statement": "Conversion réelle :",
+          "exercise_type": "mcq",
+          "options": [
+            "une partie finit souvent en chaleur",
+            "l'énergie disparaît",
+            "on crée de l'énergie"
+          ],
+          "correct_answer": "une partie finit souvent en chaleur",
+          "correction": "L'énergie totale se conserve.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Renouvelable",
+          "statement": "Source renouvelable ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Soleil",
+            "charbon",
+            "pétrole"
+          ],
+          "correct_answer": "Soleil",
+          "correction": "Solaire renouvelable.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 7,
+      "title": "Circuits électriques : tension et intensité",
+      "summary": "Mesurer tension et intensité et distinguer série et dérivation.",
+      "lessons": [
+        {
+          "title": "Mesures",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Tension U en volts avec voltmètre en dérivation. Intensité I en ampères avec ampèremètre en série.\"}, {\"type\": \"note\", \"content\": \"Exemple : dans un circuit simple, si l’interrupteur est ouvert, la lampe s’éteint car le courant ne circule plus.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Série",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"En série, l'intensité est la même en tout point.\"}, {\"type\": \"note\", \"content\": \"Exemple : dans un circuit simple, si l’interrupteur est ouvert, la lampe s’éteint car le courant ne circule plus.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Dérivation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans des branches en dérivation, la tension est la même ; le courant se partage.\"}, {\"type\": \"note\", \"content\": \"Exemple : dans un circuit simple, si l’interrupteur est ouvert, la lampe s’éteint car le courant ne circule plus.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Tension unité",
+          "statement": "Tension en :",
+          "exercise_type": "mcq",
+          "options": [
+            "volts",
+            "ampères",
+            "ohms"
+          ],
+          "correct_answer": "volts",
+          "correction": "V.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Intensité unité",
+          "statement": "Intensité en :",
+          "exercise_type": "mcq",
+          "options": [
+            "ampères",
+            "volts",
+            "joules"
+          ],
+          "correct_answer": "ampères",
+          "correction": "A.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Voltmètre",
+          "statement": "Voltmètre se branche :",
+          "exercise_type": "mcq",
+          "options": [
+            "en dérivation",
+            "en série",
+            "n'importe où"
+          ],
+          "correct_answer": "en dérivation",
+          "correction": "Aux bornes du dipôle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Ampèremètre",
+          "statement": "Ampèremètre se branche :",
+          "exercise_type": "mcq",
+          "options": [
+            "en série",
+            "en dérivation",
+            "hors circuit"
+          ],
+          "correct_answer": "en série",
+          "correction": "Le courant le traverse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Intensité série",
+          "statement": "En série, intensité :",
+          "exercise_type": "mcq",
+          "options": [
+            "la même partout",
+            "toujours nulle",
+            "augmente"
+          ],
+          "correct_answer": "la même partout",
+          "correction": "Même courant.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Tension dérivation",
+          "statement": "En dérivation, tension des branches :",
+          "exercise_type": "mcq",
+          "options": [
+            "la même",
+            "nulle",
+            "s'additionne dans chaque branche"
+          ],
+          "correct_answer": "la même",
+          "correction": "Mêmes nœuds.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Générateur",
+          "statement": "Un générateur :",
+          "exercise_type": "mcq",
+          "options": [
+            "fournit de l'énergie électrique",
+            "mesure I",
+            "bloque toujours le courant"
+          ],
+          "correct_answer": "fournit de l'énergie électrique",
+          "correction": "Pile/alimentation.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Interrupteur ouvert",
+          "statement": "Interrupteur ouvert :",
+          "exercise_type": "mcq",
+          "options": [
+            "courant interrompu",
+            "tension infinie",
+            "pile créée"
+          ],
+          "correct_answer": "courant interrompu",
+          "correction": "Circuit ouvert.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Court-circuit",
+          "statement": "Danger d'un court-circuit :",
+          "exercise_type": "mcq",
+          "options": [
+            "forte intensité et échauffement",
+            "froid uniquement",
+            "aucun"
+          ],
+          "correct_answer": "forte intensité et échauffement",
+          "correction": "Faible résistance, courant élevé.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Sens courant",
+          "statement": "Sens conventionnel extérieur générateur :",
+          "exercise_type": "mcq",
+          "options": [
+            "du + vers le -",
+            "du - vers le +",
+            "les deux"
+          ],
+          "correct_answer": "du + vers le -",
+          "correction": "Convention.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Série",
+          "statement": "Deux lampes l'une après l'autre :",
+          "exercise_type": "mcq",
+          "options": [
+            "série",
+            "dérivation",
+            "sans circuit"
+          ],
+          "correct_answer": "série",
+          "correction": "Une seule branche.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Dérivation",
+          "statement": "Deux branches entre mêmes nœuds :",
+          "exercise_type": "mcq",
+          "options": [
+            "dérivation",
+            "série",
+            "ouvert"
+          ],
+          "correct_answer": "dérivation",
+          "correction": "Montage parallèle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 8,
+      "title": "Loi d’Ohm et puissance électrique",
+      "summary": "Relier tension, intensité, résistance et puissance.",
+      "lessons": [
+        {
+          "title": "Résistance",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La résistance R s'exprime en ohms.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"U=R\\\\times I=100\\\\times 0{,}02=2\\\\ \\\\text{V}\"}, {\"type\": \"paragraph\", \"content\": \"Une résistance de 100 Ω traversée par un courant de 0,02 A a une tension de 2 V.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Loi d'Ohm",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"U=R×I, donc I=U/R et R=U/I.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"U=R\\\\times I=100\\\\times 0{,}02=2\\\\ \\\\text{V}\"}, {\"type\": \"paragraph\", \"content\": \"Une résistance de 100 Ω traversée par un courant de 0,02 A a une tension de 2 V.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Puissance",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La puissance électrique peut s'écrire P=U×I.\"}, {\"type\": \"paragraph\", \"content\": \"Exemple :\"}, {\"type\": \"formula\", \"content\": \"U=R\\\\times I=100\\\\times 0{,}02=2\\\\ \\\\text{V}\"}, {\"type\": \"paragraph\", \"content\": \"Une résistance de 100 Ω traversée par un courant de 0,02 A a une tension de 2 V.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Tension R10 I2",
+          "statement": "R=10 Ω, I=2 A. U en V ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "U=R×I=20 V.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Tension R5 I3",
+          "statement": "R=5 Ω, I=3 A. U en V ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "U=R×I=15 V.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Tension R20 I0.5",
+          "statement": "R=20 Ω, I=0,5 A. U en V ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "10",
+          "correction": "U=R×I=10 V.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Tension R100 I0.02",
+          "statement": "R=100 Ω, I=0,02 A. U en V ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "U=R×I=2 V.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Intensité U12 R6",
+          "statement": "U=12 V, R=6 Ω. I en A ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "I=U/R=2 A.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Intensité U9 R3",
+          "statement": "U=9 V, R=3 Ω. I en A ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "I=U/R=3 A.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Intensité U5 R10",
+          "statement": "U=5 V, R=10 Ω. I en A ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.5",
+          "correction": "I=U/R=0.5 A.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Intensité U24 R12",
+          "statement": "U=24 V, R=12 Ω. I en A ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "I=U/R=2 A.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Résistance unité",
+          "statement": "Résistance en :",
+          "exercise_type": "mcq",
+          "options": [
+            "ohms",
+            "volts",
+            "watts"
+          ],
+          "correct_answer": "ohms",
+          "correction": "Ω.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Loi Ohm",
+          "statement": "Loi d'Ohm :",
+          "exercise_type": "mcq",
+          "options": [
+            "U=R×I",
+            "P=U/I",
+            "E=R×t"
+          ],
+          "correct_answer": "U=R×I",
+          "correction": "Relation pour conducteur ohmique.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Puissance 12V2A",
+          "statement": "U=12 V, I=2 A. P en W ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "24",
+          "correction": "P=U×I=24 W.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Puissance 230V2A",
+          "statement": "U=230 V, I=2 A. P en W ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "460",
+          "correction": "P=460 W.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 9,
+      "title": "Signaux sonores et lumineux",
+      "summary": "Décrire fréquence, propagation et transmission d'information.",
+      "lessons": [
+        {
+          "title": "Son",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le son est une vibration qui se propage dans un milieu matériel. Sa fréquence est exprimée en hertz.\"}, {\"type\": \"note\", \"content\": \"Exemple : plus la fréquence d’un son est grande, plus le son est aigu. Un diapason qui vibre plus vite produit un son plus aigu.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Lumière",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La lumière peut se propager dans le vide à environ 3×10^8 m/s.\"}, {\"type\": \"note\", \"content\": \"Exemple : plus la fréquence d’un son est grande, plus le son est aigu. Un diapason qui vibre plus vite produit un son plus aigu.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Signal",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un signal peut transporter une information. Un signal périodique se répète après une période.\"}, {\"type\": \"note\", \"content\": \"Exemple : plus la fréquence d’un son est grande, plus le son est aigu. Un diapason qui vibre plus vite produit un son plus aigu.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Son milieu",
+          "statement": "Le son a besoin :",
+          "exercise_type": "mcq",
+          "options": [
+            "d'un milieu matériel",
+            "du vide uniquement",
+            "d'une pile"
+          ],
+          "correct_answer": "d'un milieu matériel",
+          "correction": "Pas de son dans le vide.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Lumière vide",
+          "statement": "La lumière se propage :",
+          "exercise_type": "mcq",
+          "options": [
+            "dans le vide",
+            "uniquement air",
+            "uniquement eau"
+          ],
+          "correct_answer": "dans le vide",
+          "correction": "Oui.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Fréquence unité",
+          "statement": "Fréquence en :",
+          "exercise_type": "mcq",
+          "options": [
+            "hertz",
+            "watts",
+            "newtons"
+          ],
+          "correct_answer": "hertz",
+          "correction": "Hz.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Aigu",
+          "statement": "Son plus aigu = fréquence :",
+          "exercise_type": "mcq",
+          "options": [
+            "plus élevée",
+            "plus faible",
+            "nulle"
+          ],
+          "correct_answer": "plus élevée",
+          "correction": "Hauteur liée à fréquence.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Grave",
+          "statement": "Son plus grave = fréquence :",
+          "exercise_type": "mcq",
+          "options": [
+            "plus faible",
+            "plus élevée",
+            "infinie"
+          ],
+          "correct_answer": "plus faible",
+          "correction": "Fréquence basse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Ultrasons",
+          "statement": "Ultrasons :",
+          "exercise_type": "mcq",
+          "options": [
+            "au-dessus de l'audition humaine",
+            "sous 1 Hz",
+            "exactement 20 Hz"
+          ],
+          "correct_answer": "au-dessus de l'audition humaine",
+          "correction": "Au-delà d'environ 20 kHz.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Vitesse lumière",
+          "statement": "La lumière va :",
+          "exercise_type": "mcq",
+          "options": [
+            "beaucoup plus vite que le son",
+            "moins vite",
+            "à la même vitesse"
+          ],
+          "correct_answer": "beaucoup plus vite que le son",
+          "correction": "c≈3×10^8 m/s.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Fréquence 5 périodes",
+          "statement": "5 périodes en 1 s. Fréquence Hz ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "5/1=5 Hz.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Fréquence 20/2",
+          "statement": "20 périodes en 2 s. Fréquence Hz ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "10",
+          "correction": "20/2=10 Hz.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Périodique",
+          "statement": "Signal répétitif à intervalles réguliers :",
+          "exercise_type": "mcq",
+          "options": [
+            "périodique",
+            "aléatoire",
+            "statique"
+          ],
+          "correct_answer": "périodique",
+          "correction": "Définition.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Information",
+          "statement": "Un signal lumineux peut transporter une information via :",
+          "exercise_type": "mcq",
+          "options": [
+            "des variations contrôlées",
+            "la masse uniquement",
+            "la température uniquement"
+          ],
+          "correct_answer": "des variations contrôlées",
+          "correction": "Modulation du signal.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Écho",
+          "statement": "Écho dû à :",
+          "exercise_type": "mcq",
+          "options": [
+            "réflexion du son",
+            "absorption totale",
+            "création de matière"
+          ],
+          "correct_answer": "réflexion du son",
+          "correction": "Le son revient après réflexion.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "3e",
+      "order_index": 10,
+      "title": "Univers, gravitation et ordres de grandeur",
+      "summary": "Situer la Terre et raisonner sur les mouvements astronomiques.",
+      "lessons": [
+        {
+          "title": "Système solaire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le Soleil est l'étoile centrale ; huit planètes orbitent autour de lui.\"}, {\"type\": \"note\", \"content\": \"Exemple : la distance Terre-Lune est d’environ 384 000 km, soit 3,84 × 10⁵ km en écriture scientifique.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Terre et Lune",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La Terre tourne sur elle-même en environ 24 h et autour du Soleil en environ un an. La Lune orbite autour de la Terre.\"}, {\"type\": \"note\", \"content\": \"Exemple : la distance Terre-Lune est d’environ 384 000 km, soit 3,84 × 10⁵ km en écriture scientifique.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Distances",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L'année-lumière est une unité de distance adaptée aux distances entre étoiles.\"}, {\"type\": \"note\", \"content\": \"Exemple : la distance Terre-Lune est d’environ 384 000 km, soit 3,84 × 10⁵ km en écriture scientifique.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Étoile système",
+          "statement": "Étoile du Système solaire ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Soleil",
+            "Terre",
+            "Lune"
+          ],
+          "correct_answer": "Soleil",
+          "correction": "Le Soleil.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Satellite Terre",
+          "statement": "Satellite naturel de la Terre ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Lune",
+            "Mars",
+            "Vénus"
+          ],
+          "correct_answer": "Lune",
+          "correction": "La Lune.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Planète rouge",
+          "statement": "Planète rouge ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Mars",
+            "Mercure",
+            "Neptune"
+          ],
+          "correct_answer": "Mars",
+          "correction": "Mars.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Année-lumière",
+          "statement": "Une année-lumière mesure :",
+          "exercise_type": "mcq",
+          "options": [
+            "une distance",
+            "un temps",
+            "une masse"
+          ],
+          "correct_answer": "une distance",
+          "correction": "Distance parcourue par la lumière en un an.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Orbites",
+          "statement": "Les planètes orbitent grâce surtout à :",
+          "exercise_type": "mcq",
+          "options": [
+            "gravitation",
+            "contact",
+            "son"
+          ],
+          "correct_answer": "gravitation",
+          "correction": "Interaction attractive.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Rotation Terre",
+          "statement": "Rotation terrestre environ :",
+          "exercise_type": "mcq",
+          "options": [
+            "24 h",
+            "365 jours",
+            "1 mois"
+          ],
+          "correct_answer": "24 h",
+          "correction": "Un jour.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Révolution Terre",
+          "statement": "Révolution autour du Soleil environ :",
+          "exercise_type": "mcq",
+          "options": [
+            "1 an",
+            "24 h",
+            "7 jours"
+          ],
+          "correct_answer": "1 an",
+          "correction": "Une année.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Phases Lune",
+          "statement": "Phases de la Lune dues à :",
+          "exercise_type": "mcq",
+          "options": [
+            "positions relatives Soleil-Terre-Lune",
+            "ombre terrestre à chaque phase",
+            "taille qui change"
+          ],
+          "correct_answer": "positions relatives Soleil-Terre-Lune",
+          "correction": "Portion éclairée visible.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 8
+        },
+        {
+          "title": "Éclipse solaire",
+          "statement": "Entre Terre et Soleil lors d'une éclipse solaire :",
+          "exercise_type": "mcq",
+          "options": [
+            "Lune",
+            "Mars",
+            "Jupiter"
+          ],
+          "correct_answer": "Lune",
+          "correction": "La Lune masque le Soleil.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 9
+        },
+        {
+          "title": "Galaxie",
+          "statement": "Le Système solaire appartient à :",
+          "exercise_type": "mcq",
+          "options": [
+            "Voie lactée",
+            "Grande Ourse",
+            "Soleil"
+          ],
+          "correct_answer": "Voie lactée",
+          "correction": "Notre galaxie.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 10
+        },
+        {
+          "title": "Distances étoiles",
+          "statement": "Unité adaptée aux distances stellaires :",
+          "exercise_type": "mcq",
+          "options": [
+            "année-lumière",
+            "millimètre",
+            "litre"
+          ],
+          "correct_answer": "année-lumière",
+          "correction": "Distance très grande.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 11
+        },
+        {
+          "title": "Modèle scientifique",
+          "statement": "Un modèle scientifique sert à :",
+          "exercise_type": "mcq",
+          "options": [
+            "représenter et expliquer certains aspects",
+            "remplacer toutes les observations",
+            "être toujours définitif"
+          ],
+          "correct_answer": "représenter et expliquer certains aspects",
+          "correction": "Il est confronté aux observations.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 12
+        }
+      ]
+    }
+  ]
+}

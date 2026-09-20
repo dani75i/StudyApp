@@ -8,6 +8,14 @@ from .models import Chapter, ContentPack, Exercise, ExerciseGuide, Lesson, Subje
 
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 
+REFRESH_PACKS = {
+    "3e_2026_v10_3_refresh.json",
+    "4e_2026_v10_3_refresh.json",
+    "5e_2026_v10_3_refresh.json",
+    "6e_2026_v10_3_refresh.json",
+    "3e_2026_v10_3_exercises_refresh.json",
+}
+
 
 def _get_or_create_subject(db: Session, slug: str, meta: dict) -> Subject:
     subject = db.query(Subject).filter(Subject.slug == slug).first()
@@ -30,7 +38,10 @@ def install_content_pack(db: Session, filename: str) -> dict:
     pack_id = payload["pack_id"]
 
     existing_pack = db.query(ContentPack).filter(ContentPack.slug == pack_id).first()
-    if existing_pack:
+    is_refresh_pack = filename in REFRESH_PACKS
+    if existing_pack and not is_refresh_pack:
+        return {"pack_id": pack_id, "status": "already_applied"}
+    if existing_pack and is_refresh_pack:
         return {"pack_id": pack_id, "status": "already_applied"}
 
     subjects = {
@@ -94,12 +105,16 @@ def install_content_pack(db: Session, filename: str) -> dict:
                 chapter.order_index = chapter_data.get("order_index", chapter.order_index)
                 updated["chapters"] += 1
 
-        existing_lesson_titles = {
-            row[0]
-            for row in db.query(Lesson.title).filter(Lesson.chapter_id == chapter.id).all()
+        existing_lessons = {
+            row.title: row
+            for row in db.query(Lesson).filter(Lesson.chapter_id == chapter.id).all()
         }
         for lesson_data in chapter_data.get("lessons", []):
-            if lesson_data["title"] in existing_lesson_titles:
+            existing_lesson = existing_lessons.get(lesson_data["title"])
+            if existing_lesson is not None:
+                if is_refresh_pack:
+                    existing_lesson.body = lesson_data["body"]
+                    existing_lesson.order_index = lesson_data.get("order_index", existing_lesson.order_index)
                 continue
             db.add(
                 Lesson(
@@ -142,10 +157,11 @@ def install_content_pack(db: Session, filename: str) -> dict:
                 ))
             created["exercises"] += 1
 
-    db.add(ContentPack(slug=pack_id, title=payload.get("title", pack_id)))
+    if not existing_pack:
+        db.add(ContentPack(slug=pack_id, title=payload.get("title", pack_id)))
     db.commit()
     return {"pack_id": pack_id, "status": "applied", "created": created, "updated": updated}
 
 
 def install_default_content_packs(db: Session) -> list[dict]:
-    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json", "6e_2026_v10.json", "5e_2026_v10.json")]
+    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json", "6e_2026_v10.json", "5e_2026_v10.json", "3e_2026_v10_3_refresh.json", "4e_2026_v10_3_refresh.json", "5e_2026_v10_3_refresh.json", "6e_2026_v10_3_refresh.json", "3e_2026_v10_3_exercises_refresh.json")]

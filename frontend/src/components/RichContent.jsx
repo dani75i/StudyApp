@@ -22,9 +22,17 @@ function latexify(expression = '') {
     .replace(/√\s*([A-Za-z0-9]+)/g, '\\sqrt{$1}');
 }
 
+function unwrapMathDelimiters(expression = '') {
+  const raw = String(expression).trim();
+  if (raw.startsWith('\[') && raw.endsWith('\]')) return raw.slice(2, -2).trim();
+  if (raw.startsWith('\(') && raw.endsWith('\)')) return raw.slice(2, -2).trim();
+  if (raw.startsWith('$') && raw.endsWith('$')) return raw.slice(1, -1).trim();
+  return raw;
+}
+
 function renderKatex(expression, displayMode = false) {
   try {
-    return katex.renderToString(latexify(expression), {
+    return katex.renderToString(latexify(unwrapMathDelimiters(expression)), {
       throwOnError: false,
       displayMode,
       strict: 'ignore',
