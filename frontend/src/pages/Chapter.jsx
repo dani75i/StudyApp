@@ -88,7 +88,7 @@ export default function Chapter() {
   const continueActionLabel = summary.review ? 'Revoir' : summary.todo ? 'Continuer' : 'Recommencer';
   const meta = getSubjectMeta(data.subject.slug);
   const Icon = meta.icon;
-  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title });
+  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title, level: data.level });
 
   return (
     <>

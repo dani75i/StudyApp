@@ -89,7 +89,7 @@ def install_content_pack(db: Session, filename: str) -> dict:
         else:
             # The pack is applied only once, so updating these fields here cannot
             # overwrite later edits made from /admin on subsequent restarts.
-            if filename != "3e_2026_v9_exercices.json":
+            if filename not in ("3e_2026_v9_exercices.json", "6e_2026_v10.json", "5e_2026_v10.json"):
                 chapter.summary = chapter_data.get("summary", chapter.summary)
                 chapter.order_index = chapter_data.get("order_index", chapter.order_index)
                 updated["chapters"] += 1
@@ -148,4 +148,4 @@ def install_content_pack(db: Session, filename: str) -> dict:
 
 
 def install_default_content_packs(db: Session) -> list[dict]:
-    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json")]
+    return [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json", "6e_2026_v10.json", "5e_2026_v10.json")]

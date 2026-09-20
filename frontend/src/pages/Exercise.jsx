@@ -77,17 +77,17 @@ export default function Exercise() {
             </label>
           )}
 
-          <div className="v9-hint-panel">
+          {(data.hints?.length > 0) && <div className="v9-hint-panel">
             <div className="v9-hint-header"><Lightbulb size={18} /><strong>Besoin d’un coup de pouce ?</strong><span>{hintsShown}/{data.hints?.length || 0} indices</span></div>
             {(data.hints || []).slice(0, hintsShown).map((hint, index) => (
               <p key={index} className="v9-hint"><b>Indice {index + 1}.</b> <RichText text={hint} /></p>
             ))}
             {hintsShown < (data.hints?.length || 0) && (
               <button type="button" className="v9-hint-reveal" onClick={() => setHintsShown((count) => count + 1)}>
-                {hintsShown ? 'Afficher le deuxième indice' : 'Afficher un indice'} <ChevronDown size={15} />
+                {hintsShown ? 'Afficher l’indice suivant' : 'Afficher un indice'} <ChevronDown size={15} />
               </button>
             )}
-          </div>
+          </div>}
           {error && <div className="alert error" role="alert">{error}</div>}
           <button className="primary answer-button v9-submit" disabled={busy || !answer.trim()}>
             {busy ? 'Vérification…' : <>Valider et voir ma correction <ArrowRight size={18} /></>}

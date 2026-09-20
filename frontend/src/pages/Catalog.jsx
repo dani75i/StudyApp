@@ -42,7 +42,7 @@ export default function Catalog() {
               {subject.chapters.length ? (
                 <div className="chapter-grid">
                   {subject.chapters.map((chapter) => {
-                    const illustration = getChapterIllustration({ subjectSlug: subject.slug, title: chapter.title });
+                    const illustration = getChapterIllustration({ subjectSlug: subject.slug, title: chapter.title, level: chapter.level });
 
                     return (
                       <Link className="chapter-card course-card" to={`/chapitre/${chapter.id}`} key={chapter.id}>

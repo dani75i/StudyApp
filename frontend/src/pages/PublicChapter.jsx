@@ -22,7 +22,7 @@ export default function PublicChapter() {
 
   if (!data) return <div className="screen-center"><div className="loader" /></div>;
 
-  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title });
+  const illustration = getChapterIllustration({ subjectSlug: data.subject.slug, title: data.title, level: data.level });
 
   return (
     <div className="public-page">

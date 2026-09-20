@@ -37,7 +37,7 @@ export default function PublicCourses() {
                 <div className="subject-title"><div className={`subject-logo ${subject.slug === 'mathematiques' ? 'math' : 'physics'}`}><Icon size={25} /></div><div><h2>{subject.name}</h2><p>{subject.description}</p></div></div>
                 <div className="chapter-grid">
                   {subject.chapters.map((chapter) => {
-                    const illustration = getChapterIllustration({ subjectSlug: subject.slug, title: chapter.title });
+                    const illustration = getChapterIllustration({ subjectSlug: subject.slug, title: chapter.title, level: chapter.level });
 
                     return (
                       <Link key={chapter.id} className="chapter-card course-card" to={`/decouvrir/cours/${chapter.id}`} onClick={() => trackEvent('course_opened', { chapter_id: chapter.id, subject: subject.slug })}>

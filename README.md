@@ -1,3 +1,9 @@
+# StudySprint V10 — collège 6e et 5e, indices et récompenses
+
+Nouveauté : ajout de 50 chapitres, 150 courtes fiches et 600 exercices corrigés pour la 6e et la 5e, avec 20 visuels scientifiques SVG, des indices associés aux notions et une distinction visuelle plus forte entre récompenses gagnées et verrouillées. Consulter **`V10_GUIDE.md`** pour l’installation, les limites éditoriales et les vérifications recommandées.
+
+---
+
 # StudySprint V9 — Exercices enrichis et parcours pédagogique
 
 Consulte `V9_GUIDE.md` pour les 52 nouveaux exercices originaux de 3e, les indices, la page de correction, le bilan de séance et la barre mobile flottante. Les fonctionnalités et ressources de la V8 restent incluses.

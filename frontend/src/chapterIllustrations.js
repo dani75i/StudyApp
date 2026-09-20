@@ -20,7 +20,34 @@ const PHYSICS_ILLUSTRATIONS = {
   'Énergie, transferts et conversions': '/illustrations/physics/energie-conversions.webp',
 };
 
-export function getChapterIllustration({ subjectSlug, title }) {
+// Chaque chapitre scientifique 6e / 5e possède un visuel SVG local, distinct.
+const V10_ILLUSTRATIONS = {
+  '6e': {
+    "Solides, liquides et gaz": '/illustrations/physics/v10/6e-01.svg',
+    "La matière à l’échelle des particules": '/illustrations/physics/v10/6e-02.svg',
+    "Fusion, solidification et évaporation": '/illustrations/physics/v10/6e-03.svg',
+    "Mélanges homogènes et hétérogènes": '/illustrations/physics/v10/6e-04.svg',
+    "Dissolution dans l’eau": '/illustrations/physics/v10/6e-05.svg',
+    "Masse et volume": '/illustrations/physics/v10/6e-06.svg',
+    "Décrire un mouvement": '/illustrations/physics/v10/6e-07.svg',
+    "Sources et transformations d’énergie": '/illustrations/physics/v10/6e-08.svg',
+    "Premiers circuits électriques": '/illustrations/physics/v10/6e-09.svg',
+    "Lumière, ombres et sources": '/illustrations/physics/v10/6e-10.svg',
+  },
+  '5e': {
+    "Séparer les mélanges": '/illustrations/physics/v10/5e-01.svg',
+    "Masse, volume et masse volumique": '/illustrations/physics/v10/5e-02.svg',
+    "L’air et les gaz": '/illustrations/physics/v10/5e-03.svg',
+    "Transformations physiques et chimiques": '/illustrations/physics/v10/5e-04.svg',
+    "Trajectoires et vitesses": '/illustrations/physics/v10/5e-05.svg',
+    "Circuits en série et dérivation": '/illustrations/physics/v10/5e-06.svg',
+    "Mesurer la tension et l’intensité": '/illustrations/physics/v10/5e-07.svg',
+    "Conversions et transferts d’énergie": '/illustrations/physics/v10/5e-08.svg',
+    "Propagation de la lumière": '/illustrations/physics/v10/5e-09.svg',
+    "Sons et vibrations": '/illustrations/physics/v10/5e-10.svg',
+  },
+ };
+export function getChapterIllustration({ subjectSlug, title, level }) {
   if (subjectSlug !== 'physique-chimie') return null;
-  return PHYSICS_ILLUSTRATIONS[title] || null;
+  return V10_ILLUSTRATIONS[level]?.[title] || PHYSICS_ILLUSTRATIONS[title] || null;
 }

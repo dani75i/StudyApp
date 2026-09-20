@@ -13,6 +13,7 @@ from sqlalchemy.orm import Session
 
 from .config import settings
 from .content_pack import install_default_content_packs
+from .v10_hints import upgrade_existing_hints, contextual_hints
 from .db import Base, SessionLocal, engine, get_db
 from .models import Attempt, Chapter, Exercise, ExerciseGuide, Lesson, Subject, User
 from .schemas import (
@@ -52,6 +53,7 @@ def startup():
     try:
         seed(db)
         install_default_content_packs(db)
+        upgrade_existing_hints(db)
     finally:
         db.close()
 
@@ -833,10 +835,7 @@ def exercise_detail(exercise_id: int, db: Session = Depends(get_db), user: User 
         "difficulty": exercise.difficulty,
         "points": exercise.points,
         "last_attempt": None if not previous else {"answer": previous.answer, "is_correct": previous.is_correct},
-        "hints": (json.loads(guide.hints_json or "[]") if guide and json.loads(guide.hints_json or "[]") else [
-            "Relis l'énoncé et distingue les données de ce que l'on te demande.",
-            "Retrouve dans le cours la propriété adaptée, puis écris les étapes de ton calcul."
-        ]),
+        "hints": (json.loads(guide.hints_json or "[]") if guide and json.loads(guide.hints_json or "[]") else contextual_hints(chapter.title, exercise.statement, exercise.exercise_type, exercise.options_json)),
         "diagram": json.loads(guide.diagram_json or "null") if guide else None,
         "sequence_total": len(chapter_exercises),
         "previous_exercise_id": chapter_exercises[sequence_number - 2][0] if sequence_number > 1 else None,
