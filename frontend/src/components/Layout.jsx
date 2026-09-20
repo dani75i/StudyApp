@@ -3,11 +3,12 @@ import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
   BookOpenText, ChartNoAxesColumnIncreasing, Clock3, LogOut, MoonStar,
   SunMedium, UserRound, Zap, Dumbbell, Sparkles, ShieldCheck, Award,
-  House, Ellipsis, X,
+  House, Ellipsis, X, MessageCircleHeart,
 } from 'lucide-react';
 import { api } from '../api';
 import { useAuth, useTheme } from '../App';
 import { openCookiePreferences } from '../analytics';
+import { OPEN_FEEDBACK_EVENT } from './FeedbackWidget';
 
 const navItems = [
   ['/dashboard', ChartNoAxesColumnIncreasing, 'Progression'],
@@ -42,7 +43,7 @@ export default function Layout() {
 
   const items = [
     ...navItems,
-    ...(user?.role === 'admin' ? [['/admin', ShieldCheck, 'Admin']] : []),
+    ...(user?.role === 'admin' ? [['/admin', ShieldCheck, 'Admin'], ['/admin/avis', MessageCircleHeart, 'Avis utilisateurs']] : []),
   ];
   const moreActive = ['/seance', '/historique', '/profil', '/admin'].some((route) => location.pathname.startsWith(route));
 
@@ -68,7 +69,7 @@ export default function Layout() {
           <div><strong>{user?.first_name}</strong><span>{user?.level}</span></div>
           <button onClick={logout} title="Se déconnecter" aria-label="Se déconnecter"><LogOut size={18} /></button>
         </div>
-        <div className="sidebar-legal"><NavLink to="/confidentialite">Confidentialité</NavLink><button type="button" onClick={openCookiePreferences}>Cookies</button></div>
+        <div className="sidebar-legal"><button type="button" onClick={() => window.dispatchEvent(new Event(OPEN_FEEDBACK_EVENT))}>Donner mon avis</button><NavLink to="/confidentialite">Confidentialité</NavLink><button type="button" onClick={openCookiePreferences}>Cookies</button></div>
       </aside>
 
       <header className="mobile-app-header">
@@ -105,6 +106,7 @@ export default function Layout() {
             {items.filter(([to]) => !mobileItems.some(([mobileTo]) => mobileTo === to)).map(([to, Icon, label]) => (
               <NavLink key={to} to={to} onClick={() => setMoreOpen(false)}><Icon size={19} />{label}</NavLink>
             ))}
+            <button type="button" onClick={() => { setMoreOpen(false); window.dispatchEvent(new Event(OPEN_FEEDBACK_EVENT)); }}><MessageCircleHeart size={19} />Donner mon avis</button>
             <NavLink to="/confidentialite" onClick={() => setMoreOpen(false)}><ShieldCheck size={19} />Confidentialité</NavLink>
             <button onClick={() => { setMoreOpen(false); openCookiePreferences(); }}>Préférences cookies</button>
             <button onClick={logout}><LogOut size={19} />Déconnexion</button>

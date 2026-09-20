@@ -1,4 +1,8 @@
 import hashlib
+import os
+import threading
+import time as time_module
+from collections import defaultdict, deque
 import json
 from pathlib import Path
 from datetime import date, datetime, time, timedelta
@@ -10,12 +14,13 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import inspect, text
 from sqlalchemy.orm import Session
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from .config import settings
 from .content_pack import install_default_content_packs
 from .v10_hints import upgrade_existing_hints, contextual_hints
 from .db import Base, SessionLocal, engine, get_db
-from .models import Attempt, Chapter, Exercise, ExerciseGuide, Lesson, Subject, User
+from .models import Attempt, Chapter, Exercise, ExerciseGuide, Feedback, Lesson, Subject, User
 from .schemas import (
     AdminChapterIn,
     AdminExerciseIn,
@@ -400,6 +405,131 @@ def admin_content_payload(db: Session):
             for exercise in exercises
         ],
     }
+
+
+
+# V10.2 — anonymous feedback. No visitor name/email/user ID or IP is persisted.
+FEEDBACK_CATEGORIES = {"opinion", "bug", "content_error", "suggestion"}
+FEEDBACK_STATUSES = {"new", "in_progress", "resolved", "dismissed"}
+_FEEDBACK_SALT = os.urandom(32)
+_feedback_window = defaultdict(deque)
+_feedback_lock = threading.Lock()
+
+
+class FeedbackIn(BaseModel):
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+    category: str
+    message: str = Field(min_length=12, max_length=1500)
+    rating: int | None = Field(default=None, ge=1, le=5)
+    page_path: str = Field(default="", max_length=240)
+    website: str = Field(default="", max_length=250)  # honeypot, hidden from visitors
+
+    @field_validator("message")
+    @classmethod
+    def message_must_be_meaningful(cls, value):
+        if len(value.strip()) < 12 or len(set(value.casefold())) < 4:
+            raise ValueError("Précise ton retour en quelques mots (12 caractères minimum).")
+        return value
+
+    @field_validator("page_path")
+    @classmethod
+    def clean_page_path(cls, value):
+        if not value or value == "/":
+            return value
+        if not value.startswith("/") or value.startswith("//") or "?" in value or "#" in value or "\\" in value or any(ord(c) < 32 for c in value):
+            raise ValueError("Page invalide")
+        return value
+
+
+class FeedbackStatusIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    status: str
+
+
+def _feedback_throttle(request: Request):
+    """Small in-memory burst limit, no IP written to logs/DB by this feature.
+
+    Uses the ASGI client address; upstream proxy configuration determines whether
+    it is the visitor IP. Multi-worker/multi-instance deployments need a shared
+    persistent limiter (Redis or edge WAF) before increasing public traffic.
+    """
+    remote = request.client.host if request.client else "unknown"
+    identity = hashlib.sha256(_FEEDBACK_SALT + remote.encode("utf-8", errors="replace")).digest()
+    now = time_module.monotonic()
+    with _feedback_lock:
+        # No unbounded growth of abandoned identities.
+        if len(_feedback_window) > 2000:
+            for key in list(_feedback_window):
+                if not _feedback_window[key] or _feedback_window[key][-1] < now - 3600:
+                    del _feedback_window[key]
+        recent = _feedback_window[identity]
+        while recent and recent[0] < now - 3600:
+            recent.popleft()
+        if len(recent) >= 3:
+            raise HTTPException(429, "Trop de messages envoyés. Réessaie dans une heure.")
+        recent.append(now)
+
+
+def _feedback_dict(entry: Feedback):
+    return {"id": entry.id, "category": entry.category, "rating": entry.rating,
+            "message": entry.message, "page_path": entry.page_path,
+            "status": entry.status, "created_at": entry.created_at.isoformat()}
+
+
+@app.post("/api/feedback", status_code=201)
+def submit_feedback(payload: FeedbackIn, request: Request, db: Session = Depends(get_db)):
+    if payload.website:
+        # Bot trap: appear to accept without storing the submission.
+        return {"ok": True}
+    if payload.category not in FEEDBACK_CATEGORIES:
+        raise HTTPException(422, "Catégorie de retour invalide")
+    _feedback_throttle(request)
+    entry = Feedback(category=payload.category, rating=payload.rating,
+                     message=payload.message, page_path=payload.page_path, status="new")
+    db.add(entry)
+    db.commit()
+    return {"ok": True}
+
+
+@app.get("/api/admin/feedback")
+def list_feedback(status: str = "all", category: str = "all", page: int = 1,
+                  db: Session = Depends(get_db), _: User = Depends(require_admin)):
+    if status not in FEEDBACK_STATUSES | {"all"} or category not in FEEDBACK_CATEGORIES | {"all"}:
+        raise HTTPException(422, "Filtre invalide")
+    if page < 1 or page > 10000:
+        raise HTTPException(422, "Page invalide")
+    query = db.query(Feedback)
+    if status != "all":
+        query = query.filter(Feedback.status == status)
+    if category != "all":
+        query = query.filter(Feedback.category == category)
+    total = query.count()
+    rows = query.order_by(Feedback.created_at.desc(), Feedback.id.desc()).offset((page-1)*30).limit(30).all()
+    return {"items": [_feedback_dict(row) for row in rows], "total": total, "page": page, "per_page": 30,
+            "new_count": db.query(Feedback).filter(Feedback.status == "new").count()}
+
+
+@app.patch("/api/admin/feedback/{feedback_id}")
+def update_feedback_status(feedback_id: int, payload: FeedbackStatusIn,
+                           db: Session = Depends(get_db), _: User = Depends(require_admin)):
+    if payload.status not in FEEDBACK_STATUSES:
+        raise HTTPException(422, "Statut invalide")
+    entry = db.get(Feedback, feedback_id)
+    if entry is None:
+        raise HTTPException(404, "Avis introuvable")
+    entry.status = payload.status
+    db.commit()
+    return _feedback_dict(entry)
+
+
+@app.delete("/api/admin/feedback/{feedback_id}")
+def delete_feedback(feedback_id: int, db: Session = Depends(get_db), _: User = Depends(require_admin)):
+    entry = db.get(Feedback, feedback_id)
+    if entry is None:
+        raise HTTPException(404, "Avis introuvable")
+    db.delete(entry)
+    db.commit()
+    return {"ok": True}
 
 
 @app.get("/api/admin/content")

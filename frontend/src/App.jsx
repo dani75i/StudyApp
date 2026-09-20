@@ -22,6 +22,8 @@ import PublicCourses from './pages/PublicCourses';
 import PublicChapter from './pages/PublicChapter';
 import Privacy from './pages/Privacy';
 import CookieConsent from './components/CookieConsent';
+import FeedbackWidget from './components/FeedbackWidget';
+import AdminFeedback from './pages/AdminFeedback';
 
 const AuthContext = createContext(null);
 const ThemeContext = createContext(null);
@@ -104,10 +106,12 @@ export default function App() {
             <Route path="/profil" element={<Profile />} />
             <Route path="/recompenses" element={<Rewards />} />
             <Route path="/admin" element={<AdminOnly><Admin /></AdminOnly>} />
+            <Route path="/admin/avis" element={<AdminOnly><AdminFeedback /></AdminOnly>} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <FeedbackWidget />
         <CookieConsent />
       </AuthContext.Provider>
     </ThemeContext.Provider>

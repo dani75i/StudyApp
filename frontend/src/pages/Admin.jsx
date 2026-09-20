@@ -7,6 +7,7 @@ import {
   Dumbbell,
   Eye,
   Lightbulb,
+  MessageCircleHeart,
   List,
   Layers3,
   Pencil,
@@ -18,6 +19,7 @@ import {
   X,
 } from 'lucide-react';
 import { api } from '../api';
+import { Link } from 'react-router-dom';
 import {
   emptyLessonBlocks,
   insertSnippet,
@@ -366,7 +368,7 @@ export default function Admin() {
           <h1>Gestion du contenu</h1>
           <p>Corrige les cours et exercices directement ici : les changements sont enregistrés dans Neon sans modifier le code.</p>
         </div>
-        <div className="admin-badge"><ShieldCheck size={18} /> Accès administrateur</div>
+<div className="feedback-admin-header-actions"><Link className="secondary" to="/admin/avis"><MessageCircleHeart size={18} /> Avis utilisateurs</Link><div className="admin-badge"><ShieldCheck size={18} /> Accès administrateur</div></div>
       </header>
 
       {success && <div className="alert success admin-feedback">{success}</div>}

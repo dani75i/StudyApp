@@ -66,6 +66,13 @@ export default function Privacy() {
         </section>
 
         <section className="privacy-section">
+          <h2>Vos avis et signalements</h2>
+          <p>Le formulaire « Donner mon avis » est facultatif et accessible sans compte. Il demande seulement une catégorie, un message, éventuellement une note et la page depuis laquelle il est envoyé. Aucune adresse email ni aucun identifiant de compte n'est ajouté au message.</p>
+          <p>Les messages sont conservés dans la base de données pour permettre à l'administrateur de traiter les signalements et d'améliorer les contenus. Ils ne sont pas publiés et ne sont pas transmis à Google Analytics. Évite d'y écrire ton nom, tes coordonnées ou d'autres informations personnelles.</p>
+          <p>Une limitation temporaire des envois utilise des informations techniques de connexion en mémoire pour réduire les abus. Nous ne stockons pas l'adresse IP avec l'avis. Les avis peuvent être supprimés par l'administrateur ; une durée de conservation définitive et les coordonnées de l'éditeur doivent être précisées avant le lancement public.</p>
+        </section>
+
+        <section className="privacy-section">
           <h2>Transferts et fournisseur</h2>
           <p>Google Analytics est un service fourni par Google. Son utilisation peut impliquer des traitements ou transferts de données hors de l'Espace économique européen selon la configuration et les services de Google. ExoDéclic n'active pas Google Signals, le remarketing ni la personnalisation publicitaire dans cette intégration.</p>
         </section>

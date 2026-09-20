@@ -173,3 +173,13 @@ Cette version améliore la lisibilité de la colonne d'exercices sans modifier l
 - cartes colorées et bordures d'état pour identifier la progression au premier coup d'œil.
 
 Aucune migration SQL n'est nécessaire pour cette version.
+
+
+### V10.2 — Retours utilisateurs
+
+- Bouton « Donner mon avis » présent sur les pages publiques et sur ordinateur ; dans le menu Plus sur mobile dans l’espace élève.
+- Formulaire anonyme et facultatif : catégorie, commentaire, note facultative, page source, sans compte ni email.
+- Messages stockés en base dans la table `feedback`, créée au démarrage par SQLAlchemy, sans modifier les comptes ni les progressions.
+- Administration privée à `/admin/avis` : lire les avis, filtrer, suivre les statuts, supprimer.
+- Anti-spam basique : pot de miel et plafond en mémoire de 3 messages par heure et par adresse réseau. Pour une forte audience ou plusieurs instances serveur, mettre en place une protection partagée côté proxy/edge.
+- Compléter les mentions légales, l’adresse de contact et la politique de conservation dans la page de confidentialité avant communication publique.

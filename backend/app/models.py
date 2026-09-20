@@ -113,3 +113,15 @@ class ExerciseGuide(Base):
     method: Mapped[str] = mapped_column(Text, default="")
     diagram_json: Mapped[str] = mapped_column(Text, default="null")
     exercise = relationship("Exercise", back_populates="guide")
+
+
+class Feedback(Base):
+    """Anonymous private product feedback; deliberately not linked to an account."""
+    __tablename__ = "feedback"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    category: Mapped[str] = mapped_column(String(24), index=True)
+    rating: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    message: Mapped[str] = mapped_column(Text)
+    page_path: Mapped[str] = mapped_column(String(240), default="")
+    status: Mapped[str] = mapped_column(String(24), default="new", index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
