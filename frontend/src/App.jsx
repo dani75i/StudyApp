@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { updateRouteSeo } from './seo';
 import { api } from './api';
 import Layout from './components/Layout';
 import Login from './pages/Login';
@@ -52,6 +53,8 @@ function GuestOnly({ children }) {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
+  useEffect(() => { updateRouteSeo(pathname); }, [pathname]);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [theme, setTheme] = useState(() => localStorage.getItem('studysprint-theme') || 'light');

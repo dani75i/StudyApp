@@ -58,7 +58,7 @@ export default function CookieConsent() {
       <div className="cookie-consent-copy">
         <strong>Statistiques de fréquentation</strong>
         <p>
-          Avec ton accord, StudySprint utilise Google Analytics uniquement sur les pages publiques et d'accès
+          Avec ton accord, ExoDéclic utilise Google Analytics uniquement sur les pages publiques et d'accès
           pour comprendre le trafic et améliorer le site. Aucun prénom, email ou réponse d'exercice n'est envoyé à Google.
         </p>
         <p className="cookie-minor-note">Si tu as moins de 15 ans, demande l'accord d'un parent avant d'accepter.</p>

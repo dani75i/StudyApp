@@ -1,3 +1,9 @@
+# ExoDéclic — mise à jour V10.1
+
+**Nom public : ExoDéclic · Domaine : https://www.exodeclic.fr**. Ce dépôt est une évolution compatible de StudySprint V10. Lis [EXODECLIC_V10_1_GUIDE.md](EXODECLIC_V10_1_GUIDE.md) avant la mise en ligne ; les anciennes clés techniques et les données utilisateur sont conservées.
+
+---
+
 # StudySprint V10 — collège 6e et 5e, indices et récompenses
 
 Nouveauté : ajout de 50 chapitres, 150 courtes fiches et 600 exercices corrigés pour la 6e et la 5e, avec 20 visuels scientifiques SVG, des indices associés aux notions et une distinction visuelle plus forte entre récompenses gagnées et verrouillées. Consulter **`V10_GUIDE.md`** pour l’installation, les limites éditoriales et les vérifications recommandées.

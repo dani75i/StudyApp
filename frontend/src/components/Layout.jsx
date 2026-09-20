@@ -50,7 +50,7 @@ export default function Layout() {
     <div className="app-shell">
       <aside className="sidebar">
         <div className="brand-row">
-          <div className="brand"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></div>
+          <div className="brand"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></div>
           <button className="theme-toggle" onClick={toggleTheme} title="Changer de thème" aria-label="Changer de thème">
             {theme === 'dark' ? <SunMedium size={18} /> : <MoonStar size={18} />}
           </button>
@@ -72,7 +72,7 @@ export default function Layout() {
       </aside>
 
       <header className="mobile-app-header">
-        <NavLink className="brand" to="/dashboard"><span className="brand-mark"><Zap size={20} /></span><span>StudySprint</span></NavLink>
+        <NavLink className="brand" to="/dashboard"><span className="brand-mark"><Zap size={20} /></span><span>ExoDéclic</span></NavLink>
         <button className="theme-toggle" onClick={toggleTheme} aria-label="Changer de thème" title="Changer de thème">
           {theme === 'dark' ? <SunMedium size={19} /> : <MoonStar size={19} />}
         </button>

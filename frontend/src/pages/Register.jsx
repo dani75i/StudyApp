@@ -49,7 +49,7 @@ export default function Register() {
 
       <div className="auth-panel">
         <form className="auth-card" onSubmit={submit} onFocus={() => { if (!startedTracked) { trackEvent('sign_up_started'); setStartedTracked(true); } }}>
-          <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>StudySprint</span></div>
+          <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>ExoDéclic</span></div>
           <h2>Créer mon compte</h2>
           <p className="muted">Tu pourras tester l'application comme un vrai élève.</p>
           {error && <div className="alert error">{error}</div>}

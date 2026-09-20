@@ -1,3 +1,4 @@
+import { setPageSeo } from '../seo';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, BookOpenCheck, Dumbbell, Zap } from 'lucide-react';
@@ -14,9 +15,11 @@ export default function PublicChapter() {
   useEffect(() => {
     api(`/public/chapters/${id}`).then((chapter) => {
       setData(chapter);
-      document.title = `${chapter.title} — ${chapter.level} — StudySprint`;
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) meta.setAttribute('content', `${chapter.summary} Cours gratuit de ${chapter.subject.name} niveau ${chapter.level} sur StudySprint.`);
+      setPageSeo({
+        title: `${chapter.title} — ${chapter.subject.name} ${chapter.level} | ExoDéclic`,
+        description: `${chapter.title} en ${chapter.level} : ${chapter.summary} Cours gratuit de ${chapter.subject.name} sur ExoDéclic.`.slice(0, 225),
+        pathname: `/decouvrir/cours/${id}`,
+      });
     });
   }, [id]);
 
@@ -26,7 +29,7 @@ export default function PublicChapter() {
 
   return (
     <div className="public-page">
-      <header className="public-nav"><Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></Link><nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'chapter_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav></header>
+      <header className="public-nav"><Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></Link><nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'chapter_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav></header>
       <main className="public-content public-chapter">
         <Link className="back" to="/decouvrir/cours"><ArrowLeft size={17} /> Tous les cours gratuits</Link>
         <header className="chapter-hero">

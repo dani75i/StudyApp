@@ -5,7 +5,7 @@ from datetime import date, datetime, time, timedelta
 from decimal import Decimal, InvalidOperation
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
-from fastapi.responses import FileResponse, PlainTextResponse
+from fastapi.responses import FileResponse, HTMLResponse, PlainTextResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import inspect, text
@@ -28,6 +28,7 @@ from .schemas import (
 )
 from .security import create_session, delete_current_session, get_current_user, hash_password, verify_password
 from .seed import seed
+from .public_seo import document_context, render_index
 
 ALLOWED_SUBJECT_SLUGS = ("mathematiques", "physique-chimie")
 
@@ -1048,15 +1049,34 @@ if _static_dir and _static_dir.exists():
         app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
 
     @app.get("/{full_path:path}", include_in_schema=False)
-    def spa_fallback(full_path: str):
+    def spa_fallback(full_path: str, request: Request):
         if full_path.startswith("api/"):
             raise HTTPException(404, "Route API introuvable")
+        # Avoid two public copies of the same site under Render's temporary URL.
+        # Existing Render-domain cookies cannot be transferred: sign in again
+        # on the new domain if needed. Never redirect /api or health checks.
+        host = (request.url.hostname or "").lower()
+        official_base = settings.site_url.rstrip("/")
+        if host.endswith(".onrender.com") and official_base.startswith("https://www.exodeclic.fr"):
+            path = "/" + full_path.lstrip("/")
+            query = f"?{request.url.query}" if request.url.query else ""
+            return RedirectResponse(official_base + path + query, status_code=308)
         requested = (_static_dir / full_path).resolve()
         try:
             requested.relative_to(_static_dir)
         except ValueError:
             requested = _static_dir / "index.html"
-        if requested.is_file():
+        if requested.is_file() and requested.name != "index.html":
             return FileResponse(requested)
-        return FileResponse(_static_dir / "index.html")
+        # Render public pages as readable HTML + dynamic SEO metadata on first
+        # request. React takes over in the browser; private routes are noindex.
+        normalized_path = "/" + full_path.strip("/") if full_path.strip("/") else "/"
+        with SessionLocal() as db:
+            context = document_context(normalized_path, db)
+        if normalized_path.startswith("/decouvrir/cours/") and context is None:
+            raise HTTPException(404, "Cours introuvable")
+        base = settings.site_url.rstrip("/")
+        html_page = render_index((_static_dir / "index.html").read_text(encoding="utf-8"), context,
+                                 base + normalized_path if normalized_path != "/" else base + "/", normalized_path)
+        return HTMLResponse(content=html_page)
 

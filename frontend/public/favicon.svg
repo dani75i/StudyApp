@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ExoDéclic">
+  <rect width="64" height="64" rx="18" fill="#6154e8"/>
+  <path d="M34 10 17 34h13l-3 20 21-28H35l5-16Z" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+  <circle cx="52" cy="12" r="3" fill="#b9ffeb"/>
+</svg>

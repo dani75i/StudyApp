@@ -1,3 +1,4 @@
+import { setPageSeo } from '../seo';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Atom, BookOpenText, Calculator, Zap } from 'lucide-react';
@@ -12,7 +13,11 @@ export default function PublicCourses() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    document.title = 'Cours gratuits de maths et physique — StudySprint';
+    setPageSeo({
+      title: 'Cours gratuits de maths et physique-chimie (6e à 3e) | ExoDéclic',
+      description: 'Découvre les cours gratuits de maths et physique-chimie du collège : 6e, 5e, 4e et 3e. Fiches de révision et exercices corrigés sur ExoDéclic.',
+      pathname: '/decouvrir/cours',
+    });
     api('/public/catalog').then(setData);
   }, []);
 
@@ -21,13 +26,13 @@ export default function PublicCourses() {
   return (
     <div className="public-page">
       <header className="public-nav">
-        <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></Link>
+        <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></Link>
         <nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'courses_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav>
       </header>
 
       <main className="public-content">
         <Link className="back" to="/"><ArrowLeft size={17} /> Accueil</Link>
-        <div className="public-course-heading"><span className="eyebrow">COURS GRATUITS</span><h1>Maths et physique du collège au lycée</h1><p>Découvre les fiches disponibles publiquement. Crée ensuite un compte pour accéder aux exercices corrigés et suivre ta progression.</p></div>
+        <div className="public-course-heading"><span className="eyebrow">COURS GRATUITS</span><h1>Maths et physique-chimie de la 6e à la 3e</h1><p>Découvre les fiches disponibles publiquement. Crée ensuite un compte pour accéder aux exercices corrigés et suivre ta progression.</p></div>
 
         <div className="subject-stack">
           {data.map((subject) => {

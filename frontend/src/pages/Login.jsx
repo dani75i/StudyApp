@@ -47,7 +47,7 @@ export default function Login() {
 
       <div className="auth-panel">
         <form className="auth-card" onSubmit={submit}>
-          <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>StudySprint</span></div>
+          <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>ExoDéclic</span></div>
           <h2>Bon retour 👋</h2>
           <p className="muted">Connecte-toi pour reprendre là où tu t'es arrêté.</p>
           {error && <div className="alert error">{error}</div>}

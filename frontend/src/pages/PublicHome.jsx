@@ -1,3 +1,4 @@
+import { setPageSeo } from '../seo';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Atom, BookOpenText, Calculator, CheckCircle2, Dumbbell, Sparkles, Target, Zap } from 'lucide-react';
@@ -6,15 +7,17 @@ import { trackEvent } from '../analytics';
 
 export default function PublicHome() {
   useEffect(() => {
-    document.title = 'StudySprint — Maths et physique du collège au lycée';
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute('content', 'Cours de maths et physique, exercices corrigés et suivi de progression pour les collégiens et lycéens. StudySprint est gratuit pendant sa phase de lancement.');
+    setPageSeo({
+      title: 'ExoDéclic — Cours et exercices corrigés du collège',
+      description: 'Cours gratuits et exercices corrigés de maths et physique-chimie pour la 6e, 5e, 4e et 3e. Révise à ton rythme avec ExoDéclic.',
+      pathname: '/',
+    });
   }, []);
 
   return (
     <div className="public-page">
       <header className="public-nav">
-        <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>StudySprint</span></Link>
+        <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></Link>
         <nav>
           <Link to="/decouvrir/cours">Cours gratuits</Link>
           <Link to="/connexion">Connexion</Link>
@@ -26,7 +29,7 @@ export default function PublicHome() {
         <section className="public-hero">
           <div className="public-hero-copy">
             <span className="public-kicker"><Sparkles size={15} /> Gratuit pendant le lancement</span>
-            <h1>Progresse en maths et en physique, un exercice à la fois.</h1>
+            <h1>Progresse en maths et en physique-chimie, du collège au brevet.</h1>
             <p>Des cours clairs, des exercices corrigés et un tableau de bord personnel pour savoir exactement ce que tu maîtrises et ce qu'il faut retravailler.</p>
             <div className="public-actions">
               <Link className="primary public-cta" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'hero_signup', destination: '/inscription' })}>Commencer gratuitement <ArrowRight size={18} /></Link>
@@ -46,7 +49,7 @@ export default function PublicHome() {
         </section>
 
         <section className="public-section">
-          <div className="public-section-head"><span className="eyebrow">POURQUOI STUDYSPRINT</span><h2>Un outil pensé pour travailler, pas seulement lire.</h2></div>
+          <div className="public-section-head"><span className="eyebrow">POURQUOI EXODÉCLIC</span><h2>Un outil pensé pour travailler, pas seulement lire.</h2></div>
           <div className="public-feature-grid">
             <article><span className="feature-icon"><BookOpenText /></span><h3>Cours essentiels</h3><p>Des fiches courtes et structurées pour revoir la notion avant de passer à la pratique.</p></article>
             <article><span className="feature-icon"><Dumbbell /></span><h3>Exercices corrigés</h3><p>Travaille par difficulté et retrouve immédiatement les exercices à revoir.</p></article>
