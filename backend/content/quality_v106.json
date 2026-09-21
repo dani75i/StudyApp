@@ -1,0 +1,393 @@
+{
+  "slug": "quality-v10-6",
+  "title": "V10.6 — corrections ciblées et démarches Pythagore",
+  "lessons": [
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Configuration",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux sécantes coupées par deux parallèles donnent des longueurs correspondantes proportionnelles.\"}, {\"type\": \"example\", \"content\": \"si (DE) est parallèle à (BC), avec AD = 2 cm, AB = 6 cm et AC = 9 cm, alors AE/AC = AD/AB = 2/6 = 1/3, donc AE = 3 cm.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et les droites (DE) et (BC) sont parallèles.\"}, {\"type\": \"paragraph\", \"content\": \"Les trois rapports de côtés correspondants sont égaux :\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}=\\\\frac{DE}{BC}\"}, {\"type\": \"note\", \"content\": \"Repère le sommet A commun aux deux triangles et écris les rapports dans le même ordre.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Méthode",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On repère le sommet commun, on met les côtés correspondants dans le même ordre, puis on utilise le produit en croix.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour chercher une longueur, vérifie d’abord l’alignement des points et le parallélisme, écris les rapports correspondants, puis isole l’inconnue.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}\"}, {\"type\": \"example\", \"content\": \"Si (DE) est parallèle à (BC), avec \\\\(AD=2\\\\) cm, \\\\(AB=6\\\\) cm et \\\\(AC=9\\\\) cm, alors \\\\(\\\\frac{2}{6}=\\\\frac{AE}{9}\\\\). On obtient \\\\(AE=\\\\frac{2\\\\times9}{6}=3\\\\) cm.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Agrandissement/réduction",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un coefficient >1 agrandit. Entre 0 et 1, il réduit.\"}, {\"type\": \"example\", \"content\": \"\\\\(3(x+2)=3x+6\\\\) On distribue 3 à chacun des termes entre parenthèses.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Lorsque les triangles ADE et ABC sont en configuration de Thalès, on peut passer du petit triangle au grand par un même coefficient k :\"}, {\"type\": \"formula\", \"content\": \"k=\\\\frac{AB}{AD}=\\\\frac{AC}{AE}=\\\\frac{BC}{DE}\"}, {\"type\": \"paragraph\", \"content\": \"Si k > 1, les longueurs sont agrandies ; pour passer du grand triangle au petit, on utilise le coefficient inverse 1/k, compris entre 0 et 1.\"}, {\"type\": \"example\", \"content\": \"Si \\\\(AD=2\\\\) cm et \\\\(AB=6\\\\) cm, alors \\\\(k=\\\\frac{6}{2}=3\\\\). Un segment de 4 cm du petit triangle correspond à un segment de 12 cm du grand triangle.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Transformations et homothéties",
+      "title": "Isométries",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Translations, rotations et symétries conservent longueurs et angles.\"}, {\"type\": \"example\", \"content\": \"lors d’une homothétie de rapport 2, une longueur de 3 cm devient 6 cm. Avec un rapport négatif, la figure est aussi renversée.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une isométrie conserve les longueurs et les angles : la figure obtenue a la même forme et la même taille.\"}, {\"type\": \"example\", \"content\": \"Une translation qui déplace un segment de 3 cm vers la droite ne change pas sa longueur : le segment mesure toujours 3 cm.\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Translations et rotations",
+      "title": "Translation",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une translation fait glisser tous les points d’une figure de la même distance dans la même direction et le même sens.\"}, {\"type\": \"note\", \"content\": \"Une translation ne tourne pas la figure.\"}, {\"type\": \"example\", \"content\": \"lors d’une homothétie de rapport 2, une longueur de 3 cm devient 6 cm. Avec un rapport négatif, la figure est aussi renversée.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une translation déplace tous les points d’une figure selon le même déplacement, sans modifier sa forme, sa taille ni son orientation.\"}, {\"type\": \"example\", \"content\": \"Une figure translatée de 4 cm vers la droite conserve toutes ses longueurs et ses angles.\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Durées et horaires",
+      "title": "Calculer une durée",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Transforme les horaires en minutes lorsque le calcul franchit une heure.\"}, {\"type\": \"note\", \"content\": \"Transforme les horaires en minutes lorsque le calcul franchit une heure.\"}, {\"type\": \"example\", \"content\": \"un rectangle de longueur 8 cm et de largeur 3 cm a une aire de 8 × 3 = 24 cm² et un périmètre de 2 × (8 + 3) = 22 cm.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer une durée, on soustrait l’heure de départ à l’heure d’arrivée, en tenant compte du passage éventuel à l’heure suivante.\"}, {\"type\": \"example\", \"content\": \"Un cours commence à 14 h 25 et finit à 15 h 10 : de 14 h 25 à 15 h il y a 35 minutes, puis 10 minutes. La durée est donc 45 minutes.\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Angles et instruments",
+      "title": "Angles complémentaires",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux angles complémentaires ont une somme de 90°.\"}, {\"type\": \"note\", \"content\": \"Deux angles complémentaires ont une somme de 90°.\"}, {\"type\": \"example\", \"content\": \"un rectangle de longueur 8 cm et de largeur 3 cm a une aire de 8 × 3 = 24 cm² et un périmètre de 2 × (8 + 3) = 22 cm.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux angles sont complémentaires lorsque la somme de leurs mesures est égale à 90°.\"}, {\"type\": \"formula\", \"content\": \"\\\\alpha+\\\\beta=90^\\\\circ\"}, {\"type\": \"example\", \"content\": \"Si un angle mesure 35°, son angle complémentaire mesure 90° − 35° = 55°.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Fonctions : images et antécédents",
+      "title": "Avec une formule",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer une image, on remplace x par la valeur. Pour chercher un antécédent, on résout une équation.\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\\\\quad\\\\text{et}\\\\quad f(x)=7\\\\Rightarrow x=3\"}, {\"type\": \"example\", \"content\": \"\\\\(f(x)=2x+1\\\\quad\\\\text{et}\\\\quad f(x)=7\\\\Rightarrow x=3\\\\) 3 est un antécédent de 7.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer une image, on remplace x par la valeur demandée. Pour trouver un antécédent, on résout une équation.\"}, {\"type\": \"formula\", \"content\": \"f(x)=2x+1\"}, {\"type\": \"example\", \"content\": \"L’image de 3 est \\\\(f(3)=2\\\\times3+1=7\\\\). Pour trouver un antécédent de 7, on résout \\\\(2x+1=7\\\\) : \\\\(x=3\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Circuits électriques : tension et intensité",
+      "title": "Mesures",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Tension U en volts avec voltmètre en dérivation. Intensité I en ampères avec ampèremètre en série.\"}, {\"type\": \"example\", \"content\": \"dans un circuit simple, si l’interrupteur est ouvert, la lampe s’éteint car le courant ne circule plus.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On mesure l’intensité I en ampères (A) avec un ampèremètre branché en série ; la tension U se mesure en volts (V) avec un voltmètre branché en dérivation.\"}, {\"type\": \"example\", \"content\": \"Pour mesurer la tension aux bornes d’une lampe, relie le voltmètre aux deux bornes de la lampe, sans ouvrir le circuit.\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Lumière et propagation",
+      "title": "Sources et objets diffusants",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une source primaire produit sa propre lumière ; un objet diffusant renvoie la lumière qu’il reçoit.\"}, {\"type\": \"note\", \"content\": \"La Lune diffuse la lumière du Soleil : elle n’est pas une source primaire.\"}, {\"type\": \"example\", \"content\": \"un rayon lumineux se propage en ligne droite dans un milieu homogène. C’est ce qui explique la formation des ombres.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une source primaire produit sa propre lumière. Un objet diffusant devient visible parce qu’il renvoie la lumière reçue.\"}, {\"type\": \"example\", \"content\": \"Le Soleil est une source primaire. La Lune renvoie la lumière du Soleil : c’est un objet diffusant.\"}]"
+    }
+  ],
+  "guides": [
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Hypoténuse 3-4",
+      "expected_correction": "c²=9+16=25, donc c=5.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=3^2+4^2=9+16=25\\]",
+        "\\[c=\\sqrt{25}=5\\ \\text{cm}\\] L’hypoténuse mesure 5 cm."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Hypoténuse 5-12",
+      "expected_correction": "c²=25+144=169, donc c=13.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=5^2+12^2=25+144=169\\]",
+        "\\[c=\\sqrt{169}=13\\ \\text{cm}\\] L’hypoténuse mesure 13 cm."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Hypoténuse 8-15",
+      "expected_correction": "c²=64+225=289, donc c=17.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=8^2+15^2=64+225=289\\]",
+        "\\[c=\\sqrt{289}=17\\ \\text{cm}\\] L’hypoténuse mesure 17 cm."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Hypoténuse 7-24",
+      "expected_correction": "c²=49+576=625, donc c=25.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=7^2+24^2=49+576=625\\]",
+        "\\[c=\\sqrt{625}=25\\ \\text{cm}\\] L’hypoténuse mesure 25 cm."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Côté manquant 6-10",
+      "expected_correction": "b²=100−36=64, donc b=8.",
+      "steps": [
+        "L’hypoténuse est le plus long côté du triangle rectangle.",
+        "On applique Pythagore, puis on isole le carré de la longueur cherchée : \\[b^2=c^2-a^2\\]",
+        "\\[b^2=10^2-6^2=64\\]",
+        "\\[b=\\sqrt{64}=8\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Côté manquant 9-15",
+      "expected_correction": "b²=225−81=144, donc b=12.",
+      "steps": [
+        "L’hypoténuse est le plus long côté du triangle rectangle.",
+        "On applique Pythagore, puis on isole le carré de la longueur cherchée : \\[b^2=c^2-a^2\\]",
+        "\\[b^2=15^2-9^2=144\\]",
+        "\\[b=\\sqrt{144}=12\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Côté manquant 12-13",
+      "expected_correction": "b²=169−144=25, donc b=5.",
+      "steps": [
+        "L’hypoténuse est le plus long côté du triangle rectangle.",
+        "On applique Pythagore, puis on isole le carré de la longueur cherchée : \\[b^2=c^2-a^2\\]",
+        "\\[b^2=13^2-12^2=25\\]",
+        "\\[b=\\sqrt{25}=5\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Côté manquant 20-29",
+      "expected_correction": "b²=841−400=441, donc b=21.",
+      "steps": [
+        "L’hypoténuse est le plus long côté du triangle rectangle.",
+        "On applique Pythagore, puis on isole le carré de la longueur cherchée : \\[b^2=c^2-a^2\\]",
+        "\\[b^2=29^2-20^2=441\\]",
+        "\\[b=\\sqrt{441}=21\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Triangle 6-8-10",
+      "expected_correction": "10²=100; 6²+8²=100. Égalité : oui.",
+      "steps": [
+        "On repère le plus long côté du triangle.",
+        "On calcule son carré : \\[10^2=100\\]",
+        "On calcule la somme des carrés des deux autres côtés : \\[6^2+8^2=36+64=100\\]",
+        "Les deux nombres sont égaux : le triangle est rectangle, par la réciproque de Pythagore."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Triangle 5-6-8",
+      "expected_correction": "8²=64; 5²+6²=61. Pas d'égalité : non.",
+      "steps": [
+        "On repère le plus long côté du triangle.",
+        "On calcule son carré : \\[8^2=64\\]",
+        "On calcule la somme des carrés des deux autres côtés : \\[5^2+6^2=25+36=61\\]",
+        "Les deux nombres sont différents : le triangle n’est pas rectangle, par la contraposée du théorème de Pythagore."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Triangle 9-12-15",
+      "expected_correction": "15²=225; 9²+12²=225. Égalité : oui.",
+      "steps": [
+        "On repère le plus long côté du triangle.",
+        "On calcule son carré : \\[15^2=225\\]",
+        "On calcule la somme des carrés des deux autres côtés : \\[9^2+12^2=81+144=225\\]",
+        "Les deux nombres sont égaux : le triangle est rectangle, par la réciproque de Pythagore."
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Triangle 7-8-10",
+      "expected_correction": "10²=100; 7²+8²=113. Pas d'égalité : non.",
+      "steps": [
+        "On repère le plus long côté du triangle.",
+        "On calcule son carré : \\[10^2=100\\]",
+        "On calcule la somme des carrés des deux autres côtés : \\[7^2+8^2=49+64=113\\]",
+        "Les deux nombres sont différents : le triangle n’est pas rectangle, par la contraposée du théorème de Pythagore."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 1 — ABC rectangle en A : quelle est l’hypoténuse",
+      "expected_correction": "BC est opposé à l’angle droit situé en A.",
+      "steps": [
+        "L’hypoténuse est le côté opposé à l’angle droit.",
+        "Le triangle ABC est rectangle en A : le côté opposé est [BC]."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 2 — Triangle rectangle : côtés de l’angle droit 3 cm et 4 cm. Hypoténuse ? (en cm)",
+      "expected_correction": "3²+4²=25, donc √25=5.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=3^2+4^2=9+16=25\\]",
+        "\\[c=\\sqrt{25}=5\\ \\text{cm}\\] L’hypoténuse mesure 5 cm."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 3 — Un triangle a des côtés 3,4,5 cm. Est-il rectangle",
+      "expected_correction": "5²=25 et 3²+4²=25.",
+      "steps": [
+        "On repère le plus long côté : 5 cm.",
+        "\\[5^2=25\\]",
+        "\\[3^2+4^2=9+16=25\\]",
+        "Les deux nombres sont égaux : le triangle est rectangle (réciproque de Pythagore)."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 4 — Triangle rectangle : hypoténuse 10 cm, autre côté 6 cm. Troisième côté ? (en cm)",
+      "expected_correction": "10²−6²=64, donc √64=8.",
+      "steps": [
+        "On connaît l’hypoténuse et un côté de l’angle droit.",
+        "\\[b^2=c^2-a^2\\]",
+        "\\[b^2=10^2-6^2=64\\]",
+        "\\[b=\\sqrt{64}=8\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 5 — Triangle rectangle : côtés de l’angle droit 5 cm et 12 cm. Hypoténuse",
+      "expected_correction": "5²+12²=169, donc 13.",
+      "steps": [
+        "Le triangle est rectangle. L’hypoténuse est le côté opposé à l’angle droit.",
+        "On applique le théorème de Pythagore : \\[c^2=a^2+b^2\\]",
+        "\\[c^2=5^2+12^2=25+144=169\\]",
+        "\\[c=\\sqrt{169}=13\\ \\text{cm}\\] L’hypoténuse mesure 13 cm."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 6 — Un triangle de côtés 5, 7 et 9 cm est-il rectangle",
+      "expected_correction": "9²=81 alors que 5²+7²=74.",
+      "steps": [
+        "Le plus long côté mesure 9 cm.",
+        "\\[9^2=81\\]",
+        "\\[5^2+7^2=25+49=74\\]",
+        "81 et 74 sont différents : le triangle n’est pas rectangle."
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 7 — Un rectangle mesure 6 cm sur 8 cm. Diagonale ? (en cm)",
+      "expected_correction": "La diagonale est l’hypoténuse du triangle rectangle : √(36+64)=10.",
+      "steps": [
+        "La diagonale d’un rectangle est l’hypoténuse du triangle rectangle formé par ses côtés.",
+        "\\[d^2=6^2+8^2=36+64=100\\]",
+        "\\[d=\\sqrt{100}=10\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "4e",
+      "chapter": "Théorème de Pythagore",
+      "title": "Exercice 8 — Triangle rectangle : hypoténuse 15 cm, autre côté 9 cm. Dernier côté ? (en cm)",
+      "expected_correction": "15²−9²=144, donc 12.",
+      "steps": [
+        "On connaît l’hypoténuse et un côté de l’angle droit.",
+        "\\[b^2=c^2-a^2\\]",
+        "\\[b^2=15^2-9^2=144\\]",
+        "\\[b=\\sqrt{144}=12\\ \\text{cm}\\]"
+      ]
+    }
+  ],
+  "statement_patches": [
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Longueur Thalès 1",
+      "expected_statement": "AB/AC=2/5 et AD=6 cm correspond à AB. Quelle est AE ?",
+      "statement": "Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et (DE) est parallèle à (BC). On sait que AB/AC = 2/5 et AD = 6 cm. Quelle est la longueur AE (en cm) ?",
+      "expected_correction": "2/5=6/AE, donc AE=15.",
+      "steps": [
+        "Les points sont alignés et (DE) est parallèle à (BC) : on peut appliquer le théorème de Thalès.",
+        "\\[\\frac{AD}{AB}=\\frac{AE}{AC}\\]",
+        "Puisque \\(\\frac{AB}{AC}=\\frac{2}{5}\\), on a aussi : \\[\\frac{AD}{AE}=\\frac{2}{5}\\]",
+        "\\[AE=\\frac{6\\times5}{2}=15\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Longueur Thalès 2",
+      "expected_statement": "AB/AC=3/4 et AD=9 cm correspond à AB. Quelle est AE ?",
+      "statement": "Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et (DE) est parallèle à (BC). On sait que AB/AC = 3/4 et AD = 9 cm. Quelle est la longueur AE (en cm) ?",
+      "expected_correction": "3/4=9/AE, donc AE=12.",
+      "steps": [
+        "Les points sont alignés et (DE) est parallèle à (BC) : on peut appliquer le théorème de Thalès.",
+        "\\[\\frac{AD}{AB}=\\frac{AE}{AC}\\]",
+        "Puisque \\(\\frac{AB}{AC}=\\frac{3}{4}\\), on a aussi : \\[\\frac{AD}{AE}=\\frac{3}{4}\\]",
+        "\\[AE=\\frac{9\\times4}{3}=12\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Longueur Thalès 3",
+      "expected_statement": "AB/AC=4/7 et AD=8 cm correspond à AB. Quelle est AE ?",
+      "statement": "Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et (DE) est parallèle à (BC). On sait que AB/AC = 4/7 et AD = 8 cm. Quelle est la longueur AE (en cm) ?",
+      "expected_correction": "4/7=8/AE, donc AE=14.",
+      "steps": [
+        "Les points sont alignés et (DE) est parallèle à (BC) : on peut appliquer le théorème de Thalès.",
+        "\\[\\frac{AD}{AB}=\\frac{AE}{AC}\\]",
+        "Puisque \\(\\frac{AB}{AC}=\\frac{4}{7}\\), on a aussi : \\[\\frac{AD}{AE}=\\frac{4}{7}\\]",
+        "\\[AE=\\frac{8\\times7}{4}=14\\ \\text{cm}\\]"
+      ]
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Longueur Thalès 4",
+      "expected_statement": "AB/AC=5/8 et AD=10 cm correspond à AB. Quelle est AE ?",
+      "statement": "Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et (DE) est parallèle à (BC). On sait que AB/AC = 5/8 et AD = 10 cm. Quelle est la longueur AE (en cm) ?",
+      "expected_correction": "5/8=10/AE, donc AE=16.",
+      "steps": [
+        "Les points sont alignés et (DE) est parallèle à (BC) : on peut appliquer le théorème de Thalès.",
+        "\\[\\frac{AD}{AB}=\\frac{AE}{AC}\\]",
+        "Puisque \\(\\frac{AB}{AC}=\\frac{5}{8}\\), on a aussi : \\[\\frac{AD}{AE}=\\frac{5}{8}\\]",
+        "\\[AE=\\frac{10\\times8}{5}=16\\ \\text{cm}\\]"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, BookOpenCheck, CheckCircle2, RotateCcw, Sparkles
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { api } from '../api';
 import { RichText } from '../components/RichContent';
+import { correctionToSteps } from '../correctionSteps';
 import GeometryDiagram from '../components/GeometryDiagram';
 
 export default function ExerciseCorrection() {
@@ -35,6 +36,7 @@ export default function ExerciseCorrection() {
     : detail.next_exercise_id;
   const onward = upcoming ? `/exercice/${upcoming}${fromSession ? '?from=seance' : ''}` : fromSession ? '/seance/bilan' : `/chapitre/${detail.chapter_id}#exercices`;
   const onwardLabel = upcoming ? 'Exercice suivant' : fromSession ? 'Voir mon bilan' : 'Retour au chapitre';
+  const solutionSteps = correctionToSteps(correction.steps, correction.correction);
 
   return (
     <div className="exercise-page v9-correction-page">
@@ -52,11 +54,14 @@ export default function ExerciseCorrection() {
 
       <section className="v9-correction-card">
         <h2><BookOpenCheck size={21} /> Correction pas à pas</h2>
-        {correction.steps?.length ? (
-          <ol className="v9-solution-steps">
-            {correction.steps.map((step, index) => <li key={index}><span>{index + 1}</span><div><RichText text={step} /></div></li>)}
-          </ol>
-        ) : <div className="v9-statement"><RichText text={correction.correction} /></div>}
+        <ol className="v9-solution-steps">
+          {solutionSteps.map((step, index) => (
+            <li key={index}>
+              <span aria-label={`Étape ${index + 1}`}>{index + 1}</span>
+              <div className="v106-step-content"><RichText text={step} /></div>
+            </li>
+          ))}
+        </ol>
       </section>
       {correction.method && <aside className="v9-method"><Sparkles size={21} /><div><strong>Méthode à retenir</strong><p><RichText text={correction.method} /></p></div></aside>}
       <div className="v9-correction-actions">

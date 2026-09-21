@@ -1,0 +1,20 @@
+{
+  "scope": "Contenus fournis dans la V10.6, avec corrections V10.6 appliquées en mémoire.",
+  "counters": {
+    "lessons": 300,
+    "formula_blocks": 86,
+    "example_blocks": 90,
+    "exercises": 1128,
+    "chapters": 100,
+    "patched_lessons": 10,
+    "patched_statements": 4,
+    "new_pythagoras_guides": 20,
+    "issues": 0
+  },
+  "issues": [],
+  "limits": [
+    "Contrôles de structure, cohérence ciblée et calculs des exercices de Pythagore réécrits ; pas de certification humaine de toutes les solutions.",
+    "Les fiches modifiées sur le site via /admin ne sont pas inspectées par cet audit hors ligne.",
+    "Un bloc KaTeX équilibré peut malgré tout contenir une erreur mathématique."
+  ]
+}

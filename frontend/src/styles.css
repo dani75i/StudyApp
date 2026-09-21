@@ -1477,3 +1477,21 @@ body {
   .feedback-admin-card{padding:16px}
 }
 @media(prefers-reduced-motion:reduce){.feedback-fab,.feedback-stars button{transition:none}}
+
+/* V10.6 — corrections aérées, avec étape et expression mathématique distinctes */
+.v9-solution-steps { gap: 13px; }
+.v9-solution-steps li {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 15px;
+  min-width: 0;
+}
+.v106-step-content { min-width: 0; line-height: 1.85; font-size: 1.05rem; overflow-wrap: anywhere; }
+.v106-step-content .display-math { margin: 10px 0; padding: 14px 10px; background: var(--course-bg); border-radius: 12px; color: var(--course-accent); }
+.v106-step-content .katex { font-size: 1.14em; }
+.v9-method p { line-height: 1.8; }
+@media (max-width: 600px) {
+  .v9-solution-steps li { padding: 13px 11px; gap: 10px; }
+  .v106-step-content { font-size: 1rem; }
+}
