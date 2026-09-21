@@ -1,0 +1,2811 @@
+{
+  "pack_id": "4e-2026-v10-5-refresh",
+  "title": "Cours 4e — v10.5 formules, exemples et cohérence",
+  "level": "4e",
+  "subjects": {
+    "mathematiques": {
+      "name": "Mathématiques",
+      "emoji": "📐",
+      "description": "Mathématiques collège et lycée."
+    },
+    "physique-chimie": {
+      "name": "Physique-Chimie",
+      "emoji": "⚛️",
+      "description": "Physique-Chimie collège et lycée."
+    }
+  },
+  "chapters": [
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 1,
+      "title": "Nombres relatifs et calculs",
+      "summary": "Additionner, soustraire, multiplier et diviser des nombres relatifs.",
+      "lessons": [
+        {
+          "title": "Signes et opposés",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux nombres opposés ont la même distance à zéro et des signes contraires.\"}, {\"type\": \"formula\", \"content\": \"-(+a)=-a \\\\qquad -(-a)=a\"}, {\"type\": \"note\", \"content\": \"Soustraire un nombre revient à ajouter son opposé.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Addition et soustraction",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"De même signe : on additionne les distances à zéro et on garde le signe. De signes contraires : on soustrait les distances et on garde le signe du nombre qui a la plus grande distance.\"}, {\"type\": \"formula\", \"content\": \"(-7)+(+3)=-4\"}, {\"type\": \"list\", \"items\": [\"Écris les signes avec des parenthèses au début.\", \"Vérifie le résultat avec la droite graduée.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Produit et quotient",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un produit de deux nombres de même signe est positif ; de signes contraires, il est négatif.\"}, {\"type\": \"formula\", \"content\": \"(-4)\\\\times(-6)=24\"}, {\"type\": \"note\", \"content\": \"Avec plusieurs facteurs non nuls, un nombre pair de facteurs négatifs donne un résultat positif.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Calcule (-5)+8",
+          "statement": "Calcule (-5)+8.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "Les signes sont contraires : 8−5=3, le nombre de plus grande distance est positif.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Calcule 12−17",
+          "statement": "Calcule 12−17.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-5",
+          "correction": "12−17=−5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Quel est le signe de (-3)×(-4)",
+          "statement": "Quel est le signe de (-3)×(-4) ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Positif",
+            "Négatif",
+            "Nul"
+          ],
+          "correct_answer": "Positif",
+          "correction": "Un produit de deux nombres négatifs est positif.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Calcule (-6)×7",
+          "statement": "Calcule (-6)×7.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-42",
+          "correction": "Signes contraires : le produit est négatif et 6×7=42.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Calcule (-48)÷(-6)",
+          "statement": "Calcule (-48)÷(-6).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "Deux signes négatifs donnent un quotient positif : 48÷6=8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Calcule (-9)+(-8)−(-4)",
+          "statement": "Calcule (-9)+(-8)−(-4).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-13",
+          "correction": "−9−8+4=−13.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Calcule 3−2×(-5)",
+          "statement": "Calcule 3−2×(-5).",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "La multiplication est prioritaire : 3−(−10)=13.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Quel calcul vaut −12",
+          "statement": "Quel calcul vaut −12 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "(-3)×4",
+            "(-3)×(-4)",
+            "3×4"
+          ],
+          "correct_answer": "(-3)×4",
+          "correction": "Un facteur négatif et un positif donnent −12.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 2,
+      "title": "Fractions et nombres rationnels",
+      "summary": "Comparer, additionner et multiplier des fractions avec des méthodes explicites.",
+      "lessons": [
+        {
+          "title": "Fractions équivalentes",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Multiplier le numérateur et le dénominateur par un même nombre non nul conserve la valeur de la fraction.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{2}{3}=\\\\frac{8}{12}\"}, {\"type\": \"note\", \"content\": \"Le dénominateur d’une fraction ne peut jamais être zéro.\"}, {\"type\": \"example\", \"content\": \"\\\\(\\\\frac{3}{4}=\\\\frac{6}{8}\\\\) Ces deux fractions sont équivalentes.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Addition et soustraction",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour additionner deux fractions, on les met au même dénominateur puis on additionne les numérateurs.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{1}{4}+\\\\frac{2}{4}=\\\\frac{3}{4}\"}, {\"type\": \"list\", \"items\": [\"Cherche un dénominateur commun.\", \"Simplifie la fraction si possible.\"]}, {\"type\": \"example\", \"content\": \"\\\\(\\\\frac{1}{2}+\\\\frac{1}{3}=\\\\frac{3}{6}+\\\\frac{2}{6}=\\\\frac{5}{6}\\\\) On met les fractions au même dénominateur avant d’additionner.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Produit et quotient",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour multiplier des fractions, multiplie les numérateurs entre eux et les dénominateurs entre eux. Diviser par une fraction non nulle revient à multiplier par son inverse.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{2}{3}\\\\times\\\\frac{3}{5}=\\\\frac{2}{5}\"}, {\"type\": \"note\", \"content\": \"Une fraction négative peut être écrite avec le signe moins devant le trait de fraction.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Quelle fraction est égale à 2/3",
+          "statement": "Quelle fraction est égale à 2/3 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "4/6",
+            "3/5",
+            "2/6"
+          ],
+          "correct_answer": "4/6",
+          "correction": "En multipliant les deux termes de 2/3 par 2, on trouve 4/6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Combien vaut 1/4 + 2/4",
+          "statement": "Combien vaut 1/4 + 2/4 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "3/4",
+            "3/8",
+            "2/4"
+          ],
+          "correct_answer": "3/4",
+          "correction": "Même dénominateur : 1+2=3 au numérateur.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Calcule 1/2 + 1/4 et donne le numérateur de la fraction irréductible",
+          "statement": "Calcule 1/2 + 1/4 et donne le numérateur de la fraction irréductible.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "1/2=2/4, donc 2/4+1/4=3/4.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Calcule 3/5 − 1/5 et donne le numérateur du résultat irréductible",
+          "statement": "Calcule 3/5 − 1/5 et donne le numérateur du résultat irréductible.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "3/5−1/5=2/5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Combien vaut 2/3 × 3/4",
+          "statement": "Combien vaut 2/3 × 3/4 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "6/7",
+            "2/7"
+          ],
+          "correct_answer": "1/2",
+          "correction": "On obtient 6/12 puis on simplifie par 6 : 1/2.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Calcule 3/4 + 1/8 et donne le numérateur de la fraction irréductible",
+          "statement": "Calcule 3/4 + 1/8 et donne le numérateur de la fraction irréductible.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "3/4=6/8, donc 7/8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Combien vaut 2/5 ÷ 4/5",
+          "statement": "Combien vaut 2/5 ÷ 4/5 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "8/25",
+            "2"
+          ],
+          "correct_answer": "1/2",
+          "correction": "(2/5)×(5/4)=10/20=1/2.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Calcule 3/4 − 5/6 et donne le numérateur signé de la fraction irréductible",
+          "statement": "Calcule 3/4 − 5/6 et donne le numérateur signé de la fraction irréductible.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "-1",
+          "correction": "3/4=9/12 et 5/6=10/12, donc −1/12.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 3,
+      "title": "Puissances de dix",
+      "summary": "Passer des puissances de dix à l’écriture décimale et scientifique.",
+      "lessons": [
+        {
+          "title": "Définition",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une puissance de dix positive déplace la virgule vers la droite. Une puissance négative correspond à une fraction de 1.\"}, {\"type\": \"formula\", \"content\": \"10^3=1000 \\\\qquad 10^{-2}=0{,}01\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Opérations",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour multiplier deux puissances de dix, on additionne les exposants.\"}, {\"type\": \"formula\", \"content\": \"10^a\\\\times 10^b=10^{a+b}\"}, {\"type\": \"note\", \"content\": \"Pour diviser deux puissances de dix, on soustrait les exposants.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Écriture scientifique",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un nombre positif peut s’écrire comme le produit d’un nombre compris entre 1 inclus et 10 exclu par une puissance de dix.\"}, {\"type\": \"formula\", \"content\": \"43000=4{,}3\\\\times 10^4\"}, {\"type\": \"list\", \"items\": [\"Place la virgule après le premier chiffre non nul.\", \"Compte le nombre de déplacements pour trouver l’exposant.\"]}, {\"type\": \"example\", \"content\": \"\\\\(45\\\\,000 = 4{,}5\\\\times 10^4\\\\) On a déplacé la virgule de 4 rangs vers la gauche.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Combien vaut 10³",
+          "statement": "Combien vaut 10³ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1000",
+          "correction": "10³=10×10×10=1000.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Calcule 10⁰",
+          "statement": "Calcule 10⁰.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1",
+          "correction": "Tout nombre non nul élevé à la puissance zéro vaut 1.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Quelle écriture représente 0,01",
+          "statement": "Quelle écriture représente 0,01 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "10⁻²",
+            "10²",
+            "10⁻¹"
+          ],
+          "correct_answer": "10⁻²",
+          "correction": "10⁻²=1/100=0,01.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Calcule 2 × 10³",
+          "statement": "Calcule 2 × 10³.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2000",
+          "correction": "2×1000=2000.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Calcule 10² × 10³ et donne le résultat décimal",
+          "statement": "Calcule 10² × 10³ et donne le résultat décimal.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "100000",
+          "correction": "10²×10³=10⁵=100000.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Quelle est l’écriture scientifique de 5400",
+          "statement": "Quelle est l’écriture scientifique de 5400 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "5,4 × 10³",
+            "54 × 10²",
+            "0,54 × 10⁴"
+          ],
+          "correct_answer": "5,4 × 10³",
+          "correction": "Le facteur initial doit être entre 1 et 10.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Combien vaut 10⁵ ÷ 10²",
+          "statement": "Combien vaut 10⁵ ÷ 10² ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "1000",
+          "correction": "10⁵÷10²=10³=1000.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Calcule 3 × 10⁻² et donne sa valeur décimale",
+          "statement": "Calcule 3 × 10⁻² et donne sa valeur décimale.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.03",
+          "correction": "3×0,01=0,03.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 4,
+      "title": "Calcul littéral et distributivité",
+      "summary": "Utiliser des lettres pour calculer, réduire et développer des expressions.",
+      "lessons": [
+        {
+          "title": "Expressions littérales",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une lettre représente un nombre : pour calculer la valeur d’une expression, remplace la lettre puis respecte les priorités.\"}, {\"type\": \"formula\", \"content\": \"A=3x+2 \\\\qquad A(4)=14\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Réduction",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On additionne les termes de même nature : les termes en x avec les termes en x et les constantes entre elles.\"}, {\"type\": \"formula\", \"content\": \"5x+2x-3=7x-3\"}, {\"type\": \"note\", \"content\": \"On ne peut pas additionner directement 3x et 2x².\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Distributivité",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Multiplier une somme par un nombre revient à multiplier chacun de ses termes.\"}, {\"type\": \"formula\", \"content\": \"a(b+c)=ab+ac\"}, {\"type\": \"formula\", \"content\": \"4(x+3)=4x+12\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Calcule 3x+2 pour x=4",
+          "statement": "Calcule 3x+2 pour x=4.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "14",
+          "correction": "3×4+2=14.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Calcule 2a−5 pour a=6",
+          "statement": "Calcule 2a−5 pour a=6.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "2×6−5=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Réduis 4x+3x",
+          "statement": "Réduis 4x+3x.",
+          "exercise_type": "mcq",
+          "options": [
+            "7x",
+            "12x",
+            "7x²"
+          ],
+          "correct_answer": "7x",
+          "correction": "4 termes en x plus 3 termes en x donnent 7x.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Développe 2(x+5)",
+          "statement": "Développe 2(x+5).",
+          "exercise_type": "mcq",
+          "options": [
+            "2x+10",
+            "2x+5",
+            "x+10"
+          ],
+          "correct_answer": "2x+10",
+          "correction": "Distribue 2 sur les deux termes de la parenthèse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Calcule 5(x−2) pour x=3",
+          "statement": "Calcule 5(x−2) pour x=3.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "5×(3−2)=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Réduis 7a−2a+4",
+          "statement": "Réduis 7a−2a+4.",
+          "exercise_type": "mcq",
+          "options": [
+            "5a+4",
+            "9a+4",
+            "5a−4"
+          ],
+          "correct_answer": "5a+4",
+          "correction": "7a−2a=5a ; la constante +4 reste.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Développe −3(x−4)",
+          "statement": "Développe −3(x−4).",
+          "exercise_type": "mcq",
+          "options": [
+            "-3x+12",
+            "-3x−12",
+            "3x+12"
+          ],
+          "correct_answer": "-3x+12",
+          "correction": "−3×x=−3x et −3×(−4)=+12.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Calcule (2x+3)(x−1) pour x=2",
+          "statement": "Calcule (2x+3)(x−1) pour x=2.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "Pour x=2, (4+3)×(2−1)=7.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 5,
+      "title": "Équations du premier degré",
+      "summary": "Résoudre une égalité contenant une inconnue et vérifier la solution.",
+      "lessons": [
+        {
+          "title": "Principe d’équilibre",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une équation est une égalité dont on cherche les valeurs de l’inconnue. On peut effectuer la même opération de chaque côté.\"}, {\"type\": \"formula\", \"content\": \"x+5=12 \\\\quad \\\\Longrightarrow \\\\quad x=7\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Équations avec multiplication",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour résoudre ax=b avec a non nul, on divise les deux membres par a.\"}, {\"type\": \"formula\", \"content\": \"4x=20 \\\\quad \\\\Longrightarrow \\\\quad x=5\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Vérification",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Remplace l’inconnue par la valeur obtenue dans l’équation de départ : les deux membres doivent être égaux.\"}, {\"type\": \"note\", \"content\": \"Pour une équation comportant des parenthèses, commence par développer puis regroupe les termes.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Résous x+7=15. Quelle est la valeur de x",
+          "statement": "Résous x+7=15. Quelle est la valeur de x ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "Soustrais 7 de chaque côté : x=15−7=8.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Résous x−4=9",
+          "statement": "Résous x−4=9.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "Ajoute 4 de chaque côté : x=13.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Résous 3x=21",
+          "statement": "Résous 3x=21.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "7",
+          "correction": "Divise chaque membre par 3 : x=7.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Résous 2x+3=11",
+          "statement": "Résous 2x+3=11.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "2x=8, puis x=4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Résous 5x−6=19",
+          "statement": "Résous 5x−6=19.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "5x=25 donc x=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Résous 4x+7=3x+12",
+          "statement": "Résous 4x+7=3x+12.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "Soustrais 3x puis 7 : x=5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Résous 3(x+2)=24",
+          "statement": "Résous 3(x+2)=24.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "x+2=8 donc x=6.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Résous 2(3x−1)=16",
+          "statement": "Résous 2(3x−1)=16.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "6x−2=16, puis 6x=18 donc x=3.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 6,
+      "title": "Proportionnalité et pourcentages",
+      "summary": "Résoudre une situation de proportionnalité et utiliser les pourcentages.",
+      "lessons": [
+        {
+          "title": "Tableau de proportionnalité",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un tableau de proportionnalité, on passe toujours d’une ligne à l’autre en multipliant par le même coefficient.\"}, {\"type\": \"example\", \"content\": \"Si 4 stylos coûtent 6 €, alors 8 stylos coûtent 12 € : le prix est proportionnel au nombre de stylos.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Pourcentages",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer p % d’une quantité, on multiplie cette quantité par p/100.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{pourcentage}=\\\\text{quantité}\\\\times\\\\frac{p}{100}\"}, {\"type\": \"example\", \"content\": \"Pour calculer 25 % de 60, on fait \\\\(60\\\\times\\\\frac{25}{100}=15\\\\).\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Échelles et vitesse constante",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une vitesse constante signifie que l’on parcourt des distances proportionnelles au temps.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}\"}, {\"type\": \"example\", \"content\": \"Si un cycliste parcourt 30 km en 2 h, sa vitesse moyenne est \\\\(v=\\\\frac{30}{2}=15\\\\) km/h.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Trois cahiers coûtent 6 €. Combien coûtent cinq cahiers ? (en €)",
+          "statement": "Trois cahiers coûtent 6 €. Combien coûtent cinq cahiers ? (en €)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "10",
+          "correction": "Un cahier coûte 2 € ; cinq coûtent 10 €.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Calcule 25 % de 80",
+          "statement": "Calcule 25 % de 80.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "80×25/100=20.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Une carte indique 1 cm pour 2 km. À quelle distance réelle correspondent 4 cm",
+          "statement": "Une carte indique 1 cm pour 2 km. À quelle distance réelle correspondent 4 cm ? (en km)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "4×2=8 km.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Une veste de 60 € est soldée de 10 %. Quel est son prix final ? (en €)",
+          "statement": "Une veste de 60 € est soldée de 10 %. Quel est son prix final ? (en €)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "54",
+          "correction": "10 % de 60=6 ; 60−6=54 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Une recette pour 4 personnes utilise 300 g de farine. Quelle masse pour 6 person",
+          "statement": "Une recette pour 4 personnes utilise 300 g de farine. Quelle masse pour 6 personnes ? (en g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "450",
+          "correction": "300×6/4=450 g.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Un article de 80 € augmente de 15 %. Quel est le nouveau prix ? (en €)",
+          "statement": "Un article de 80 € augmente de 15 %. Quel est le nouveau prix ? (en €)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "92",
+          "correction": "80×1,15=92 €.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Une réduction de 20 % fait passer un prix à 64 €. Quel était le prix initial ? (",
+          "statement": "Une réduction de 20 % fait passer un prix à 64 €. Quel était le prix initial ? (en €)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "80",
+          "correction": "Le prix final représente 80 % du prix initial : 64÷0,8=80 €.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Deux quantités proportionnelles : si x double, que fait y",
+          "statement": "Deux quantités proportionnelles : si x double, que fait y ?",
+          "exercise_type": "mcq",
+          "options": [
+            "y double",
+            "y augmente de 2",
+            "y ne change pas"
+          ],
+          "correct_answer": "y double",
+          "correction": "Avec y=k×x, doubler x double y.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 7,
+      "title": "Statistiques : moyenne et médiane",
+      "summary": "Lire une série de données et calculer des indicateurs simples.",
+      "lessons": [
+        {
+          "title": "Moyenne",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La moyenne d’une série est la somme de ses valeurs divisée par le nombre de valeurs.\"}, {\"type\": \"formula\", \"content\": \"\\\\bar{x}=\\\\frac{\\\\text{somme des valeurs}}{\\\\text{effectif}}\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Médiane",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Range les valeurs dans l’ordre croissant. La médiane sépare la série en deux groupes de même effectif.\"}, {\"type\": \"list\", \"items\": [\"Effectif impair : prends la valeur du milieu.\", \"Effectif pair : au collège, prends la moyenne des deux valeurs centrales.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Étendue et interprétation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue est la différence entre la plus grande et la plus petite valeur.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{étendue}=\\\\text{max}-\\\\text{min}\"}, {\"type\": \"note\", \"content\": \"Une valeur très grande ou très petite peut modifier fortement la moyenne, sans modifier autant la médiane.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Calcule la moyenne de 4, 6 et 8",
+          "statement": "Calcule la moyenne de 4, 6 et 8.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "(4+6+8)/3=18/3=6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Quelle est la médiane de 2, 5, 7",
+          "statement": "Quelle est la médiane de 2, 5, 7 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "La valeur centrale de la série rangée est 5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Quelle est l’étendue de 3, 8, 12 et 5",
+          "statement": "Quelle est l’étendue de 3, 8, 12 et 5 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "12−3=9.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Calcule la moyenne de 10, 12, 8, 6",
+          "statement": "Calcule la moyenne de 10, 12, 8, 6.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "9",
+          "correction": "36÷4=9.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Trouve la médiane de 3, 7, 11, 5",
+          "statement": "Trouve la médiane de 3, 7, 11, 5.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "Série rangée : 3,5,7,11 ; (5+7)/2=6.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Notes 8, 12, 12, 16, 17 : quelle est la médiane",
+          "statement": "Notes 8, 12, 12, 16, 17 : quelle est la médiane ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "La troisième note, au milieu, est 12.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Cinq notes ont une moyenne de 12. Quelle est leur somme",
+          "statement": "Cinq notes ont une moyenne de 12. Quelle est leur somme ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "La somme vaut 5×12=60.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Une série a min=−4 et max=9. Quelle est son étendue",
+          "statement": "Une série a min=−4 et max=9. Quelle est son étendue ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "9−(−4)=13.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 8,
+      "title": "Probabilités simples",
+      "summary": "Décrire une expérience aléatoire et calculer une probabilité en cas d’équiprobabilité.",
+      "lessons": [
+        {
+          "title": "Issue et événement",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une issue est un résultat possible. Un événement regroupe une ou plusieurs issues.\"}, {\"type\": \"note\", \"content\": \"Une probabilité est comprise entre 0 et 1.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Issues équiprobables",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Si toutes les issues sont aussi probables, une probabilité se calcule en divisant le nombre d’issues favorables par le nombre d’issues possibles.\"}, {\"type\": \"formula\", \"content\": \"P(A)=\\\\frac{\\\\text{issues favorables}}{\\\\text{issues possibles}}\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Événement contraire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un événement et son contraire couvrent toutes les issues sans recouvrement.\"}, {\"type\": \"formula\", \"content\": \"P(\\\\overline A)=1-P(A)\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Sur un dé équilibré, quelle est la probabilité d’obtenir 6",
+          "statement": "Sur un dé équilibré, quelle est la probabilité d’obtenir 6 ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/6",
+            "1/2",
+            "1/3"
+          ],
+          "correct_answer": "1/6",
+          "correction": "Il y a 1 issue favorable parmi 6.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Sur une pièce équilibrée, probabilité de pile",
+          "statement": "Sur une pièce équilibrée, probabilité de pile ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "1/4",
+            "1"
+          ],
+          "correct_answer": "1/2",
+          "correction": "Une issue favorable parmi deux.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Une urne contient 3 boules rouges et 2 bleues. Combien y a-t-il d’issues favorab",
+          "statement": "Une urne contient 3 boules rouges et 2 bleues. Combien y a-t-il d’issues favorables à rouge ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "Les trois boules rouges correspondent aux issues favorables.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Probabilité d’obtenir un nombre pair sur un dé équilibré",
+          "statement": "Probabilité d’obtenir un nombre pair sur un dé équilibré ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/2",
+            "1/3",
+            "2/3"
+          ],
+          "correct_answer": "1/2",
+          "correction": "2,4,6 : 3 issues sur 6, donc 1/2.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Probabilité d’obtenir un nombre strictement supérieur à 4 sur un dé",
+          "statement": "Probabilité d’obtenir un nombre strictement supérieur à 4 sur un dé ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1/3",
+            "1/6",
+            "2/3"
+          ],
+          "correct_answer": "1/3",
+          "correction": "5 et 6 : 2 issues sur 6 = 1/3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Une boîte a 2 jetons verts et 6 rouges. Probabilité du vert : donne le dénominat",
+          "statement": "Une boîte a 2 jetons verts et 6 rouges. Probabilité du vert : donne le dénominateur de la fraction simplifiée.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "2/8=1/4 ; dénominateur 4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Si P(A)=0,7, combien vaut P(non A)",
+          "statement": "Si P(A)=0,7, combien vaut P(non A) ?",
+          "exercise_type": "mcq",
+          "options": [
+            "0,3",
+            "0,7",
+            "1,7"
+          ],
+          "correct_answer": "0,3",
+          "correction": "1−0,7=0,3.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — On tire une carte numérotée de 1 à 10. Combien d’issues favorables pour un multi",
+          "statement": "On tire une carte numérotée de 1 à 10. Combien d’issues favorables pour un multiple de 3 ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "Les multiples sont 3, 6 et 9.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 9,
+      "title": "Théorème de Pythagore",
+      "summary": "Calculer une longueur dans un triangle rectangle et vérifier la réciproque.",
+      "lessons": [
+        {
+          "title": "Hypoténuse et angle droit",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’hypoténuse est le côté opposé à l’angle droit : c’est toujours le plus long côté d’un triangle rectangle.\"}, {\"type\": \"note\", \"content\": \"Repère et marque d’abord l’angle droit sur la figure.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Théorème",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés.\"}, {\"type\": \"formula\", \"content\": \"BC^2=AB^2+AC^2\"}, {\"type\": \"example\", \"content\": \"Dans un triangle ABC rectangle en A, si \\\\(AB=3\\\\) cm et \\\\(AC=4\\\\) cm, alors \\\\(BC^2=3^2+4^2=25\\\\), donc \\\\(BC=5\\\\) cm.\"}, {\"type\": \"note\", \"content\": \"L’hypoténuse est toujours le côté opposé à l’angle droit.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Réciproque",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La réciproque permet de savoir si un triangle est rectangle.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{Si }BC^2=AB^2+AC^2\\\\text{, alors le triangle ABC est rectangle en A.}\"}, {\"type\": \"example\", \"content\": \"Si un triangle a pour côtés 6 cm, 8 cm et 10 cm, alors \\\\(6^2+8^2=36+64=100=10^2\\\\). Le triangle est donc rectangle.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — ABC rectangle en A : quelle est l’hypoténuse",
+          "statement": "ABC rectangle en A : quelle est l’hypoténuse ?",
+          "exercise_type": "mcq",
+          "options": [
+            "BC",
+            "AB",
+            "AC"
+          ],
+          "correct_answer": "BC",
+          "correction": "BC est opposé à l’angle droit situé en A.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Triangle rectangle : côtés de l’angle droit 3 cm et 4 cm. Hypoténuse ? (en cm)",
+          "statement": "Triangle rectangle : côtés de l’angle droit 3 cm et 4 cm. Hypoténuse ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "3²+4²=25, donc √25=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Un triangle a des côtés 3,4,5 cm. Est-il rectangle",
+          "statement": "Un triangle a des côtés 3,4,5 cm. Est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non",
+            "Impossible"
+          ],
+          "correct_answer": "Oui",
+          "correction": "5²=25 et 3²+4²=25.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Triangle rectangle : hypoténuse 10 cm, autre côté 6 cm. Troisième côté ? (en cm)",
+          "statement": "Triangle rectangle : hypoténuse 10 cm, autre côté 6 cm. Troisième côté ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "10²−6²=64, donc √64=8.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Triangle rectangle : côtés de l’angle droit 5 cm et 12 cm. Hypoténuse",
+          "statement": "Triangle rectangle : côtés de l’angle droit 5 cm et 12 cm. Hypoténuse ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "13",
+          "correction": "5²+12²=169, donc 13.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Un triangle de côtés 5, 7 et 9 cm est-il rectangle",
+          "statement": "Un triangle de côtés 5, 7 et 9 cm est-il rectangle ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Impossible"
+          ],
+          "correct_answer": "Non",
+          "correction": "9²=81 alors que 5²+7²=74.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Un rectangle mesure 6 cm sur 8 cm. Diagonale ? (en cm)",
+          "statement": "Un rectangle mesure 6 cm sur 8 cm. Diagonale ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "10",
+          "correction": "La diagonale est l’hypoténuse du triangle rectangle : √(36+64)=10.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Triangle rectangle : hypoténuse 15 cm, autre côté 9 cm. Dernier côté ? (en cm)",
+          "statement": "Triangle rectangle : hypoténuse 15 cm, autre côté 9 cm. Dernier côté ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "15²−9²=144, donc 12.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 10,
+      "title": "Triangles, angles et parallèles",
+      "summary": "Exploiter la somme des angles et les propriétés des droites parallèles.",
+      "lessons": [
+        {
+          "title": "Angles du triangle",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La somme des trois angles d’un triangle est toujours 180 degrés.\"}, {\"type\": \"formula\", \"content\": \"\\\\widehat A+\\\\widehat B+\\\\widehat C=180^\\\\circ\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Isocèle et équilatéral",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un triangle isocèle, les angles à la base sont égaux. Dans un triangle équilatéral, chaque angle mesure 60 degrés.\"}, {\"type\": \"note\", \"content\": \"Pour calculer l’angle restant d’un triangle isocèle, commence par enlever l’angle au sommet à 180°.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Angles et droites parallèles",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux droites parallèles coupées par une sécante forment des angles alternes-internes égaux et des angles correspondants égaux.\"}, {\"type\": \"list\", \"items\": [\"Vérifie la position des angles sur la figure.\", \"Deux angles adjacents sur une droite forment 180°.\"]}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Deux angles d’un triangle valent 50° et 60°. Troisième angle ? (en degrés)",
+          "statement": "Deux angles d’un triangle valent 50° et 60°. Troisième angle ? (en degrés)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "70",
+          "correction": "180−50−60=70.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Angle d’un triangle équilatéral ? (en degrés)",
+          "statement": "Angle d’un triangle équilatéral ? (en degrés)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "180÷3=60°.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Triangle isocèle : angle au sommet 40°. Quel angle à la base",
+          "statement": "Triangle isocèle : angle au sommet 40°. Quel angle à la base ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "70",
+          "correction": "(180−40)/2=70°.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Deux angles adjacents sur une droite : l’un vaut 135°. Autre angle",
+          "statement": "Deux angles adjacents sur une droite : l’un vaut 135°. Autre angle ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "45",
+          "correction": "180−135=45°.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Les angles alternes-internes de deux droites parallèles sont…",
+          "statement": "Les angles alternes-internes de deux droites parallèles sont…",
+          "exercise_type": "mcq",
+          "options": [
+            "égaux",
+            "supplémentaires",
+            "toujours droits"
+          ],
+          "correct_answer": "égaux",
+          "correction": "La propriété des alternes-internes donne deux mesures égales.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Triangle : deux angles valent 90° et 35°. Troisième angle",
+          "statement": "Triangle : deux angles valent 90° et 35°. Troisième angle ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "55",
+          "correction": "180−90−35=55°.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Triangle isocèle : angles à la base 65°. Angle au sommet",
+          "statement": "Triangle isocèle : angles à la base 65°. Angle au sommet ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "180−2×65=50°.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Un triangle peut-il avoir deux angles obtus",
+          "statement": "Un triangle peut-il avoir deux angles obtus ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Toujours"
+          ],
+          "correct_answer": "Non",
+          "correction": "Deux angles supérieurs à 90° dépasseraient déjà 180°.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 11,
+      "title": "Translations et rotations",
+      "summary": "Reconnaître et utiliser deux transformations conservant longueurs et angles.",
+      "lessons": [
+        {
+          "title": "Translation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une translation fait glisser tous les points d’une figure de la même distance dans la même direction et le même sens.\"}, {\"type\": \"note\", \"content\": \"Une translation ne tourne pas la figure.\"}, {\"type\": \"example\", \"content\": \"lors d’une homothétie de rapport 2, une longueur de 3 cm devient 6 cm. Avec un rapport négatif, la figure est aussi renversée.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Rotation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une rotation tourne une figure autour d’un centre donné d’un angle orienté. Les distances au centre sont conservées.\"}, {\"type\": \"formula\", \"content\": \"90^\\\\circ \\\\quad 180^\\\\circ \\\\quad 270^\\\\circ\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Propriétés communes",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Translations et rotations conservent les longueurs, les mesures d’angles, l’aire et la forme.\"}, {\"type\": \"list\", \"items\": [\"Une image et la figure initiale sont superposables.\", \"Repère le centre et l’angle pour une rotation.\"]}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Une translation modifie-t-elle la longueur d’un segment",
+          "statement": "Une translation modifie-t-elle la longueur d’un segment ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Seulement si le segment est horizontal"
+          ],
+          "correct_answer": "Non",
+          "correction": "La translation conserve les longueurs.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Une rotation de 180° est aussi appelée…",
+          "statement": "Une rotation de 180° est aussi appelée…",
+          "exercise_type": "mcq",
+          "options": [
+            "un demi-tour",
+            "un quart de tour",
+            "un tour complet"
+          ],
+          "correct_answer": "un demi-tour",
+          "correction": "180° correspond à la moitié de 360°.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Combien de degrés pour un quart de tour",
+          "statement": "Combien de degrés pour un quart de tour ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "90",
+          "correction": "360÷4=90°.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Une translation peut-elle inverser le sens de la figure",
+          "statement": "Une translation peut-elle inverser le sens de la figure ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Toujours"
+          ],
+          "correct_answer": "Non",
+          "correction": "Elle déplace sans tourner ni retourner.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Combien de degrés pour trois quarts de tour",
+          "statement": "Combien de degrés pour trois quarts de tour ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "270",
+          "correction": "3×90=270°.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Une rotation conserve-t-elle l’aire d’une figure",
+          "statement": "Une rotation conserve-t-elle l’aire d’une figure ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non",
+            "Uniquement à 90°"
+          ],
+          "correct_answer": "Oui",
+          "correction": "La rotation est une isométrie : même forme et mêmes aires.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Un point à 3 cm du centre subit une rotation. Nouvelle distance au centre ? (en",
+          "statement": "Un point à 3 cm du centre subit une rotation. Nouvelle distance au centre ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "Une rotation conserve la distance au centre.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Pour définir complètement une rotation, on doit préciser…",
+          "statement": "Pour définir complètement une rotation, on doit préciser…",
+          "exercise_type": "mcq",
+          "options": [
+            "centre, angle et sens",
+            "distance seulement",
+            "couleur et taille"
+          ],
+          "correct_answer": "centre, angle et sens",
+          "correction": "Une rotation requiert un centre, un angle et un sens.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 12,
+      "title": "Volumes de solides",
+      "summary": "Calculer volumes de pavés et de cylindres et convertir des unités.",
+      "lessons": [
+        {
+          "title": "Pavé droit",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un pavé droit s’obtient en multipliant longueur, largeur et hauteur dans la même unité.\"}, {\"type\": \"formula\", \"content\": \"V=L\\\\times l\\\\times h\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Cylindre de révolution",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un cylindre est l’aire de sa base circulaire multipliée par sa hauteur.\"}, {\"type\": \"formula\", \"content\": \"V=\\\\pi r^2h\"}, {\"type\": \"note\", \"content\": \"Un rayon vaut la moitié du diamètre.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Conversions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un litre vaut 1 dm³. Un mètre cube vaut 1000 litres.\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{L}=1\\\\ \\\\mathrm{dm}^3\"}, {\"type\": \"list\", \"items\": [\"Écris les trois dimensions dans la même unité.\", \"Un volume se donne en unités cubiques.\"]}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Pavé 2 cm × 3 cm × 4 cm : volume ? (en cm³)",
+          "statement": "Pavé 2 cm × 3 cm × 4 cm : volume ? (en cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "24",
+          "correction": "2×3×4=24 cm³.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Cube de 3 cm de côté : volume ? (en cm³)",
+          "statement": "Cube de 3 cm de côté : volume ? (en cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "27",
+          "correction": "3³=27 cm³.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Combien de litres vaut 2 dm³",
+          "statement": "Combien de litres vaut 2 dm³ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "1 dm³=1 L donc 2 dm³=2 L.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Pavé : aire de base 12 cm², hauteur 5 cm : volume ? (en cm³)",
+          "statement": "Pavé : aire de base 12 cm², hauteur 5 cm : volume ? (en cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "60",
+          "correction": "12×5=60 cm³.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Cylindre : rayon 2 cm, hauteur 3 cm. Volume sous la forme kπ : donne k",
+          "statement": "Cylindre : rayon 2 cm, hauteur 3 cm. Volume sous la forme kπ : donne k.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "12",
+          "correction": "V=π×2²×3=12π cm³.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Combien de litres vaut 0,5 m³",
+          "statement": "Combien de litres vaut 0,5 m³ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "500",
+          "correction": "0,5×1000=500 L.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Cube de volume 125 cm³ : longueur de l’arête ? (en cm)",
+          "statement": "Cube de volume 125 cm³ : longueur de l’arête ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "5³=125.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Pavé de 120 cm³, base 20 cm² : hauteur ? (en cm)",
+          "statement": "Pavé de 120 cm³, base 20 cm² : hauteur ? (en cm)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "h=120/20=6 cm.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "mathematiques",
+      "level": "4e",
+      "order_index": 13,
+      "title": "Algorithmique : conditions et boucles",
+      "summary": "Lire de petits programmes et prédire les résultats des instructions.",
+      "lessons": [
+        {
+          "title": "Variables",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une variable contient une valeur qui peut changer au cours d’un programme.\"}, {\"type\": \"note\", \"content\": \"Une affectation remplace la valeur précédente de la variable.\"}, {\"type\": \"example\", \"content\": \"un programme peut répéter 5 fois l’instruction « avancer de 2 » ; au total, il avance de 10 unités.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Conditions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une condition exécute des instructions uniquement lorsqu’un test est vrai.\"}, {\"type\": \"list\", \"items\": [\"Lis la condition avant la branche « alors ».\", \"Si la condition est fausse, regarde la branche « sinon ».\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Boucles",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une boucle répète plusieurs fois une suite d’instructions. Le nombre de répétitions peut être fixé.\"}, {\"type\": \"note\", \"content\": \"Pour prévoir un résultat, fais un tableau avec la valeur après chaque tour.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — On affecte x←3 puis x←x+2. Valeur finale de x",
+          "statement": "On affecte x←3 puis x←x+2. Valeur finale de x ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "3+2=5.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — On affecte x←4 puis x←2×x. Valeur de x",
+          "statement": "On affecte x←4 puis x←2×x. Valeur de x ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "8",
+          "correction": "2×4=8.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Si x=−2, la condition x>0 est…",
+          "statement": "Si x=−2, la condition x>0 est…",
+          "exercise_type": "mcq",
+          "options": [
+            "fausse",
+            "vraie",
+            "indécidable"
+          ],
+          "correct_answer": "fausse",
+          "correction": "−2 n’est pas positif.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Départ x=1. On ajoute 1 trois fois. Valeur finale",
+          "statement": "Départ x=1. On ajoute 1 trois fois. Valeur finale ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "1+1+1+1=4.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Départ x=10. On retire 2 quatre fois. Valeur finale",
+          "statement": "Départ x=10. On retire 2 quatre fois. Valeur finale ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "10−4×2=2.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Si x=8 et si x>5 alors y←1 sinon y←0. Valeur de y",
+          "statement": "Si x=8 et si x>5 alors y←1 sinon y←0. Valeur de y ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1",
+            "0",
+            "8"
+          ],
+          "correct_answer": "1",
+          "correction": "8>5 donc on exécute la branche alors.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Départ x=2. On multiplie par 2 trois fois. Valeur finale",
+          "statement": "Départ x=2. On multiplie par 2 trois fois. Valeur finale ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "16",
+          "correction": "2→4→8→16.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Départ n=0. Pour i de 1 à 5 on fait n←n+i. Valeur finale de n",
+          "statement": "Départ n=0. Pour i de 1 à 5 on fait n←n+i. Valeur finale de n ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "1+2+3+4+5=15.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 1,
+      "title": "Masse, volume et masse volumique",
+      "summary": "Distinguer masse, volume et masse volumique et utiliser les unités adaptées.",
+      "lessons": [
+        {
+          "title": "Masse et volume",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La masse se mesure avec une balance en grammes ou kilogrammes. Le volume mesure la place occupée, en litres ou unités cubiques.\"}, {\"type\": \"formula\", \"content\": \"1 L = 1 dm³ et 1 mL = 1 cm³.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Masse volumique",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La masse volumique est la masse par unité de volume pour une substance homogène.\"}, {\"type\": \"formula\", \"content\": \"\\\\rho=\\\\frac{m}{V}\"}, {\"type\": \"list\", \"items\": [\"m en g et V en cm³ donnent ρ en g/cm³.\", \"Écris systématiquement les unités de ton résultat.\"]}, {\"type\": \"example\", \"content\": \"\\\\(\\\\rho=\\\\frac{m}{V}=\\\\frac{20}{10}=2\\\\ \\\\text{g/mL}\\\\) Si un objet a une masse de 20 g pour un volume de 10 mL, sa masse volumique est 2 g/mL.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Identifier une substance",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour une même substance, la masse varie proportionnellement avec le volume, à température identique.\"}, {\"type\": \"note\", \"content\": \"Pour un objet qui flotte dans l’eau, la masse volumique moyenne est inférieure à celle de l’eau.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Une pierre a une masse de 60 g et un volume de 20 cm³. Masse volumique ? (g/cm³)",
+          "statement": "Une pierre a une masse de 60 g et un volume de 20 cm³. Masse volumique ? (g/cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "ρ=m/V=60/20=3 g/cm³.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Combien de millilitres valent 2 litres",
+          "statement": "Combien de millilitres valent 2 litres ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2000",
+          "correction": "1 L=1000 mL, donc 2 L=2000 mL.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Avec quel instrument mesure-t-on une masse",
+          "statement": "Avec quel instrument mesure-t-on une masse ?",
+          "exercise_type": "mcq",
+          "options": [
+            "balance",
+            "thermomètre",
+            "chronomètre"
+          ],
+          "correct_answer": "balance",
+          "correction": "La balance mesure la masse.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Un liquide a une masse volumique de 2 g/mL. Masse de 5 mL ? (g)",
+          "statement": "Un liquide a une masse volumique de 2 g/mL. Masse de 5 mL ? (g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "10",
+          "correction": "m=ρ×V=2×5=10 g.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Un cube occupe 8 cm³ et pèse 24 g. Masse volumique ? (g/cm³)",
+          "statement": "Un cube occupe 8 cm³ et pèse 24 g. Masse volumique ? (g/cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "24÷8=3.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Un objet moins dense que l’eau est généralement…",
+          "statement": "Un objet moins dense que l’eau est généralement…",
+          "exercise_type": "mcq",
+          "options": [
+            "flottant",
+            "toujours au fond",
+            "sans masse"
+          ],
+          "correct_answer": "flottant",
+          "correction": "Si sa masse volumique moyenne est inférieure à celle de l’eau, il flotte.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Une masse de 500 g occupe 250 cm³. Masse volumique ? (g/cm³)",
+          "statement": "Une masse de 500 g occupe 250 cm³. Masse volumique ? (g/cm³)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "500÷250=2 g/cm³.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Un liquide de masse volumique 0,8 g/mL occupe 50 mL. Masse ? (g)",
+          "statement": "Un liquide de masse volumique 0,8 g/mL occupe 50 mL. Masse ? (g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "40",
+          "correction": "m=0,8×50=40 g.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 2,
+      "title": "Mélanges, dissolution et solubilité",
+      "summary": "Différencier mélanges homogènes/hétérogènes et comprendre la dissolution.",
+      "lessons": [
+        {
+          "title": "Mélange et dissolution",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un mélange homogène présente une seule phase visible. Un mélange hétérogène comporte plusieurs phases visibles.\"}, {\"type\": \"note\", \"content\": \"Dans l’eau salée, l’eau est le solvant et le sel dissous est le soluté.\"}, {\"type\": \"example\", \"content\": \"le sucre dissous dans l’eau forme un mélange homogène, alors que l’eau et l’huile forment un mélange hétérogène.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Conservation de la masse",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Lors d’une dissolution dans un récipient fermé, la masse totale de la solution est égale à la somme des masses du solvant et du soluté.\"}, {\"type\": \"formula\", \"content\": \"m_{\\\\text{solution}}=m_{\\\\text{solvant}}+m_{\\\\text{soluté}}\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Solubilité",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La solubilité indique la quantité maximale de soluté qui peut se dissoudre dans une quantité donnée de solvant dans des conditions définies.\"}, {\"type\": \"list\", \"items\": [\"Au-delà de cette limite, il peut rester du soluté solide.\", \"Une filtration sert à séparer un solide non dissous d’un liquide.\"]}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — L’eau salée limpide est un mélange…",
+          "statement": "L’eau salée limpide est un mélange…",
+          "exercise_type": "mcq",
+          "options": [
+            "homogène",
+            "hétérogène",
+            "un corps pur"
+          ],
+          "correct_answer": "homogène",
+          "correction": "Le sel dissous n’est plus visible.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — L’eau et l’huile forment habituellement un mélange…",
+          "statement": "L’eau et l’huile forment habituellement un mélange…",
+          "exercise_type": "mcq",
+          "options": [
+            "hétérogène",
+            "homogène",
+            "un corps pur"
+          ],
+          "correct_answer": "hétérogène",
+          "correction": "Deux phases liquides sont visibles.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — On dissout 10 g de sel dans 90 g d’eau. Masse de solution ? (g)",
+          "statement": "On dissout 10 g de sel dans 90 g d’eau. Masse de solution ? (g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "100",
+          "correction": "La masse totale vaut 90+10=100 g.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Dans l’eau sucrée, l’eau joue le rôle de…",
+          "statement": "Dans l’eau sucrée, l’eau joue le rôle de…",
+          "exercise_type": "mcq",
+          "options": [
+            "solvant",
+            "soluté",
+            "précipité"
+          ],
+          "correct_answer": "solvant",
+          "correction": "Le solvant est le liquide qui dissout le soluté.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — 15 g de sucre sont dissous dans 135 g d’eau. Masse totale ? (g)",
+          "statement": "15 g de sucre sont dissous dans 135 g d’eau. Masse totale ? (g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "150",
+          "correction": "135+15=150 g.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Pour séparer un solide insoluble de l’eau, on utilise…",
+          "statement": "Pour séparer un solide insoluble de l’eau, on utilise…",
+          "exercise_type": "mcq",
+          "options": [
+            "filtration",
+            "dissolution",
+            "évaporation totale"
+          ],
+          "correct_answer": "filtration",
+          "correction": "La filtration retient le solide insoluble.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Une solution a 80 g d’eau et 20 g de sel. Pourcentage massique de sel ? (nombre)",
+          "statement": "Une solution a 80 g d’eau et 20 g de sel. Pourcentage massique de sel ? (nombre)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "20/(80+20)×100=20 %.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Quand la limite de solubilité est atteinte, ajouter du sel peut laisser…",
+          "statement": "Quand la limite de solubilité est atteinte, ajouter du sel peut laisser…",
+          "exercise_type": "mcq",
+          "options": [
+            "du sel non dissous",
+            "de l’eau nouvelle",
+            "la masse disparaître"
+          ],
+          "correct_answer": "du sel non dissous",
+          "correction": "Une solution saturée ne dissout plus ce soluté dans les mêmes conditions.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 3,
+      "title": "Atomes, molécules et transformations chimiques",
+      "summary": "Interpréter de petites formules moléculaires et reconnaître une transformation chimique.",
+      "lessons": [
+        {
+          "title": "Atomes et molécules",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un atome est un constituant de la matière. Une molécule est un ensemble d’atomes liés.\"}, {\"type\": \"formula\", \"content\": \"\\\\mathrm{H_2O}\"}, {\"type\": \"note\", \"content\": \"Dans H₂O, l’indice 2 concerne seulement H : il y a deux atomes d’hydrogène et un d’oxygène.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Réactifs et produits",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans une transformation chimique, les réactifs sont consommés et de nouveaux produits apparaissent.\"}, {\"type\": \"list\", \"items\": [\"On repère les réactifs au départ.\", \"On repère les produits à l’arrivée.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Conservation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un système fermé, la masse totale se conserve et les atomes présents au départ sont réorganisés, pas créés.\"}, {\"type\": \"formula\", \"content\": \"\\\\mathrm{2H_2+O_2\\\\longrightarrow 2H_2O}\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Combien d’atomes d’hydrogène contient une molécule H₂O",
+          "statement": "Combien d’atomes d’hydrogène contient une molécule H₂O ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "L’indice 2 après H indique deux atomes H.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Combien d’atomes au total dans CO₂",
+          "statement": "Combien d’atomes au total dans CO₂ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "3",
+          "correction": "Un C et deux O : 3 atomes.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — La rouille est-elle issue d’une transformation chimique",
+          "statement": "La rouille est-elle issue d’une transformation chimique ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non",
+            "Toujours physique"
+          ],
+          "correct_answer": "Oui",
+          "correction": "De nouvelles substances se forment lors de la corrosion.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Lors d’une réaction en système fermé, la masse totale…",
+          "statement": "Lors d’une réaction en système fermé, la masse totale…",
+          "exercise_type": "mcq",
+          "options": [
+            "se conserve",
+            "disparaît",
+            "double"
+          ],
+          "correct_answer": "se conserve",
+          "correction": "La masse totale des réactifs égale celle des produits.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Une molécule CH₄ contient combien d’atomes en tout",
+          "statement": "Une molécule CH₄ contient combien d’atomes en tout ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "Un C et quatre H : 5.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Les substances consommées au cours d’une réaction sont les…",
+          "statement": "Les substances consommées au cours d’une réaction sont les…",
+          "exercise_type": "mcq",
+          "options": [
+            "réactifs",
+            "produits",
+            "solvants"
+          ],
+          "correct_answer": "réactifs",
+          "correction": "Les réactifs se trouvent à gauche de l’équation de réaction.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — 12 g de réactifs donnent 7 g d’un produit et un second produit. Masse du second",
+          "statement": "12 g de réactifs donnent 7 g d’un produit et un second produit. Masse du second ? (g)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "12−7=5 g, par conservation de la masse.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Combien d’atomes d’oxygène contiennent deux molécules de CO₂",
+          "statement": "Combien d’atomes d’oxygène contiennent deux molécules de CO₂ ?",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "4",
+          "correction": "Chaque CO₂ a 2 atomes O ; deux molécules en ont 4.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 4,
+      "title": "Circuits électriques et sécurité",
+      "summary": "Reconnaître un circuit fermé, les composants, la série et la dérivation.",
+      "lessons": [
+        {
+          "title": "Circuit fermé",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un circuit électrique fermé contient un générateur et une boucle conductrice. Un interrupteur ouvert interrompt le courant.\"}, {\"type\": \"note\", \"content\": \"Ne réalise jamais de montage directement sur le secteur domestique.\"}, {\"type\": \"example\", \"content\": \"dans un circuit simple, si l’interrupteur est ouvert, la lampe s’éteint car le courant ne circule plus.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Montages en série",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un circuit en série, les composants se succèdent sur une seule boucle. Si cette boucle est ouverte, aucun dipôle ne reçoit de courant.\"}, {\"type\": \"list\", \"items\": [\"Repère le générateur.\", \"Trace la boucle pour distinguer un circuit en série d’un circuit en dérivation.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Montages en dérivation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un circuit en dérivation, plusieurs branches relient les mêmes deux nœuds. L’ouverture d’une branche ne coupe pas nécessairement les autres.\"}, {\"type\": \"note\", \"content\": \"Une lampe peut rester allumée même si une autre branche est interrompue.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Une lampe éclaire si l’interrupteur en série est…",
+          "statement": "Une lampe éclaire si l’interrupteur en série est…",
+          "exercise_type": "mcq",
+          "options": [
+            "fermé",
+            "ouvert",
+            "enlevé"
+          ],
+          "correct_answer": "fermé",
+          "correction": "La boucle doit être fermée pour que le courant circule.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Dans un circuit en série, le courant suit combien de boucles indépendantes",
+          "statement": "Dans un circuit en série, le courant suit combien de boucles indépendantes ?",
+          "exercise_type": "mcq",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct_answer": "1",
+          "correction": "Un circuit simple en série possède une seule boucle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Pour mesurer une intensité, on utilise…",
+          "statement": "Pour mesurer une intensité, on utilise…",
+          "exercise_type": "mcq",
+          "options": [
+            "ampèremètre",
+            "voltmètre",
+            "balance"
+          ],
+          "correct_answer": "ampèremètre",
+          "correction": "L’ampèremètre mesure l’intensité.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Deux lampes en dérivation : si l’une grille, l’autre peut-elle rester allumée",
+          "statement": "Deux lampes en dérivation : si l’une grille, l’autre peut-elle rester allumée ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Oui",
+            "Non",
+            "Jamais"
+          ],
+          "correct_answer": "Oui",
+          "correction": "Les branches sont indépendantes si elles restent reliées au générateur.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Quelle situation est dangereuse",
+          "statement": "Quelle situation est dangereuse ?",
+          "exercise_type": "mcq",
+          "options": [
+            "relier directement les deux bornes d’une pile",
+            "utiliser une lampe adaptée",
+            "ouvrir un interrupteur"
+          ],
+          "correct_answer": "relier directement les deux bornes d’une pile",
+          "correction": "Un court-circuit provoque une circulation de courant excessive.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Deux lampes sur une seule boucle sont montées…",
+          "statement": "Deux lampes sur une seule boucle sont montées…",
+          "exercise_type": "mcq",
+          "options": [
+            "en série",
+            "en dérivation",
+            "sans circuit"
+          ],
+          "correct_answer": "en série",
+          "correction": "Une seule boucle correspond à un montage en série.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Un interrupteur ouvert coupe-t-il toujours les autres branches parallèles",
+          "statement": "Un interrupteur ouvert coupe-t-il toujours les autres branches parallèles ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Seulement la pile"
+          ],
+          "correct_answer": "Non",
+          "correction": "Il peut couper uniquement sa propre branche.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Pour interrompre tout le circuit, on place l’interrupteur…",
+          "statement": "Pour interrompre tout le circuit, on place l’interrupteur…",
+          "exercise_type": "mcq",
+          "options": [
+            "sur la branche principale",
+            "sur une branche secondaire seulement",
+            "en parallèle sur une lampe"
+          ],
+          "correct_answer": "sur la branche principale",
+          "correction": "Sur la branche principale, il coupe le courant pour toutes les branches.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 5,
+      "title": "Tension et intensité électrique",
+      "summary": "Comprendre la mesure en volts et ampères et les lois des circuits simples.",
+      "lessons": [
+        {
+          "title": "Grandeurs et appareils",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La tension électrique se mesure en volts (V) avec un voltmètre branché en dérivation. L’intensité se mesure en ampères (A) avec un ampèremètre branché en série.\"}, {\"type\": \"formula\", \"content\": \"U\\\\ \\\\text{en V} \\\\qquad I\\\\ \\\\text{en A}\"}, {\"type\": \"example\", \"content\": \"le voltmètre se branche en dérivation aux bornes du dipôle, alors que l’ampèremètre se branche en série dans le circuit.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Intensité en série",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans une boucle en série, l’intensité du courant est identique à tout endroit.\"}, {\"type\": \"formula\", \"content\": \"I_1=I_2\"}, {\"type\": \"note\", \"content\": \"Pour mesurer l’intensité, on ouvre le circuit pour insérer l’ampèremètre en série.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Tension en dérivation",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un circuit en dérivation, la tension aux bornes des branches reliées aux mêmes nœuds est la même.\"}, {\"type\": \"formula\", \"content\": \"U_1=U_2\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — L’unité de tension est le…",
+          "statement": "L’unité de tension est le…",
+          "exercise_type": "mcq",
+          "options": [
+            "volt",
+            "ampère",
+            "watt"
+          ],
+          "correct_answer": "volt",
+          "correction": "La tension se mesure en volts (V).",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — L’unité d’intensité est l’…",
+          "statement": "L’unité d’intensité est l’…",
+          "exercise_type": "mcq",
+          "options": [
+            "ampère",
+            "ohm",
+            "joule"
+          ],
+          "correct_answer": "ampère",
+          "correction": "L’intensité se mesure en ampères (A).",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Pour mesurer une tension, le voltmètre se branche…",
+          "statement": "Pour mesurer une tension, le voltmètre se branche…",
+          "exercise_type": "mcq",
+          "options": [
+            "en dérivation",
+            "en série",
+            "à la place du générateur"
+          ],
+          "correct_answer": "en dérivation",
+          "correction": "Il se branche aux bornes du dipôle.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — En série, un ampèremètre mesure 0,3 A. Quelle intensité ailleurs sur la boucle",
+          "statement": "En série, un ampèremètre mesure 0,3 A. Quelle intensité ailleurs sur la boucle ? (en A)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.3",
+          "correction": "En série, l’intensité est la même partout.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Deux lampes en dérivation sont soumises à 6 V. Tension sur chaque lampe ? (en V)",
+          "statement": "Deux lampes en dérivation sont soumises à 6 V. Tension sur chaque lampe ? (en V)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "En dérivation, la tension est la même aux bornes des branches.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Dans une dérivation, I principale=0,7 A et I branche 1=0,2 A. I branche 2 ? (en",
+          "statement": "Dans une dérivation, I principale=0,7 A et I branche 1=0,2 A. I branche 2 ? (en A)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "0.5",
+          "correction": "0,7=0,2+I₂ donc I₂=0,5 A.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Générateur 9 V, deux récepteurs en série : U₁=4 V. U₂ ? (en V)",
+          "statement": "Générateur 9 V, deux récepteurs en série : U₁=4 V. U₂ ? (en V)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "La tension totale vaut la somme des tensions : 9−4=5.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Dans une dérivation, les intensités des branches…",
+          "statement": "Dans une dérivation, les intensités des branches…",
+          "exercise_type": "mcq",
+          "options": [
+            "s’additionnent dans la branche principale",
+            "sont toujours égales",
+            "sont toutes nulles"
+          ],
+          "correct_answer": "s’additionnent dans la branche principale",
+          "correction": "Au nœud, l’intensité se conserve.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 6,
+      "title": "Mouvement, trajectoire et vitesse",
+      "summary": "Décrire un mouvement et calculer une vitesse moyenne avec les unités.",
+      "lessons": [
+        {
+          "title": "Référentiel et trajectoire",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le mouvement est décrit par rapport à un objet de référence, appelé référentiel. Une trajectoire peut être rectiligne, circulaire ou curviligne.\"}, {\"type\": \"note\", \"content\": \"Une personne assise dans un train est immobile par rapport au train mais se déplace par rapport au sol.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Vitesse moyenne",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La vitesse moyenne est la distance parcourue divisée par la durée.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}\"}, {\"type\": \"list\", \"items\": [\"d en mètres et t en secondes donnent v en m/s.\", \"d en kilomètres et t en heures donnent v en km/h.\"]}, {\"type\": \"example\", \"content\": \"un cycliste parcourt 120 m en 20 s. \\\\(v=\\\\frac{d}{t}=\\\\frac{120}{20}=6\\\\ \\\\text{m/s}\\\\) Sa vitesse moyenne est de 6 m/s.\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Conversion",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour convertir une vitesse de m/s en km/h, on multiplie par 3,6.\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{m/s}=3{,}6\\\\ \\\\mathrm{km/h}\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Un marcheur parcourt 120 m en 60 s. Vitesse ? (m/s)",
+          "statement": "Un marcheur parcourt 120 m en 60 s. Vitesse ? (m/s)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "2",
+          "correction": "120÷60=2 m/s.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Une trajectoire en ligne droite est dite…",
+          "statement": "Une trajectoire en ligne droite est dite…",
+          "exercise_type": "mcq",
+          "options": [
+            "rectiligne",
+            "circulaire",
+            "curviligne"
+          ],
+          "correct_answer": "rectiligne",
+          "correction": "Un mouvement rectiligne suit une droite.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Un vélo parcourt 15 km en 1 h. Vitesse ? (km/h)",
+          "statement": "Un vélo parcourt 15 km en 1 h. Vitesse ? (km/h)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "15",
+          "correction": "15÷1=15 km/h.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Un coureur parcourt 200 m en 40 s. Vitesse ? (m/s)",
+          "statement": "Un coureur parcourt 200 m en 40 s. Vitesse ? (m/s)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "200÷40=5 m/s.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Convertis 10 m/s en km/h",
+          "statement": "Convertis 10 m/s en km/h.",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "36",
+          "correction": "10×3,6=36 km/h.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Dans le référentiel du train, le voyageur assis est…",
+          "statement": "Dans le référentiel du train, le voyageur assis est…",
+          "exercise_type": "mcq",
+          "options": [
+            "immobile",
+            "toujours en mouvement",
+            "en chute libre"
+          ],
+          "correct_answer": "immobile",
+          "correction": "Sa position ne change pas par rapport au train.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Un véhicule roule à 60 km/h pendant 2 h. Distance ? (km)",
+          "statement": "Un véhicule roule à 60 km/h pendant 2 h. Distance ? (km)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "120",
+          "correction": "d=v×t=60×2=120 km.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Un sportif fait 1,5 km en 300 s. Vitesse moyenne ? (m/s)",
+          "statement": "Un sportif fait 1,5 km en 300 s. Vitesse moyenne ? (m/s)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "1,5 km=1500 m ; 1500÷300=5 m/s.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 7,
+      "title": "Lumière et propagation",
+      "summary": "Expliquer comment la lumière se propage et distinguer source et objet diffusant.",
+      "lessons": [
+        {
+          "title": "Sources et objets diffusants",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une source primaire produit sa propre lumière ; un objet diffusant renvoie la lumière qu’il reçoit.\"}, {\"type\": \"note\", \"content\": \"La Lune diffuse la lumière du Soleil : elle n’est pas une source primaire.\"}, {\"type\": \"example\", \"content\": \"un rayon lumineux se propage en ligne droite dans un milieu homogène. C’est ce qui explique la formation des ombres.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Propagation rectiligne",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un milieu transparent homogène, la lumière se propage en ligne droite. Un obstacle opaque peut produire une ombre.\"}, {\"type\": \"list\", \"items\": [\"Une ombre nécessite une source lumineuse, un obstacle opaque et une zone où la lumière n’arrive pas.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Réflexion et couleurs",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La réflexion correspond au renvoi de la lumière par une surface. Une surface colorée absorbe certaines composantes de la lumière et en diffuse d’autres.\"}, {\"type\": \"note\", \"content\": \"Un objet rouge sous une lumière blanche diffuse principalement le rouge.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Le Soleil est une source lumineuse…",
+          "statement": "Le Soleil est une source lumineuse…",
+          "exercise_type": "mcq",
+          "options": [
+            "primaire",
+            "diffusante seulement",
+            "éteinte"
+          ],
+          "correct_answer": "primaire",
+          "correction": "Il produit lui-même la lumière.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — La Lune est-elle une source lumineuse primaire",
+          "statement": "La Lune est-elle une source lumineuse primaire ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Toujours"
+          ],
+          "correct_answer": "Non",
+          "correction": "Elle renvoie la lumière solaire.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Dans l’air homogène, la lumière se propage principalement…",
+          "statement": "Dans l’air homogène, la lumière se propage principalement…",
+          "exercise_type": "mcq",
+          "options": [
+            "en ligne droite",
+            "en spirale",
+            "en zigzag"
+          ],
+          "correct_answer": "en ligne droite",
+          "correction": "La propagation est rectiligne dans un milieu homogène.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Pour produire une ombre, l’obstacle doit être…",
+          "statement": "Pour produire une ombre, l’obstacle doit être…",
+          "exercise_type": "mcq",
+          "options": [
+            "opaque",
+            "transparent",
+            "lumineux"
+          ],
+          "correct_answer": "opaque",
+          "correction": "Un obstacle opaque bloque la lumière.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Une surface qui renvoie la lumière réalise une…",
+          "statement": "Une surface qui renvoie la lumière réalise une…",
+          "exercise_type": "mcq",
+          "options": [
+            "réflexion",
+            "fusion",
+            "dissolution"
+          ],
+          "correct_answer": "réflexion",
+          "correction": "La réflexion est le changement de direction dû au renvoi de lumière.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Un objet blanc sous une lumière blanche…",
+          "statement": "Un objet blanc sous une lumière blanche…",
+          "exercise_type": "mcq",
+          "options": [
+            "diffuse les principales couleurs visibles",
+            "absorbe toute lumière",
+            "devient toujours noir"
+          ],
+          "correct_answer": "diffuse les principales couleurs visibles",
+          "correction": "Une surface blanche diffuse l’essentiel du spectre visible.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Un objet rouge éclairé seulement en bleu apparaît plutôt…",
+          "statement": "Un objet rouge éclairé seulement en bleu apparaît plutôt…",
+          "exercise_type": "mcq",
+          "options": [
+            "sombre",
+            "rouge vif",
+            "blanc"
+          ],
+          "correct_answer": "sombre",
+          "correction": "Il ne reçoit pas la composante rouge qu’il diffuse habituellement.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Quand une source ponctuelle se rapproche d’un objet, son ombre sur l’écran peut…",
+          "statement": "Quand une source ponctuelle se rapproche d’un objet, son ombre sur l’écran peut…",
+          "exercise_type": "mcq",
+          "options": [
+            "s’agrandir",
+            "disparaître toujours",
+            "rester identique"
+          ],
+          "correct_answer": "s’agrandir",
+          "correction": "La géométrie des rayons peut agrandir l’ombre projetée.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 8,
+      "title": "Son : vibration et fréquence",
+      "summary": "Comprendre la production et la propagation du son et la notion de fréquence.",
+      "lessons": [
+        {
+          "title": "Production du son",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une source sonore vibre. Le son se propage dans un milieu matériel comme l’air, l’eau ou un solide.\"}, {\"type\": \"note\", \"content\": \"Le son ne se propage pas dans le vide.\"}, {\"type\": \"example\", \"content\": \"plus la fréquence d’un son est grande, plus le son est aigu. Un diapason qui vibre plus vite produit un son plus aigu.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Fréquence et hauteur",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La fréquence, mesurée en hertz (Hz), indique le nombre de vibrations par seconde. Une fréquence plus élevée produit généralement un son plus aigu.\"}, {\"type\": \"formula\", \"content\": \"f=\\\\frac{1}{T}\"}]",
+          "order_index": 2
+        },
+        {
+          "title": "Amplitude et protection",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une vibration de plus grande amplitude donne en général un son plus intense ; l’intensité sonore et la hauteur sont deux propriétés différentes.\"}, {\"type\": \"note\", \"content\": \"Une exposition prolongée à un son trop intense peut abîmer l’audition.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Un son est produit par…",
+          "statement": "Un son est produit par…",
+          "exercise_type": "mcq",
+          "options": [
+            "une vibration",
+            "une couleur",
+            "une température"
+          ],
+          "correct_answer": "une vibration",
+          "correction": "Une source qui vibre met le milieu matériel en mouvement.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — Le son se propage-t-il dans le vide",
+          "statement": "Le son se propage-t-il dans le vide ?",
+          "exercise_type": "mcq",
+          "options": [
+            "Non",
+            "Oui",
+            "Seulement au-dessus de 1000 Hz"
+          ],
+          "correct_answer": "Non",
+          "correction": "Le son a besoin d’un milieu matériel.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Quelle unité mesure la fréquence",
+          "statement": "Quelle unité mesure la fréquence ?",
+          "exercise_type": "mcq",
+          "options": [
+            "hertz",
+            "newton",
+            "volt"
+          ],
+          "correct_answer": "hertz",
+          "correction": "La fréquence se mesure en hertz (Hz).",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Un son de fréquence 800 Hz est plus… qu’un son de 200 Hz",
+          "statement": "Un son de fréquence 800 Hz est plus… qu’un son de 200 Hz.",
+          "exercise_type": "mcq",
+          "options": [
+            "aigu",
+            "grave",
+            "silencieux"
+          ],
+          "correct_answer": "aigu",
+          "correction": "Plus la fréquence est haute, plus le son est aigu.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Une vibration se répète 50 fois en 1 s. Fréquence ? (Hz)",
+          "statement": "Une vibration se répète 50 fois en 1 s. Fréquence ? (Hz)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "f=50 oscillations/1 s=50 Hz.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — L’intensité sonore dépend principalement de…",
+          "statement": "L’intensité sonore dépend principalement de…",
+          "exercise_type": "mcq",
+          "options": [
+            "l’amplitude de vibration",
+            "la couleur de la source",
+            "sa masse uniquement"
+          ],
+          "correct_answer": "l’amplitude de vibration",
+          "correction": "Une plus grande amplitude correspond généralement à un son plus intense.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — 100 vibrations en 0,5 s : fréquence ? (Hz)",
+          "statement": "100 vibrations en 0,5 s : fréquence ? (Hz)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "200",
+          "correction": "100÷0,5=200 Hz.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Porter des protections auditives pendant un concert intense est…",
+          "statement": "Porter des protections auditives pendant un concert intense est…",
+          "exercise_type": "mcq",
+          "options": [
+            "recommandé",
+            "inutile",
+            "dangereux par principe"
+          ],
+          "correct_answer": "recommandé",
+          "correction": "Les protections réduisent l’exposition sonore.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    },
+    {
+      "subject": "physique-chimie",
+      "level": "4e",
+      "order_index": 9,
+      "title": "Énergie, transferts et conversions",
+      "summary": "Reconnaître des formes d’énergie et calculer une énergie transférée.",
+      "lessons": [
+        {
+          "title": "Formes d’énergie",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une source peut posséder ou transférer de l’énergie sous différentes formes : cinétique, thermique, électrique, chimique ou lumineuse.\"}, {\"type\": \"note\", \"content\": \"Une lampe reçoit de l’énergie électrique et transfère notamment de l’énergie lumineuse et thermique.\"}]",
+          "order_index": 1
+        },
+        {
+          "title": "Conversions",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Lors d’une conversion, l’énergie totale se conserve, mais seule une partie est parfois convertie dans la forme utile.\"}, {\"type\": \"list\", \"items\": [\"Identifie la forme reçue.\", \"Repère la forme utile et les autres transferts.\"]}]",
+          "order_index": 2
+        },
+        {
+          "title": "Puissance, énergie et durée",
+          "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La puissance exprime l’énergie transférée par unité de temps.\"}, {\"type\": \"formula\", \"content\": \"E=P\\\\times t\"}, {\"type\": \"note\", \"content\": \"Avec P en watts et t en secondes, E s’exprime en joules.\"}, {\"type\": \"example\", \"content\": \"une lampe de 60 W allumée pendant 2 h consomme : \\\\(E=P\\\\times t=60\\\\times 2=120\\\\ \\\\text{Wh}\\\\) On peut aussi écrire 0,12 kWh.\"}]",
+          "order_index": 3
+        }
+      ],
+      "exercises": [
+        {
+          "title": "Exercice 1 — Une lampe allumée convertit une partie de l’énergie électrique en énergie…",
+          "statement": "Une lampe allumée convertit une partie de l’énergie électrique en énergie…",
+          "exercise_type": "mcq",
+          "options": [
+            "lumineuse",
+            "nucléaire uniquement",
+            "gravitationnelle uniquement"
+          ],
+          "correct_answer": "lumineuse",
+          "correction": "La lampe émet de la lumière.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 1
+        },
+        {
+          "title": "Exercice 2 — L’unité d’énergie du Système international est le…",
+          "statement": "L’unité d’énergie du Système international est le…",
+          "exercise_type": "mcq",
+          "options": [
+            "joule",
+            "watt",
+            "volt"
+          ],
+          "correct_answer": "joule",
+          "correction": "L’énergie est exprimée en joules (J).",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 2
+        },
+        {
+          "title": "Exercice 3 — Appareil de 10 W pendant 2 s : énergie transférée ? (J)",
+          "statement": "Appareil de 10 W pendant 2 s : énergie transférée ? (J)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "20",
+          "correction": "E=P×t=10×2=20 J.",
+          "difficulty": 1,
+          "points": 10,
+          "order_index": 3
+        },
+        {
+          "title": "Exercice 4 — Lampe de 5 W pendant 10 s : énergie transférée ? (J)",
+          "statement": "Lampe de 5 W pendant 10 s : énergie transférée ? (J)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "50",
+          "correction": "E=5×10=50 J.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 4
+        },
+        {
+          "title": "Exercice 5 — Dans une conversion, l’énergie totale…",
+          "statement": "Dans une conversion, l’énergie totale…",
+          "exercise_type": "mcq",
+          "options": [
+            "se conserve",
+            "est toujours créée",
+            "disparaît complètement"
+          ],
+          "correct_answer": "se conserve",
+          "correction": "L’énergie totale est conservée malgré les différentes formes.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 5
+        },
+        {
+          "title": "Exercice 6 — Un appareil transfère 120 J en 20 s. Puissance ? (W)",
+          "statement": "Un appareil transfère 120 J en 20 s. Puissance ? (W)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "6",
+          "correction": "P=E/t=120/20=6 W.",
+          "difficulty": 2,
+          "points": 10,
+          "order_index": 6
+        },
+        {
+          "title": "Exercice 7 — Une lampe de 60 W fonctionne pendant 3 s. Énergie ? (J)",
+          "statement": "Une lampe de 60 W fonctionne pendant 3 s. Énergie ? (J)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "180",
+          "correction": "E=60×3=180 J.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 7
+        },
+        {
+          "title": "Exercice 8 — Un moteur de 40 W transfère 200 J. Durée ? (s)",
+          "statement": "Un moteur de 40 W transfère 200 J. Durée ? (s)",
+          "exercise_type": "text",
+          "options": [],
+          "correct_answer": "5",
+          "correction": "t=E/P=200/40=5 s.",
+          "difficulty": 3,
+          "points": 10,
+          "order_index": 8
+        }
+      ]
+    }
+  ]
+}

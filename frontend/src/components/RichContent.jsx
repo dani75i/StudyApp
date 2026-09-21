@@ -5,8 +5,8 @@ import { parseLessonBlocks } from '../contentFormat';
 
 function latexify(expression = '') {
   const raw = String(expression).trim();
-  // Les formules LaTeX rédigées dans l'admin contiennent déjà \sin, \frac,
-  // \text, etc. Ne pas réécrire l'intérieur de ces commandes.
+  // Les formules déjà écrites en LaTeX (
+  // \frac, \sin, \text, etc.) sont conservées telles quelles.
   if (raw.includes('\\')) return raw;
   return raw
     .replace(/−/g, '-')
@@ -18,14 +18,13 @@ function latexify(expression = '') {
     .replace(/²/g, '^{2}')
     .replace(/³/g, '^{3}')
     .replace(/\^\(([^)]+)\)/g, '^{$1}')
-    .replace(/\^([A-Za-z0-9+\-]+)/g, '^{$1}')
     .replace(/√\s*([A-Za-z0-9]+)/g, '\\sqrt{$1}');
 }
 
 function unwrapMathDelimiters(expression = '') {
   const raw = String(expression).trim();
-  if (raw.startsWith('\[') && raw.endsWith('\]')) return raw.slice(2, -2).trim();
-  if (raw.startsWith('\(') && raw.endsWith('\)')) return raw.slice(2, -2).trim();
+  if (raw.startsWith('\\[') && raw.endsWith('\\]')) return raw.slice(2, -2).trim();
+  if (raw.startsWith('\\(') && raw.endsWith('\\)')) return raw.slice(2, -2).trim();
   if (raw.startsWith('$') && raw.endsWith('$')) return raw.slice(1, -1).trim();
   return raw;
 }
@@ -105,7 +104,10 @@ export function LessonContent({ body = '' }) {
           return (
             <aside key={index} className="lesson-example">
               <BookOpen size={18} />
-              <div><strong>Exemple</strong><p><RichText text={block.content} /></p></div>
+              <div className="lesson-example-copy">
+                <strong>Exemple</strong>
+                <div className="lesson-example-body"><RichText text={block.content} /></div>
+              </div>
             </aside>
           );
         }

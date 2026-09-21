@@ -1116,6 +1116,19 @@ body {
 .lesson-note > svg { color: #f59e0b; margin-top: 2px; }
 .lesson-note strong { display: block; margin-bottom: 4px; }
 .lesson-note p { margin: 0; line-height: 1.65; color: var(--muted); }
+.lesson-example {
+  display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: flex-start; margin-top: 2px; padding: 18px 18px;
+  border-radius: 16px; background: rgba(79,70,229,.05); border: 1px solid rgba(79,70,229,.16); color: var(--text);
+}
+.lesson-example > svg { color: var(--course-accent); margin-top: 2px; }
+.lesson-example-copy { display: flex; flex-direction: column; gap: 12px; }
+.lesson-example-copy strong { display: block; margin: 0; font-size: 1.05rem; }
+.lesson-example-body {
+  font-size: 1rem; line-height: 1.8; color: var(--text); opacity: .96;
+}
+.lesson-example-body > *:first-child { margin-top: 0; }
+.lesson-example-body > *:last-child { margin-bottom: 0; }
+.lesson-example-body .inline-math { font-size: 1.02em; }
 .katex { font-size: 1.08em; }
 .formula-block .katex { font-size: 1.22em; }
 .correction-copy { line-height: 1.7; margin: 12px 0; }
