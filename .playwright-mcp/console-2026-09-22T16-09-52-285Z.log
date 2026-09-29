@@ -1,0 +1,105 @@
+[     640ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[     641ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[     641ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[    3788ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[    3788ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[    3788ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[    3836ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    3862ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    3862ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    3862ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    3974ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   37103ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   37104ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   37104ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   38474ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   38474ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   38474ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   38516ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   39140ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   39141ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   39141ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   39141ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   39654ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   39654ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   39654ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   40662ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   40662ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   40662ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   40685ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   42541ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   42541ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   42541ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   43549ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   43549ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   43549ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   43578ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   44641ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   44641ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   44641ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   45257ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   45257ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   45257ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   45292ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   46868ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   46868ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   46868ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   46869ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   63581ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   63581ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   63581ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   64205ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   64205ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   64205ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   64232ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   65699ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   65903ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   65903ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   65903ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   66932ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   66932ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   66932ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   66974ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   67979ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   67979ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   67979ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   68624ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   68624ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   68624ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   68660ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   70422ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   70422ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   70422ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   70422ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   70670ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   70671ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   70671ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   71576ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[   71576ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[   71576ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[   71626ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[   72977ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   72977ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   72977ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   72977ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4iqlk4/yF/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_faLyKUg20G7I99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039

@@ -1,0 +1,325 @@
+{
+  "slug": "quality-v107-math-lessons",
+  "title": "ExoDéclic V10.7 – expressions KaTeX et fiches mathématiques",
+  "lessons": [
+    {
+      "level": "3e",
+      "chapter": "Racines carrées",
+      "title": "Définition",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour a≥0, √a est le nombre positif dont le carré vaut a.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour \\\\(a\\\\ge 0\\\\), \\\\(\\\\sqrt{a}\\\\) désigne le nombre positif ou nul dont le carré est égal à \\\\(a\\\\).\"}, {\"type\": \"formula\", \"content\": \"\\\\left(\\\\sqrt{a}\\\\right)^2=a\\\\qquad(a\\\\ge 0)\"}, {\"type\": \"example\", \"content\": \"Comme \\\\(7^2=49\\\\), on obtient \\\\(\\\\sqrt{49}=7\\\\).\"}, {\"type\": \"note\", \"content\": \"La racine carrée d’un nombre négatif n’est pas définie dans les nombres réels.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Racines carrées",
+      "title": "Carrés parfaits",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Il est utile de connaître les carrés parfaits usuels : 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144…\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un carré parfait est le carré d’un nombre entier. Connaître les carrés usuels aide à calculer les racines carrées.\"}, {\"type\": \"formula\", \"content\": \"1^2=1,\\\\quad 2^2=4,\\\\quad 3^2=9,\\\\quad 4^2=16,\\\\quad 5^2=25\"}, {\"type\": \"example\", \"content\": \"Puisque \\\\(12^2=144\\\\), on a \\\\(\\\\sqrt{144}=12\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Racines carrées",
+      "title": "Lien avec la géométrie",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La racine carrée intervient notamment avec Pythagore quand on passe d'une longueur au carré à la longueur.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans un triangle rectangle, le théorème de Pythagore donne le carré d’une longueur ; la racine carrée permet ensuite de retrouver cette longueur.\"}, {\"type\": \"formula\", \"content\": \"BC=\\\\sqrt{AB^2+AC^2}\\\\quad\\\\text{(triangle rectangle en A)}\"}, {\"type\": \"example\", \"content\": \"Si \\\\(AB=6\\\\) cm et \\\\(AC=8\\\\) cm, alors \\\\(BC=\\\\sqrt{6^2+8^2}=\\\\sqrt{100}=10\\\\) cm.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Puissances et écriture scientifique",
+      "title": "Règles de calcul",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Avec des puissances de même base, on applique des règles de calcul simples.\"}, {\"type\": \"formula\", \"content\": \"a^m\\\\times a^n=a^{m+n}\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{a^m}{a^n}=a^{m-n}\"}, {\"type\": \"example\", \"content\": \"Par exemple, \\\\(10^3\\\\times10^2=10^5\\\\) et \\\\(\\\\frac{10^6}{10^2}=10^4\\\\).\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Avec des puissances de même base, on additionne les exposants pour multiplier et on les soustrait pour diviser (base non nulle).\"}, {\"type\": \"formula\", \"content\": \"a^m\\\\times a^n=a^{m+n}\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{a^m}{a^n}=a^{m-n}\\\\qquad(a\\\\ne 0)\"}, {\"type\": \"example\", \"content\": \"Pour multiplier des puissances : \\\\(10^3\\\\times10^2=10^5\\\\). Pour les diviser : \\\\(\\\\frac{10^6}{10^2}=10^4\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Configuration",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux sécantes coupées par deux parallèles donnent des longueurs correspondantes proportionnelles.\"}, {\"type\": \"example\", \"content\": \"si (DE) est parallèle à (BC), avec AD = 2 cm, AB = 6 cm et AC = 9 cm, alors AE/AC = AD/AB = 2/6 = 1/3, donc AE = 3 cm.\"}]",
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans le triangle ABC, D appartient à [AB], E appartient à [AC] et les droites (DE) et (BC) sont parallèles.\"}, {\"type\": \"paragraph\", \"content\": \"Les trois rapports de côtés correspondants sont égaux :\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}=\\\\frac{DE}{BC}\"}, {\"type\": \"note\", \"content\": \"Repère le sommet A commun aux deux triangles et écris les rapports dans le même ordre.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On considère un triangle ABC. Le point D appartient à [AB], le point E à [AC], et les droites (DE) et (BC) sont parallèles.\"}, {\"type\": \"paragraph\", \"content\": \"Le théorème de Thalès donne les rapports de côtés correspondants :\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}=\\\\frac{DE}{BC}\"}, {\"type\": \"note\", \"content\": \"Vérifie toujours l’alignement et le parallélisme avant d’utiliser la formule.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Méthode",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"On repère le sommet commun, on met les côtés correspondants dans le même ordre, puis on utilise le produit en croix.\"}]",
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour chercher une longueur, vérifie d’abord l’alignement des points et le parallélisme, écris les rapports correspondants, puis isole l’inconnue.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}\"}, {\"type\": \"example\", \"content\": \"Si (DE) est parallèle à (BC), avec \\\\(AD=2\\\\) cm, \\\\(AB=6\\\\) cm et \\\\(AC=9\\\\) cm, alors \\\\(\\\\frac{2}{6}=\\\\frac{AE}{9}\\\\). On obtient \\\\(AE=\\\\frac{2\\\\times9}{6}=3\\\\) cm.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer une longueur, écris les rapports correspondants dans le même ordre, puis isole la longueur cherchée.\"}, {\"type\": \"formula\", \"content\": \"\\\\frac{AD}{AB}=\\\\frac{AE}{AC}\"}, {\"type\": \"example\", \"content\": \"Si \\\\((DE)\\\\parallel(BC)\\\\), \\\\(AD=2\\\\) cm, \\\\(AB=6\\\\) cm et \\\\(AC=9\\\\) cm, alors \\\\(\\\\frac{2}{6}=\\\\frac{AE}{9}\\\\), d’où \\\\(AE=\\\\frac{2\\\\times9}{6}=3\\\\) cm.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Théorème de Thalès",
+      "title": "Agrandissement/réduction",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un coefficient >1 agrandit. Entre 0 et 1, il réduit.\"}, {\"type\": \"example\", \"content\": \"\\\\(3(x+2)=3x+6\\\\) On distribue 3 à chacun des termes entre parenthèses.\"}]",
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Lorsque les triangles ADE et ABC sont en configuration de Thalès, on peut passer du petit triangle au grand par un même coefficient k :\"}, {\"type\": \"formula\", \"content\": \"k=\\\\frac{AB}{AD}=\\\\frac{AC}{AE}=\\\\frac{BC}{DE}\"}, {\"type\": \"paragraph\", \"content\": \"Si k > 1, les longueurs sont agrandies ; pour passer du grand triangle au petit, on utilise le coefficient inverse 1/k, compris entre 0 et 1.\"}, {\"type\": \"example\", \"content\": \"Si \\\\(AD=2\\\\) cm et \\\\(AB=6\\\\) cm, alors \\\\(k=\\\\frac{6}{2}=3\\\\). Un segment de 4 cm du petit triangle correspond à un segment de 12 cm du grand triangle.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Dans cette configuration, les deux triangles ADE et ABC ont des côtés correspondants proportionnels.\"}, {\"type\": \"formula\", \"content\": \"k=\\\\frac{AB}{AD}=\\\\frac{AC}{AE}=\\\\frac{BC}{DE}\"}, {\"type\": \"paragraph\", \"content\": \"Lorsque les points D et E sont sur les côtés du triangle, le coefficient k du petit triangle vers le grand est supérieur ou égal à 1.\"}, {\"type\": \"example\", \"content\": \"Si \\\\(AD=2\\\\) cm et \\\\(AB=6\\\\) cm, alors \\\\(k=\\\\frac{6}{2}=3\\\\). Toutes les longueurs du grand triangle sont trois fois celles du petit.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Statistiques",
+      "title": "Moyenne",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Moyenne=somme des valeurs/effectif total.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La moyenne est la somme des valeurs divisée par leur nombre. Si les valeurs ont des effectifs, on utilise une moyenne pondérée.\"}, {\"type\": \"formula\", \"content\": \"\\\\overline{x}=\\\\frac{x_1+x_2+\\\\cdots+x_n}{n}\"}, {\"type\": \"formula\", \"content\": \"\\\\overline{x}=\\\\frac{n_1x_1+n_2x_2+\\\\cdots+n_px_p}{n_1+n_2+\\\\cdots+n_p}\"}, {\"type\": \"example\", \"content\": \"Pour les notes 8, 12 et 16, la moyenne vaut \\\\(\\\\overline{x}=\\\\frac{8+12+16}{3}=12\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Statistiques",
+      "title": "Médiane",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une fois la série ordonnée, la médiane partage les données en deux groupes de même effectif.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Commence par ranger les valeurs dans l’ordre croissant. Si l’effectif est impair, prends la valeur centrale. S’il est pair, au collège on prend généralement la moyenne des deux valeurs centrales.\"}, {\"type\": \"example\", \"content\": \"Dans la série 4 ; 7 ; 9 ; 12 ; 18, la médiane est 9. Dans 4 ; 7 ; 9 ; 12, elle vaut \\\\(\\\\frac{7+9}{2}=8\\\\).\"}, {\"type\": \"note\", \"content\": \"La médiane n’est pas toujours égale à la moyenne.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Statistiques",
+      "title": "Étendue et fréquence",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Étendue=max−min. Une fréquence est l'effectif d'une catégorie divisé par l'effectif total.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue mesure l’écart entre la plus grande et la plus petite valeur. La fréquence indique la proportion d’un effectif.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{Étendue}=x_{\\\\max}-x_{\\\\min}\"}, {\"type\": \"formula\", \"content\": \"\\\\text{Fréquence}=\\\\frac{\\\\text{effectif de la catégorie}}{\\\\text{effectif total}}\"}, {\"type\": \"example\", \"content\": \"Pour les valeurs 5, 7 et 13, l’étendue vaut \\\\(13-5=8\\\\). Si 6 élèves sur 20 choisissent une réponse, sa fréquence est \\\\(\\\\frac{6}{20}=0{,}30=30\\\\%\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Géométrie dans l'espace",
+      "title": "Volumes",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pavé : L×l×h. Cylindre : πr²h. Boule : 4/3πr³.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un solide se calcule avec la formule correspondant à sa forme. Toutes les longueurs doivent être exprimées dans la même unité.\"}, {\"type\": \"paragraph\", \"content\": \"Pavé droit et cube :\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{pavé}}=L\\\\times\\\\ell\\\\times h\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{cube}}=c^3\"}, {\"type\": \"paragraph\", \"content\": \"Cylindre et cône de révolution :\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{cylindre}}=\\\\pi r^2 h\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{cône}}=\\\\frac{\\\\pi r^2h}{3}\"}, {\"type\": \"paragraph\", \"content\": \"Pyramide et boule :\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{pyramide}}=\\\\frac{\\\\mathcal A_{\\\\mathrm{base}}\\\\times h}{3}\"}, {\"type\": \"formula\", \"content\": \"V_{\\\\mathrm{boule}}=\\\\frac{4}{3}\\\\pi r^3\"}, {\"type\": \"example\", \"content\": \"Un cylindre de rayon 2 cm et de hauteur 5 cm a un volume \\\\(V=\\\\pi\\\\times2^2\\\\times5=20\\\\pi\\\\approx62{,}8\\\\ \\\\mathrm{cm}^3\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Géométrie dans l'espace",
+      "title": "Sections",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une coupe par un plan donne une figure plane. Par exemple, une coupe parallèle à la base d'un cylindre donne un disque.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une section est la figure obtenue lorsque l’on coupe un solide par un plan.\"}, {\"type\": \"list\", \"items\": [\"Une section d’un cylindre par un plan parallèle aux bases est un disque.\", \"Une section d’une boule par un plan peut être un disque.\", \"Une section d’un pavé droit par un plan parallèle à l’une de ses faces est un rectangle.\"]}, {\"type\": \"example\", \"content\": \"Si l’on coupe un cylindre droit parallèlement à ses deux bases circulaires, la section est un disque de même rayon que les bases.\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Géométrie dans l'espace",
+      "title": "Unités",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"formula\", \"content\": \"1 dm³=1 L et 1 cm³=1 mL.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Une mesure de volume s’exprime en unités cubiques ou en litres. Pour convertir, on utilise notamment ces égalités :\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{dm}^3=1\\\\ \\\\mathrm{L}\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{cm}^3=1\\\\ \\\\mathrm{mL}\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{m}^3=1000\\\\ \\\\mathrm{L}\"}, {\"type\": \"example\", \"content\": \"Un aquarium d’un volume de \\\\(20\\\\ \\\\mathrm{dm}^3\\\\) contient \\\\(20\\\\) litres d’eau s’il est rempli.\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Statistiques : moyenne et médiane",
+      "title": "Moyenne",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La moyenne d’une série est la somme de ses valeurs divisée par le nombre de valeurs.\"}, {\"type\": \"formula\", \"content\": \"\\\\bar{x}=\\\\frac{\\\\text{somme des valeurs}}{\\\\text{effectif}}\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La moyenne se calcule en faisant la somme de toutes les valeurs puis en divisant par l’effectif total.\"}, {\"type\": \"formula\", \"content\": \"\\\\overline{x}=\\\\frac{\\\\text{somme des valeurs}}{\\\\text{effectif total}}\"}, {\"type\": \"example\", \"content\": \"Pour les valeurs 10, 12 et 17, la moyenne vaut \\\\(\\\\frac{10+12+17}{3}=13\\\\).\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Statistiques : moyenne et médiane",
+      "title": "Médiane",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Range les valeurs dans l’ordre croissant. La médiane sépare la série en deux groupes de même effectif.\"}, {\"type\": \"list\", \"items\": [\"Effectif impair : prends la valeur du milieu.\", \"Effectif pair : au collège, prends la moyenne des deux valeurs centrales.\"]}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Ordonne les valeurs dans l’ordre croissant. Si l’effectif est impair, prends la valeur centrale ; s’il est pair, on prend généralement la moyenne des deux valeurs centrales au collège.\"}, {\"type\": \"example\", \"content\": \"Pour la série 3 ; 5 ; 8 ; 12 ; 15, la médiane est 8. Pour 3 ; 5 ; 8 ; 12, elle vaut \\\\(\\\\frac{5+8}{2}=6{,}5\\\\).\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Statistiques : moyenne et médiane",
+      "title": "Étendue et interprétation",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue est la différence entre la plus grande et la plus petite valeur.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{étendue}=\\\\text{max}-\\\\text{min}\"}, {\"type\": \"note\", \"content\": \"Une valeur très grande ou très petite peut modifier fortement la moyenne, sans modifier autant la médiane.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue est la différence entre la valeur maximale et la valeur minimale d’une série.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{Étendue}=x_{\\\\max}-x_{\\\\min}\"}, {\"type\": \"example\", \"content\": \"Pour les valeurs 6, 9, 11 et 16, l’étendue est \\\\(16-6=10\\\\).\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Volumes de solides",
+      "title": "Pavé droit",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un pavé droit s’obtient en multipliant longueur, largeur et hauteur dans la même unité.\"}, {\"type\": \"formula\", \"content\": \"V=L\\\\times l\\\\times h\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un pavé droit est le produit de sa longueur, de sa largeur et de sa hauteur.\"}, {\"type\": \"formula\", \"content\": \"V=L\\\\times\\\\ell\\\\times h\"}, {\"type\": \"example\", \"content\": \"Un pavé de 4 cm sur 3 cm et de hauteur 5 cm a pour volume \\\\(V=4\\\\times3\\\\times5=60\\\\ \\\\mathrm{cm}^3\\\\).\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Volumes de solides",
+      "title": "Cylindre de révolution",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un cylindre est l’aire de sa base circulaire multipliée par sa hauteur.\"}, {\"type\": \"formula\", \"content\": \"V=\\\\pi r^2h\"}, {\"type\": \"note\", \"content\": \"Un rayon vaut la moitié du diamètre.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un cylindre est l’aire de sa base circulaire multipliée par sa hauteur.\"}, {\"type\": \"formula\", \"content\": \"V=\\\\pi r^2\\\\times h\"}, {\"type\": \"example\", \"content\": \"Pour un rayon de 3 cm et une hauteur de 4 cm, \\\\(V=\\\\pi\\\\times3^2\\\\times4=36\\\\pi\\\\ \\\\mathrm{cm}^3\\\\).\"}, {\"type\": \"note\", \"content\": \"Le rayon est la moitié du diamètre.\"}]"
+    },
+    {
+      "level": "4e",
+      "chapter": "Volumes de solides",
+      "title": "Conversions",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un litre vaut 1 dm³. Un mètre cube vaut 1000 litres.\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{L}=1\\\\ \\\\mathrm{dm}^3\"}, {\"type\": \"list\", \"items\": [\"Écris les trois dimensions dans la même unité.\", \"Un volume se donne en unités cubiques.\"]}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Les volumes se mesurent en unités cubiques. Les équivalences usuelles sont :\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{L}=1\\\\ \\\\mathrm{dm}^3\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{mL}=1\\\\ \\\\mathrm{cm}^3\"}, {\"type\": \"formula\", \"content\": \"1\\\\ \\\\mathrm{m}^3=1000\\\\ \\\\mathrm{L}\"}, {\"type\": \"example\", \"content\": \"Un récipient de \\\\(250\\\\ \\\\mathrm{cm}^3\\\\) a une capacité de \\\\(250\\\\) mL.\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Aires et volumes composés",
+      "title": "Aire du triangle",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Aire = base × hauteur / 2.\"}, {\"type\": \"note\", \"content\": \"Aire = base × hauteur / 2.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’aire d’un triangle est la moitié du produit d’une base par la hauteur correspondante.\"}, {\"type\": \"formula\", \"content\": \"\\\\mathcal A=\\\\frac{b\\\\times h}{2}\"}, {\"type\": \"example\", \"content\": \"Pour une base de 6 cm et une hauteur de 4 cm, \\\\(\\\\mathcal A=\\\\frac{6\\\\times4}{2}=12\\\\ \\\\mathrm{cm}^2\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Aires et volumes composés",
+      "title": "Volume du pavé",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Volume = longueur × largeur × hauteur.\"}, {\"type\": \"note\", \"content\": \"Volume = longueur × largeur × hauteur.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le volume d’un pavé droit est obtenu en multipliant ses trois dimensions.\"}, {\"type\": \"formula\", \"content\": \"V=L\\\\times\\\\ell\\\\times h\"}, {\"type\": \"example\", \"content\": \"Pour un pavé de dimensions 5 cm, 3 cm et 2 cm : \\\\(V=5\\\\times3\\\\times2=30\\\\ \\\\mathrm{cm}^3\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Probabilités et statistiques",
+      "title": "Équiprobabilité",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Probabilité = nombre de cas favorables / nombre de cas possibles.\"}, {\"type\": \"note\", \"content\": \"Probabilité = nombre de cas favorables / nombre de cas possibles.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Quand toutes les issues ont la même chance de se produire, la probabilité est le rapport entre les cas favorables et les cas possibles.\"}, {\"type\": \"formula\", \"content\": \"P(A)=\\\\frac{\\\\text{nombre de cas favorables}}{\\\\text{nombre de cas possibles}}\"}, {\"type\": \"example\", \"content\": \"En lançant un dé équilibré, la probabilité d’obtenir un nombre pair est \\\\(\\\\frac36=\\\\frac12\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Probabilités et statistiques",
+      "title": "Moyenne",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Additionne les données puis divise par leur nombre.\"}, {\"type\": \"note\", \"content\": \"Additionne les données puis divise par leur nombre.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour calculer la moyenne d’une série simple, on additionne les valeurs puis on divise par leur nombre.\"}, {\"type\": \"formula\", \"content\": \"\\\\overline{x}=\\\\frac{\\\\text{somme des valeurs}}{\\\\text{effectif total}}\"}, {\"type\": \"example\", \"content\": \"Pour les valeurs 4, 6 et 8, la moyenne est \\\\(\\\\frac{4+6+8}{3}=6\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Masse, volume et masse volumique",
+      "title": "Comprendre : Masse, volume et masse volumique",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La masse volumique est la masse d’un objet divisée par son volume.\"}, {\"type\": \"note\", \"content\": \"Comparer des objets selon leur masse et leur volume.\"}, {\"type\": \"formula\", \"content\": \"\\\\rho=\\\\frac{m}{V}=\\\\frac{20}{10}=2\\\\ \\\\text{g/mL}\"}, {\"type\": \"example\", \"content\": \"Si un objet a une masse de 20 g pour un volume de 10 mL, sa masse volumique est 2 g/mL.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La masse volumique correspond à la masse d’une substance par unité de volume.\"}, {\"type\": \"formula\", \"content\": \"\\\\rho=\\\\frac{m}{V}\"}, {\"type\": \"example\", \"content\": \"Si un objet a une masse de 20 g et un volume de 10 mL, sa masse volumique vaut \\\\(\\\\rho=\\\\frac{20}{10}=2\\\\ \\\\mathrm{g/mL}\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Masse, volume et masse volumique",
+      "title": "Relation",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"ρ = m / V, avec des unités cohérentes.\"}, {\"type\": \"note\", \"content\": \"ρ = m / V, avec des unités cohérentes.\"}, {\"type\": \"formula\", \"content\": \"\\\\rho=\\\\frac{m}{V}=\\\\frac{20}{10}=2\\\\ \\\\text{g/mL}\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour déterminer la masse volumique, divise la masse par le volume en utilisant des unités compatibles.\"}, {\"type\": \"formula\", \"content\": \"\\\\rho=\\\\frac{m}{V}\"}, {\"type\": \"example\", \"content\": \"Pour 50 g répartis dans 25 mL, on obtient \\\\(\\\\rho=\\\\frac{50}{25}=2\\\\ \\\\mathrm{g/mL}\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Volumes et pavés droits",
+      "title": "Pavé droit",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Volume = longueur × largeur × hauteur, avec trois longueurs dans la même unité.\"}, {\"type\": \"note\", \"content\": \"Volume = longueur × largeur × hauteur, avec trois longueurs dans la même unité.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Pour un pavé droit, multiplie la longueur, la largeur et la hauteur après les avoir exprimées dans la même unité.\"}, {\"type\": \"formula\", \"content\": \"V=L\\\\times\\\\ell\\\\times h\"}, {\"type\": \"example\", \"content\": \"Un pavé de 4 cm sur 3 cm et de hauteur 2 cm a un volume \\\\(V=4\\\\times3\\\\times2=24\\\\ \\\\mathrm{cm}^3\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Volumes et pavés droits",
+      "title": "Cube",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un cube de côté c a pour volume c × c × c.\"}, {\"type\": \"note\", \"content\": \"Un cube de côté c a pour volume c × c × c.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un cube a toutes ses arêtes de même longueur. Son volume est le cube de cette longueur.\"}, {\"type\": \"formula\", \"content\": \"V=c^3\"}, {\"type\": \"example\", \"content\": \"Si un cube mesure 3 cm de côté, son volume est \\\\(V=3^3=27\\\\ \\\\mathrm{cm}^3\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Tableaux et statistiques",
+      "title": "Moyenne",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Additionne toutes les valeurs puis divise par le nombre de valeurs.\"}, {\"type\": \"note\", \"content\": \"Additionne toutes les valeurs puis divise par le nombre de valeurs.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La moyenne d’une série simple est la somme des valeurs divisée par leur nombre.\"}, {\"type\": \"formula\", \"content\": \"\\\\overline{x}=\\\\frac{\\\\text{somme des valeurs}}{\\\\text{nombre de valeurs}}\"}, {\"type\": \"example\", \"content\": \"Pour les valeurs 5, 7 et 9, la moyenne vaut \\\\(\\\\frac{5+7+9}{3}=7\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Tableaux et statistiques",
+      "title": "Étendue",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue est la différence entre la plus grande valeur et la plus petite.\"}, {\"type\": \"note\", \"content\": \"L’étendue est la différence entre la plus grande valeur et la plus petite.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"L’étendue mesure l’écart entre la plus grande et la plus petite valeur d’une série.\"}, {\"type\": \"formula\", \"content\": \"\\\\text{Étendue}=x_{\\\\max}-x_{\\\\min}\"}, {\"type\": \"example\", \"content\": \"Pour 2, 7, 10 et 14, l’étendue est \\\\(14-2=12\\\\).\"}]"
+    },
+    {
+      "level": "3e",
+      "chapter": "Univers, gravitation et ordres de grandeur",
+      "title": "Système solaire",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le Soleil est l'étoile centrale ; huit planètes orbitent autour de lui.\"}, {\"type\": \"example\", \"content\": \"la distance Terre-Lune est d’environ 384 000 km, soit 3,84 × 10⁵ km en écriture scientifique.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Le Soleil est l’étoile au centre du Système solaire. Huit planètes tournent autour de lui, dont la Terre.\"}, {\"type\": \"example\", \"content\": \"La distance moyenne Terre-Lune est d’environ 384 000 km. En écriture scientifique : \\\\(384\\\\,000=3{,}84\\\\times 10^5\\\\) km.\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Proportionnalité et vitesse",
+      "title": "Comprendre : Proportionnalité et vitesse",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"La vitesse est la distance parcourue pendant une unité de temps.\"}, {\"type\": \"note\", \"content\": \"Calculer des distances et des vitesses constantes.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{150}{2}=75\\\\ \\\\text{km/h}\"}, {\"type\": \"example\", \"content\": \"Une voiture parcourt 150 km en 2 h : sa vitesse moyenne est 75 km/h.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"À vitesse constante, la distance parcourue est proportionnelle au temps. La vitesse moyenne se calcule en divisant la distance par la durée.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}\"}, {\"type\": \"example\", \"content\": \"Une voiture parcourt 150 km en 2 h. Sa vitesse moyenne est \\\\(v=\\\\frac{150}{2}=75\\\\ \\\\mathrm{km/h}\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Proportionnalité et vitesse",
+      "title": "Vitesse",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"v = d / t, avec des unités cohérentes.\"}, {\"type\": \"note\", \"content\": \"v = d / t, avec des unités cohérentes.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{150}{2}=75\\\\ \\\\text{km/h}\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Utilise des unités compatibles : les kilomètres et les heures donnent des kilomètres par heure.\"}, {\"type\": \"formula\", \"content\": \"v=\\\\frac{d}{t}\"}, {\"type\": \"example\", \"content\": \"Si un cycliste parcourt 24 km en 2 h, on obtient \\\\(v=\\\\frac{24}{2}=12\\\\ \\\\mathrm{km/h}\\\\).\"}]"
+    },
+    {
+      "level": "5e",
+      "chapter": "Proportionnalité et vitesse",
+      "title": "Distance",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"À vitesse constante, distance = vitesse × durée.\"}, {\"type\": \"note\", \"content\": \"À vitesse constante, distance = vitesse × durée.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"À vitesse constante, pour calculer la distance, multiplie la vitesse par la durée.\"}, {\"type\": \"formula\", \"content\": \"d=v\\\\times t\"}, {\"type\": \"example\", \"content\": \"À 15 km/h pendant 3 h, un cycliste parcourt \\\\(d=15\\\\times3=45\\\\ \\\\mathrm{km}\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Angles et instruments",
+      "title": "Comprendre : Angles et instruments",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un angle est formé par deux demi-droites de même origine.\"}, {\"type\": \"note\", \"content\": \"Identifier et mesurer des angles.\"}, {\"type\": \"example\", \"content\": \"dans un triangle, si deux angles mesurent 50° et 60°, alors le troisième angle mesure 180° − 50° − 60° = 70°.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Un angle est formé par deux demi-droites de même origine. Le rapporteur permet de mesurer un angle en degrés.\"}, {\"type\": \"example\", \"content\": \"Un angle de \\\\(60^\\\\circ\\\\) est aigu, car il est inférieur à \\\\(90^\\\\circ\\\\).\"}]"
+    },
+    {
+      "level": "6e",
+      "chapter": "Angles et instruments",
+      "title": "Angles complémentaires",
+      "expected_bodies": [
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux angles complémentaires ont une somme de 90°.\"}, {\"type\": \"note\", \"content\": \"Deux angles complémentaires ont une somme de 90°.\"}, {\"type\": \"example\", \"content\": \"un rectangle de longueur 8 cm et de largeur 3 cm a une aire de 8 × 3 = 24 cm² et un périmètre de 2 × (8 + 3) = 22 cm.\"}]",
+        "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux angles sont complémentaires lorsque la somme de leurs mesures est égale à 90°.\"}, {\"type\": \"formula\", \"content\": \"\\\\alpha+\\\\beta=90^\\\\circ\"}, {\"type\": \"example\", \"content\": \"Si un angle mesure 35°, son angle complémentaire mesure 90° − 35° = 55°.\"}]"
+      ],
+      "body": "@@studysprint-blocks@@[{\"type\": \"paragraph\", \"content\": \"Deux angles sont complémentaires lorsque la somme de leurs mesures est égale à 90°.\"}, {\"type\": \"formula\", \"content\": \"\\\\alpha+\\\\beta=90^\\\\circ\"}, {\"type\": \"example\", \"content\": \"Si un angle mesure 35°, alors son angle complémentaire mesure \\\\(90^\\\\circ-35^\\\\circ=55^\\\\circ\\\\).\"}]"
+    }
+  ]
+}

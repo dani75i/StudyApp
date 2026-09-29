@@ -1117,11 +1117,11 @@ body {
 .lesson-note strong { display: block; margin-bottom: 4px; }
 .lesson-note p { margin: 0; line-height: 1.65; color: var(--muted); }
 .lesson-example {
-  display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: flex-start; margin-top: 2px; padding: 18px 18px;
+  display: grid; grid-template-columns: 24px minmax(0,1fr); gap: 12px; align-items: flex-start; margin-top: 2px; padding: 18px 18px;
   border-radius: 16px; background: rgba(79,70,229,.05); border: 1px solid rgba(79,70,229,.16); color: var(--text);
 }
 .lesson-example > svg { color: var(--course-accent); margin-top: 2px; }
-.lesson-example-copy { display: flex; flex-direction: column; gap: 12px; }
+.lesson-example-copy { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .lesson-example-copy strong { display: block; margin: 0; font-size: 1.05rem; }
 .lesson-example-body {
   font-size: 1rem; line-height: 1.8; color: var(--text); opacity: .96;
@@ -1495,3 +1495,64 @@ body {
   .v9-solution-steps li { padding: 13px 11px; gap: 10px; }
   .v106-step-content { font-size: 1rem; }
 }
+
+
+/* V10.7 — mêmes formules KaTeX dans le cours et les exemples */
+.lesson-example-body { display: grid; gap: 10px; min-width: 0; }
+.lesson-example-body > p { margin: 0; font-size: 1.03rem; line-height: 1.8; }
+.lesson-example-body .formula-block { width: 100%; min-width: 0; font-size: 1.08rem; padding: 15px 12px; }
+.lesson-example-body .formula-block .katex { font-size: 1.22em; }
+.lesson-example-body .formula-block .katex-display { margin: .1em 0; }
+/* Affichage net des fractions imbriquées et racines, sur ordinateur comme mobile */
+.lesson-content .formula-block { font-size: 1.04rem; }
+.lesson-content .formula-block .katex-display { overflow-x: auto; overflow-y: hidden; }
+
+/* V10.7 — Déclic : compagnon léger, vectoriel, sans ressources externes */
+.declic-dashboard-card {
+  display: flex; align-items: center; gap: clamp(16px, 4vw, 36px);
+  background: linear-gradient(125deg, var(--card), var(--course-bg));
+  padding: 20px clamp(18px, 4vw, 32px); border: 1px solid var(--line);
+  border-radius: 22px; margin: 18px 0; min-width: 0;
+}
+.declic-dashboard-card .declic-mascot { flex: 0 0 min(40%, 260px); }
+.declic-dashboard-side { min-width: 0; flex: 1; }
+.declic-dashboard-side h2 { margin: 8px 0; font-size: clamp(19px, 2.5vw, 27px); }
+.declic-dashboard-side p { margin: 0 0 12px; line-height: 1.7; color: var(--muted); }
+.declic-mastery-counter { display: inline-flex; gap: 5px; padding: 8px 11px; font-size: .9rem; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+.declic-mastery-counter strong { color: var(--course-accent); }
+.declic-mascot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; min-width: 0; }
+.declic-mascot svg { width: clamp(110px, 100%, 190px); height: auto; overflow: visible; }
+.declic-mascot .declic-body { transform-origin: 100px 105px; animation: declic-float 3.3s ease-in-out infinite; }
+.declic-mascot .declic-arm-right { transform-origin: 146px 110px; }
+.declic-mascot .declic-arm-left { transform-origin: 54px 110px; }
+.declic-mascot.mood-success .declic-body { animation: declic-happy 850ms ease-out 2; }
+.declic-mascot.mood-success .declic-arm-right { animation: declic-wave 680ms ease-in-out 3; }
+.declic-mascot.mood-encourage .declic-body { animation: declic-nod 1100ms ease-in-out 2; }
+.declic-mascot.mood-encourage .declic-arm-left { animation: declic-wave 900ms ease-in-out 2; }
+.declic-mascot .declic-confetti { animation: declic-confetti 1.1s ease-out 2; transform-origin: 100px 100px; }
+.declic-mascot .declic-message { text-align: center; max-width: 245px; }
+.declic-mascot .declic-message strong { display: block; font-size: .96rem; }
+.declic-mascot .declic-message p { margin: 3px 0 6px; font-size: .88rem; line-height: 1.45; color: var(--muted); }
+.declic-mascot .declic-message small { color: var(--course-accent); font-size: .75rem; font-weight: 700; }
+.v9-result-hero .v107-result-message { flex: 1; min-width: 0; }
+.v9-result-hero > .declic-mascot.compact { flex: 0 0 120px; margin: -20px -13px -20px 0; }
+.v9-result-hero > .declic-mascot.compact svg { width: 115px; }
+@keyframes declic-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes declic-happy { 0%,100% { transform: translateY(0) rotate(0); } 35% { transform: translateY(-20px) rotate(-7deg); } 70% { transform: translateY(-5px) rotate(7deg); } }
+@keyframes declic-wave { 0%,100% { transform: rotate(0); } 50% { transform: rotate(15deg); } }
+@keyframes declic-nod { 0%,100% { transform: translateY(0) rotate(0deg); } 30% { transform: translateY(3px) rotate(-4deg); } 65% { transform: translateY(3px) rotate(4deg); } }
+@keyframes declic-confetti { 0% { transform: scale(.7); opacity: 0; } 30% { transform: scale(1.15); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+@media (max-width: 630px) {
+  .declic-dashboard-card { flex-direction: column; align-items: stretch; text-align: center; }
+  .declic-dashboard-card .declic-mascot { flex: none; }
+  .v9-result-hero > .declic-mascot.compact { flex-basis: 66px; margin: -5px -6px 0 0; }
+  .v9-result-hero > .declic-mascot.compact svg { width: 64px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .declic-mascot .declic-body,
+  .declic-mascot .declic-arm-left,
+  .declic-mascot .declic-arm-right,
+  .declic-mascot .declic-confetti { animation: none !important; }
+}
+
+.lesson-example-body .math-joiner { text-align: center; color: var(--muted); font-weight: 700; }

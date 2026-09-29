@@ -1,0 +1,43 @@
+- generic [ref=f4e5]:
+  - banner:
+    - generic [ref=f4e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f4e7] [cursor=pointer]:
+        - /url: /
+    - status "Chargement…" [ref=f4e14]
+    - navigation "Facebook" [ref=f4e18]:
+      - list [ref=f4e19]:
+        - listitem [ref=f4e20]:
+          - link "Accueil" [ref=f4e23] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f4e27]:
+          - link "Reels" [ref=f4e30] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f4e35]:
+          - link "Ami(e)s" [ref=f4e38] [cursor=pointer]:
+            - /url: /friends/
+        - listitem [ref=f4e42]:
+          - link "Marketplace" [ref=f4e45] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f4e49]:
+          - link "Groupes" [ref=f4e52] [cursor=pointer]:
+            - /url: /groups/
+    - navigation "Contrôles et paramètres du compte" [ref=f4e57]:
+      - button "Menu Facebook" [ref=f4e62] [cursor=pointer]
+      - button "Messenger" [ref=f4e69] [cursor=pointer]
+      - button "Notifications" [ref=f4e76] [cursor=pointer]
+      - button "Votre profil" [ref=f4e81] [cursor=pointer]:
+        - img "Votre profil" [ref=f4e83]
+  - generic [ref=f4e97]:
+    - region "Filtres de résultats" [ref=f4e98]:
+      - generic [ref=f4e99]:
+        - heading "Résultats de la recherche" [level=1] [ref=f4e107]
+        - generic [ref=f4e112]:
+          - heading "Filtres" [level=2] [ref=f4e126]
+          - status "Chargement…" [ref=f4e131]
+    - main "Résultats de la recherche" [ref=f4e214]:
+      - feed [ref=f4e219]:
+        - article [ref=f4e223]:
+          - status "Chargement…" [ref=f4e225]

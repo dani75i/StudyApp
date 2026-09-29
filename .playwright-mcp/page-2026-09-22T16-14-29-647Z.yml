@@ -1,0 +1,72 @@
+- generic [ref=f70e5]:
+  - banner:
+    - generic [ref=f70e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f70e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f70e16]:
+      - generic [ref=f70e17]:
+        - generic:
+          - generic:
+            - generic:
+              - button [aria-hidden]
+      - combobox "Rechercher sur Facebook" [ref=f70e20]
+    - navigation "Facebook" [ref=f70e24]:
+      - list [ref=f70e25]:
+        - listitem [ref=f70e26]:
+          - link "Accueil" [ref=f70e29] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f70e33]:
+          - link "Reels" [ref=f70e36] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f70e41]:
+          - link "Ami(e)s" [ref=f70e44] [cursor=pointer]:
+            - /url: /friends/
+        - listitem [ref=f70e48]:
+          - link "Marketplace" [ref=f70e51] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f70e55]:
+          - link "Groupes" [ref=f70e58] [cursor=pointer]:
+            - /url: /groups/
+    - navigation "Contrôles et paramètres du compte" [ref=f70e63]:
+      - button "Menu Facebook" [ref=f70e68] [cursor=pointer]
+      - button "Messenger" [ref=f70e75] [cursor=pointer]
+      - generic [ref=f70e81]:
+        - button "Notifications, 1 non lues" [ref=f70e82] [cursor=pointer]
+        - button [aria-hidden] [ref=f70e85] [cursor=pointer]:
+          - generic [ref=f70e86]:
+            - generic [ref=f70e87]: Nombre de notifications non lues
+            - generic [aria-hidden] [ref=f70e88]: "1"
+      - button "Votre profil" [ref=f70e91] [cursor=pointer]:
+        - img "Votre profil" [ref=f70e93]
+  - generic [ref=f70e107]:
+    - navigation "Filtres de résultats" [ref=f70e108]:
+      - generic [ref=f70e109]:
+        - generic [ref=f70e114]:
+          - heading "Résultats de recherche" [level=1] [ref=f70e117]
+          - generic [ref=f70e118]: dans Aide en Maths
+        - combobox "Rechercher dans ce groupe" [ref=f70e126]: exodeclic
+        - generic [ref=f70e129]:
+          - heading "Filtres" [level=2] [ref=f70e142]
+          - list [ref=f70e145]:
+            - listitem [ref=f70e146]:
+              - generic [ref=f70e147]:
+                - generic [ref=f70e148]: Publications que vous avez vues
+                - switch "Publications que vous avez vues" [ref=f70e155] [cursor=pointer]
+            - listitem [ref=f70e156]:
+              - generic [ref=f70e157]:
+                - generic [ref=f70e158]: Plus récent
+                - switch "Plus récent" [ref=f70e165] [cursor=pointer]
+            - listitem [ref=f70e166]:
+              - combobox "Lieu identifié" [ref=f70e173] [cursor=pointer]
+            - listitem [ref=f70e174]:
+              - 'combobox "Filtrer par Date de publication : N’importe quelle date" [ref=f70e178] [cursor=pointer]':
+                - generic [ref=f70e180]: Date de publication
+    - main "Résultats de la recherche" [ref=f70e185]:
+      - generic [ref=f70e190]:
+        - generic [ref=f70e216]:
+          - heading "Nous n’avons trouvé aucun résultat dans ce groupe" [level=2] [ref=f70e218]
+          - generic [ref=f70e220]: Essayez avec d’autres mot-clés ou recherchez dans tout Facebook.
+        - button "Rechercher dans tout Facebook" [ref=f70e224] [cursor=pointer]

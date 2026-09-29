@@ -1,0 +1,600 @@
+- generic [ref=f73e1]:
+  - generic [ref=f73e5]:
+    - banner:
+      - generic [ref=f73e6]:
+        - generic:
+          - generic:
+            - button [disabled] [aria-hidden]
+        - link "Facebook" [ref=f73e7] [cursor=pointer]:
+          - /url: /
+      - generic [ref=f73e16]:
+        - generic [ref=f73e17]:
+          - generic:
+            - generic:
+              - generic:
+                - button [aria-hidden]
+        - combobox "Rechercher sur Facebook" [ref=f73e20]
+      - navigation "Facebook" [ref=f73e24]:
+        - list [ref=f73e25]:
+          - listitem [ref=f73e26]:
+            - link "Accueil" [ref=f73e29] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f73e33]:
+            - link "Reels" [ref=f73e36] [cursor=pointer]:
+              - /url: /reel/?s=tab
+          - listitem [ref=f73e41]:
+            - link "Ami(e)s" [ref=f73e44] [cursor=pointer]:
+              - /url: /friends/
+          - listitem [ref=f73e48]:
+            - link "Marketplace" [ref=f73e51] [cursor=pointer]:
+              - /url: /marketplace/?ref=app_tab
+          - listitem [ref=f73e55]:
+            - link "Groupes" [ref=f73e58] [cursor=pointer]:
+              - /url: /groups/
+      - navigation "Contrôles et paramètres du compte" [ref=f73e63]:
+        - button "Menu Facebook" [ref=f73e68] [cursor=pointer]
+        - button "Messenger" [ref=f73e75] [cursor=pointer]
+        - generic [ref=f73e81]:
+          - button "Notifications, 1 non lues" [ref=f73e82] [cursor=pointer]
+          - button [aria-hidden] [ref=f73e85] [cursor=pointer]:
+            - generic [ref=f73e86]:
+              - generic [ref=f73e87]: Nombre de notifications non lues
+              - generic [aria-hidden] [ref=f73e88]: "1"
+        - button "Votre profil" [ref=f73e91] [cursor=pointer]:
+          - img "Votre profil" [ref=f73e93]
+    - main [ref=f73e107]:
+      - generic [ref=f73e108]:
+        - link [ref=f73e830] [cursor=pointer]:
+          - /url: https://www.facebook.com/photo/?fbid=10153521638300000&set=p.10153521638300000
+        - generic [ref=f73e129]:
+          - generic [ref=f73e133]:
+            - generic [ref=f73e135]:
+              - heading [level=1] [ref=f73e831]:
+                - generic [ref=f73e138]: Aide en Maths
+              - generic [ref=f73e144]:
+                - generic [ref=f73e145]: Groupe (Public)
+                - generic [ref=f73e151]: ·
+                - link [ref=f73e832] [cursor=pointer]:
+                  - /url: /groups/453926531378080/members/
+                  - text: 22,1 K membres
+            - list [ref=f73e159]:
+              - listitem [ref=f73e160]:
+                - link [ref=f73e833] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100095799871035/
+              - listitem [ref=f73e170]:
+                - link [ref=f73e835] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094930387605/
+              - listitem [ref=f73e180]:
+                - link [ref=f73e837] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094921702155/
+              - listitem [ref=f73e190]:
+                - link [ref=f73e839] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094751989994/
+              - listitem [ref=f73e200]:
+                - link [ref=f73e841] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094672928809/
+              - listitem [ref=f73e210]:
+                - link [ref=f73e843] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094562010532/
+              - listitem [ref=f73e220]:
+                - link [ref=f73e845] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094505852917/
+              - listitem [ref=f73e230]:
+                - link [ref=f73e847] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094460584994/
+              - listitem [ref=f73e240]:
+                - link [ref=f73e849] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094459865246/
+              - listitem [ref=f73e250]:
+                - link [ref=f73e851] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094448855744/
+              - listitem [ref=f73e260]:
+                - link [ref=f73e853] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094430407798/
+              - listitem [ref=f73e270]:
+                - link [ref=f73e855] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094409977387/
+              - listitem [ref=f73e280]:
+                - link [ref=f73e857] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094403197905/
+              - listitem [ref=f73e290]:
+                - link [ref=f73e859] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094398787649/
+              - listitem [ref=f73e300]:
+                - link [ref=f73e861] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094383878574/
+              - listitem [ref=f73e310]:
+                - link [ref=f73e863] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094377880624/
+              - listitem [ref=f73e320]:
+                - link [ref=f73e865] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094330631506/
+              - listitem [ref=f73e330]:
+                - link [ref=f73e867] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094314883961/
+              - listitem [ref=f73e341]:
+                - link [ref=f73e869] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094219608516/
+              - listitem [ref=f73e352]:
+                - link [ref=f73e871] [cursor=pointer]:
+                  - /url: /groups/453926531378080/user/100094212857847/
+              - listitem:
+                - link [ref=f73e873] [cursor=pointer]:
+                  - /url: /groups/453926531378080/members/
+          - generic [ref=f73e368]:
+            - button [ref=f73e874] [cursor=pointer]:
+              - generic [ref=f73e372]: Inviter
+            - button [ref=f73e875] [cursor=pointer]:
+              - generic [ref=f73e379]: Partager
+            - button [ref=f73e876] [cursor=pointer]:
+              - generic [ref=f73e387]: Membre
+      - generic [ref=f73e400]:
+        - tablist [ref=f73e408]:
+          - generic [ref=f73e410]:
+            - generic [ref=f73e411]: Plus
+            - tab [ref=f73e877] [cursor=pointer]:
+              - generic [ref=f73e418]: À propos
+            - tab [selected] [ref=f73e878] [cursor=pointer]:
+              - generic [ref=f73e422]: Discussion
+            - tab [ref=f73e879] [cursor=pointer]:
+              - generic [ref=f73e426]: À la une
+            - tab [ref=f73e880] [cursor=pointer]:
+              - generic [ref=f73e430]: Personnes
+            - tab [ref=f73e881] [cursor=pointer]:
+              - generic [ref=f73e434]: Évènements
+            - tab [ref=f73e882] [cursor=pointer]:
+              - generic [ref=f73e438]: Contenu multimédia
+            - tab [ref=f73e883] [cursor=pointer]:
+              - generic [ref=f73e442]: Fichiers
+        - generic [ref=f73e446]:
+          - button [ref=f73e884] [cursor=pointer]
+          - button [ref=f73e885] [cursor=pointer]
+      - generic [ref=f73e462]:
+        - generic [ref=f73e463]:
+          - generic [ref=f73e467]:
+            - generic [ref=f73e468]:
+              - button [ref=f73e886] [cursor=pointer]
+              - button [ref=f73e887] [cursor=pointer]:
+                - generic [ref=f73e479]: Exprimez-vous...
+            - generic [ref=f73e482]:
+              - button [ref=f73e888] [cursor=pointer]:
+                - generic [ref=f73e484]: Publication anonyme
+              - button [ref=f73e889] [cursor=pointer]:
+                - generic [ref=f73e489]: Humeur/Activité
+              - button [ref=f73e890] [cursor=pointer]:
+                - generic [ref=f73e494]: Sondage
+          - generic [ref=f73e498]:
+            - generic [ref=f73e504]:
+              - generic [ref=f73e506]:
+                - generic [ref=f73e507]: À la une
+                - generic [ref=f73e511]:
+                  - text: 1 nouveaux
+                  - generic [ref=f73e512]: Badge de contenu à la une
+              - button [ref=f73e891] [cursor=pointer]
+              - button [ref=f73e892] [cursor=pointer]
+            - feed [ref=f73e522]:
+              - button [ref=f73e893] [cursor=pointer]:
+                - generic [ref=f73e526]: trier le fil du groupe par
+                - heading [level=2] [ref=f73e894]:
+                  - generic [ref=f73e528]: Les plus pertinentes
+              - article [ref=f73e535]:
+                - generic [ref=f73e543]:
+                  - generic [ref=f73e545]:
+                    - link [aria-hidden] [ref=f73e548] [cursor=pointer]:
+                      - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=%3C%2CP-R
+                      - link [ref=f73e553]:
+                        - /url: /stories/101099982918854/UzpfSVNDOjIxNDU3MjMyNDYzNzg3Mzc=/?view_single=false&__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f73e561]:
+                      - heading [level=2] [ref=f73e895]:
+                        - link [ref=f73e896] [cursor=pointer]:
+                          - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=-UC%2CP-R
+                          - generic [ref=f73e572]: Maths Monde
+                      - generic [ref=f73e575]:
+                        - link [ref=f73e897] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/453926531378080/posts/27934818859528810/?__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=%2CO%2CP-R
+                          - text: 9 h
+                        - generic [ref=f73e580]: ·
+                    - button [ref=f73e899] [cursor=pointer]
+                  - generic [ref=f73e598]:
+                    - generic [ref=f73e599]: Tu te rappelles comment calculer une moyenne ?
+                    - generic [ref=f73e613]:
+                      - generic [ref=f73e615]:
+                        - link [ref=f73e902] [cursor=pointer]:
+                          - /url: /stories/101099982918854/UzpfSVNDOjIxNDU3MjMyNDYzNzg3Mzc=/?view_single=false&__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=%3C%3C%2CP-y-R
+                        - generic [ref=f73e627]:
+                          - heading [level=3] [ref=f73e904]:
+                            - link [ref=f73e905] [cursor=pointer]:
+                              - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=-UC%2CP-y-R
+                              - generic [ref=f73e636]: Maths Monde
+                          - generic [ref=f73e639]:
+                            - link [ref=f73e906] [cursor=pointer]:
+                              - /url: https://www.facebook.com/permalink.php?story_fbid=pfbid02MZYJyoHtTuQLiuXgwUYcy3dfj3wQUd5jbVa3AqvPnNrxbfgwqnt2cyzsQ6B2hnjBl&id=100090565563017&__cft__[0]=AZhg3t_ptJrUOzcrxEG5RpeaIUoE1Cc3gv9qi3wQcHQgdSsM1Hfozoe42m_WO18bmr8PrAqURRxKnatidcPnioyLQRznSa1bnGO4bq4t4wrfGg2VVQqgpxrRVhmeY02dLc04IECf5DvKhQnEaZgP_LpXkMVbcuYUfoTbWeOTOFXIEpGjghqh2lai3z4-4CMiabtjUkBRofPa-Vb-6gzCOrSGQ7l1F2x_mLsWv3IB2Cb3aqWVhlToOE3OgimhzEtVAHwaug&__tn__=%2CO%2CP-y-R
+                              - text: 9 h
+                            - generic [ref=f73e644]: ·
+                      - generic [ref=f73e656]: Tu te rappelles comment calculer une moyenne ?
+                      - generic [ref=f73e666]:
+                        - generic [ref=f73e667]:
+                          - link [ref=f73e908] [cursor=pointer]:
+                            - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FfuiWRheAoAE%3Fsi%3D7LqgUKyLQfgRMrpU%26fbclid%3DIwcGRvZgVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEehCH8pU5vXwVaWL58B2lJBI86omaisxNIT6GJZsl0UzWDtVgN-lgkx1UzeRI_aem_kIKfh8syrskeExH6G85HRQ&h=AUBaFlTYhZvbgvy-vGsSheWeUYp5Js2gaOldeiKRPM6kaBlyypWbbkUf0AtL-Bofnz5OnNg1etSjAeonyfvoqYTDxKKHZVdxtfMN2ZH6EmPv4J3egPFQAe6cAMsS8S4LSLtzDL0PmBGrLF3D&__tn__=H-y-R&c[0]=AUD4KvEGsDvisdfNcuQJHyyhdoMqRabj9U5gvUtiKAcA7vMWS25HE__pc90Ljh95nEKutbPjOmgaWoF_j5LUwUmNGUGNOMr1viFkyjCYNtLOWEpZCeww8trgPi8QnUHqDHTquRetzBHBWr3BoFjz-bDu0EVaDRN733KbMahIFmgX1OGbiCLjLoLHkWibli0yUgKvT8_-4YKXS8uDX1LAGihhUKNzuTZHozXxUVkXmfI58dDkvTplphfSx2jWu3y2JL5F7rwPTAhO_GMEgUDlvhN_WCoK8GmlJdpZ
+                          - button [ref=f73e910] [cursor=pointer]
+                        - link [ref=f73e911] [cursor=pointer]:
+                          - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutu.be%2FfuiWRheAoAE%3Fsi%3D7LqgUKyLQfgRMrpU%26fbclid%3DIwcGRvZgVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEehCH8pU5vXwVaWL58B2lJBI86omaisxNIT6GJZsl0UzWDtVgN-lgkx1UzeRI_aem_kIKfh8syrskeExH6G85HRQ&h=AUBaFlTYhZvbgvy-vGsSheWeUYp5Js2gaOldeiKRPM6kaBlyypWbbkUf0AtL-Bofnz5OnNg1etSjAeonyfvoqYTDxKKHZVdxtfMN2ZH6EmPv4J3egPFQAe6cAMsS8S4LSLtzDL0PmBGrLF3D&__tn__=%2CmH-y-R&c[0]=AUD4KvEGsDvisdfNcuQJHyyhdoMqRabj9U5gvUtiKAcA7vMWS25HE__pc90Ljh95nEKutbPjOmgaWoF_j5LUwUmNGUGNOMr1viFkyjCYNtLOWEpZCeww8trgPi8QnUHqDHTquRetzBHBWr3BoFjz-bDu0EVaDRN733KbMahIFmgX1OGbiCLjLoLHkWibli0yUgKvT8_-4YKXS8uDX1LAGihhUKNzuTZHozXxUVkXmfI58dDkvTplphfSx2jWu3y2JL5F7rwPTAhO_GMEgUDlvhN_WCoK8GmlJdpZ
+                          - generic [ref=f73e687]:
+                            - generic [ref=f73e688]: youtube.com
+                            - generic [ref=f73e691]: Comment calculer TA moyenne ?
+                  - generic [ref=f73e699]:
+                    - generic [ref=f73e703]:
+                      - generic [ref=f73e704]:
+                        - button [ref=f73e912] [cursor=pointer]:
+                          - generic [ref=f73e706]: J’aime
+                        - button [ref=f73e913] [cursor=pointer]
+                      - button [ref=f73e914] [cursor=pointer]:
+                        - generic [ref=f73e717]: Commenter
+                      - button [ref=f73e915] [cursor=pointer]:
+                        - generic [ref=f73e724]: Partager
+                    - generic [ref=f73e735]:
+                      - button [ref=f73e916] [cursor=pointer]
+                      - generic [ref=f73e747]:
+                        - generic [ref=f73e919]:
+                          - textbox [ref=f73e920]:
+                            - paragraph [ref=f73e921]
+                          - generic: Commenter en tant que Dani Noti
+                        - list [ref=f73e923]:
+                          - listitem [ref=f73e924]:
+                            - button [ref=f73e926] [cursor=pointer]
+                          - listitem [ref=f73e928]:
+                            - button [ref=f73e930] [cursor=pointer]
+                          - listitem [ref=f73e934]:
+                            - button [ref=f73e936] [cursor=pointer]
+                          - listitem [ref=f73e938]:
+                            - button [ref=f73e940] [cursor=pointer]
+                          - listitem [ref=f73e942]:
+                            - button [ref=f73e944] [cursor=pointer]
+              - article [ref=f73e950]:
+                - generic [ref=f73e958]:
+                  - generic [ref=f73e960]:
+                    - link [aria-hidden] [ref=f73e963] [cursor=pointer]:
+                      - /url: /groups/453926531378080/user/100000382367177/?__cft__[0]=AZjE7pm9koeV0C8p-t1KfwwCcy-xTYUX8EIemhJe1ch69HHWDkWJH3GWP-zWT2z-vxP5StfqJVVTXhJlXCG6C7Il-F_4ecOhBmzqVGmP-xtjYy7wn05ZsyK4qvO2LHc7f6WYNEUeqevLXau4aB-AvgYzc_eSQOCZnZnhNzqJZPwo-SFJMupqfFydepnrjrTZ4-NMrRUrahl-7XF-Tg&__tn__=%3C%2CP-R
+                      - link [ref=f73e968]:
+                        - /url: /stories/1413872418635014/UzpfSVNDOjE0MTQ2MDE3NzQxNTU5NzI=/?view_single=false&__cft__[0]=AZjE7pm9koeV0C8p-t1KfwwCcy-xTYUX8EIemhJe1ch69HHWDkWJH3GWP-zWT2z-vxP5StfqJVVTXhJlXCG6C7Il-F_4ecOhBmzqVGmP-xtjYy7wn05ZsyK4qvO2LHc7f6WYNEUeqevLXau4aB-AvgYzc_eSQOCZnZnhNzqJZPwo-SFJMupqfFydepnrjrTZ4-NMrRUrahl-7XF-Tg&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f73e976]:
+                      - heading [level=2] [ref=f73e980]:
+                        - generic [ref=f73e981]:
+                          - link [ref=f73e986] [cursor=pointer]:
+                            - /url: /groups/453926531378080/user/100000382367177/?__cft__[0]=AZjE7pm9koeV0C8p-t1KfwwCcy-xTYUX8EIemhJe1ch69HHWDkWJH3GWP-zWT2z-vxP5StfqJVVTXhJlXCG6C7Il-F_4ecOhBmzqVGmP-xtjYy7wn05ZsyK4qvO2LHc7f6WYNEUeqevLXau4aB-AvgYzc_eSQOCZnZnhNzqJZPwo-SFJMupqfFydepnrjrTZ4-NMrRUrahl-7XF-Tg&__tn__=-UC%2CP-R
+                            - generic [ref=f73e987]: جيلالي حنيفي
+                          - generic [ref=f73e988]:
+                            - generic [ref=f73e989]: ·
+                            - button [ref=f73e992] [cursor=pointer]: Suivre
+                      - generic [ref=f73e995]:
+                        - link [ref=f73e999] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/453926531378080/posts/27898822013128495/?__cft__[0]=AZjE7pm9koeV0C8p-t1KfwwCcy-xTYUX8EIemhJe1ch69HHWDkWJH3GWP-zWT2z-vxP5StfqJVVTXhJlXCG6C7Il-F_4ecOhBmzqVGmP-xtjYy7wn05ZsyK4qvO2LHc7f6WYNEUeqevLXau4aB-AvgYzc_eSQOCZnZnhNzqJZPwo-SFJMupqfFydepnrjrTZ4-NMrRUrahl-7XF-Tg&__tn__=%2CO%2CP-R
+                          - text: 3 j
+                        - generic [ref=f73e1000]: ·
+                    - button [ref=f73e1014] [cursor=pointer]
+                  - generic [ref=f73e1020]:
+                    - generic [ref=f73e1022]:
+                      - generic [ref=f73e1027]:
+                        - generic [ref=f73e1028]: youtube.com
+                        - generic [ref=f73e1030]: "« Comment tracer la tangente sans avoir à déterminer son équation » #bacdz"
+                        - generic [ref=f73e1033]: Description de la vidéoDans cette vidéo, je vous présente une m...
+                      - link [ref=f73e1038] [cursor=pointer]:
+                        - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fshorts%2FYRwTjiKAt0w%3Fsi%3D7RqeAOZsAD05zQCY%26fbclid%3DIwcGRvZgVleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeklkmocJRP9FgJcRUoqq2SFT9QInoKv15rYHsZ1l3t1w6O8GAiUTdl2eRmtM_aem_Yo4ToLBpojWZvKG_pGQXPg&h=AUDJ73eXvNUZBQgxh_V5GhyKrimbMuN0anfQXq7XT5fSntqdIHGs6ERRHr1GNQ-LCUUzSddRU0TSIvSyFipfd56gqY85q7809o3YasSnmlAFJKuvSohf79xdfFT8hlg4wnmy&__tn__=H-R&c[0]=AUBIRF_NhB4AwnwjX6eA6BiA_FvBUMKhgoU_wyEvLvv51HWnNNFcPAETSu1erptt8uD3t-we3ZxHZ3aVrbzNLL7KKAMlpcofcwTTPa-WarYFTFhuamh--qksqDu9yxzbIX6vengLIeYKQp-7LjI7-bT0O9ColREeCAbi7M50C81rQqxNNWeDSAdHSseEu455DJB-mcg8mCMENJC_9pyalAms9OzWK0dGvx4zH530t4Ny581g
+                    - button [ref=f73e1040] [cursor=pointer]
+                  - generic [ref=f73e1047]:
+                    - generic [ref=f73e1051]:
+                      - generic [ref=f73e1052]:
+                        - button [ref=f73e1053] [cursor=pointer]:
+                          - generic [ref=f73e1054]: J’aime
+                        - button [ref=f73e1060] [cursor=pointer]
+                      - button [ref=f73e1064] [cursor=pointer]:
+                        - generic [ref=f73e1065]: Commenter
+                      - button [ref=f73e1071] [cursor=pointer]:
+                        - generic [ref=f73e1072]: Partager
+                    - generic [ref=f73e1083]:
+                      - button [ref=f73e1085] [cursor=pointer]
+                      - generic [ref=f73e1095]:
+                        - generic [ref=f73e1099]:
+                          - textbox [ref=f73e1100]:
+                            - paragraph [ref=f73e1101]
+                          - generic: Commenter en tant que Dani Noti
+                        - list [ref=f73e1103]:
+                          - listitem [ref=f73e1104]:
+                            - button [ref=f73e1106] [cursor=pointer]
+                          - listitem [ref=f73e1108]:
+                            - button [ref=f73e1110] [cursor=pointer]
+                          - listitem [ref=f73e1114]:
+                            - button [ref=f73e1116] [cursor=pointer]
+                          - listitem [ref=f73e1118]:
+                            - button [ref=f73e1120] [cursor=pointer]
+                          - listitem [ref=f73e1122]:
+                            - button [ref=f73e1124] [cursor=pointer]
+              - article [ref=f73e1130]:
+                - generic [ref=f73e1138]:
+                  - generic [ref=f73e1140]:
+                    - link [aria-hidden] [ref=f73e1143] [cursor=pointer]:
+                      - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__tn__=%3C%2CP-R
+                      - link [ref=f73e1148]:
+                        - /url: /stories/101099982918854/UzpfSVNDOjIxNDU3MjMyNDYzNzg3Mzc=/?view_single=false&__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f73e1156]:
+                      - heading [level=2] [ref=f73e1160]:
+                        - link [ref=f73e1166] [cursor=pointer]:
+                          - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__tn__=-UC%2CP-R
+                          - generic [ref=f73e1167]: Maths Monde
+                      - generic [ref=f73e1170]:
+                        - link [ref=f73e1174] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/453926531378080/posts/27874346682242695/?__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__tn__=%2CO%2CP-R
+                          - text: 4 j
+                        - generic [ref=f73e1175]: ·
+                    - button [ref=f73e1189] [cursor=pointer]
+                  - link [ref=f73e1199] [cursor=pointer]:
+                    - /url: /reel/2064060041139035/?s=single_unit&__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__tn__=H-R
+                    - generic [ref=f73e1200]:
+                      - group [ref=f73e1209]
+                      - generic [ref=f73e1211]:
+                        - generic [ref=f73e1215]:
+                          - text: Comprendre les fractions en 2 minutes ! 💡 C'est dur les fractions ? Avec cette méthode simple tu vas y arriver ! 🔥 **La vidéo complète est sur YouTu…
+                          - button [ref=f73e1217]: En voir plus
+                        - generic [ref=f73e1219]:
+                          - generic [aria-hidden]:
+                            - button [disabled]
+                          - generic [aria-hidden]:
+                            - button [disabled]
+                      - generic [ref=f73e1226]:
+                        - generic [ref=f73e1229]:
+                          - link [ref=f73e1232]:
+                            - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__cft__[1]=AZimNC5sghdPTESxd8OsOrUEuvvnz_56NZD4c6Szr8nvMCVir5f9pjM2--N5PlG-hHFdwg_I0Nz9SYMC-tF5ftvd_OpAPFfcCZx5Fs7CXrW5oXUGSRw0R8X5jGLKVtCbi5BuQ_CnyzFtbSI70MfOtm6afxWMzFRlqC3ybX_o965_8F1pwWYaqagk1m3gvtmQ_WDejjai&__tn__=H-R
+                          - generic [ref=f73e1239]:
+                            - generic [ref=f73e1241]:
+                              - heading [level=3] [ref=f73e1242]:
+                                - link [ref=f73e1247]:
+                                  - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZjy2KMeTcgw_xavInfidsmpCqZfrN2LRIO3zxYXHDfN7G_4BcrVRFbDaD3IZSnZ6p98zyS3IHlwPNIgAfHftXm_EJEqpAp5EUK8Ujio_5m0YfV6B4oXFI0gkuQcZf_z3jUpphN2GpfAyCcYX1kARItDmCYa515xU_Ly7gVFvVCikzF2UE4U9Zkats1VNA5__zGRuFBs3-F8yzQowIZYbrUG8936o8OVmg&__cft__[1]=AZimNC5sghdPTESxd8OsOrUEuvvnz_56NZD4c6Szr8nvMCVir5f9pjM2--N5PlG-hHFdwg_I0Nz9SYMC-tF5ftvd_OpAPFfcCZx5Fs7CXrW5oXUGSRw0R8X5jGLKVtCbi5BuQ_CnyzFtbSI70MfOtm6afxWMzFRlqC3ybX_o965_8F1pwWYaqagk1m3gvtmQ_WDejjai&__tn__=-]H-R
+                                  - text: Maths Monde
+                              - generic [ref=f73e1250]:
+                                - generic [ref=f73e1251]: ·
+                                - button [ref=f73e1253]: Suivre
+                            - generic [ref=f73e1259]:
+                              - text: 17 sep
+                              - generic [ref=f73e1260]: ·
+                              - button [ref=f73e1266]
+                        - button [ref=f73e1273]
+                  - generic [ref=f73e1279]:
+                    - generic [ref=f73e1283]:
+                      - generic [ref=f73e1284]:
+                        - button [ref=f73e1285] [cursor=pointer]:
+                          - generic [ref=f73e1286]: J’aime
+                        - button [ref=f73e1292] [cursor=pointer]
+                      - button [ref=f73e1296] [cursor=pointer]:
+                        - generic [ref=f73e1297]: Commenter
+                      - button [ref=f73e1303] [cursor=pointer]:
+                        - generic [ref=f73e1304]: Partager
+                    - generic [ref=f73e1315]:
+                      - button [ref=f73e1317] [cursor=pointer]
+                      - generic [ref=f73e1327]:
+                        - generic [ref=f73e1331]:
+                          - textbox [ref=f73e1332]:
+                            - paragraph [ref=f73e1333]
+                          - generic: Commenter en tant que Dani Noti
+                        - list [ref=f73e1335]:
+                          - listitem [ref=f73e1336]:
+                            - button [ref=f73e1338] [cursor=pointer]
+                          - listitem [ref=f73e1340]:
+                            - button [ref=f73e1342] [cursor=pointer]
+                          - listitem [ref=f73e1346]:
+                            - button [ref=f73e1348] [cursor=pointer]
+                          - listitem [ref=f73e1350]:
+                            - button [ref=f73e1352] [cursor=pointer]
+                          - listitem [ref=f73e1354]:
+                            - button [ref=f73e1356] [cursor=pointer]
+              - article [ref=f73e1362]:
+                - generic [ref=f73e1370]:
+                  - generic [ref=f73e1372]:
+                    - link [aria-hidden] [ref=f73e1375] [cursor=pointer]:
+                      - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__tn__=%3C%2CP-R
+                      - link [ref=f73e1380]:
+                        - /url: /stories/101099982918854/UzpfSVNDOjIxNDU3MjMyNDYzNzg3Mzc=/?view_single=false&__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f73e1388]:
+                      - heading [level=2] [ref=f73e1392]:
+                        - link [ref=f73e1398] [cursor=pointer]:
+                          - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__tn__=-UC%2CP-R
+                          - generic [ref=f73e1399]: Maths Monde
+                      - generic [ref=f73e1402]:
+                        - link [ref=f73e1406] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/453926531378080/posts/27846969091647121/?__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__tn__=%2CO%2CP-R
+                          - text: 6 j
+                        - generic [ref=f73e1407]: ·
+                    - button [ref=f73e1421] [cursor=pointer]
+                  - generic [ref=f73e1425]:
+                    - generic [ref=f73e1426]: Bonjour, aujourd’hui, un petit cours de rappel sur les fractions
+                    - link [ref=f73e1444] [cursor=pointer]:
+                      - /url: /reel/3021548501514793/?s=single_unit&__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__tn__=H-R
+                      - generic [ref=f73e1445]:
+                        - group [ref=f73e1454]
+                        - generic [ref=f73e1456]:
+                          - generic [ref=f73e1459]:
+                            - generic [ref=f73e1460]: L'ASTUCE POUR COMPRENDRE LES FRACTIONS EN 15 SECONDES !
+                            - generic [ref=f73e1461]:
+                              - text: 💡 Vous galérez avec les fractions ? Découvrez la méthode simple qui va tout changer ! …
+                              - button [ref=f73e1463]: En voir plus
+                          - generic [ref=f73e1465]:
+                            - generic [aria-hidden]:
+                              - button [disabled]
+                            - generic [aria-hidden]:
+                              - button [disabled]
+                        - generic [ref=f73e1472]:
+                          - generic [ref=f73e1475]:
+                            - link [ref=f73e1478]:
+                              - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__cft__[1]=AZhUBRuJKCsLTFrJUvQKuUvTnPMQo1mlvHNN88v-Vw_eF0H1LMHDjTtkMD66lf61BDR70UYW7-V6d8Bae23CZLNRMNF3JjQYYPJ0HucKCk_2qEFWWK_4QogpeqBq4vn7mamQYLDRyOc-P_DQrRmkVuFgqe7-042e_qMc9QViI0pwNfKIDjk30huNw9-qwLJWQeOtr26x&__tn__=H-R
+                            - generic [ref=f73e1485]:
+                              - generic [ref=f73e1487]:
+                                - heading [level=3] [ref=f73e1488]:
+                                  - link [ref=f73e1493]:
+                                    - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZg4bsN-cTthITXR5dJixZ-NHUHVMkzhSETcf9XSruqyyDpScsRwN9pvK7gcclZWa_GFDpF3IRRt8pKo-SqN1GRnhWCjjTULiOR0S8aGkIdi46ocE8-MBmt0CDogeg4iHXUavc8Q0T4fpwyzSxn0TIhFxxOB1WlA4IpKixzNosoDiIPK6-jWiShHn29jrutly3CmXdNUvdJGgvIs9fUpubX6USVPVliuAA&__cft__[1]=AZhUBRuJKCsLTFrJUvQKuUvTnPMQo1mlvHNN88v-Vw_eF0H1LMHDjTtkMD66lf61BDR70UYW7-V6d8Bae23CZLNRMNF3JjQYYPJ0HucKCk_2qEFWWK_4QogpeqBq4vn7mamQYLDRyOc-P_DQrRmkVuFgqe7-042e_qMc9QViI0pwNfKIDjk30huNw9-qwLJWQeOtr26x&__tn__=-]H-R
+                                    - text: Maths Monde
+                                - generic [ref=f73e1496]:
+                                  - generic [ref=f73e1497]: ·
+                                  - button [ref=f73e1499]: Suivre
+                              - generic [ref=f73e1505]:
+                                - text: 15 sep
+                                - generic [ref=f73e1506]: ·
+                                - button [ref=f73e1512]
+                          - button [ref=f73e1519]
+                  - generic [ref=f73e1525]:
+                    - generic [ref=f73e1529]:
+                      - generic [ref=f73e1530]:
+                        - button [ref=f73e1531] [cursor=pointer]:
+                          - generic [ref=f73e1532]: J’aime
+                        - button [ref=f73e1538] [cursor=pointer]
+                      - button [ref=f73e1542] [cursor=pointer]:
+                        - generic [ref=f73e1543]: Commenter
+                      - button [ref=f73e1549] [cursor=pointer]:
+                        - generic [ref=f73e1550]: Partager
+                    - generic [ref=f73e1561]:
+                      - button [ref=f73e1563] [cursor=pointer]
+                      - generic [ref=f73e1573]:
+                        - generic [ref=f73e1577]:
+                          - textbox [ref=f73e1578]:
+                            - paragraph [ref=f73e1579]
+                          - generic: Commenter en tant que Dani Noti
+                        - list [ref=f73e1581]:
+                          - listitem [ref=f73e1582]:
+                            - button [ref=f73e1584] [cursor=pointer]
+                          - listitem [ref=f73e1586]:
+                            - button [ref=f73e1588] [cursor=pointer]
+                          - listitem [ref=f73e1592]:
+                            - button [ref=f73e1594] [cursor=pointer]
+                          - listitem [ref=f73e1596]:
+                            - button [ref=f73e1598] [cursor=pointer]
+                          - listitem [ref=f73e1600]:
+                            - button [ref=f73e1602] [cursor=pointer]
+              - article [ref=f73e1608]:
+                - generic [ref=f73e1616]:
+                  - generic [ref=f73e1618]:
+                    - link [aria-hidden] [ref=f73e1621] [cursor=pointer]:
+                      - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__tn__=%3C%2CP-R
+                      - link [ref=f73e1626]:
+                        - /url: /stories/101099982918854/UzpfSVNDOjIxNDU3MjMyNDYzNzg3Mzc=/?view_single=false&__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f73e1634]:
+                      - heading [level=2] [ref=f73e1638]:
+                        - link [ref=f73e1644] [cursor=pointer]:
+                          - /url: /groups/453926531378080/user/100090565563017/?__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__tn__=-UC%2CP-R
+                          - generic [ref=f73e1645]: Maths Monde
+                      - generic [ref=f73e1648]:
+                        - link [ref=f73e1652] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/453926531378080/posts/27786156367728394/?__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__tn__=%2CO%2CP-R
+                          - text: 11 septembre à 10:03
+                        - generic [ref=f73e1653]: ·
+                    - button [ref=f73e1667] [cursor=pointer]
+                  - generic [ref=f73e1671]:
+                    - generic [ref=f73e1672]: Salut, commente si tu veux me soutenir
+                    - link [ref=f73e1690] [cursor=pointer]:
+                      - /url: /reel/1682457153267558/?s=single_unit&__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__tn__=H-R
+                      - generic [ref=f73e1691]:
+                        - group [ref=f73e1700]
+                        - generic [ref=f73e1702]:
+                          - generic [ref=f73e1706]:
+                            - text: "PREMIÈRE : Me voilà devant le tableau pour vous expliquer les fractions comme jamais ! 🧮✨ Finies les galères avec les dénominateurs et les simplificat…"
+                            - button [ref=f73e1708]: En voir plus
+                          - generic [ref=f73e1710]:
+                            - generic [aria-hidden]:
+                              - button [disabled]
+                            - button [ref=f73e1716]:
+                              - generic [ref=f73e1726]:
+                                - generic [ref=f73e1727]: Maths Monde · Audio d’origine
+                                - generic [ref=f73e1729]: Maths Monde · Audio d’origine
+                                - generic [ref=f73e1731]: Maths Monde · Audio d’origine
+                            - generic [aria-hidden]:
+                              - button [disabled]
+                        - generic [ref=f73e1735]:
+                          - generic [ref=f73e1738]:
+                            - link [ref=f73e1741]:
+                              - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__cft__[1]=AZhKf6BPzcUaPy1pynoHc-vPydGXGaVH5XmGUrYZ-yoricnViu08b-zcdnslW7Kz1iAiVUUdDjdoKcXDaiCGolJMYNBZLoJf02Lf4oT1dr8YvtDMMNaEPik6jWjkR2b0K4sutuACevPRYSwSU1SmAb-xZsXSgmZ59nvPIL8nO8sQC5C0YejU-WNnHjs9DSUAzheu2rOP&__tn__=H-R
+                            - generic [ref=f73e1748]:
+                              - generic [ref=f73e1750]:
+                                - heading [level=3] [ref=f73e1751]:
+                                  - link [ref=f73e1756]:
+                                    - /url: https://www.facebook.com/profile.php?id=100090565563017&__cft__[0]=AZi-8xWScQNYUw2LxX0i5DG7Tr7km5ni84vD8rpRZkkIpErOOi31ZJNW9BDL1cbuGKojevX7PkGykR5PHwIt0A2oRJdv-63OvsfAoEdE_q-IVkImvt3G3s3eA23S60VYfmxVtWVZLJMaGtDHGRbAf5vGA6QeGdOGV9mHRYqs_N65LidEpp9hnu6UmjpCnKUf8x1-k9Fwg3ZIV-TxGQxut5yFsMB8U_Y80w&__cft__[1]=AZhKf6BPzcUaPy1pynoHc-vPydGXGaVH5XmGUrYZ-yoricnViu08b-zcdnslW7Kz1iAiVUUdDjdoKcXDaiCGolJMYNBZLoJf02Lf4oT1dr8YvtDMMNaEPik6jWjkR2b0K4sutuACevPRYSwSU1SmAb-xZsXSgmZ59nvPIL8nO8sQC5C0YejU-WNnHjs9DSUAzheu2rOP&__tn__=-]H-R
+                                    - text: Maths Monde
+                                - generic [ref=f73e1759]:
+                                  - generic [ref=f73e1760]: ·
+                                  - button [ref=f73e1762]: Suivre
+                              - generic [ref=f73e1768]:
+                                - text: 11 sep
+                                - generic [ref=f73e1769]: ·
+                                - button [ref=f73e1775]
+                          - button [ref=f73e1782]
+                  - generic [ref=f73e1788]:
+                    - generic [ref=f73e1792]:
+                      - generic [ref=f73e1793]:
+                        - button [ref=f73e1794] [cursor=pointer]:
+                          - generic [ref=f73e1795]: J’aime
+                        - button [ref=f73e1801] [cursor=pointer]
+                      - button [ref=f73e1805] [cursor=pointer]:
+                        - generic [ref=f73e1806]: Commenter
+                      - button [ref=f73e1812] [cursor=pointer]:
+                        - generic [ref=f73e1813]: Partager
+                    - generic [ref=f73e1824]:
+                      - button [ref=f73e1826] [cursor=pointer]
+                      - generic [ref=f73e1836]:
+                        - generic [ref=f73e1840]:
+                          - textbox [ref=f73e1841]:
+                            - paragraph [ref=f73e1842]
+                          - generic: Commenter en tant que Dani Noti
+                        - list [ref=f73e1844]:
+                          - listitem [ref=f73e1845]:
+                            - button [ref=f73e1847] [cursor=pointer]
+                          - listitem [ref=f73e1849]:
+                            - button [ref=f73e1851] [cursor=pointer]
+                          - listitem [ref=f73e1855]:
+                            - button [ref=f73e1857] [cursor=pointer]
+                          - listitem [ref=f73e1859]:
+                            - button [ref=f73e1861] [cursor=pointer]
+                          - listitem [ref=f73e1863]:
+                            - button [ref=f73e1865] [cursor=pointer]
+              - generic [ref=f73e750]:
+                - article [ref=f73e751]:
+                  - status [ref=f73e1867]
+                - article [ref=f73e764]:
+                  - status [ref=f73e1868]
+        - generic [ref=f73e784]:
+          - heading [level=2] [ref=f73e1869]:
+            - generic [ref=f73e795]: À propos
+          - generic [ref=f73e797]:
+            - generic [ref=f73e807]:
+              - generic [ref=f73e808]: Public
+              - generic [ref=f73e811]: Tout le monde peut voir qui est dans le groupe et ce qui est publié.
+            - generic [ref=f73e823]:
+              - generic [ref=f73e824]: Visible
+              - generic [ref=f73e827]: Tout le monde peut trouver ce groupe.
+    - dialog [ref=f73e1878]:
+      - generic [ref=f73e1886]:
+        - generic [ref=f73e1887]:
+          - dialog "Créer une publication" [ref=f73e1888]:
+            - heading "Créer une publication" [level=2] [ref=f73e1890]
+            - button "Fermer la boîte de dialogue de l’éditeur" [ref=f73e1896] [cursor=pointer]
+          - generic [ref=f73e1906]:
+            - button "Dani Noti" [ref=f73e1908] [cursor=pointer]
+            - generic [ref=f73e1915]:
+              - button "Modifier la confidentialité. Partage avec Groupe public." [disabled] [ref=f73e1919]:
+                - generic [ref=f73e1920]: Groupe public
+              - button "Ajouter des groupes" [ref=f73e1928] [cursor=pointer]
+        - generic [ref=f73e1938]:
+          - generic [ref=f73e1941]:
+            - textbox [active] [ref=f73e1942]:
+              - paragraph [ref=f73e1943]
+            - generic: Créez une publication publique...
+          - button "Voir les options d’arrière-plan" [ref=f73e1946] [cursor=pointer]
+          - button "Emoji" [ref=f73e1955] [cursor=pointer]:
+            - img "Emoji" [ref=f73e1961]
+        - generic [ref=f73e1962]:
+          - generic [ref=f73e1963]:
+            - button "Ajouter à votre publication" [ref=f73e1965] [cursor=pointer]
+            - generic [ref=f73e1967]:
+              - button "Photo/Vidéo" [ref=f73e1971] [cursor=pointer]
+              - button "Identifier des personnes" [ref=f73e1981] [cursor=pointer]
+              - button "Je suis là" [ref=f73e1991] [cursor=pointer]
+              - button "Humeur/Activité" [ref=f73e2001] [cursor=pointer]
+              - button "Autres options de publication" [ref=f73e2011] [cursor=pointer]
+          - button "Publier" [disabled] [ref=f73e2022]
+    - button "Nouveau message" [ref=f73e2028] [cursor=pointer]
+  - button "Choose File" [ref=f73e829]

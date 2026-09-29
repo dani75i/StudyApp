@@ -2,6 +2,7 @@ import React from 'react';
 import katex from 'katex';
 import { Lightbulb, BookOpen } from 'lucide-react';
 import { parseLessonBlocks } from '../contentFormat';
+import { explicitMathRegex, splitExampleText } from '../exampleMath';
 
 function latexify(expression = '') {
   const raw = String(expression).trim();
@@ -42,7 +43,6 @@ function renderKatex(expression, displayMode = false) {
   }
 }
 
-const explicitMathRegex = /(\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\))/g;
 // Conservative auto-format: match only actual short mathematical expressions.
 // Never swallow ordinary French words next to an exponent such as « Pour a non nul ».
 const autoMathRegex = /([A-Za-z](?:\([A-Za-z0-9+\-]+\))?|[0-9]+(?:[.,][0-9]+)?)(?:\^\([A-Za-z0-9+\-]+\)|\^[A-Za-z0-9+\-]+|[²³])?(?:\s*[=≈×]\s*(?:[A-Za-z](?:\([A-Za-z0-9+\-]+\))?|[0-9]+(?:[.,][0-9]+)?)(?:\^\([A-Za-z0-9+\-]+\)|\^[A-Za-z0-9+\-]+|[²³])?)+|\b[A-Za-z]\^(?:\([A-Za-z0-9+\-]+\)|[A-Za-z0-9+\-]+)|\b[A-Z]{2}[²³]/g;
@@ -52,6 +52,10 @@ function AutoMathText({ text }) {
   const parts = [];
   let lastIndex = 0;
   for (const match of source.matchAll(autoMathRegex)) {
+    // Ne coupe jamais un mot français : « somme » ne doit pas devenir « s omme ».
+    const startsInsideWord = /[A-Za-zÀ-ÿ]/.test(source[match.index - 1] || '');
+    const endsInsideWord = /[A-Za-zÀ-ÿ]/.test(source[match.index + match[0].length] || '');
+    if (startsInsideWord || endsInsideWord) continue;
     if (match.index > lastIndex) parts.push(source.slice(lastIndex, match.index));
     parts.push(<span key={match.index} className="inline-math" dangerouslySetInnerHTML={{ __html: renderKatex(match[0], false) }} />);
     lastIndex = match.index + match[0].length;
@@ -72,6 +76,17 @@ export function RichText({ text = '' }) {
     }
     return <AutoMathText key={index} text={chunk} />;
   });
+}
+
+// Les calculs significatifs d'un exemple empruntent le même composant
+// KaTeX en mode display que les formules principales du cours.
+function ExampleContent({ text = '' }) {
+  const pieces = splitExampleText(text);
+  return <div className="lesson-example-body">
+    {pieces.map((piece, index) => piece.type === 'formula'
+      ? <Formula key={index} value={piece.value} />
+      : <p key={index} className={/^(et|ou)$/.test(piece.value) ? 'math-joiner' : ''}><RichText text={piece.value} /></p>)}
+  </div>;
 }
 
 export function Formula({ value = '' }) {
@@ -106,7 +121,7 @@ export function LessonContent({ body = '' }) {
               <BookOpen size={18} />
               <div className="lesson-example-copy">
                 <strong>Exemple</strong>
-                <div className="lesson-example-body"><RichText text={block.content} /></div>
+                <ExampleContent text={block.content} />
               </div>
             </aside>
           );

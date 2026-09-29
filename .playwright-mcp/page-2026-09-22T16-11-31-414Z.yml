@@ -1,0 +1,181 @@
+- generic [ref=f31e5]:
+  - banner:
+    - generic [ref=f31e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f31e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f31e16]:
+      - generic [ref=f31e17]:
+        - generic:
+          - generic:
+            - generic:
+              - button [aria-hidden]
+      - combobox "Rechercher sur Facebook" [ref=f31e20]
+    - navigation "Facebook" [ref=f31e24]:
+      - list [ref=f31e25]:
+        - listitem [ref=f31e26]:
+          - link "Accueil" [ref=f31e29] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f31e33]:
+          - link "Reels" [ref=f31e36] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f31e41]:
+          - link "Ami(e)s" [ref=f31e44] [cursor=pointer]:
+            - /url: /friends/
+        - listitem [ref=f31e48]:
+          - link "Marketplace" [ref=f31e51] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f31e55]:
+          - link "Groupes" [ref=f31e58] [cursor=pointer]:
+            - /url: /groups/
+    - navigation "Contrôles et paramètres du compte" [ref=f31e63]:
+      - button "Menu Facebook" [ref=f31e68] [cursor=pointer]
+      - button "Messenger" [ref=f31e75] [cursor=pointer]
+      - button "Notifications" [ref=f31e82] [cursor=pointer]
+      - button "Votre profil" [ref=f31e87] [cursor=pointer]:
+        - img "Votre profil" [ref=f31e89]
+  - main [ref=f31e103]:
+    - generic [ref=f31e104]:
+      - link "Photo de couverture" [ref=f31e116] [cursor=pointer]:
+        - /url: https://www.facebook.com/photo/?fbid=3962556467124149&set=p.3962556467124149
+      - generic [ref=f31e125]:
+        - generic [ref=f31e131]:
+          - heading "Communauté de Chartres" [level=1] [ref=f31e133]
+          - generic [ref=f31e140]:
+            - generic [ref=f31e141]: Groupe (Public)
+            - generic [ref=f31e147]: ·
+            - link "11,5 K membres" [ref=f31e151] [cursor=pointer]:
+              - /url: /groups/1165028303946011/members/
+        - generic [ref=f31e153]:
+          - button "Rejoindre le groupe" [ref=f31e155] [cursor=pointer]
+          - button "Partager le groupe" [ref=f31e167] [cursor=pointer]:
+            - generic [ref=f31e168]: Partager
+    - generic [ref=f31e178]:
+      - tablist [ref=f31e186]:
+        - generic [ref=f31e188]:
+          - generic [ref=f31e189]: Plus
+          - tab "À propos" [selected] [ref=f31e195] [cursor=pointer]
+          - tab "Discussion" [ref=f31e199] [cursor=pointer]
+          - tab "Personnes" [ref=f31e203] [cursor=pointer]
+          - tab "Évènements" [ref=f31e207] [cursor=pointer]
+          - tab "Contenu multimédia" [ref=f31e211] [cursor=pointer]
+          - tab "Fichiers" [ref=f31e215] [cursor=pointer]
+      - generic [ref=f31e220]:
+        - button "Rechercher dans ce groupe" [ref=f31e222] [cursor=pointer]
+        - button "Plus" [ref=f31e228] [cursor=pointer]
+    - generic [ref=f31e236]:
+      - generic [ref=f31e243]:
+        - heading "À propos de ce groupe" [level=2] [ref=f31e253]
+        - generic [ref=f31e256]:
+          - separator [ref=f31e257]
+          - generic [ref=f31e263]:
+            - text: Ce groupe réponds aux besoins des personnes seules(ou pas) désirant sortir et découvrir Chartres et sa communauté. Certaines sorties, barbecues(…
+            - button "En voir plus" [ref=f31e264] [cursor=pointer]
+          - list [ref=f31e265]:
+            - listitem [ref=f31e266]:
+              - generic [ref=f31e273]:
+                - generic [ref=f31e274]: Public
+                - generic [ref=f31e276]: Tout le monde peut voir qui est dans le groupe et ce qui est publié.
+            - listitem [ref=f31e278]:
+              - generic [ref=f31e286]:
+                - generic [ref=f31e287]: Visible
+                - generic [ref=f31e289]: Tout le monde peut trouver ce groupe.
+            - listitem [ref=f31e291]:
+              - generic [ref=f31e298]:
+                - generic [ref=f31e299]: Historique
+                - generic [ref=f31e303]:
+                  - text: Groupe créé le 18 avril 2021. Dernière modification du nom le 21 novembre 2022.
+                  - button "Voir plus de l’historique du groupe" [ref=f31e304] [cursor=pointer]: Voir plus
+      - generic [ref=f31e311]:
+        - heading "Membres 11,5 K" [level=2] [ref=f31e321]:
+          - generic [ref=f31e323]:
+            - text: Membres
+            - generic [ref=f31e324]:
+              - generic [ref=f31e325]: ·
+              - text: 11,5 K
+        - generic [ref=f31e327]:
+          - separator [ref=f31e328]
+          - generic [ref=f31e331]:
+            - list [ref=f31e333]:
+              - listitem [ref=f31e334]:
+                - link "Profil" [ref=f31e338] [cursor=pointer]:
+                  - /url: /groups/1165028303946011/user/613198618/
+                  - img "Magalie Chatellard" [ref=f31e340]
+            - generic [ref=f31e344]: Magalie a rejoint le groupe.
+          - generic [ref=f31e351]:
+            - list [ref=f31e353]:
+              - listitem [ref=f31e354]:
+                - link "Profil" [ref=f31e358] [cursor=pointer]:
+                  - /url: /groups/1165028303946011/user/100001095052989/
+                  - img "Martial Ibouanga" [ref=f31e360]
+              - listitem [ref=f31e364]:
+                - link "Profil" [ref=f31e368] [cursor=pointer]:
+                  - /url: /groups/1165028303946011/user/100010995450764/
+                  - img "Ben Ben" [ref=f31e370]
+            - generic [ref=f31e374]: Martial est admin. Ben est modérateur.
+          - link "Voir tout" [ref=f31e380] [cursor=pointer]:
+            - /url: /groups/1165028303946011/members/
+      - generic [ref=f31e390]:
+        - heading "Activité" [level=2] [ref=f31e400]
+        - generic [ref=f31e403]:
+          - separator [ref=f31e404]
+          - list [ref=f31e405]:
+            - listitem [ref=f31e406]:
+              - generic [ref=f31e412]:
+                - generic [ref=f31e413]: 37 nouvelles publications aujourd’hui
+                - generic [ref=f31e415]: 765 le mois dernier
+            - listitem [ref=f31e417]:
+              - generic [ref=f31e423]:
+                - generic [ref=f31e424]: 11 462 membres au total
+                - generic [ref=f31e426]: + 51 la semaine dernière
+            - listitem [ref=f31e428]:
+              - generic [ref=f31e436]:
+                - text: Créé le
+                - generic "il y a 5 ans" [ref=f31e438]
+      - generic [ref=f31e444]:
+        - heading "Règles de groupe des admins" [level=2] [ref=f31e456]
+        - separator [ref=f31e460]
+        - list [ref=f31e462]:
+          - listitem [ref=f31e463]:
+            - button "1 Soyez aimable et courtois(e)" [expanded] [ref=f31e464] [cursor=pointer]:
+              - generic [ref=f31e473]:
+                - generic [ref=f31e474]: "1"
+                - generic [ref=f31e476]: Soyez aimable et courtois(e)
+          - generic [ref=f31e482]:
+            - generic [ref=f31e483]: Créer un environnement chaleureux, c’est notre responsabilité à tous. Traitons tout le monde avec respect. Il est normal d’avoir des débats constructifs, mais il est essentiel de rester aimable.
+            - button "Options de règle" [ref=f31e486] [cursor=pointer]
+          - listitem [ref=f31e488]:
+            - button "2 Publications saines…" [expanded] [ref=f31e489] [cursor=pointer]:
+              - generic [ref=f31e498]:
+                - generic [ref=f31e499]: "2"
+                - generic [ref=f31e501]: Publications saines…
+          - generic [ref=f31e507]:
+            - generic [ref=f31e508]: "Toutes les publications doivent être saines, par exemple: pas de sujets liés à la religion car ce n’est pas la plateforme dédiée; pas de publicité ou placement de produits etc."
+            - button "Options de règle" [ref=f31e511] [cursor=pointer]
+          - listitem [ref=f31e513]:
+            - button "3 Pas de discours haineux, ni de harcèlement" [expanded] [ref=f31e514] [cursor=pointer]:
+              - generic [ref=f31e523]:
+                - generic [ref=f31e524]: "3"
+                - generic [ref=f31e526]: Pas de discours haineux, ni de harcèlement
+          - generic [ref=f31e532]:
+            - generic [ref=f31e533]: Faites en sorte que tout le monde se sente en sécurité. Le harcèlement sous toutes ses formes est interdit et les commentaires dégradants qui portent sur l’origine ethnique, la religion, la culture, l’orientation sexuelle, le genre ou l’identité sexuelle ne sont pas tolérés.
+            - button "Options de règle" [ref=f31e536] [cursor=pointer]
+          - listitem [ref=f31e538]:
+            - button "4 Pas de promotions, ni de spam" [expanded] [ref=f31e539] [cursor=pointer]:
+              - generic [ref=f31e548]:
+                - generic [ref=f31e549]: "4"
+                - generic [ref=f31e551]: Pas de promotions, ni de spam
+          - generic [ref=f31e557]:
+            - generic [ref=f31e558]: Offrez plus que vous ne prenez au sein de ce groupe. L’auto-promotion, le spam et les liens non pertinents ne sont pas autorisés.
+            - button "Options de règle" [ref=f31e561] [cursor=pointer]
+          - listitem [ref=f31e563]:
+            - button "5 Respecter la confidentialité de tous" [expanded] [ref=f31e564] [cursor=pointer]:
+              - generic [ref=f31e573]:
+                - generic [ref=f31e574]: "5"
+                - generic [ref=f31e576]: Respecter la confidentialité de tous
+          - generic [ref=f31e582]:
+            - generic [ref=f31e583]: Faire partie de ce groupe implique une confiance mutuelle. Des discussions animées et authentiques font tout l’intérêt des groupes, mais elles peuvent aussi contenir des informations sensibles et personnelles. Ce qui est partagé dans le groupe doit rester dans le groupe.
+            - button "Options de règle" [ref=f31e586] [cursor=pointer]
+  - button "Nouveau message" [ref=f31e590] [cursor=pointer]

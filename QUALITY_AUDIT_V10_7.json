@@ -1,0 +1,20 @@
+{
+  "scope": "Catalogue livré avec superposition des modifications V10.6 et V10.7 ; pas les modifications de la base de production.",
+  "counts": {
+    "formula_blocks": 112,
+    "example_blocks": 116,
+    "examples_with_explicit_math": 72,
+    "chapters": 100,
+    "lessons": 300,
+    "exercises": 1128,
+    "revised_lessons_v107": 35,
+    "issues": 0
+  },
+  "issues": [],
+  "limits": [
+    "Le contrôle des 1128 exercices est surtout structurel : aucune validation mathématique exhaustive n’a été réalisée.",
+    "Aucune lecture de la base Neon ni des modifications en production dans /admin.",
+    "Le rendu KaTeX n’a pas pu être compilé dans cet environnement faute d’accès au registre npm.",
+    "Le test de l’URL publique et le référencement Search Console sont des chantiers distincts."
+  ]
+}

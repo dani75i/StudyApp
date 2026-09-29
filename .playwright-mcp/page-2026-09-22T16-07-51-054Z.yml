@@ -1,0 +1,161 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - banner:
+      - generic [ref=f1e6]:
+        - generic:
+          - generic:
+            - button [disabled] [aria-hidden]
+        - link "Facebook" [ref=f1e7] [cursor=pointer]:
+          - /url: /
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - generic:
+            - generic:
+              - generic:
+                - button [aria-hidden]
+        - combobox "Rechercher sur Facebook" [ref=f1e20] [cursor=pointer]
+      - navigation "Facebook" [ref=f1e24]:
+        - list [ref=f1e25]:
+          - listitem [ref=f1e26]:
+            - link "Accueil" [ref=f1e29] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e33]:
+            - link "Reels" [ref=f1e36] [cursor=pointer]:
+              - /url: /reel/?s=tab
+          - listitem [ref=f1e41]:
+            - link "Ami(e)s" [ref=f1e44] [cursor=pointer]:
+              - /url: /friends/
+          - listitem [ref=f1e48]:
+            - link "Marketplace" [ref=f1e51] [cursor=pointer]:
+              - /url: /marketplace/?ref=app_tab
+          - listitem [ref=f1e55]:
+            - link "Groupes" [ref=f1e58] [cursor=pointer]:
+              - /url: /groups/
+      - navigation "Contrôles et paramètres du compte" [ref=f1e63]:
+        - button "Menu Facebook" [ref=f1e68] [cursor=pointer]
+        - button "Messenger" [ref=f1e75] [cursor=pointer]
+        - button "Notifications" [ref=f1e82] [cursor=pointer]
+        - button "Votre profil" [ref=f1e87] [cursor=pointer]:
+          - img "Votre profil" [ref=f1e89]
+    - main [ref=f1e103]:
+      - generic [ref=f1e104]:
+        - link "Photo de couverture" [ref=f1e116] [cursor=pointer]:
+          - /url: https://www.facebook.com/photo/?fbid=10225727265951289&set=p.10225727265951289
+        - generic [ref=f1e125]:
+          - generic [ref=f1e131]:
+            - heading "Vivre à Vannes" [level=1] [ref=f1e133]
+            - generic [ref=f1e140]:
+              - generic [ref=f1e141]: Groupe (Public)
+              - generic [ref=f1e147]: ·
+              - link "58,7 K membres" [ref=f1e151] [cursor=pointer]:
+                - /url: /groups/361694485361326/members/
+          - generic [ref=f1e153]:
+            - button "Rejoindre le groupe" [ref=f1e155] [cursor=pointer]
+            - button "Partager le groupe" [ref=f1e167] [cursor=pointer]:
+              - generic [ref=f1e168]: Partager
+      - generic [ref=f1e178]:
+        - tablist [ref=f1e186]:
+          - generic [ref=f1e188]:
+            - generic [ref=f1e189]: Plus
+            - tab "À propos" [ref=f1e195] [cursor=pointer]
+            - tab "Discussion" [selected] [ref=f1e199] [cursor=pointer]
+            - tab "À la une" [ref=f1e203] [cursor=pointer]
+            - tab "Personnes" [ref=f1e207] [cursor=pointer]
+            - tab "Évènements" [ref=f1e211] [cursor=pointer]
+            - tab "Contenu multimédia" [ref=f1e215] [cursor=pointer]
+            - tab "Fichiers" [ref=f1e219] [cursor=pointer]
+        - generic [ref=f1e224]:
+          - button "Rechercher dans ce groupe" [ref=f1e226] [cursor=pointer]
+          - button "Plus" [ref=f1e232] [cursor=pointer]
+      - generic [ref=f1e241]:
+        - generic [ref=f1e245]:
+          - generic [ref=f1e246]:
+            - link "Profil de Dani Noti" [ref=f1e250] [cursor=pointer]:
+              - /url: /groups/361694485361326/user/100003699299074/
+            - button "Exprimez-vous..." [ref=f1e257] [cursor=pointer]
+          - generic [ref=f1e261]:
+            - button "Humeur/Activité" [ref=f1e262] [cursor=pointer]
+            - button "Je suis là" [ref=f1e267] [cursor=pointer]
+            - button "Sondage" [ref=f1e272] [cursor=pointer]
+        - generic [ref=f1e277]:
+          - generic [ref=f1e283]:
+            - generic [ref=f1e285]:
+              - generic [ref=f1e286]: À la une
+              - generic [ref=f1e290]:
+                - text: 3 nouveaux
+                - generic [ref=f1e291]: Badge de contenu à la une
+            - button "À propos de la section À la une" [ref=f1e294] [cursor=pointer]
+            - button "Augmenter/réduire la section À la une" [ref=f1e298] [cursor=pointer]
+          - feed [ref=f1e301]:
+            - article [ref=f1e306]:
+              - generic [ref=f1e314]:
+                - generic [ref=f1e316]:
+                  - link [aria-hidden] [ref=f1e319] [cursor=pointer]:
+                    - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%2CP-R
+                    - link [ref=f1e324]:
+                      - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%3C%2CP-R
+                  - generic [ref=f1e331]:
+                    - heading [level=2] [ref=f1e335]:
+                      - link "Ambre Grimaud" [ref=f1e341] [cursor=pointer]:
+                        - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=-UC%2CP-R
+                    - generic [ref=f1e345]:
+                      - link "5 min" [ref=f1e349] [cursor=pointer]:
+                        - /url: https://www.facebook.com/groups/361694485361326/posts/1643639270500168/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%2CO%2CP-R
+                      - generic [ref=f1e350]: ·
+                      - 'img "Partagé avec : Groupe public" [ref=f1e356]'
+                  - button "Actions pour cette publication de Ambre Grimaud" [ref=f1e364] [cursor=pointer]
+                - generic [ref=f1e371]:
+                  - generic [ref=f1e376]:
+                    - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e378] [cursor=pointer]:
+                      - /url: https://www.facebook.com/photo/?fbid=122122893249395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b0H-y-R
+                    - link "Aucune description de photo disponible." [ref=f1e383] [cursor=pointer]:
+                      - /url: https://www.facebook.com/photo/?fbid=122122893351395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b1H-y-R
+                    - link "Aucune description de photo disponible." [ref=f1e388] [cursor=pointer]:
+                      - /url: https://www.facebook.com/photo/?fbid=122122893261395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b2H-y-R
+                    - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e393] [cursor=pointer]:
+                      - /url: https://www.facebook.com/photo/?fbid=122122893363395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b3H-y-R
+                    - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e398] [cursor=pointer]:
+                      - /url: https://www.facebook.com/photo/?fbid=122122893441395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b4H-y-R
+                  - generic [ref=f1e403]:
+                    - link "Ambre Grimaud" [ref=f1e407] [cursor=pointer]:
+                      - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%3C%2CP-y-R
+                      - img "Ambre Grimaud" [ref=f1e409]
+                    - generic [ref=f1e413]:
+                      - heading [level=3] [ref=f1e417]:
+                        - link "Ambre Grimaud" [ref=f1e422] [cursor=pointer]:
+                          - /url: https://www.facebook.com/profile.php?id=61591870607526&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=-UC%2CP-y-R
+                      - generic [ref=f1e426]:
+                        - link "10 min" [ref=f1e430] [cursor=pointer]:
+                          - /url: https://www.facebook.com/permalink.php?story_fbid=pfbid066GhKuHiQw1PExLYn96ZYXu7tuz3kFMUVxixocPnzCscH8eL7Jtaspn8QqNQAzdTl&id=61591870607526&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%2CO%2CP-y-R
+                        - generic [ref=f1e431]: ·
+                        - 'img "Partagé avec : Public" [ref=f1e437]'
+                  - generic [ref=f1e452]:
+                    - img "✨" [ref=f1e454]
+                    - text: Recherche modele coloration
+                    - img "✨" [ref=f1e456]
+                    - text: …
+                    - button "En voir plus" [ref=f1e457] [cursor=pointer]
+                - generic [ref=f1e460]:
+                  - generic [ref=f1e464]:
+                    - generic [ref=f1e465]:
+                      - button "Réagir avec J’aime à la publication de Ambre Grimaud" [ref=f1e466] [cursor=pointer]:
+                        - generic [ref=f1e467]: J’aime
+                      - button "Réagir à la publication de Ambre Grimaud" [ref=f1e473] [cursor=pointer]
+                    - button "Commenter la publication de Ambre Grimaud" [ref=f1e477] [cursor=pointer]:
+                      - generic [ref=f1e478]: Commenter
+                    - button "Partager la publication de Ambre Grimaud" [ref=f1e484] [cursor=pointer]:
+                      - generic [ref=f1e485]: Partager
+                  - generic [ref=f1e496]:
+                    - button [aria-hidden] [ref=f1e498] [cursor=pointer]
+                    - generic [ref=f1e507]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - textbox "Envoyez votre premier commentaire..."
+                            - generic: Envoyez votre premier commentaire...
+            - generic [ref=f1e509]:
+              - article [ref=f1e510]:
+                - status "Chargement…" [ref=f1e511]
+              - article [ref=f1e523]:
+                - status "Chargement…" [ref=f1e524]
+  - button "Choose File" [ref=f1e536]

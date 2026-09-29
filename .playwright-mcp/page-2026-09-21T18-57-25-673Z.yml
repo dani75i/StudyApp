@@ -1,0 +1,236 @@
+- generic [ref=f8e5]:
+  - banner:
+    - generic [ref=f8e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f8e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f8e16]:
+      - generic [ref=f8e17]:
+        - generic:
+          - generic:
+            - generic:
+              - button [aria-hidden]
+      - combobox "Rechercher sur Facebook" [ref=f8e20] [cursor=pointer]: La Rochelle
+    - navigation "Facebook" [ref=f8e24]:
+      - list [ref=f8e25]:
+        - listitem [ref=f8e26]:
+          - link "Accueil" [ref=f8e29] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f8e33]:
+          - link "Reels" [ref=f8e36] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f8e41]:
+          - link "Ami(e)s" [ref=f8e44] [cursor=pointer]:
+            - /url: /friends/
+        - listitem [ref=f8e48]:
+          - link "Marketplace" [ref=f8e51] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f8e55]:
+          - link "Groupes" [ref=f8e58] [cursor=pointer]:
+            - /url: /groups/
+    - navigation "Contrôles et paramètres du compte" [ref=f8e63]:
+      - button "Menu Facebook" [ref=f8e68] [cursor=pointer]
+      - button "Messenger" [ref=f8e75] [cursor=pointer]
+      - generic [ref=f8e81]:
+        - button "Notifications, 2 non lues" [ref=f8e82] [cursor=pointer]
+        - button [aria-hidden] [ref=f8e85] [cursor=pointer]:
+          - generic [ref=f8e86]:
+            - generic [ref=f8e87]: Nombre de notifications non lues
+            - generic [aria-hidden] [ref=f8e88]: "2"
+      - button "Votre profil" [ref=f8e91] [cursor=pointer]:
+        - img "Votre profil" [ref=f8e93]
+  - generic [ref=f8e107]:
+    - region "Filtres de résultats" [ref=f8e108]:
+      - generic [ref=f8e109]:
+        - heading "Résultats de recherche pour « La Rochelle »" [level=1] [ref=f8e117]
+        - generic [ref=f8e122]:
+          - heading "Filtres" [level=2] [ref=f8e136]
+          - list [ref=f8e140]:
+            - listitem [ref=f8e141]:
+              - link "Tous" [ref=f8e143] [cursor=pointer]:
+                - /url: /search/top/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+            - listitem [ref=f8e157]:
+              - link "Personnes" [ref=f8e159] [cursor=pointer]:
+                - /url: /search/people/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+            - listitem [ref=f8e171]:
+              - link "Résultats des reels" [ref=f8e173] [cursor=pointer]:
+                - /url: /search/videos/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+                - generic [ref=f8e174]: Reels
+            - listitem [ref=f8e185]:
+              - link "Résultats Marketplace" [ref=f8e187] [cursor=pointer]:
+                - /url: /marketplace/search/?query=La%20Rochelle
+                - generic [ref=f8e188]: Marketplace
+            - listitem [ref=f8e199]:
+              - link "Pages" [ref=f8e201] [cursor=pointer]:
+                - /url: /search/pages/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+            - listitem [ref=f8e213]:
+              - link "Résultats des groupes" [ref=f8e215] [cursor=pointer]:
+                - /url: /search/groups/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+                - generic [ref=f8e216]: Groupes
+              - list [ref=f8e227]:
+                - listitem [ref=f8e228]:
+                  - combobox "Ville" [ref=f8e235] [cursor=pointer]
+                - listitem [ref=f8e236]:
+                  - generic [ref=f8e237]:
+                    - generic [ref=f8e238]: À proximité
+                    - switch "À proximité" [ref=f8e245] [cursor=pointer]
+                - listitem [ref=f8e246]:
+                  - generic [ref=f8e247]:
+                    - generic [ref=f8e248]: Groupes publics
+                    - switch "Groupes publics" [ref=f8e255] [cursor=pointer]
+                - listitem [ref=f8e256]:
+                  - generic [ref=f8e257]:
+                    - generic [ref=f8e258]: Mes groupes
+                    - switch "Mes groupes" [ref=f8e265] [cursor=pointer]
+            - listitem [ref=f8e266]:
+              - link "Évènements" [ref=f8e268] [cursor=pointer]:
+                - /url: /search/events/?q=La%20Rochelle&__rsidv2__=0584f513-b794-4115-81b7-3e7a965e8622&__epa__=SERP_TAB&__eps__=SERP_GROUPS_TAB
+    - main "Résultats de la recherche" [ref=f8e280]:
+      - feed [ref=f8e285]:
+        - article [ref=f8e291]:
+          - generic [ref=f8e295]:
+            - link "Photo de profil de Entraide sur La Rochelle ⚓️" [ref=f8e299] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/2089729474606140/?__tn__=%3C
+              - img "Entraide sur La Rochelle ⚓️" [ref=f8e301]
+            - generic [ref=f8e305]:
+              - generic [ref=f8e308]:
+                - link [aria-hidden] [ref=f8e313] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/2089729474606140/
+                  - text: Entraide sur La Rochelle ⚓️
+                - generic [ref=f8e314]: Privé · 30 K membres · Plus de 30 publications par jour
+              - button "Rejoindre le groupe Entraide sur La Rochelle ⚓️" [ref=f8e323] [cursor=pointer]:
+                - generic [ref=f8e324]: Rejoindre
+        - article [ref=f8e332]:
+          - generic [ref=f8e336]:
+            - link "Photo de profil de Entraide entre rochelais" [ref=f8e340] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/428693254719865/?__tn__=%3C
+              - img "Entraide entre rochelais" [ref=f8e342]
+            - generic [ref=f8e346]:
+              - generic [ref=f8e349]:
+                - link [aria-hidden] [ref=f8e354] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/428693254719865/
+                  - text: Entraide entre rochelais
+                - generic [ref=f8e355]: Public · 18 K membres · Plus de 10 publications par jour
+              - button "Rejoindre le groupe Entraide entre rochelais" [ref=f8e364] [cursor=pointer]:
+                - generic [ref=f8e365]: Rejoindre
+        - article [ref=f8e373]:
+          - generic [ref=f8e377]:
+            - link "Photo de profil de Vivre a La Rochelle" [ref=f8e381] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/586745571440826/?__tn__=%3C
+              - img "Vivre a La Rochelle" [ref=f8e383]
+            - generic [ref=f8e387]:
+              - generic [ref=f8e390]:
+                - link [aria-hidden] [ref=f8e395] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/586745571440826/
+                  - text: Vivre a La Rochelle
+                - generic [ref=f8e396]: Public · 71 K membres · 6 publications par jour
+              - button "Rejoindre le groupe Vivre a La Rochelle" [ref=f8e405] [cursor=pointer]:
+                - generic [ref=f8e406]: Rejoindre
+        - article [ref=f8e414]:
+          - generic [ref=f8e418]:
+            - link "Photo de profil de la rochelle et les alentours" [ref=f8e422] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/406261057228479/?__tn__=%3C
+              - img "la rochelle et les alentours" [ref=f8e424]
+            - generic [ref=f8e428]:
+              - generic [ref=f8e431]:
+                - link [aria-hidden] [ref=f8e436] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/406261057228479/
+                  - text: la rochelle et les alentours
+                - generic [ref=f8e437]: Public · 14 K membres · Plus de 50 publications par jour
+              - button "Rejoindre le groupe la rochelle et les alentours" [ref=f8e446] [cursor=pointer]:
+                - generic [ref=f8e447]: Rejoindre
+        - article [ref=f8e455]:
+          - generic [ref=f8e459]:
+            - link "Photo de profil de La Rochelle locations" [ref=f8e463] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/320576590034685/?__tn__=%3C
+              - img "La Rochelle locations" [ref=f8e465]
+            - generic [ref=f8e469]:
+              - generic [ref=f8e472]:
+                - link [aria-hidden] [ref=f8e477] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/320576590034685/
+                  - text: La Rochelle locations
+                - generic [ref=f8e478]: Public · 23 K membres · Plus de 10 publications par jour
+              - button "Rejoindre le groupe La Rochelle locations" [ref=f8e487] [cursor=pointer]:
+                - generic [ref=f8e488]: Rejoindre
+        - article [ref=f8e496]:
+          - generic [ref=f8e500]:
+            - link "Photo de profil de VENTE DONS LA ROCHELLE ET SES ALENTOURS" [ref=f8e504] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/trocventedonslarochelleetsesalentours/?__tn__=%3C
+              - img "VENTE DONS LA ROCHELLE ET SES ALENTOURS" [ref=f8e506]
+            - generic [ref=f8e510]:
+              - generic [ref=f8e513]:
+                - link [aria-hidden] [ref=f8e518] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/trocventedonslarochelleetsesalentours/
+                  - text: VENTE DONS LA ROCHELLE ET SES ALENTOURS
+                - generic [ref=f8e519]: Privé · 5,4 K membres · Plus de 10 publications par jour
+              - button "Rejoindre le groupe VENTE DONS LA ROCHELLE ET SES ALENTOURS" [ref=f8e528] [cursor=pointer]:
+                - generic [ref=f8e529]: Rejoindre
+        - article [ref=f8e537]:
+          - generic [ref=f8e541]:
+            - link "Photo de profil de BONS PLANS LA ROCHELLE" [ref=f8e545] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/larochelle.bonsplans/?__tn__=%3C
+              - img "BONS PLANS LA ROCHELLE" [ref=f8e547]
+            - generic [ref=f8e551]:
+              - generic [ref=f8e554]:
+                - link [aria-hidden] [ref=f8e559] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/larochelle.bonsplans/
+                  - text: BONS PLANS LA ROCHELLE
+                - generic [ref=f8e560]: Public · 9,6 K membres · 6 publications par jour
+              - button "Rejoindre le groupe BONS PLANS LA ROCHELLE" [ref=f8e569] [cursor=pointer]:
+                - generic [ref=f8e570]: Rejoindre
+        - article [ref=f8e578]:
+          - generic [ref=f8e582]:
+            - link "Photo de profil de Sortir sur la Rochelle" [ref=f8e586] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/sortirsurlarochelle/?__tn__=%3C
+              - img "Sortir sur la Rochelle" [ref=f8e588]
+            - generic [ref=f8e592]:
+              - generic [ref=f8e595]:
+                - link [aria-hidden] [ref=f8e600] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/sortirsurlarochelle/
+                  - text: Sortir sur la Rochelle
+                - generic [ref=f8e601]: Privé · 23 K membres · 2 publications par jour
+              - button "Rejoindre le groupe Sortir sur la Rochelle" [ref=f8e610] [cursor=pointer]:
+                - generic [ref=f8e611]: Rejoindre
+        - article [ref=f8e619]:
+          - generic [ref=f8e623]:
+            - link "Photo de profil de La Rochelle Ma Ville" [ref=f8e627] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/ville.la.rochelle/?__tn__=%3C
+              - img "La Rochelle Ma Ville" [ref=f8e629]
+            - generic [ref=f8e633]:
+              - generic [ref=f8e636]:
+                - link [aria-hidden] [ref=f8e641] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/ville.la.rochelle/
+                  - text: La Rochelle Ma Ville
+                - generic [ref=f8e642]: Public · 7,8 K membres · Plus de 20 publications par jour
+              - button "Rejoindre le groupe La Rochelle Ma Ville" [ref=f8e651] [cursor=pointer]:
+                - generic [ref=f8e652]: Rejoindre
+        - article [ref=f8e660]:
+          - generic [ref=f8e664]:
+            - link "Photo de profil de Ventes La Rochelle 17000 et environs proches" [ref=f8e668] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/226474357503049/?__tn__=%3C
+              - img "Ventes La Rochelle 17000 et environs proches" [ref=f8e670]
+            - generic [ref=f8e674]:
+              - generic [ref=f8e677]:
+                - link [aria-hidden] [ref=f8e682] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/226474357503049/
+                  - text: Ventes La Rochelle 17000 et environs proches
+                - generic [ref=f8e683]: Privé · 17 K membres · Plus de 20 publications par jour
+              - button "Rejoindre le groupe Ventes La Rochelle 17000 et environs proches" [ref=f8e692] [cursor=pointer]:
+                - generic [ref=f8e693]: Rejoindre
+        - article [ref=f8e701]:
+          - generic [ref=f8e705]:
+            - link "Photo de profil de Loc' Appart' La Rochelle" [ref=f8e709] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/514233818633851/?__tn__=%3C
+              - img "Loc' Appart' La Rochelle" [ref=f8e711]
+            - generic [ref=f8e715]:
+              - generic [ref=f8e718]:
+                - link [aria-hidden] [ref=f8e723] [cursor=pointer]:
+                  - /url: https://www.facebook.com/groups/514233818633851/
+                  - text: Loc' Appart' La Rochelle
+                - generic [ref=f8e724]: Privé · 17 K membres
+              - button "Rejoindre le groupe Loc' Appart' La Rochelle" [ref=f8e733] [cursor=pointer]:
+                - generic [ref=f8e734]: Rejoindre
+        - article [ref=f8e740]:
+          - status "Chargement…" [ref=f8e742]

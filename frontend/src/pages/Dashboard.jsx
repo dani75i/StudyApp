@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { api } from '../api';
+import DeclicMascot from '../components/DeclicMascot';
 
 const badgeIcons = {
   sparkles: Sparkles,
@@ -115,6 +116,16 @@ export default function Dashboard() {
           </div>
         </div>
       </section>
+
+      <div className="declic-dashboard-card">
+        <DeclicMascot correct={data.stats.correct} />
+        <div className="declic-dashboard-side">
+          <span className="eyebrow">TON COMPAGNON D'AVENTURE</span>
+          <h2>Déclic grandit avec toi !</h2>
+          <p>Chaque exercice distinct que tu maîtrises fait progresser ton personnage. Même quand tu te trompes, Déclic reste à tes côtés.</p>
+          <div className="declic-mastery-counter"><strong>{data.stats.correct}</strong> exercice{data.stats.correct > 1 ? 's' : ''} maîtrisé{data.stats.correct > 1 ? 's' : ''}</div>
+        </div>
+      </div>
 
       <div className="stats-grid dashboard-stats">
         <Stat icon={CheckCircle2} label="Exercices maîtrisés" value={data.stats.correct} sub={`${data.stats.completed} tentés`} tone="green" />

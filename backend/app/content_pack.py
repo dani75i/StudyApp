@@ -175,6 +175,8 @@ def install_content_pack(db: Session, filename: str) -> dict:
 
 def install_default_content_packs(db: Session) -> list[dict]:
     from .quality_patch import apply_quality_patch
+    from .math_patch import apply_math_patch
     results = [install_content_pack(db, filename) for filename in ("3e_2026_v1.json", "4e_2026_v1.json", "3e_2026_v9_exercices.json", "6e_2026_v10.json", "5e_2026_v10.json", "3e_2026_v10_3_refresh.json", "4e_2026_v10_3_refresh.json", "5e_2026_v10_3_refresh.json", "6e_2026_v10_3_refresh.json", "3e_2026_v10_3_exercises_refresh.json", "3e_2026_v10_4_refresh.json", "4e_2026_v10_4_refresh.json", "5e_2026_v10_4_refresh.json", "6e_2026_v10_4_refresh.json", "3e_2026_v10_4_exercises_refresh.json", "3e_2026_v10_5_refresh.json", "4e_2026_v10_5_refresh.json", "5e_2026_v10_5_refresh.json", "6e_2026_v10_5_refresh.json", "3e_2026_v10_5_exercises_refresh.json")]
     results.append(apply_quality_patch(db))
+    results.append(apply_math_patch(db))
     return results

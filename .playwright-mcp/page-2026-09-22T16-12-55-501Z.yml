@@ -1,0 +1,250 @@
+- generic [ref=f49e5]:
+  - banner:
+    - generic [ref=f49e6]:
+      - generic:
+        - generic:
+          - button [disabled] [aria-hidden]
+      - link "Facebook" [ref=f49e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=f49e16]:
+      - generic [ref=f49e17]:
+        - generic:
+          - generic:
+            - generic:
+              - button [aria-hidden]
+      - combobox "Rechercher sur Facebook" [ref=f49e20]
+    - navigation "Facebook" [ref=f49e24]:
+      - list [ref=f49e25]:
+        - listitem [ref=f49e26]:
+          - link "Accueil" [ref=f49e29] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f49e33]:
+          - link "Reels" [ref=f49e36] [cursor=pointer]:
+            - /url: /reel/?s=tab
+        - listitem [ref=f49e41]:
+          - link "Ami(e)s" [ref=f49e44] [cursor=pointer]:
+            - /url: /friends/
+        - listitem [ref=f49e48]:
+          - link "Marketplace" [ref=f49e51] [cursor=pointer]:
+            - /url: /marketplace/?ref=app_tab
+        - listitem [ref=f49e55]:
+          - link "Groupes" [ref=f49e58] [cursor=pointer]:
+            - /url: /groups/
+    - navigation "Contrôles et paramètres du compte" [ref=f49e63]:
+      - button "Menu Facebook" [ref=f49e68] [cursor=pointer]
+      - button "Messenger" [ref=f49e75] [cursor=pointer]
+      - button "Notifications" [ref=f49e82] [cursor=pointer]
+      - button "Votre profil" [ref=f49e87] [cursor=pointer]:
+        - img "Votre profil" [ref=f49e89]
+  - main [ref=f49e103]:
+    - generic [ref=f49e121]:
+      - generic [ref=f49e125]:
+        - generic [ref=f49e127]:
+          - heading "melun ma ville" [level=1] [ref=f49e129]
+          - generic [ref=f49e136]:
+            - generic [ref=f49e137]: Groupe (Public)
+            - generic [ref=f49e143]: ·
+            - link "8,9 K membres" [ref=f49e147] [cursor=pointer]:
+              - /url: /groups/444463714066211/members/
+        - list [ref=f49e151]:
+          - listitem [ref=f49e152]:
+            - link [ref=f49e156] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/1106937386/
+              - img "Ziyed Boukadida" [ref=f49e158]
+          - listitem [ref=f49e162]:
+            - link [ref=f49e166] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095734622327/
+              - img "Cline massage" [ref=f49e168]
+          - listitem [ref=f49e172]:
+            - link [ref=f49e176] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095608440112/
+              - img "Peter Beaumann" [ref=f49e178]
+          - listitem [ref=f49e182]:
+            - link [ref=f49e186] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095562484956/
+              - img "Maître Akouê Baba Daho" [ref=f49e188]
+          - listitem [ref=f49e192]:
+            - link [ref=f49e196] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095460850280/
+              - img "Pierre Muller" [ref=f49e198]
+          - listitem [ref=f49e202]:
+            - link [ref=f49e206] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095433756100/
+              - img "Louane Gillot" [ref=f49e208]
+          - listitem [ref=f49e212]:
+            - link [ref=f49e216] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095424912101/
+              - img "Ykealo Kahsay" [ref=f49e218]
+          - listitem [ref=f49e222]:
+            - link [ref=f49e226] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095396713453/
+              - img "Babenne Babenne" [ref=f49e228]
+          - listitem [ref=f49e232]:
+            - link [ref=f49e236] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095394141349/
+              - img "Mélodie Puche" [ref=f49e238]
+          - listitem [ref=f49e242]:
+            - link [ref=f49e246] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095381920537/
+              - img "Alba Amaro" [ref=f49e248]
+          - listitem [ref=f49e252]:
+            - link [ref=f49e256] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095359531246/
+              - img "Bram's Dh" [ref=f49e258]
+          - listitem [ref=f49e262]:
+            - link [ref=f49e266] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095357146667/
+              - img "Josy Bouniol" [ref=f49e268]
+          - listitem [ref=f49e272]:
+            - link [ref=f49e276] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095338818786/
+              - img "Mehmet Cetin" [ref=f49e278]
+          - listitem [ref=f49e282]:
+            - link [ref=f49e286] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095302154237/
+              - img "Zc Massielita" [ref=f49e288]
+          - listitem [ref=f49e292]:
+            - link [ref=f49e296] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095292920287/
+              - img "Øû Ssïd" [ref=f49e298]
+          - listitem [ref=f49e302]:
+            - link [ref=f49e306] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095270889373/
+              - img "O Lisboa - Restaurant & Café" [ref=f49e308]
+          - listitem [ref=f49e312]:
+            - link [ref=f49e316] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095204715929/
+              - img "Keite Freitas" [ref=f49e318]
+          - listitem [ref=f49e322]:
+            - link [ref=f49e326] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095199214479/
+              - img "Dayana Jasmine" [ref=f49e328]
+          - listitem [ref=f49e333]:
+            - link [ref=f49e337] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095169430657/
+              - img "Aw Ram" [ref=f49e339]
+          - listitem [ref=f49e344]:
+            - link [ref=f49e348] [cursor=pointer]:
+              - /url: /groups/444463714066211/user/100095100906820/
+              - img "Dounia Kameche" [ref=f49e350]
+          - listitem:
+            - link "Voir tout le monde" [ref=f49e354] [cursor=pointer]:
+              - /url: /groups/444463714066211/members/
+      - generic [ref=f49e360]:
+        - button "Inviter" [ref=f49e363] [cursor=pointer]
+        - button "Partager le groupe" [ref=f49e370] [cursor=pointer]:
+          - generic [ref=f49e371]: Partager
+        - button "Membre" [ref=f49e378] [cursor=pointer]
+    - generic [ref=f49e392]:
+      - tablist [ref=f49e400]:
+        - generic [ref=f49e402]:
+          - generic [ref=f49e403]: Plus
+          - tab "À propos" [selected] [ref=f49e409] [cursor=pointer]
+          - tab "Discussion" [ref=f49e413] [cursor=pointer]
+          - tab "Personnes" [ref=f49e417] [cursor=pointer]
+          - tab "Évènements" [ref=f49e421] [cursor=pointer]
+          - tab "Contenu multimédia" [ref=f49e425] [cursor=pointer]
+          - tab "Fichiers" [ref=f49e429] [cursor=pointer]
+      - generic [ref=f49e434]:
+        - button "Rechercher dans ce groupe" [ref=f49e436] [cursor=pointer]
+        - button "Plus" [ref=f49e442] [cursor=pointer]
+    - generic [ref=f49e450]:
+      - generic [ref=f49e457]:
+        - heading "À propos de ce groupe" [level=2] [ref=f49e467]
+        - generic [ref=f49e470]:
+          - separator [ref=f49e471]
+          - list [ref=f49e472]:
+            - listitem [ref=f49e473]:
+              - generic [ref=f49e480]:
+                - generic [ref=f49e481]: Public
+                - generic [ref=f49e483]: Tout le monde peut voir qui est dans le groupe et ce qui est publié.
+            - listitem [ref=f49e485]:
+              - generic [ref=f49e493]:
+                - generic [ref=f49e494]: Visible
+                - generic [ref=f49e496]: Tout le monde peut trouver ce groupe.
+            - listitem [ref=f49e498]:
+              - generic [ref=f49e505]:
+                - generic [ref=f49e506]: Historique
+                - generic [ref=f49e510]:
+                  - text: Groupe créé le 25 novembre 2021
+                  - button "Voir plus de l’historique du groupe" [ref=f49e511] [cursor=pointer]: Voir plus
+      - generic [ref=f49e518]:
+        - heading "Membres 8,9 K" [level=2] [ref=f49e528]:
+          - generic [ref=f49e530]:
+            - text: Membres
+            - generic [ref=f49e531]:
+              - generic [ref=f49e532]: ·
+              - text: 8,9 K
+        - generic [ref=f49e534]:
+          - separator [ref=f49e535]
+          - generic [ref=f49e538]:
+            - list [ref=f49e540]:
+              - listitem [ref=f49e541]:
+                - link "Profil" [ref=f49e545] [cursor=pointer]:
+                  - /url: /groups/444463714066211/user/100011335179874/
+                  - img "Ange Ou Démon" [ref=f49e547]
+              - listitem [ref=f49e551]:
+                - link "Profil" [ref=f49e555] [cursor=pointer]:
+                  - /url: /groups/444463714066211/user/100009031088204/
+                  - img "Mickael Sh" [ref=f49e557]
+              - listitem [ref=f49e561]:
+                - link "Profil" [ref=f49e565] [cursor=pointer]:
+                  - /url: /groups/444463714066211/user/100001621597235/
+                  - img "Amel Mekdad" [ref=f49e567]
+            - generic [ref=f49e571]: Amel et 2 autres membres sont admins.
+          - link "Voir tout" [ref=f49e577] [cursor=pointer]:
+            - /url: /groups/444463714066211/members/
+      - generic [ref=f49e587]:
+        - heading "Activité" [level=2] [ref=f49e597]
+        - generic [ref=f49e600]:
+          - separator [ref=f49e601]
+          - list [ref=f49e602]:
+            - listitem [ref=f49e603]:
+              - generic [ref=f49e609]:
+                - generic [ref=f49e610]: 36 nouvelles publications aujourd’hui
+                - generic [ref=f49e612]: 1 118 le mois dernier
+            - listitem [ref=f49e614]:
+              - generic [ref=f49e620]:
+                - generic [ref=f49e621]: 8 899 membres au total
+                - generic [ref=f49e623]: + 120 la semaine dernière
+            - listitem [ref=f49e625]:
+              - generic [ref=f49e633]:
+                - text: Créé le
+                - generic "il y a 4 ans" [ref=f49e635]
+      - generic [ref=f49e641]:
+        - heading "Règles de groupe des admins" [level=2] [ref=f49e653]
+        - separator [ref=f49e657]
+        - list [ref=f49e659]:
+          - listitem [ref=f49e660]:
+            - button "1 Soyez aimable et courtois(e)" [expanded] [ref=f49e661] [cursor=pointer]:
+              - generic [ref=f49e670]:
+                - generic [ref=f49e671]: "1"
+                - generic [ref=f49e673]: Soyez aimable et courtois(e)
+          - generic [ref=f49e679]:
+            - generic [ref=f49e680]: Créer un environnement chaleureux, c’est notre responsabilité à tous. Traitons tout le monde avec respect. Il est normal d’avoir des débats constructifs, mais il est essentiel de rester aimable.
+            - button "Options de règle" [ref=f49e683] [cursor=pointer]
+          - listitem [ref=f49e685]:
+            - button "2 Pas de discours haineux, ni de harcèlement" [expanded] [ref=f49e686] [cursor=pointer]:
+              - generic [ref=f49e695]:
+                - generic [ref=f49e696]: "2"
+                - generic [ref=f49e698]: Pas de discours haineux, ni de harcèlement
+          - generic [ref=f49e704]:
+            - generic [ref=f49e705]: Faites en sorte que tout le monde se sente en sécurité. Le harcèlement sous toutes ses formes est interdit et les commentaires dégradants qui portent sur l’origine ethnique, la religion, la culture, l’orientation sexuelle, le genre ou l’identité sexuelle ne sont pas tolérés.
+            - button "Options de règle" [ref=f49e708] [cursor=pointer]
+          - listitem [ref=f49e710]:
+            - button "3 Pas de promotions, ni de spam" [expanded] [ref=f49e711] [cursor=pointer]:
+              - generic [ref=f49e720]:
+                - generic [ref=f49e721]: "3"
+                - generic [ref=f49e723]: Pas de promotions, ni de spam
+          - generic [ref=f49e729]:
+            - generic [ref=f49e730]: Offrez plus que vous ne prenez au sein de ce groupe. L’auto-promotion, le contenu indésirable et les liens non pertinents ne sont pas autorisés.
+            - button "Options de règle" [ref=f49e733] [cursor=pointer]
+          - listitem [ref=f49e735]:
+            - button "4 Respecter la confidentialité de tous" [expanded] [ref=f49e736] [cursor=pointer]:
+              - generic [ref=f49e745]:
+                - generic [ref=f49e746]: "4"
+                - generic [ref=f49e748]: Respecter la confidentialité de tous
+          - generic [ref=f49e754]:
+            - generic [ref=f49e755]: Faire partie de ce groupe implique une confiance mutuelle. Des discussions animées et authentiques font tout l’intérêt des groupes, mais elles peuvent aussi contenir des informations sensibles et personnelles. Ce qui est partagé dans le groupe doit rester dans le groupe.
+            - button "Options de règle" [ref=f49e758] [cursor=pointer]
+  - button "Nouveau message" [ref=f49e762] [cursor=pointer]

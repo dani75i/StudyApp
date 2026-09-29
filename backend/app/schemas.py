@@ -1,3 +1,4 @@
+from typing import Literal
 from pydantic import BaseModel, EmailStr, Field
 
 
@@ -5,7 +6,7 @@ class RegisterIn(BaseModel):
     email: EmailStr
     first_name: str = Field(min_length=2, max_length=80)
     password: str = Field(min_length=8, max_length=128)
-    level: str
+    level: Literal['6e', '5e', '4e', '3e']
 
 
 class LoginIn(BaseModel):
@@ -27,7 +28,7 @@ class AnswerIn(BaseModel):
 
 class ProfileIn(BaseModel):
     first_name: str = Field(min_length=2, max_length=80)
-    level: str
+    level: Literal['6e', '5e', '4e', '3e']
 
 
 class WeeklyGoalIn(BaseModel):

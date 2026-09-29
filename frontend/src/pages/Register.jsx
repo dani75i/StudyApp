@@ -6,7 +6,7 @@ import { useAuth } from '../App';
 import { appBadges } from '../subjectMeta';
 import { openCookiePreferences, trackEvent } from '../analytics';
 
-const levels = ['6e', '5e', '4e', '3e', '2nde', '1re', 'Terminale'];
+const levels = ['6e', '5e', '4e', '3e'];
 
 export default function Register() {
   const [form, setForm] = useState({ first_name: '', email: '', password: '', level: '3e' });
@@ -51,7 +51,7 @@ export default function Register() {
         <form className="auth-card" onSubmit={submit} onFocus={() => { if (!startedTracked) { trackEvent('sign_up_started'); setStartedTracked(true); } }}>
           <div className="brand auth-brand"><span className="brand-mark"><Zap size={20} /></span><span>ExoDéclic</span></div>
           <h2>Créer mon compte</h2>
-          <p className="muted">Tu pourras tester l'application comme un vrai élève.</p>
+          <p className="muted">ExoDéclic accueille pour le moment les élèves de la 6e à la 3e. Le lycée arrivera plus tard.</p>
           {error && <div className="alert error">{error}</div>}
           <div className="form-grid">
             <label>Prénom<input required value={form.first_name} onChange={(e) => setForm({ ...form, first_name: e.target.value })} placeholder="Daniel" /></label>

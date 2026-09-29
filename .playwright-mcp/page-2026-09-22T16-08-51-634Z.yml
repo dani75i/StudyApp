@@ -1,0 +1,410 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - banner:
+      - generic [ref=f1e6]:
+        - generic:
+          - generic:
+            - button [disabled] [aria-hidden]
+        - link "Facebook" [ref=f1e7] [cursor=pointer]:
+          - /url: /
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]:
+          - generic:
+            - generic:
+              - generic:
+                - button [aria-hidden]
+        - combobox "Rechercher sur Facebook" [ref=f1e20]
+      - navigation "Facebook" [ref=f1e24]:
+        - list [ref=f1e25]:
+          - listitem [ref=f1e26]:
+            - link "Accueil" [ref=f1e29] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e33]:
+            - link "Reels" [ref=f1e36] [cursor=pointer]:
+              - /url: /reel/?s=tab
+          - listitem [ref=f1e41]:
+            - link "Ami(e)s" [ref=f1e44] [cursor=pointer]:
+              - /url: /friends/
+          - listitem [ref=f1e48]:
+            - link "Marketplace" [ref=f1e51] [cursor=pointer]:
+              - /url: /marketplace/?ref=app_tab
+          - listitem [ref=f1e55]:
+            - link "Groupes" [ref=f1e58] [cursor=pointer]:
+              - /url: /groups/
+      - navigation "Contrôles et paramètres du compte" [ref=f1e63]:
+        - button "Menu Facebook" [ref=f1e68] [cursor=pointer]
+        - button "Messenger" [ref=f1e75] [cursor=pointer]
+        - button "Notifications" [ref=f1e82] [cursor=pointer]
+        - button "Votre profil" [ref=f1e87] [cursor=pointer]:
+          - img "Votre profil" [ref=f1e89]
+    - main [ref=f1e103]:
+      - generic [ref=f1e104]:
+        - link "Photo de couverture" [ref=f1e116] [cursor=pointer]:
+          - /url: https://www.facebook.com/photo/?fbid=10225727265951289&set=p.10225727265951289
+        - generic [ref=f1e125]:
+          - generic [ref=f1e131]:
+            - heading "Vivre à Vannes" [level=1] [ref=f1e133]
+            - generic [ref=f1e140]:
+              - generic [ref=f1e141]: Groupe (Public)
+              - generic [ref=f1e147]: ·
+              - link "58,7 K membres" [ref=f1e151] [cursor=pointer]:
+                - /url: /groups/361694485361326/members/
+          - generic [ref=f1e153]:
+            - button "Rejoindre le groupe" [disabled] [ref=f1e1904]:
+              - generic [ref=f1e1905]:
+                - status "Chargement…" [ref=f1e1906]
+                - generic [ref=f1e1908]: Rejoindre le groupe
+            - button "Partager le groupe" [ref=f1e167] [cursor=pointer]:
+              - generic [ref=f1e168]: Partager
+        - generic [ref=f1e1914]:
+          - generic [ref=f1e1917]:
+            - heading "Groupes associés" [level=2] [ref=f1e1918]
+            - link "Découvrir plus de groupes" [ref=f1e1920] [cursor=pointer]:
+              - /url: /groups/discover/
+          - generic [ref=f1e1923]:
+            - generic [aria-hidden]:
+              - button [disabled]
+            - generic [ref=f1e1926]:
+              - generic [ref=f1e1933]:
+                - generic [ref=f1e1935]:
+                  - link [ref=f1e1937] [cursor=pointer]:
+                    - /url: /groups/1045077085514285/?action_source=group_mall_recommendation_affordance
+                    - img "Photo du groupe" [ref=f1e1940]
+                  - generic [ref=f1e1942]:
+                    - link "MELUN J'aime Ma Ville" [ref=f1e1948] [cursor=pointer]:
+                      - /url: /groups/1045077085514285/?action_source=group_mall_recommendation_affordance
+                    - generic [ref=f1e1949]: 10 K membres • 3 publications par jour
+                    - generic [ref=f1e1951]: Groupe (Privé)
+                  - button "Rejoindre le groupe" [ref=f1e1962] [cursor=pointer]
+                - button "Supprimer la recommandation pour MELUN J'aime Ma Ville" [ref=f1e1968] [cursor=pointer]
+              - generic [ref=f1e1976]:
+                - generic [ref=f1e1978]:
+                  - link [ref=f1e1980] [cursor=pointer]:
+                    - /url: /groups/229232647281700/?action_source=group_mall_recommendation_affordance
+                    - img "Photo du groupe" [ref=f1e1983]
+                  - generic [ref=f1e1985]:
+                    - link "MELUN ma ville ( l’original )" [ref=f1e1991] [cursor=pointer]:
+                      - /url: /groups/229232647281700/?action_source=group_mall_recommendation_affordance
+                    - generic [ref=f1e1992]: 29 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e1994]: Groupe (Privé)
+                  - button "Rejoindre le groupe" [ref=f1e2005] [cursor=pointer]
+                - button "Supprimer la recommandation pour MELUN ma ville ( l’original )" [ref=f1e2011] [cursor=pointer]
+              - generic [ref=f1e2019]:
+                - generic [ref=f1e2021]:
+                  - link [ref=f1e2023] [cursor=pointer]:
+                    - /url: /groups/1047309493701803/?action_source=group_mall_recommendation_affordance
+                    - img "Photo du groupe" [ref=f1e2026]
+                  - generic [ref=f1e2028]:
+                    - link "Lille bons plans, partagés, entraides, infos..." [ref=f1e2034] [cursor=pointer]:
+                      - /url: /groups/1047309493701803/?action_source=group_mall_recommendation_affordance
+                    - generic [ref=f1e2035]: 19 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2037]: Groupe (Public)
+                  - button "Rejoindre le groupe" [ref=f1e2047] [cursor=pointer]
+                - button "Supprimer la recommandation pour Lille bons plans, partagés, entraides, infos..." [ref=f1e2053] [cursor=pointer]
+              - generic [ref=f1e2061]:
+                - generic [ref=f1e2063]:
+                  - link [ref=f1e2065] [cursor=pointer]:
+                    - /url: /groups/241864789299372/?action_source=group_mall_recommendation_affordance
+                    - img "Photo du groupe" [ref=f1e2068]
+                  - generic [ref=f1e2070]:
+                    - link "Vend melun, le mée sur seine" [ref=f1e2076] [cursor=pointer]:
+                      - /url: /groups/241864789299372/?action_source=group_mall_recommendation_affordance
+                    - generic [ref=f1e2077]: 23 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2079]: Groupe (Public)
+                  - button "Rejoindre le groupe" [ref=f1e2089] [cursor=pointer]
+                - button "Supprimer la recommandation pour Vend melun, le mée sur seine" [ref=f1e2095] [cursor=pointer]
+              - generic [ref=f1e2103]:
+                - generic [ref=f1e2105]:
+                  - link [ref=f1e2107] [cursor=pointer]:
+                    - /url: /groups/225710859819830/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2112]:
+                    - link [ref=f1e2118] [cursor=pointer]:
+                      - /url: /groups/225710859819830/?action_source=group_mall_recommendation_affordance
+                      - text: Melun , Dammarie les lys, offres de travail , a temps partiel .
+                    - generic [ref=f1e2119]: 8,4 K membres • 10 publications par jour
+                    - generic [ref=f1e2121]: Groupe (Public)
+                  - button [ref=f1e2131] [cursor=pointer]:
+                    - generic [ref=f1e2132]: Rejoindre le groupe
+                - button [ref=f1e2137] [cursor=pointer]
+              - generic [ref=f1e2145]:
+                - generic [ref=f1e2147]:
+                  - link [ref=f1e2149] [cursor=pointer]:
+                    - /url: /groups/1511912645730826/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2154]:
+                    - link [ref=f1e2160] [cursor=pointer]:
+                      - /url: /groups/1511912645730826/?action_source=group_mall_recommendation_affordance
+                      - text: Bons Plans Lyon Rhône-alpes LYON
+                    - generic [ref=f1e2161]: 111 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2163]: Groupe (Public)
+                  - button [ref=f1e2173] [cursor=pointer]:
+                    - generic [ref=f1e2174]: Rejoindre le groupe
+                - button [ref=f1e2179] [cursor=pointer]
+              - generic [ref=f1e2187]:
+                - generic [ref=f1e2189]:
+                  - link [ref=f1e2191] [cursor=pointer]:
+                    - /url: /groups/870792580177224/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2196]:
+                    - link [ref=f1e2202] [cursor=pointer]:
+                      - /url: /groups/870792580177224/?action_source=group_mall_recommendation_affordance
+                      - text: Bon plan Lyon
+                    - generic [ref=f1e2203]: 13 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2205]: Groupe (Public)
+                  - button [ref=f1e2215] [cursor=pointer]:
+                    - generic [ref=f1e2216]: Rejoindre le groupe
+                - button [ref=f1e2221] [cursor=pointer]
+              - generic [ref=f1e2229]:
+                - generic [ref=f1e2231]:
+                  - link [ref=f1e2233] [cursor=pointer]:
+                    - /url: /groups/602917326465680/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2238]:
+                    - link [ref=f1e2244] [cursor=pointer]:
+                      - /url: /groups/602917326465680/?action_source=group_mall_recommendation_affordance
+                      - text: Si tu viens du Secteur Melun-Sénart... (de Combs à Dammarie)
+                    - generic [ref=f1e2245]: 16 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2247]: Groupe (Public)
+                  - button [ref=f1e2257] [cursor=pointer]:
+                    - generic [ref=f1e2258]: Rejoindre le groupe
+                - button [ref=f1e2263] [cursor=pointer]
+              - generic [ref=f1e2271]:
+                - generic [ref=f1e2273]:
+                  - link [ref=f1e2275] [cursor=pointer]:
+                    - /url: /groups/221328988854896/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2280]:
+                    - link [ref=f1e2286] [cursor=pointer]:
+                      - /url: /groups/221328988854896/?action_source=group_mall_recommendation_affordance
+                      - text: Lille
+                    - generic [ref=f1e2287]: 14 K membres • Plus de 10 publications par jour
+                    - generic [ref=f1e2289]: Groupe (Public)
+                  - button [ref=f1e2299] [cursor=pointer]:
+                    - generic [ref=f1e2300]: Rejoindre le groupe
+                - button [ref=f1e2305] [cursor=pointer]
+              - generic [ref=f1e2313]:
+                - generic [ref=f1e2315]:
+                  - link [ref=f1e2317] [cursor=pointer]:
+                    - /url: /groups/772971736516531/?action_source=group_mall_recommendation_affordance
+                  - generic [ref=f1e2322]:
+                    - link [ref=f1e2328] [cursor=pointer]:
+                      - /url: /groups/772971736516531/?action_source=group_mall_recommendation_affordance
+                      - text: melun capitale de la solidarité
+                    - generic [ref=f1e2329]: 19 K membres • 5 publications par jour
+                    - generic [ref=f1e2331]: Groupe (Public)
+                  - button [ref=f1e2341] [cursor=pointer]:
+                    - generic [ref=f1e2342]: Rejoindre le groupe
+                - button [ref=f1e2347] [cursor=pointer]
+            - button "Éléments suivants" [ref=f1e2352] [cursor=pointer]
+      - generic [ref=f1e178]:
+        - generic [ref=f1e181]:
+          - tablist [ref=f1e186]:
+            - generic [ref=f1e188]:
+              - generic [ref=f1e189]: Plus
+              - tab [disabled] [aria-hidden] [ref=f1e543] [cursor=pointer]:
+                - generic [ref=f1e196]: À propos
+              - tab [disabled] [selected] [aria-hidden] [ref=f1e544] [cursor=pointer]:
+                - generic [ref=f1e200]: Discussion
+              - tab [disabled] [aria-hidden] [ref=f1e545] [cursor=pointer]:
+                - generic [ref=f1e204]: À la une
+              - tab [disabled] [aria-hidden] [ref=f1e546] [cursor=pointer]:
+                - generic [ref=f1e208]: Personnes
+              - tab [disabled] [aria-hidden] [ref=f1e547] [cursor=pointer]:
+                - generic [ref=f1e212]: Évènements
+              - tab [disabled] [aria-hidden] [ref=f1e548] [cursor=pointer]:
+                - generic [ref=f1e216]: Contenu multimédia
+              - tab [disabled] [aria-hidden] [ref=f1e549] [cursor=pointer]:
+                - generic [ref=f1e220]: Fichiers
+          - generic [ref=f1e552]:
+            - link "Vivre à Vannes" [ref=f1e555] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/361694485361326/
+            - button "Rejoindre le groupe" [ref=f1e571] [cursor=pointer]
+            - button "Partager le groupe" [ref=f1e583] [cursor=pointer]:
+              - generic [ref=f1e584]: Partager
+        - generic [ref=f1e224]:
+          - button "Rechercher dans ce groupe" [ref=f1e226] [cursor=pointer]
+          - button "Plus" [ref=f1e232] [cursor=pointer]
+      - generic [ref=f1e240]:
+        - generic [ref=f1e241]:
+          - generic [ref=f1e245]:
+            - generic [ref=f1e246]:
+              - link "Profil de Dani Noti" [ref=f1e250] [cursor=pointer]:
+                - /url: /groups/361694485361326/user/100003699299074/
+              - button "Exprimez-vous..." [ref=f1e257] [cursor=pointer]
+            - generic [ref=f1e261]:
+              - button "Humeur/Activité" [ref=f1e262] [cursor=pointer]
+              - button "Je suis là" [ref=f1e267] [cursor=pointer]
+              - button "Sondage" [ref=f1e272] [cursor=pointer]
+          - generic [ref=f1e277]:
+            - generic [ref=f1e283]:
+              - generic [ref=f1e285]:
+                - generic [ref=f1e286]: À la une
+                - generic [ref=f1e290]:
+                  - text: 3 nouveaux
+                  - generic [ref=f1e291]: Badge de contenu à la une
+              - button "À propos de la section À la une" [ref=f1e294] [cursor=pointer]
+              - button "Augmenter/réduire la section À la une" [ref=f1e298] [cursor=pointer]
+            - feed [ref=f1e301]:
+              - article [ref=f1e306]:
+                - generic [ref=f1e314]:
+                  - generic [ref=f1e316]:
+                    - link [aria-hidden] [ref=f1e319] [cursor=pointer]:
+                      - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%2CP-R
+                      - link [ref=f1e324]:
+                        - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%3C%2CP-R
+                    - generic [ref=f1e331]:
+                      - heading [level=2] [ref=f1e335]:
+                        - link "Ambre Grimaud" [ref=f1e341] [cursor=pointer]:
+                          - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=-UC%2CP-R
+                      - generic [ref=f1e345]:
+                        - link "6 min" [ref=f1e2355] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/361694485361326/posts/1643639270500168/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%2CO%2CP-R
+                        - generic [ref=f1e350]: ·
+                        - 'img "Partagé avec : Groupe public" [ref=f1e356]'
+                    - button "Actions pour cette publication de Ambre Grimaud" [ref=f1e364] [cursor=pointer]
+                  - generic [ref=f1e371]:
+                    - generic [ref=f1e376]:
+                      - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e378] [cursor=pointer]:
+                        - /url: https://www.facebook.com/photo/?fbid=122122893249395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b0H-y-R
+                      - link "Aucune description de photo disponible." [ref=f1e383] [cursor=pointer]:
+                        - /url: https://www.facebook.com/photo/?fbid=122122893351395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b1H-y-R
+                      - link "Aucune description de photo disponible." [ref=f1e388] [cursor=pointer]:
+                        - /url: https://www.facebook.com/photo/?fbid=122122893261395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b2H-y-R
+                      - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e393] [cursor=pointer]:
+                        - /url: https://www.facebook.com/photo/?fbid=122122893363395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b3H-y-R
+                      - link "Peut être une image de une personne ou plus et cheveux blonds" [ref=f1e398] [cursor=pointer]:
+                        - /url: https://www.facebook.com/photo/?fbid=122122893441395686&set=pcb.122122893477395686&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=*b4H-y-R
+                    - generic [ref=f1e403]:
+                      - link "Ambre Grimaud" [ref=f1e407] [cursor=pointer]:
+                        - /url: /groups/361694485361326/user/61591870607526/?__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%3C%3C%2CP-y-R
+                        - img "Ambre Grimaud" [ref=f1e409]
+                      - generic [ref=f1e413]:
+                        - heading [level=3] [ref=f1e417]:
+                          - link "Ambre Grimaud" [ref=f1e422] [cursor=pointer]:
+                            - /url: https://www.facebook.com/profile.php?id=61591870607526&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=-UC%2CP-y-R
+                        - generic [ref=f1e426]:
+                          - link "11 min" [ref=f1e2356] [cursor=pointer]:
+                            - /url: https://www.facebook.com/permalink.php?story_fbid=pfbid066GhKuHiQw1PExLYn96ZYXu7tuz3kFMUVxixocPnzCscH8eL7Jtaspn8QqNQAzdTl&id=61591870607526&__cft__[0]=AZjV0xIiXbK4Z9RufIHLflnxkXT2MlgZGqGG5ud0cAWM7Jn2RfVB7INAhoksXFtPl_27HN_BZUtCZmBwABR1ZtrZeu_2XD5TQIVpzujXC_mUOkrYT43P3WnPjJDpsp8Wish2dfTemNwZwIGmZCUxi8Wt_ir4hl79-guCGglrhlYyQXlrlwhLPK6STjfPM01X3jLr5O87xqCRLjMt1pHJ0Wh6&__tn__=%2CO%2CP-y-R
+                          - generic [ref=f1e431]: ·
+                          - 'img "Partagé avec : Public" [ref=f1e437]'
+                    - generic [ref=f1e452]:
+                      - img "✨" [ref=f1e454]
+                      - text: Recherche modele coloration
+                      - img "✨" [ref=f1e456]
+                      - text: …
+                      - button "En voir plus" [ref=f1e457] [cursor=pointer]
+                  - generic [ref=f1e460]:
+                    - generic [ref=f1e464]:
+                      - generic [ref=f1e465]:
+                        - button "Réagir avec J’aime à la publication de Ambre Grimaud" [ref=f1e466] [cursor=pointer]:
+                          - generic [ref=f1e467]: J’aime
+                        - button "Réagir à la publication de Ambre Grimaud" [ref=f1e473] [cursor=pointer]
+                      - button "Commenter la publication de Ambre Grimaud" [ref=f1e477] [cursor=pointer]:
+                        - generic [ref=f1e478]: Commenter
+                      - button "Partager la publication de Ambre Grimaud" [ref=f1e484] [cursor=pointer]:
+                        - generic [ref=f1e485]: Partager
+                    - generic [ref=f1e496]:
+                      - button [aria-hidden] [ref=f1e498] [cursor=pointer]
+                      - generic [ref=f1e506]:
+                        - generic [ref=f1e590]:
+                          - textbox "Envoyez votre premier commentaire..." [ref=f1e591]:
+                            - paragraph [ref=f1e592]
+                          - generic: Envoyez votre premier commentaire...
+                        - list [ref=f1e594]:
+                          - listitem [ref=f1e595]:
+                            - button "Commentez avec un sticker avatar" [ref=f1e597] [cursor=pointer]
+                          - listitem [ref=f1e599]:
+                            - button "Insérez un emoji" [ref=f1e601] [cursor=pointer]
+                          - listitem [ref=f1e605]:
+                            - button "Joignez une photo ou une vidéo" [ref=f1e607] [cursor=pointer]
+                          - listitem [ref=f1e609]:
+                            - button "Commentez avec un GIF" [ref=f1e611] [cursor=pointer]
+                          - listitem [ref=f1e613]:
+                            - button "Commentez avec un sticker" [ref=f1e615] [cursor=pointer]
+              - article [ref=f1e621]
+              - article [ref=f1e882]
+              - article [ref=f1e888]
+              - article [ref=f1e894]
+              - article [ref=f1e1895]
+              - article [ref=f1e1901]
+              - generic [ref=f1e509]:
+                - article [ref=f1e510]:
+                  - status "Chargement…" [ref=f1e511]
+                - article [ref=f1e523]:
+                  - status "Chargement…" [ref=f1e524]
+        - generic [ref=f1e897]:
+          - generic [ref=f1e903]:
+            - heading "À propos" [level=2] [ref=f1e913]
+            - generic [ref=f1e916]:
+              - generic [ref=f1e917]: Pour tout ceux qui aiment vivre à Vannes et souhaitent contribuer à une vie locale sereine et positive...
+              - generic [ref=f1e938]:
+                - generic [ref=f1e939]: Public
+                - generic [ref=f1e942]: Tout le monde peut voir qui est dans le groupe et ce qui est publié.
+              - generic [ref=f1e954]:
+                - generic [ref=f1e955]: Visible
+                - generic [ref=f1e958]: Tout le monde peut trouver ce groupe.
+              - generic [ref=f1e960]: Vannes
+          - generic [ref=f1e976]:
+            - heading "Évènements à venir" [level=2] [ref=f1e986]
+            - generic [ref=f1e989]:
+              - link "photo de profil de l’évènement Lun, 5 oct. à 20:30 et 17 autres dates ✨ PORTES OUVERTES KIN DANCERS SCHOOL – VANNES ✨ 3 Rue Pasteur, 56000 Vannes, France 33 invités Intéressé(e) Partager cet évènement" [ref=f1e991] [cursor=pointer]:
+                - /url: https://www.facebook.com/events/4411094432484053/
+                - generic [ref=f1e993]:
+                  - link "photo de profil de l’évènement" [ref=f1e996]:
+                    - /url: https://www.facebook.com/events/4411094432484053/?__tn__=%3C
+                  - generic [ref=f1e1003]:
+                    - generic [ref=f1e1004]:
+                      - generic [ref=f1e1005]: Lun, 5 oct. à 20:30 et 17 autres dates
+                      - generic [ref=f1e1008]: ✨ PORTES OUVERTES KIN DANCERS SCHOOL – VANNES ✨
+                      - generic [ref=f1e1011]: 3 Rue Pasteur, 56000 Vannes, France
+                    - generic [ref=f1e1015]: 33 invités
+                    - generic [ref=f1e1018]:
+                      - button "Intéressé(e)" [ref=f1e1020]
+                      - button "Partager cet évènement" [ref=f1e1027]
+              - link "photo de profil de l’évènement En cours Sacred Brittany Tour 2026 ( Autumn Equinox ) 35380 Paimpont, France 64 invités Intéressé(e) Partager cet évènement" [ref=f1e1032] [cursor=pointer]:
+                - /url: https://www.facebook.com/events/1547202790087088/
+                - generic [ref=f1e1034]:
+                  - link "photo de profil de l’évènement" [ref=f1e1037]:
+                    - /url: https://www.facebook.com/events/1547202790087088/?__tn__=%3C
+                  - generic [ref=f1e1044]:
+                    - generic [ref=f1e1045]:
+                      - generic [ref=f1e1046]: En cours
+                      - generic [ref=f1e1049]: Sacred Brittany Tour 2026 ( Autumn Equinox )
+                      - generic [ref=f1e1052]: 35380 Paimpont, France
+                    - generic [ref=f1e1056]: 64 invités
+                    - generic [ref=f1e1059]:
+                      - button "Intéressé(e)" [ref=f1e1061]
+                      - button "Partager cet évènement" [ref=f1e1068]
+              - link "photo de profil de l’évènement En cours LA VOIE DU TOURNOIEMENT - DANSE SOUFIE À L'ANNÉE (Débutants) - Un samedi par mois - AURAY Lieu-dit Le Sablen, 56400 Auray, France 11 invités Intéressé(e) Partager cet évènement" [ref=f1e1073] [cursor=pointer]:
+                - /url: https://www.facebook.com/events/1722037965740145/
+                - generic [ref=f1e1075]:
+                  - link "photo de profil de l’évènement" [ref=f1e1078]:
+                    - /url: https://www.facebook.com/events/1722037965740145/?__tn__=%3C
+                  - generic [ref=f1e1085]:
+                    - generic [ref=f1e1086]:
+                      - generic [ref=f1e1087]: En cours
+                      - generic [ref=f1e1090]: LA VOIE DU TOURNOIEMENT - DANSE SOUFIE À L'ANNÉE (Débutants) - Un samedi par mois - AURAY
+                      - generic [ref=f1e1093]: Lieu-dit Le Sablen, 56400 Auray, France
+                    - generic [ref=f1e1097]: 11 invités
+                    - generic [ref=f1e1100]:
+                      - button "Intéressé(e)" [ref=f1e1102]
+                      - button "Partager cet évènement" [ref=f1e1109]
+              - link "Voir tout" [ref=f1e1114] [cursor=pointer]:
+                - /url: /groups/361694485361326/events/
+          - generic [ref=f1e1122]:
+            - heading "Contenu multimédia récent" [level=2] [ref=f1e1132]
+            - generic [ref=f1e1135]:
+              - generic [ref=f1e1137]:
+                - link [ref=f1e1143] [cursor=pointer]:
+                  - /url: /photo/?fbid=122142542607003640&set=g.361694485361326
+                  - img "Peut être une image de texte" [ref=f1e1144]
+                - link [ref=f1e1150] [cursor=pointer]:
+                  - /url: /photo/?fbid=122142542595003640&set=g.361694485361326
+                  - img "Peut être une image de texte" [ref=f1e1151]
+                - link [ref=f1e1157] [cursor=pointer]:
+                  - /url: /photo/?fbid=2135718010360167&set=g.361694485361326
+                  - img "Peut être une image de texte" [ref=f1e1158]
+                - link [ref=f1e1164] [cursor=pointer]:
+                  - /url: /photo/?fbid=10244184413335284&set=g.361694485361326
+                  - img "Peut être une image de texte" [ref=f1e1165]
+              - link "Voir tous les contenus multimédias récents" [ref=f1e1167] [cursor=pointer]:
+                - /url: /groups/361694485361326/media/
+                - generic [ref=f1e1168]: Voir tout
+    - button "Nouveau message" [ref=f1e1173] [cursor=pointer]
+  - button "Choose File" [ref=f1e536]

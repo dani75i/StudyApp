@@ -1,0 +1,18 @@
+[     345ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[     345ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[     345ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[    1285ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'. @ :0
+[    1285ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'. @ :0
+[    1285ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'. @ :0
+[    1344ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/y5/r/pCkse6VZNPK.js:332
+[    6326ms] [LOG] 
+%cStop ! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4ihwg4/yX/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_f99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    6326ms] [LOG] 
+%cIl s’agit d’une fonctionnalité de navigateur conçue pour les développeurs. Si quelqu’un vous a invité(e) à copier-coller quelque chose ici pour activer une fonctionnalité Facebook ou soit-disant pirater le compte d’un tiers, sachez que c’est une arnaque permettant à cette personne d’accéder à votre compte Facebook. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4ihwg4/yX/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_f99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    6326ms] [LOG] 
+%cConsultez https://www.facebook.com/selfxss pour plus d’informations. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4ihwg4/yX/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_f99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[    6327ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4ihwg4/yX/l/fr_FR-j/lAlCjoD9fBAKNE0GCUPYB1HAzEIEYTwp64t8F3AxFuWl8RnazJ5v_Odmy-jUv3hMDr_HYbKcK5rtxKSTz1J0IrsWZ4tN32nDJ_f99iASUQ4WnmyFM3yvfKE4DdJoraP3KLd038T0bInedX9KjIGjnpuK-qVTtep-pVz5FUheE8wAsi6z.js:1039
+[   10898ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://static.xx.fbcdn.net/rsrc.php/v4iJH54/y0/l/fr_FR-j/GUif9JSQVBI.js:22
+[   11501ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://static.xx.fbcdn.net/rsrc.php/v4iJH54/y0/l/fr_FR-j/GUif9JSQVBI.js:22
+[   14114ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://static.xx.fbcdn.net/rsrc.php/v4iJH54/y0/l/fr_FR-j/GUif9JSQVBI.js:22

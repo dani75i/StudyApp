@@ -5,6 +5,7 @@ import { api } from '../api';
 import { RichText } from '../components/RichContent';
 import { correctionToSteps } from '../correctionSteps';
 import GeometryDiagram from '../components/GeometryDiagram';
+import DeclicMascot from '../components/DeclicMascot';
 
 export default function ExerciseCorrection() {
   const { id } = useParams();
@@ -14,6 +15,7 @@ export default function ExerciseCorrection() {
   const [correction, setCorrection] = useState(null);
   const [session, setSession] = useState(null);
   const [error, setError] = useState('');
+  const [mascotCorrect, setMascotCorrect] = useState(0);
 
   useEffect(() => {
     let active = true;
@@ -22,6 +24,7 @@ export default function ExerciseCorrection() {
       if (active) { setDetail(d); setCorrection(c); }
     }).catch((err) => { if (active) setError(err.message); });
     if (fromSession) api('/daily-session').then((s) => { if (active) setSession(s); }).catch(() => {});
+    api('/dashboard').then((summary) => { if (active) setMascotCorrect(summary.stats?.correct || 0); }).catch(() => {});
     return () => { active = false; };
   }, [id, fromSession]);
 
@@ -43,7 +46,8 @@ export default function ExerciseCorrection() {
       <Link className="back" to={fromSession ? '/seance' : `/chapitre/${detail.chapter_id}#exercices`}><ArrowLeft size={17} /> {fromSession ? 'Séance du jour' : 'Retour au chapitre'}</Link>
       <div className={`v9-result-hero ${correction.is_correct ? 'correct' : 'review'}`}>
         <span>{correction.is_correct ? <CheckCircle2 size={26} /> : <XCircle size={26} />}</span>
-        <div><small>EXERCICE {ordinal} / {total} · TENTATIVE {correction.attempt_number}</small><h1>{correction.is_correct ? 'Bravo, c’est juste !' : 'On reprend ensemble'}</h1><p>{correction.is_correct ? 'Tu as trouvé la bonne réponse. Découvre la méthode pour la retenir.' : 'Ce n’est pas encore la bonne réponse. La résolution détaillée t’aide à comprendre.'}</p></div>
+        <div className="v107-result-message"><small>EXERCICE {ordinal} / {total} · TENTATIVE {correction.attempt_number}</small><h1>{correction.is_correct ? 'Bravo, c’est juste !' : 'On reprend ensemble'}</h1><p>{correction.is_correct ? 'Tu as trouvé la bonne réponse. Découvre la méthode pour la retenir.' : 'Ce n’est pas encore la bonne réponse. La résolution détaillée t’aide à comprendre.'}</p></div>
+        <DeclicMascot key={`${id}-${correction.attempt_number}`} correct={mascotCorrect} mood={correction.is_correct ? 'success' : 'encourage'} compact />
       </div>
 
       <section className="v9-correction-card"><h2>Rappel de l’énoncé</h2><div className="v9-statement"><RichText text={detail.statement} /><GeometryDiagram diagram={detail.diagram} /></div></section>

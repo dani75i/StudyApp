@@ -1,0 +1,84 @@
+- generic:
+  - generic [ref=e1]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - heading [level=1] [ref=e8]:
+          - link "Facebook" [ref=e9] [cursor=pointer]:
+            - /url: https://www.facebook.com/
+        - generic [ref=e12]:
+          - link "Inscrivez-vous ou connectez-vous à Facebook" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e18]:
+            - generic [ref=e21]:
+              - generic [ref=e22]: Adresse e-mail ou téléphone
+              - textbox "Adresse e-mail ou téléphone" [active] [ref=e24]
+              - generic [ref=e25]: Mot de passe
+              - textbox "Mot de passe" [ref=e27]
+              - link "Informations de compte oubliées ?" [ref=e29] [cursor=pointer]:
+                - /url: https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar
+              - button "Se connecter" [ref=e30] [cursor=pointer]
+            - generic [ref=e31]: Voulez-vous vous inscrire à Facebook ?
+            - button "S’inscrire" [ref=e32] [cursor=pointer]
+      - button "S’inscrire" [ref=e33] [cursor=pointer]
+    - main [ref=e40]
+  - dialog [ref=e44]:
+    - generic [ref=e48]:
+      - button [ref=e52] [cursor=pointer]
+      - generic [ref=e55]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: Autoriser l’utilisation des cookies de Facebook sur ce navigateur ?
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - text: Nous utilisons les cookies et des solutions similaires pour fournir et améliorer le contenu sur les
+              - link "Produits Meta" [ref=e63] [cursor=pointer]:
+                - /url: https://www.facebook.com/help/1561485474074139
+              - text: . Ils permettent aussi d’offrir une expérience de navigation plus sûre, grâce aux informations reçues sur et en dehors de Facebook, et de fournir et améliorer les Produits Meta pour toute personne possédant un compte.
+            - generic [ref=e64]: "Cookies essentiels : sans eux, le bon fonctionnement des Produits et sites Meta est impossible."
+            - generic [ref=e69]: "Cookies d’autres entreprises : ces cookies optionnels nous permettent de vous montrer des publicités en dehors des Produits Meta. Ils permettent aussi d’intégrer certaines fonctionnalités à nos Produits, telles que des lecteurs vidéo et des visualiseurs de cartes."
+            - generic [ref=e75]:
+              - text: Vous choisissez quels cookies optionnels garder. Pour en savoir plus sur les cookies et l’usage que nous en faisons, ainsi que pour passer en revue ou modifier vos choix à tout moment, consultez notre
+              - link "Politique d’utilisation des cookies" [ref=e76] [cursor=pointer]:
+                - /url: https://www.facebook.com/policies/cookies/
+              - text: .
+          - generic [ref=e77]:
+            - generic [ref=e78]: À propos des cookies
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - generic [ref=e84]:
+                  - generic [ref=e88]: Définition
+                  - button "En savoir plus sur Définition" [ref=e92] [cursor=pointer]:
+                    - generic [ref=e93]: En savoir plus
+                - generic [ref=e99]:
+                  - generic [ref=e103]: Pourquoi utiliser les cookies ?
+                  - button "En savoir plus sur Pourquoi utiliser les cookies ?" [ref=e107] [cursor=pointer]:
+                    - generic [ref=e108]: En savoir plus
+              - generic [ref=e112]:
+                - generic [ref=e115]:
+                  - generic [ref=e119]: Qu’entendons-nous par « Produits Meta » ?
+                  - button "En savoir plus sur Qu’entendons-nous par « Produits Meta » ?" [ref=e123] [cursor=pointer]:
+                    - generic [ref=e124]: En savoir plus
+                - generic [ref=e130]:
+                  - generic [ref=e134]: Vos préférences cookies
+                  - button "En savoir plus sur Vos préférences cookies" [ref=e138] [cursor=pointer]:
+                    - generic [ref=e139]: En savoir plus
+          - generic [ref=e143]:
+            - generic [ref=e144]: Cookies d’autres entreprises
+            - generic [ref=e147]:
+              - generic [ref=e150]:
+                - generic [ref=e157]:
+                  - text: Nous utilisons les cookies
+                  - link "d’autres entreprises" [ref=e158] [cursor=pointer]:
+                    - /url: https://www.facebook.com/privacy/policies/cookies/?annotations[0]=explanation%2F3_companies_list
+                  - text: pour vous montrer des publicités en dehors de nos Produits, et pour vous fournir des fonctionnalités comme les visualiseurs de cartes, les services de paiement et les lecteurs vidéo.
+                - switch "Cookies from other companies" [ref=e164] [cursor=pointer]
+              - button "Choisir les cookies par catégorie" [ref=e169] [cursor=pointer]
+            - button "Comment nous utilisons ces cookies" [ref=e186] [cursor=pointer]
+            - button "Si vous autorisez ces cookies" [ref=e203] [cursor=pointer]
+            - button "Si vous n’autorisez pas ces cookies" [ref=e220] [cursor=pointer]
+          - generic [ref=e233]: Voici comment mieux contrôler vos informations
+          - button "Gérez votre expérience publicitaire dans l’Espace Comptes" [ref=e239] [cursor=pointer]
+          - button "Plus d’informations sur les publicités en ligne" [ref=e256] [cursor=pointer]
+          - button "Contrôler les cookies avec les paramètres du navigateur" [ref=e273] [cursor=pointer]
+        - generic [ref=e287]:
+          - button "Refuser les cookies optionnels" [ref=e289] [cursor=pointer]
+          - button "Autoriser tous les cookies" [ref=e294] [cursor=pointer]
