@@ -5,6 +5,7 @@ import {
   BookOpenText,
   CheckCircle2,
   Crown,
+  Compass,
   Dumbbell,
   Flame,
   Medal,
@@ -17,6 +18,8 @@ import {
 import { Link } from 'react-router-dom';
 import { api } from '../api';
 import DeclicMascot from '../components/DeclicMascot';
+import { getDeclicProgress } from '../components/declicLevels';
+import { getDashboardMission } from '../dashboardMission';
 
 const badgeIcons = {
   sparkles: Sparkles,
@@ -40,11 +43,15 @@ function Stat({ icon: Icon, label, value, sub, tone = 'violet' }) {
 
 export default function Dashboard() {
   const [data, setData] = useState(null);
+  const [session, setSession] = useState(null);
   const [goalBusy, setGoalBusy] = useState(false);
   const [toastBadge, setToastBadge] = useState(null);
 
   const load = () => api('/dashboard').then(setData);
-  useEffect(() => { load(); }, []);
+  useEffect(() => {
+    load();
+    api('/daily-session').then(setSession).catch(() => setSession({ error: true }));
+  }, []);
 
   useEffect(() => {
     if (!data?.badges) return;
@@ -78,6 +85,9 @@ export default function Dashboard() {
     }
   };
 
+  const declic = getDeclicProgress(data.stats.correct);
+  const mission = getDashboardMission(session, data.recommended);
+
   const featuredBadges = [...data.badges]
     .sort((a, b) => Number(b.unlocked) - Number(a.unlocked) || (b.progress / b.target) - (a.progress / a.target))
     .slice(0, 4);
@@ -91,7 +101,7 @@ export default function Dashboard() {
         </div>
       )}
 
-      <section className="dashboard-hero-card">
+      <section className="dashboard-hero-card dashboard-hero-card-v108">
         <div className="dashboard-hero-copy">
           <div className="dashboard-kicker"><Sparkles size={15} /> TON ESPACE DE PROGRESSION</div>
           <h1>Bonjour {data.first_name} 👋</h1>
@@ -100,6 +110,21 @@ export default function Dashboard() {
             <Link className="primary hero-primary" to="/seance">Commencer ma séance <ArrowRight size={18} /></Link>
             <Link className="hero-link" to="/cours"><BookOpenText size={17} /> Réviser un cours</Link>
           </div>
+        </div>
+
+        <div className="hero-declic" aria-label={`Progression de Déclic, niveau ${declic.level} sur 5`}>
+          <div className="hero-declic-art"><DeclicMascot correct={data.stats.correct} compact /></div>
+          <span className="hero-declic-caption">TON COMPAGNON</span>
+          <strong className="hero-declic-name">Déclic · Niveau {declic.level}</strong>
+          <span className="hero-declic-rank">{declic.title}</span>
+          <div className="hero-declic-meter" role="progressbar" aria-label="Progression de Déclic vers le niveau suivant" aria-valuemin={0} aria-valuemax={100} aria-valuenow={declic.percent}>
+            <span style={{ width: `${declic.percent}%` }} />
+          </div>
+          <small className="hero-declic-next">
+            {declic.next
+              ? `Encore ${declic.remaining} exercice${declic.remaining > 1 ? 's' : ''} maîtrisé${declic.remaining > 1 ? 's' : ''} pour le niveau ${declic.level + 1}`
+              : 'Niveau maximum débloqué !'}
+          </small>
         </div>
 
         <div className="hero-goal-panel">
@@ -117,15 +142,20 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <div className="declic-dashboard-card">
-        <DeclicMascot correct={data.stats.correct} />
-        <div className="declic-dashboard-side">
-          <span className="eyebrow">TON COMPAGNON D'AVENTURE</span>
-          <h2>Déclic grandit avec toi !</h2>
-          <p>Chaque exercice distinct que tu maîtrises fait progresser ton personnage. Même quand tu te trompes, Déclic reste à tes côtés.</p>
-          <div className="declic-mastery-counter"><strong>{data.stats.correct}</strong> exercice{data.stats.correct > 1 ? 's' : ''} maîtrisé{data.stats.correct > 1 ? 's' : ''}</div>
+      <section className={`dashboard-mission-card mission-${mission.status}`} aria-labelledby="dashboard-mission-title">
+        <div className="dashboard-mission-icon"><Compass size={24} /></div>
+        <div className="dashboard-mission-content">
+          <span className="eyebrow">TA PROCHAINE MISSION · {mission.meta}</span>
+          <h2 id="dashboard-mission-title">{mission.title}</h2>
+          <p>{mission.detail}</p>
+          {mission.status === 'exercise' && (
+            <div className="dashboard-mission-track" role="progressbar" aria-label="Exercices réalisés dans la séance du jour" aria-valuemin={0} aria-valuemax={100} aria-valuenow={mission.percent}>
+              <span style={{ width: `${mission.percent}%` }} />
+            </div>
+          )}
         </div>
-      </div>
+        <Link className="primary dashboard-mission-action" to={mission.url}>{mission.action} <ArrowRight size={17} /></Link>
+      </section>
 
       <div className="stats-grid dashboard-stats">
         <Stat icon={CheckCircle2} label="Exercices maîtrisés" value={data.stats.correct} sub={`${data.stats.completed} tentés`} tone="green" />
@@ -168,7 +198,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <div className="dashboard-two-col polished-grid">
+      <div className="dashboard-two-col polished-grid dashboard-weekly-settings">
         <section className="weekly-card polished-card">
           <div className="weekly-card-head">
             <div>
@@ -187,15 +217,6 @@ export default function Dashboard() {
           </div>
         </section>
 
-        <section className="daily-cta-card polished-card">
-          <div className="daily-cta-icon"><Sparkles size={24} /></div>
-          <div>
-            <span className="eyebrow">SÉANCE DU JOUR</span>
-            <h2>Prêt pour quelques minutes utiles ?</h2>
-            <p>La sélection privilégie ce qu'il te reste à maîtriser.</p>
-          </div>
-          <Link className="primary" to="/seance">Démarrer <ArrowRight size={17} /></Link>
-        </section>
       </div>
 
       <div className="quick-grid polished-quick-grid">
@@ -210,17 +231,6 @@ export default function Dashboard() {
           <ArrowRight size={16} />
         </Link>
       </div>
-
-      {data.recommended && (
-        <section className="focus-card focus-card-v7">
-          <div>
-            <span className="eyebrow">À TRAVAILLER MAINTENANT</span>
-            <h2>{data.recommended.emoji} {data.recommended.title}</h2>
-            <p>{data.recommended.percent}% du chapitre maîtrisé. Encore quelques exercices pour faire monter la jauge.</p>
-          </div>
-          <Link className="secondary" to={`/chapitre/${data.recommended.chapter_id}#exercices`}>Reprendre <ArrowRight size={17} /></Link>
-        </section>
-      )}
 
       <section>
         <div className="section-head">

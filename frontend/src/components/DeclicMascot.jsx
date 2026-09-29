@@ -1,36 +1,28 @@
 import React from 'react';
-
-const STAGES = [
-  { title: 'Déclic explorateur', hint: 'Ton compagnon grandit avec tes réussites !', min: 0 },
-  { title: 'Déclic aventurier', hint: '8 exercices maîtrisés : tu progresses !', min: 8 },
-  { title: 'Déclic expert', hint: '25 exercices maîtrisés : quel parcours !', min: 25 },
-  { title: 'Déclic étoilé', hint: '60 exercices maîtrisés : bravo !', min: 60 },
-];
+import { getDeclicProgress } from './declicLevels';
 
 /** Le niveau repose sur le nombre d'exercices distincts réussis (statistiques serveur).
  * L'humeur ne change qu'à l'affichage du résultat d'une tentative.
  * Sans nouvel appel réseau ni données sensibles dans le navigateur.
  */
 export default function DeclicMascot({ correct = 0, mood = 'idle', compact = false }) {
-  const count = Math.max(0, Number(correct) || 0);
-  const stage = count >= 60 ? 3 : count >= 25 ? 2 : count >= 8 ? 1 : 0;
+  const progress = getDeclicProgress(correct);
+  const stage = progress.level - 1;
   const state = ['idle', 'success', 'encourage'].includes(mood) ? mood : 'idle';
-  const current = STAGES[stage];
-  const next = STAGES[stage + 1];
   const message = state === 'success'
     ? 'Super ! On continue !'
     : state === 'encourage'
       ? 'Ce n’est pas grave, on apprend ensemble !'
-      : current.hint;
-  const aria = `${current.title}. ${message}`;
+      : `Ton compagnon grandit avec tes ${progress.count} exercices maîtrisés !`;
+  const aria = `Déclic niveau ${progress.level}, ${progress.title}. ${message}`;
 
   return (
     <div className={`declic-mascot stage-${stage} mood-${state} ${compact ? 'compact' : ''}`} role="img" aria-label={aria}>
       <svg viewBox="0 0 200 190" aria-hidden="true" focusable="false">
         <defs>
           <linearGradient id="declic-coat" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor={stage > 1 ? '#a9f6e8' : '#c7c2ff'} />
-            <stop offset="100%" stopColor={stage > 1 ? '#5cdaca' : '#8478ef'} />
+            <stop offset="0%" stopColor={stage >= 4 ? '#ffe8ac' : stage > 1 ? '#a9f6e8' : '#c7c2ff'} />
+            <stop offset="100%" stopColor={stage >= 4 ? '#ffca69' : stage > 1 ? '#5cdaca' : '#8478ef'} />
           </linearGradient>
         </defs>
         <ellipse cx="100" cy="172" rx="55" ry="9" fill="#564ba1" opacity=".12" />
@@ -63,6 +55,7 @@ export default function DeclicMascot({ correct = 0, mood = 'idle', compact = fal
           {stage >= 1 && <path d="M49 66 L58 47 L66 68" fill="#ffd074" stroke="#eaaa42" strokeWidth="3" />}
           {stage >= 2 && <path d="M151 72 l6 -14 7 14 15 2 -12 10 4 15 -14 -8 -13 8 4 -15 -12 -10Z" fill="#fbc557" stroke="#e8a943" strokeWidth="2" />}
           {stage >= 3 && <path d="M75 47 L69 19 89 29 101 8 113 29 136 20 130 47Z" fill="#f8bf5b" stroke="#dd9d36" strokeWidth="3" />}
+          {stage >= 4 && <g fill="#fff2a9" stroke="#f4b454" strokeWidth="2"><path d="M35 63 l4 -10 4 10 10 4 -10 4 -4 10 -4 -10 -10 -4Z" /><path d="M163 53 l3 -8 3 8 8 3 -8 3 -3 8 -3 -8 -8 -3Z" /></g>}
           <circle cx="99" cy="143" r="8" fill="#fff" opacity=".65" />
         </g>
         {state === 'success' && <g className="declic-confetti" fill="#e4a847">
@@ -72,7 +65,7 @@ export default function DeclicMascot({ correct = 0, mood = 'idle', compact = fal
           <circle cx="27" cy="132" r="5" fill="#f87a9c" />
         </g>}
       </svg>
-      {!compact && <div className="declic-message"><strong>{current.title}</strong><p>{message}</p>{next && <small>Prochaine évolution : {next.min} exercices maîtrisés</small>}</div>}
+      {!compact && <div className="declic-message"><strong>{`Déclic ${progress.title.toLowerCase()}`}</strong><p>{message}</p>{progress.next && <small>Prochaine évolution : {progress.next.min} exercices maîtrisés</small>}</div>}
     </div>
   );
 }
