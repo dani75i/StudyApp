@@ -1809,3 +1809,93 @@ body {
 :root[data-theme='dark'] body { background:radial-gradient(circle at 80% 0%,rgba(119,92,242,.16),transparent 30%),linear-gradient(145deg,#0d132b,#151332 55%,#0b202a); }
 :root[data-theme='dark'] .sidebar { background:linear-gradient(180deg,#29236f,#17143d); }
 :root[data-theme='dark'] .public-page { background:linear-gradient(145deg,#0d132b,#171334 55%,#0b202a); }
+
+/* ============================================================
+   V10.11 — Dark mode confort
+   Les composants V10.10 utilisaient des fonds clairs explicites.
+   En mode sombre, on remplace ces blancs par des surfaces bleu nuit
+   afin de conserver le contraste sans éblouissement.
+   ============================================================ */
+:root[data-theme='dark'] {
+  --card: #18203d;
+  --surface: #0d1228;
+  --surface-2: #121a35;
+  --sidebar-bg: #181443;
+  --text: #f1f3fb;
+  --ink: #f1f3fb;
+  --muted: #aab5cf;
+  --line: rgba(190,199,225,.14);
+  --line-strong: rgba(190,199,225,.25);
+  --shadow: 0 16px 42px rgba(0,0,0,.28);
+}
+
+:root[data-theme='dark'] body {
+  background:
+    radial-gradient(circle at 78% 0%, rgba(111,89,232,.15), transparent 30%),
+    radial-gradient(circle at 12% 32%, rgba(25,143,164,.08), transparent 25%),
+    linear-gradient(145deg,#0b1024,#121631 58%,#0b1823);
+}
+
+:root[data-theme='dark'] .main { color: var(--text); }
+:root[data-theme='dark'] .page-header {
+  background: rgba(24,32,61,.82);
+  border-color: rgba(190,199,225,.13);
+  box-shadow: 0 12px 32px rgba(0,0,0,.18);
+}
+
+:root[data-theme='dark'] .dashboard-mission-card {
+  background: linear-gradient(110deg,#18203d 0%,#1d2347 58%,#28204e 100%);
+  border-color: rgba(139,130,255,.22);
+}
+:root[data-theme='dark'] .dashboard-mission-icon {
+  background: linear-gradient(145deg,#252b58,#33265b);
+  color: #aaa3ff;
+  border-color: rgba(170,163,255,.18);
+}
+
+:root[data-theme='dark'] .dashboard-stats .stat-card:nth-child(1) { background: linear-gradient(145deg,#17223a,#142c2b); }
+:root[data-theme='dark'] .dashboard-stats .stat-card:nth-child(2) { background: linear-gradient(145deg,#18203d,#252044); }
+:root[data-theme='dark'] .dashboard-stats .stat-card:nth-child(3) { background: linear-gradient(145deg,#1c2039,#32241f); }
+:root[data-theme='dark'] .dashboard-stats .stat-card:nth-child(4) { background: linear-gradient(145deg,#1b2039,#302b1d); }
+:root[data-theme='dark'] .stat-card { border-color: rgba(190,199,225,.12); }
+
+:root[data-theme='dark'] .achievement-showcase {
+  background:
+    radial-gradient(circle at 93% 10%,rgba(245,158,11,.10),transparent 26%),
+    linear-gradient(145deg,#191f39,#27231f);
+  border-color: rgba(245,190,83,.18);
+}
+:root[data-theme='dark'] .featured-badge { background: rgba(24,32,61,.88); }
+:root[data-theme='dark'] .collection-meter:before { background: #151d36; }
+
+:root[data-theme='dark'] .weekly-card { background: linear-gradient(145deg,#18203d,#242044); }
+:root[data-theme='dark'] .quick-course { background: linear-gradient(145deg,#18203d,#20284a); }
+:root[data-theme='dark'] .quick-practice { background: linear-gradient(145deg,#18203d,#15323a); }
+:root[data-theme='dark'] .progress-list { background: rgba(24,32,61,.88); }
+:root[data-theme='dark'] .progress-row:nth-child(even) { background: rgba(35,43,78,.62); }
+
+:root[data-theme='dark'] .chapter-card { background: linear-gradient(155deg,#18203d 62%,#242044); }
+:root[data-theme='dark'] .chapter-card.exercise-card { background: linear-gradient(155deg,#18203d 62%,#143239); }
+:root[data-theme='dark'] .panel,
+:root[data-theme='dark'] .chapter-hero { background: rgba(24,32,61,.92); }
+:root[data-theme='dark'] .lesson-card,
+:root[data-theme='dark'] .browser-exercise-card,
+:root[data-theme='dark'] .history-table,
+:root[data-theme='dark'] .profile-card,
+:root[data-theme='dark'] .admin-panel,
+:root[data-theme='dark'] .filter-card,
+:root[data-theme='dark'] .daily-hero { background-color: var(--card); }
+
+:root[data-theme='dark'] .exercise-item.exercise-status-success { background: linear-gradient(90deg,var(--green-bg),var(--card) 28%); }
+:root[data-theme='dark'] .exercise-item.exercise-status-review { background: linear-gradient(90deg,rgba(245,158,11,.10),var(--card) 28%); }
+:root[data-theme='dark'] .exercise-item.exercise-status-todo { background: var(--card); }
+:root[data-theme='dark'] .continue-icon { background: #202847; }
+
+:root[data-theme='dark'] .public-nav,
+:root[data-theme='dark'] .public-section { background: rgba(24,32,61,.72); border-color: rgba(190,199,225,.12); }
+:root[data-theme='dark'] .public-demo-card { background: rgba(24,32,61,.96); border-color: rgba(190,199,225,.14); }
+:root[data-theme='dark'] .public-feature-grid article:nth-child(1) { background: linear-gradient(150deg,#18203d,#20284a); }
+:root[data-theme='dark'] .public-feature-grid article:nth-child(2) { background: linear-gradient(150deg,#18203d,#15323a); }
+:root[data-theme='dark'] .public-feature-grid article:nth-child(3) { background: linear-gradient(150deg,#18203d,#30251f); }
+:root[data-theme='dark'] .public-subjects > div:first-child { background: linear-gradient(145deg,#18203d,#20284a); border-color:rgba(139,130,255,.18); }
+:root[data-theme='dark'] .public-subjects > div:last-child { background: linear-gradient(145deg,#18203d,#15323a); border-color:rgba(103,232,249,.14); }
