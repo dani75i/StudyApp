@@ -103,11 +103,11 @@ export default function Dashboard() {
 
       <section className="dashboard-hero-card dashboard-hero-card-v108">
         <div className="dashboard-hero-copy">
-          <div className="dashboard-kicker"><Sparkles size={15} /> TON TABLEAU DE BORD</div>
-          <h1>Prêt à progresser, {data.first_name} ?</h1>
-          <p>Cours, exercices et progression réunis au même endroit. Avance à ton rythme en {data.level}.</p>
+          <div className="dashboard-kicker"><Sparkles size={15} /> TON ESPACE DE PROGRESSION</div>
+          <h1>Bonjour {data.first_name} 👋</h1>
+          <p>Une nouvelle séance, quelques exercices bien choisis, et tu avances encore en {data.level}.</p>
           <div className="dashboard-hero-actions">
-            <Link className="primary hero-primary" to="/seance">Continuer ma séance <ArrowRight size={18} /></Link>
+            <Link className="primary hero-primary" to="/seance">Commencer ma séance <ArrowRight size={18} /></Link>
             <Link className="hero-link" to="/cours"><BookOpenText size={17} /> Réviser un cours</Link>
           </div>
         </div>
