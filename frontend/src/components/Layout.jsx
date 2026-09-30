@@ -11,7 +11,7 @@ import { openCookiePreferences } from '../analytics';
 import { OPEN_FEEDBACK_EVENT } from './FeedbackWidget';
 
 const navItems = [
-  ['/dashboard', ChartNoAxesColumnIncreasing, 'Progression'],
+  ['/dashboard', House, 'Accueil'],
   ['/seance', Sparkles, 'Séance du jour'],
   ['/cours', BookOpenText, 'Cours'],
   ['/exercices', Dumbbell, 'Exercices'],
