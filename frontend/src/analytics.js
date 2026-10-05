@@ -16,7 +16,9 @@ export function isAnalyticsAllowedPath(pathname) {
     || pathname === '/inscription'
     || pathname === '/confidentialite'
     || pathname === '/decouvrir/cours'
-    || pathname.startsWith('/decouvrir/cours/');
+    || pathname.startsWith('/decouvrir/cours/')
+    || pathname === '/decouvrir/exercices'
+    || pathname.startsWith('/decouvrir/exercices/');
 }
 
 function ensureGtag() {

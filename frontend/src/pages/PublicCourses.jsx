@@ -27,7 +27,7 @@ export default function PublicCourses() {
     <div className="public-page">
       <header className="public-nav">
         <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></Link>
-        <nav><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'courses_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav>
+        <nav><Link to="/decouvrir/exercices">Exercices corrigés</Link><Link to="/connexion">Connexion</Link><Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'courses_nav_signup', destination: '/inscription' })}>Créer mon compte</Link></nav>
       </header>
 
       <main className="public-content">

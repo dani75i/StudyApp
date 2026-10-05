@@ -78,13 +78,13 @@ export default function Exercise() {
           )}
 
           {(data.hints?.length > 0) && <div className="v9-hint-panel">
-            <div className="v9-hint-header"><Lightbulb size={18} /><strong>Besoin d’un coup de pouce ?</strong><span>{hintsShown}/{data.hints?.length || 0} indices</span></div>
+            <div className="v9-hint-header"><Lightbulb size={18} /><strong>Besoin d’aide ?</strong><span>{hintsShown}/{data.hints?.length || 0} étapes</span></div>
             {(data.hints || []).slice(0, hintsShown).map((hint, index) => (
-              <p key={index} className="v9-hint"><b>Indice {index + 1}.</b> <RichText text={hint} /></p>
+              <p key={index} className="v9-hint"><b>Étape {index + 1}.</b> <RichText text={hint} /></p>
             ))}
             {hintsShown < (data.hints?.length || 0) && (
               <button type="button" className="v9-hint-reveal" onClick={() => setHintsShown((count) => count + 1)}>
-                {hintsShown ? 'Afficher l’indice suivant' : 'Afficher un indice'} <ChevronDown size={15} />
+                {hintsShown ? 'Guide-moi encore' : 'Guide-moi'} <ChevronDown size={15} />
               </button>
             )}
           </div>}

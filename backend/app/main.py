@@ -297,6 +297,23 @@ def public_chapter(chapter_id: int, db: Session = Depends(get_db)):
     }
 
 
+@app.get("/api/public/exercises/{chapter_id}")
+def public_exercises(chapter_id: int, db: Session = Depends(get_db)):
+    chapter = db.get(Chapter, chapter_id)
+    if not chapter:
+        raise HTTPException(404, "Chapitre introuvable")
+    subject = db.get(Subject, chapter.subject_id)
+    if not subject or subject.slug not in ALLOWED_SUBJECT_SLUGS:
+        raise HTTPException(404, "Chapitre introuvable")
+    exercises = db.query(Exercise).filter(Exercise.chapter_id == chapter_id).order_by(Exercise.order_index, Exercise.id).all()
+    return {
+        "id": chapter.id, "title": chapter.title, "summary": chapter.summary, "level": chapter.level,
+        "subject": {"id": subject.id, "name": subject.name, "emoji": subject.emoji, "slug": subject.slug},
+        "exercises": [{"id": ex.id, "title": ex.title, "statement": ex.statement, "correction": ex.correction, "difficulty": ex.difficulty} for ex in exercises[:5]],
+        "exercise_count": len(exercises),
+    }
+
+
 @app.get("/robots.txt", response_class=PlainTextResponse)
 def robots_txt():
     base = settings.site_url.rstrip("/")
@@ -311,7 +328,9 @@ def sitemap_xml(db: Session = Depends(get_db)):
         db.query(Chapter).filter(Chapter.subject_id.in_(subject_ids)).order_by(Chapter.id).all()
         if subject_ids else []
     )
-    urls = [f"{base}/", f"{base}/decouvrir/cours", f"{base}/confidentialite"] + [f"{base}/decouvrir/cours/{chapter.id}" for chapter in chapters]
+    urls = [f"{base}/", f"{base}/decouvrir/cours", f"{base}/decouvrir/exercices", f"{base}/confidentialite"]
+    urls += [f"{base}/decouvrir/cours/{chapter.id}" for chapter in chapters]
+    urls += [f"{base}/decouvrir/exercices/{chapter.id}" for chapter in chapters if db.query(Exercise).filter(Exercise.chapter_id == chapter.id).count()]
     rows = "".join(f"<url><loc>{url}</loc></url>" for url in urls)
     xml = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{rows}</urlset>'
     return Response(content=xml, media_type="application/xml")

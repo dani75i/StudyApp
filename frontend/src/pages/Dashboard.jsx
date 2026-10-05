@@ -101,45 +101,28 @@ export default function Dashboard() {
         </div>
       )}
 
-      <section className="dashboard-hero-card dashboard-hero-card-v108">
-        <div className="dashboard-hero-copy">
-          <div className="dashboard-kicker"><Sparkles size={15} /> TON ESPACE DE PROGRESSION</div>
+      <section className="dashboard-hero-card dashboard-hero-card-v108 dashboard-hero-simple">
+        <div className="dashboard-hero-copy dashboard-hero-copy-simple">
           <h1>Bonjour {data.first_name} 👋</h1>
-          <p>Une nouvelle séance, quelques exercices bien choisis, et tu avances encore en {data.level}.</p>
-          <div className="dashboard-hero-actions">
-            <Link className="primary hero-primary" to="/seance">Commencer ma séance <ArrowRight size={18} /></Link>
-            <Link className="hero-link" to="/cours"><BookOpenText size={17} /> Réviser un cours</Link>
-          </div>
+          <Link className="primary hero-primary hero-continue" to="/seance">Continuer <ArrowRight size={20} /></Link>
         </div>
 
-        <div className="hero-declic" aria-label={`Progression de Déclic, niveau ${declic.level} sur 5`}>
+        <div className="hero-declic hero-declic-simple" aria-label="Déclic, ton compagnon ExoDéclic">
           <div className="hero-declic-art"><DeclicMascot correct={data.stats.correct} compact /></div>
-          <span className="hero-declic-caption">TON COMPAGNON</span>
-          <strong className="hero-declic-name">Déclic · Niveau {declic.level}</strong>
-          <span className="hero-declic-rank">{declic.title}</span>
-          <div className="hero-declic-meter" role="progressbar" aria-label="Progression de Déclic vers le niveau suivant" aria-valuemin={0} aria-valuemax={100} aria-valuenow={declic.percent}>
-            <span style={{ width: `${declic.percent}%` }} />
-          </div>
-          <small className="hero-declic-next">
-            {declic.next
-              ? `Encore ${declic.remaining} exercice${declic.remaining > 1 ? 's' : ''} maîtrisé${declic.remaining > 1 ? 's' : ''} pour le niveau ${declic.level + 1}`
-              : 'Niveau maximum débloqué !'}
-          </small>
         </div>
+      </section>
 
-        <div className="hero-goal-panel">
-          <div className="hero-goal-top">
-            <span>Objectif de la semaine</span>
-            <strong>{data.weekly.completed}/{data.weekly.target}</strong>
-          </div>
-          <div className="hero-goal-orb" style={{ '--goal-progress': `${data.weekly.percent * 3.6}deg` }}>
-            <div><strong>{data.weekly.percent}%</strong><span>atteint</span></div>
-          </div>
-          <div className="hero-goal-foot">
-            <span><CheckCircle2 size={15} /> {data.weekly.correct} réussis</span>
-            <span><Flame size={15} /> {data.stats.streak} j de série</span>
-          </div>
-        </div>
+      <section className="dashboard-subject-shortcuts" aria-label="Choisir une matière">
+        <Link className="dashboard-subject-card maths" to="/cours">
+          <span className="dashboard-subject-symbol">∠</span>
+          <strong>Maths</strong>
+          <ArrowRight size={21} />
+        </Link>
+        <Link className="dashboard-subject-card physics" to="/cours">
+          <span className="dashboard-subject-symbol">⚗</span>
+          <strong>Physique-Chimie</strong>
+          <ArrowRight size={21} />
+        </Link>
       </section>
 
       <section className={`dashboard-mission-card mission-${mission.status}`} aria-labelledby="dashboard-mission-title">

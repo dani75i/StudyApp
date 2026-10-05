@@ -21,7 +21,7 @@ export default function FeedbackWidget() {
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
   const [sending, setSending] = useState(false);
-  const isPrivateMobile = !['/', '/decouvrir/cours', '/connexion', '/inscription', '/confidentialite'].includes(pathname) && !pathname.startsWith('/decouvrir/cours/');
+  const isPrivateMobile = !['/', '/decouvrir/cours', '/connexion', '/inscription', '/confidentialite'].includes(pathname) && !pathname.startsWith('/decouvrir/cours/') && !pathname.startsWith('/decouvrir/exercices');
 
   useEffect(() => {
     const handler = () => { setOpen(true); setStatus('idle'); setError(''); setForm(initial); };

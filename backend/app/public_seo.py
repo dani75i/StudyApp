@@ -12,10 +12,11 @@ import re
 
 from sqlalchemy.orm import Session
 
-from .models import Chapter, Lesson, Subject
+from .models import Chapter, Exercise, Lesson, Subject
 
 PREFIX = "@@studysprint-blocks@@"  # Existing storage marker: do not rename it.
 PUBLIC_PREFIX = "/decouvrir/cours/"
+PUBLIC_EXERCISES_PREFIX = "/decouvrir/exercices/"
 
 
 def esc(value: object) -> str:
@@ -75,6 +76,42 @@ def document_context(path: str, db: Session) -> dict | None:
             "description": "Découvre les cours gratuits de maths et physique-chimie du collège : 6e, 5e, 4e et 3e. Fiches de révision et exercices corrigés sur ExoDéclic.",
             "content": "".join(parts),
         }
+    if path == "/decouvrir/exercices":
+        subjects = db.query(Subject).filter(Subject.slug.in_(("mathematiques", "physique-chimie"))).order_by(Subject.id).all()
+        parts = ["<h1>Exercices corrigés gratuits de maths et physique-chimie au collège</h1>",
+                 "<p>Entraîne-toi gratuitement de la 6e à la 3e avec des exercices classés par chapitre et leur correction.</p>"]
+        for subject in subjects:
+            parts.append(f"<section><h2>Exercices de {esc(subject.name)}</h2><ul>")
+            chapters = db.query(Chapter).filter(Chapter.subject_id == subject.id).order_by(Chapter.level, Chapter.order_index).all()
+            for chapter in chapters:
+                count = db.query(Exercise).filter(Exercise.chapter_id == chapter.id).count()
+                if count:
+                    parts.append(f'<li><a href="/decouvrir/exercices/{chapter.id}">{esc(chapter.title)} — {esc(chapter.level)}</a> : {count} exercices corrigés</li>')
+            parts.append("</ul></section>")
+        return {"title": "Exercices maths collège corrigés gratuits (6e à 3e) | ExoDéclic",
+                "description": "Exercices corrigés gratuits de maths et physique-chimie pour le collège, de la 6e à la 3e. Entraîne-toi par chapitre avec ExoDéclic.",
+                "content": "".join(parts)}
+    if path.startswith(PUBLIC_EXERCISES_PREFIX) and path[len(PUBLIC_EXERCISES_PREFIX):].isdigit():
+        chapter = db.get(Chapter, int(path[len(PUBLIC_EXERCISES_PREFIX):]))
+        if chapter is None:
+            return None
+        subject = db.get(Subject, chapter.subject_id)
+        if subject is None or subject.slug not in ("mathematiques", "physique-chimie"):
+            return None
+        exercises = db.query(Exercise).filter(Exercise.chapter_id == chapter.id).order_by(Exercise.order_index, Exercise.id).all()
+        if not exercises:
+            return None
+        parts = [f'<p><a href="/decouvrir/exercices">Exercices corrigés</a> / {esc(subject.name)} / {esc(chapter.level)}</p>',
+                 f'<h1>Exercices corrigés : {esc(chapter.title)} — {esc(chapter.level)}</h1>',
+                 f'<p>{esc(chapter.summary)}</p>']
+        for i, exercise in enumerate(exercises[:5], 1):
+            parts.append(f'<article><h2>Exercice {i} — {esc(exercise.title)}</h2><p>{esc(exercise.statement)}</p>'
+                         f'<h3>Correction</h3><p>{esc(exercise.correction)}</p></article>')
+        parts.append(f'<p><a href="/decouvrir/cours/{chapter.id}">Revoir le cours : {esc(chapter.title)}</a></p>')
+        parts.append('<p><a href="/inscription">Créer un compte gratuit pour faire tous les exercices et suivre sa progression</a></p>')
+        return {"title": f"{chapter.title} {chapter.level} : exercices corrigés gratuits | ExoDéclic",
+                "description": f"Exercices corrigés gratuits sur {chapter.title} en {chapter.level}. Entraîne-toi en {subject.name} avec des exercices et corrections ExoDéclic."[:225],
+                "content": "".join(parts)}
     if path.startswith(PUBLIC_PREFIX) and path[len(PUBLIC_PREFIX):].isdigit():
         chapter = db.get(Chapter, int(path[len(PUBLIC_PREFIX):]))
         if chapter is None:

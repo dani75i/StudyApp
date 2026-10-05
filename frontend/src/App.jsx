@@ -20,6 +20,8 @@ import Admin from './pages/Admin';
 import PublicHome from './pages/PublicHome';
 import PublicCourses from './pages/PublicCourses';
 import PublicChapter from './pages/PublicChapter';
+import PublicExercises from './pages/PublicExercises';
+import PublicExercisesChapter from './pages/PublicExercisesChapter';
 import Privacy from './pages/Privacy';
 import CookieConsent from './components/CookieConsent';
 import FeedbackWidget from './components/FeedbackWidget';
@@ -89,6 +91,8 @@ export default function App() {
           <Route path="/" element={<PublicHome />} />
           <Route path="/decouvrir/cours" element={<PublicCourses />} />
           <Route path="/decouvrir/cours/:id" element={<PublicChapter />} />
+          <Route path="/decouvrir/exercices" element={<PublicExercises />} />
+          <Route path="/decouvrir/exercices/:id" element={<PublicExercisesChapter />} />
           <Route path="/confidentialite" element={<Privacy />} />
           <Route path="/connexion" element={<GuestOnly><Login /></GuestOnly>} />
           <Route path="/inscription" element={<GuestOnly><Register /></GuestOnly>} />

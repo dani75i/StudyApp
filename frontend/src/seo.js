@@ -1,7 +1,7 @@
 // Keep metadata in sync on React Router navigation, not only on HTTP reload.
 // The backend independently renders SEO metadata for first HTTP responses.
 const ORIGIN = 'https://www.exodeclic.fr';
-const PUBLIC = /^\/$|^\/decouvrir\/cours(?:\/\d+)?\/?$|^\/confidentialite\/?$/;
+const PUBLIC = /^\/$|^\/decouvrir\/(?:cours|exercices)(?:\/\d+)?\/?$|^\/confidentialite\/?$/;
 
 function updateMeta(selector, attribute, value, name) {
   let tag = document.querySelector(selector);

@@ -19,7 +19,7 @@ export default function PublicHome() {
       <header className="public-nav">
         <Link className="brand" to="/"><span className="brand-mark"><Zap size={21} /></span><span>ExoDéclic</span></Link>
         <nav>
-          <Link to="/decouvrir/cours">Cours gratuits</Link>
+          <Link to="/decouvrir/cours">Cours gratuits</Link><Link to="/decouvrir/exercices">Exercices corrigés</Link>
           <Link to="/connexion">Connexion</Link>
           <Link className="primary compact" to="/inscription" onClick={() => trackEvent('cta_click', { cta_name: 'nav_signup', destination: '/inscription' })}>Créer mon compte</Link>
         </nav>

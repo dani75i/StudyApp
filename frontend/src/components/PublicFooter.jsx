@@ -7,6 +7,7 @@ export default function PublicFooter() {
     <footer className="public-footer">
       <span>© {new Date().getFullYear()} ExoDéclic</span>
       <Link to="/decouvrir/cours">Cours gratuits</Link>
+      <Link to="/decouvrir/exercices">Exercices corrigés</Link>
       <Link to="/confidentialite">Confidentialité</Link>
       <button type="button" className="footer-link-button" onClick={openCookiePreferences}>Gérer les cookies</button>
       <Link to="/connexion">Connexion</Link>
